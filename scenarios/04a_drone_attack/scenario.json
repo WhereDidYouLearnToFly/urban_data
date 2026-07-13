@@ -1,0 +1,382 @@
+{
+  "id": "04a_drone_attack",
+  "name": "Drone Attack — Shahed Swarm",
+  "description": "Coordinated Shahed-136 drone attack in three waves: Atlantic Ocean approach, US-border corridor, and polar route. Detection escalates from distant RF signatures through acoustic and visual contact to detonation events over multiple Canadian cities. Approximately 15 minutes of real-time events.",
+  "loop": false,
+  "events": [
+    {
+      "offset_seconds": 0,
+      "source": {
+        "id": "src_001",
+        "type": "fft",
+        "data": null,
+        "coordinates": { "lat": 44.0, "lon": -53.0 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "RF anomaly over Atlantic — characteristic Shahed-136 frequency signature at 900 MHz band. Bearing 065°. Distance approx 620 km from Nova Scotia coast. Low confidence — possible false positive.",
+          "confidence": 0.61,
+          "tag_id": "1/5",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 20,
+      "source": {
+        "id": "src_002",
+        "type": "fft",
+        "data": null,
+        "coordinates": { "lat": 47.5, "lon": -69.5 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Second RF cluster near Maine/New Brunswick border. Tighter spectral match to Shahed-136. Multiple contacts in loose formation. Bearing 340° heading northwest.",
+          "confidence": 0.74,
+          "tag_id": "1/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 35,
+      "source": {
+        "id": "src_003",
+        "type": "fft",
+        "data": null,
+        "coordinates": { "lat": 83.0, "lon": -80.0 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact on polar route — near Ellesmere Island, Nunavut. Third wave confirmed inbound. Trajectory modeling points to Ontario within 90 minutes at estimated 185 km/h cruise.",
+          "confidence": 0.68,
+          "tag_id": "1/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 60,
+      "source": {
+        "id": "src_004",
+        "type": "fft",
+        "data": null,
+        "coordinates": { "lat": 44.0, "lon": -53.0 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "Atlantic RF cluster strengthening. Contact count now estimated 18 units. Formation tightening — consistent with pre-strike convergence protocol. Confidence upgraded.",
+          "confidence": 0.82,
+          "tag_id": "1/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 100,
+      "source": {
+        "id": "src_005",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 44.6476, "lon": -63.5728 },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Acoustic array near Halifax: low-frequency two-stroke piston engine hum. Spectral profile matches Shahed propulsion unit. Multiple overlapping signatures — estimated 10–15 units passing north of Halifax.",
+          "confidence": 0.84,
+          "tag_id": "2/5",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 130,
+      "source": {
+        "id": "src_006",
+        "type": "fft",
+        "data": null,
+        "coordinates": { "lat": 47.5, "lon": -69.5 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "Maine/NB corridor: RF cluster now 40 km inside Canadian airspace. Jamming attempt detected on ATC frequencies — electronic warfare component confirmed.",
+          "confidence": 0.87,
+          "tag_id": "2/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 160,
+      "source": {
+        "id": "src_007",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 47.5600, "lon": -52.7126 },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Ham radio operator in St. John's NL: 'We can hear them — dozens of them, like lawn mowers in the sky. Flying low and fast heading west. No lights.'",
+          "confidence": 0.78,
+          "tag_id": "2/5",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 200,
+      "source": {
+        "id": "src_008",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 9,
+          "description": "Visual contact over Ottawa. Security camera near Parliament Hill captures delta-wing silhouettes at approximately 150 m altitude. Estimated 8–12 units in loose formation heading southwest.",
+          "confidence": 0.91,
+          "tag_id": "3/5",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 220,
+      "source": {
+        "id": "src_009",
+        "type": "video",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Ottawa traffic camera video: Shahed formation overflying Rideau Canal. Characteristic delta-wing silhouette confirmed. Speed approximately 180 km/h. Heading 225° toward Toronto.",
+          "confidence": 0.95,
+          "tag_id": "3/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 250,
+      "source": {
+        "id": "src_010",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Ottawa resident phone report: 'They flew right over our neighborhood — Glebe area. Looked like toys but they were loud. One broke from the formation heading east toward the airport.'",
+          "confidence": 0.80,
+          "tag_id": "3/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 290,
+      "source": {
+        "id": "src_011",
+        "type": "fft",
+        "data": null,
+        "coordinates": { "lat": 44.2312, "lon": -76.4860 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 9,
+          "description": "RF signatures over Kingston area. Polar-route wave now visible on ground RF arrays. Merging with Atlantic wave on intercept course to Toronto. Combined estimated count: 30+ units.",
+          "confidence": 0.88,
+          "tag_id": "4/5",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 330,
+      "source": {
+        "id": "src_012",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.8500, "lon": -79.0500 },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Acoustic sensor east of Toronto (Whitby area): heavy drone swarm audio. Estimated 20+ units. Sound pressure consistent with formation of this size at 200 m altitude.",
+          "confidence": 0.92,
+          "tag_id": "4/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 360,
+      "source": {
+        "id": "src_013",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.7000, "lon": -79.4100 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 10,
+          "description": "Traffic camera north of Toronto — multiple drone silhouettes visible crossing Highway 401. Formation splitting into sub-groups. Target acquisition phase likely underway.",
+          "confidence": 0.94,
+          "tag_id": "4/5",
+          "tag_ai_action": "prediction"
+        }
+      }
+    },
+    {
+      "offset_seconds": 390,
+      "source": {
+        "id": "src_014",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Explosion — acoustic signature consistent with Shahed-136 HEAT warhead detonation. Downtown Toronto, estimated origin near Union Station area.",
+          "confidence": 0.97,
+          "tag_id": "5/5",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 398,
+      "source": {
+        "id": "src_015",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6450, "lon": -79.3810 },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Camera near CN Tower: large fireball and smoke column rising from Front Street West. Secondary fires visible in adjacent buildings. Blast radius estimated 30 m.",
+          "confidence": 0.98,
+          "tag_id": "5/5",
+          "tag_ai_action": "suggestion"
+        }
+      }
+    },
+    {
+      "offset_seconds": 410,
+      "source": {
+        "id": "src_016",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Explosion detected in Ottawa — acoustic origin near Vanier district. Separate detonation from Toronto. Multiple cities targeted simultaneously.",
+          "confidence": 0.93,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 425,
+      "source": {
+        "id": "src_017",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Second explosion in Toronto — acoustic origin near Pearson Airport corridor. Impact sounds followed by secondary detonation consistent with fuel ignition.",
+          "confidence": 0.95,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 445,
+      "source": {
+        "id": "src_018",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6820, "lon": -79.6200 },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Pearson Airport perimeter camera: impact crater visible on runway 06L. Fire suppression systems activated. Terminal building intact. Air traffic halted.",
+          "confidence": 0.96,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 470,
+      "source": {
+        "id": "src_019",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Ham radio operator downtown Toronto: 'Multiple explosions, fire on the waterfront and near the airport. People running everywhere. We are taking shelter in the subway.'",
+          "confidence": 0.83,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 500,
+      "source": {
+        "id": "src_020",
+        "type": "fft",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "RF sensors now showing scattered remaining signatures dispersing over Lake Ontario. Second wave appears to have expended payload. Possible third wave still inbound via polar route.",
+          "confidence": 0.76,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 540,
+      "source": {
+        "id": "src_021",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "firefighter",
+          "level": 9,
+          "description": "Multiple fire departments responding to waterfront and airport fires. Ambulances staged at safe distance. Emergency declaration imminent.",
+          "confidence": 0.94,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 600,
+      "source": {
+        "id": "src_022",
+        "data": null,
+        "type": "float_sequence",
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 5,
+          "description": "Seismic network: no new ground detonations detected in last 60 seconds. Active fires ongoing. Strike appears to have paused. Situation status: active emergency.",
+          "confidence": 0.89,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "01_all_ok",
+  "name": "Everything OK",
+  "description": "Baseline scenario. Normal urban activity across Toronto, Ottawa, and Vancouver. Loops continuously. Provides the negative class — the system's reference for 'nothing is wrong'.",
+  "loop": true,
+  "events": [
+    {
+      "offset_seconds": 0,
+      "source": {
+        "id": "src_001",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "Downtown Toronto, King and Bay. Morning commute underway. Normal pedestrian density and vehicle flow.",
+          "confidence": 0.97,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 20,
+      "source": {
+        "id": "src_002",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.7180, "lon": -79.5180 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "Highway 401 westbound near Mississauga. Traffic flowing freely at highway speed.",
+          "confidence": 0.96,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 40,
+      "source": {
+        "id": "src_003",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "Acoustic sensor downtown Toronto. Background urban noise within normal parameters: traffic, HVAC, distant construction.",
+          "confidence": 0.95,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 60,
+      "source": {
+        "id": "src_004",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "Ottawa, Rideau Street. Normal daytime foot traffic. Government district calm.",
+          "confidence": 0.98,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 80,
+      "source": {
+        "id": "src_005",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "Vancouver, Granville Street downtown. Normal midday activity. No anomalies detected.",
+          "confidence": 0.96,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 100,
+      "source": {
+        "id": "src_006",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "Seismic network: no unusual ground vibration. All sensors at baseline noise floor.",
+          "confidence": 0.99,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 120,
+      "source": {
+        "id": "src_007",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6890, "lon": -79.3960 },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 0,
+          "description": "Residential street in Midtown Toronto. Quiet. A dog walker visible. No incidents.",
+          "confidence": 0.97,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    },
+    {
+      "offset_seconds": 140,
+      "source": {
+        "id": "src_008",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "CN Tower area. Tourists and pedestrians. No anomaly. All clear.",
+          "confidence": 0.98,
+          "tag_id": "1/1",
+          "tag_ai_action": "main_event"
+        }
+      }
+    }
+  ]
+}
