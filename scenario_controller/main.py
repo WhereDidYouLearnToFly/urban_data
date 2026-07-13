@@ -3,6 +3,7 @@ from pathlib import Path
 
 from PyQt5.QtWidgets import QApplication, QMessageBox
 
+from ui.theme import apply_dark
 from scenario import ScenarioLoader
 from publisher import ZmqPublisher
 from controller import ScenarioController
@@ -14,7 +15,7 @@ DEFAULT_ZMQ = "tcp://127.0.0.1:5555"
 
 def main():
     app = QApplication(sys.argv)
-    app.setStyle("Fusion")
+    apply_dark(app)
 
     publisher = ZmqPublisher()
     publisher.connect(DEFAULT_ZMQ)

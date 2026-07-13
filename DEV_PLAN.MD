@@ -8,20 +8,20 @@ Build a demonstrable grant-proposal demo in the shortest time possible. All AI m
 ## Architecture Overview
 
 ```
-┌─────────────────────┐        ┌──────────────────────────────────────────────────────────┐
-│  Scenario Controller│        │  GNU Radio Flowgraph                                     │
-│  (PyQt5 + ZMQ PUB)  │──ZMQ──▶│  ZMQ SUB ▶ Fake Analyzer ▶ Fake Processor ▶ ZMQ PUB      │
-│  scenario_controller│        │              (custom Python blocks)                      │
-└─────────────────────┘        └─────────────────────────────┬────────────────────────────┘
-                                                             │ ZMQ
-                                                             ▼
-                                                        ┌─────────┐
-                                                        │   UI    │
-                                                        └─────────┘
+┌─────────────────────┐        ┌────────────────────────────────────────────────────────────────┐
+│  Scenario Controller│        │  GRC Application (PyQt5)                                       │
+│  (PyQt5 + ZMQ PUB)  │──ZMQ──▶│  ZMQ SUB ▶ Fake Analyzer ▶ Fake Processor                     │
+│  scenario_controller│        │                                   │ message port                │
+└─────────────────────┘        │                                   ▼                            │
+                               │                         Custom Qt Widgets                      │
+                               │                         (map, event feed, popups)              │
+                               └────────────────────────────────────────────────────────────────┘
 ```
 
 **Demo mode:** Scenario Controller feeds the flowgraph via ZMQ.
-**Production mode:** Real hardware sources (RF receiver, cameras, mics, seismographs) replace the Scenario Controller. The GNU Radio flowgraph and everything downstream stays identical.
+**Production mode:** Real hardware sources replace the Scenario Controller. The GRC application stays identical.
+
+The UI is a wrapper around the GNU Radio processor — a GRC-generated PyQt5 app with custom Qt widgets (map, feed, detail popups) added alongside the flowgraph blocks. No ZMQ hop between processor and UI; they run in the same process and communicate via GNU Radio message ports.
 
 The GRC flowgraph diagram is also a presentation asset — it visually proves the modular architecture to reviewers.
 
@@ -110,16 +110,14 @@ GNU Radio custom Python block. Receives Event PDUs from Step 2. Simulates cross-
 ---
 
 ### Step 4: UI Application
-Consumes the final processed event stream from the GNU Radio ZMQ PUB sink.
+GRC-generated PyQt5 application. The GNU Radio flowgraph runs inside it. Custom Qt widgets are added to the same window and receive processed events via GNU Radio message ports — no ZMQ between processor and UI.
 
-- **Map view:** every event as a colored dot (color = event type / severity)
-- **Event feed:** scrolling text list
-- **Detail popup:** click map dot or feed item → metadata + attached media (photo/video/audio/RF waterfall)
-- **RF events:** rendered as waterfall plot in popup
+- **Map view:** custom QWidget drawing event dots over a static Canada map tile (color = event type / severity). Click a dot to open detail popup.
+- **Event feed:** QListWidget — scrolling color-coded event log
+- **Detail popup:** QDialog showing event metadata + attached media (QLabel for photo, QMediaPlayer for video/audio, QPainter widget for RF waterfall)
+- **Dark theme:** shared `ui/theme.py` palette
 
-**Framework:** TBD (web app recommended — Leaflet.js for map, WebSocket to receive ZMQ-bridged events)
-
-**Output:** `ui/`
+**Output:** `grc/urban_data.grc` + `grc/urban_data.py` (generated), custom widget files alongside
 
 ---
 
