@@ -1,0 +1,315 @@
+{
+  "id": "04_mob_protests",
+  "name": "Coordinated Civil Unrest",
+  "description": "Simultaneous coordinated aggressive protests paralyze Toronto, Ottawa, and Vancouver. Starts as marches, escalates to riots. Police overwhelmed in all three cities. Citizen radio operators begin noting the suspicious simultaneity.",
+  "loop": false,
+  "groups": {
+    "protest_toronto": {
+      "summary": "Coordinated aggressive protest at Toronto City Hall escalating to full riot.",
+      "main_event": "Riot confirmed at Nathan Phillips Square. Police lines broken. Financial district threatened.",
+      "prediction": "Protest will spread to Queen's Park and financial district within 20 minutes.",
+      "suggestion": "Request mutual aid from Peel and York Regional Police. Close Queen St corridor."
+    },
+    "protest_ottawa": {
+      "summary": "Violent protest at Parliament Hill blocking all government district access.",
+      "main_event": "Parliament Hill access blocked. Vehicles set on fire on Wellington St.",
+      "prediction": "Government district lockdown required. Secondary protest forming near US Embassy.",
+      "suggestion": "Evacuate non-essential Parliament staff. Activate RCMP emergency protocols."
+    },
+    "protest_vancouver": {
+      "summary": "Downtown Vancouver protest turning violent — police overwhelmed, port access threatened.",
+      "main_event": "Vancouver downtown riot. Police requesting backup. Crowd fragmenting toward port.",
+      "prediction": "Port access roads may be blocked within 15 minutes.",
+      "suggestion": "Deploy riot squad. Close Georgia St and Burrard St. Alert Port Authority."
+    },
+    "coordinated_pattern": {
+      "summary": "All three cities experiencing simultaneous escalation — pattern inconsistent with organic protest.",
+      "main_event": "Simultaneous riots in Toronto, Ottawa, and Vancouver confirmed. Coordination suspected.",
+      "prediction": "Civil unrest may be a precursor to a larger operation. Recommend elevated national alert.",
+      "suggestion": "Notify CSIS and RCMP intelligence. Begin monitoring for follow-on activity."
+    }
+  },
+  "events": [
+    {
+      "offset_seconds": 0,
+      "source": {
+        "id": "src_001",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "Toronto baseline. Morning calm. No anomalies.",
+          "confidence": 0.97
+        }
+      }
+    },
+    {
+      "offset_seconds": 20,
+      "source": {
+        "id": "src_002",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "tag_id": "protest_toronto",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 4,
+          "description": "Large protest gathering forming at Nathan Phillips Square. Estimated 3,000 people. Crowd agitated, pushing against police lines. Signs in multiple languages.",
+          "confidence": 0.91
+        }
+      }
+    },
+    {
+      "offset_seconds": 30,
+      "source": {
+        "id": "src_003",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "tag_id": "protest_ottawa",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 4,
+          "description": "Simultaneous protest at Parliament Hill Ottawa. Crowd blocking all vehicle access to Wellington St. Police forming defensive line.",
+          "confidence": 0.89
+        }
+      }
+    },
+    {
+      "offset_seconds": 35,
+      "source": {
+        "id": "src_004",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "tag_id": "protest_vancouver",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 4,
+          "description": "Protest march on Georgia St Vancouver heading toward Vancouver Art Gallery. 2,000 participants. Traffic blocked in both directions.",
+          "confidence": 0.87
+        }
+      }
+    },
+    {
+      "offset_seconds": 70,
+      "source": {
+        "id": "src_005",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "tag_id": "protest_toronto",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "street_fight",
+          "level": 6,
+          "description": "Acoustic sensor Nathan Phillips Square: crowd roar escalating, glass breaking, police sirens. Riot beginning. Multiple injuries reported via 911.",
+          "confidence": 0.88
+        }
+      }
+    },
+    {
+      "offset_seconds": 80,
+      "source": {
+        "id": "src_006",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "tag_id": "protest_ottawa",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 7,
+          "description": "Ottawa — vehicles set on fire on Wellington St. Smoke column visible from Parliament. Police requesting reinforcements. Government district access severed.",
+          "confidence": 0.86
+        }
+      }
+    },
+    {
+      "offset_seconds": 90,
+      "source": {
+        "id": "src_007",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "tag_id": "protest_vancouver",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "street_fight",
+          "level": 6,
+          "description": "Vancouver — crowd turning violent. Store windows smashed on Robson St. Police outnumbered. Transit suspended downtown.",
+          "confidence": 0.84
+        }
+      }
+    },
+    {
+      "offset_seconds": 120,
+      "source": {
+        "id": "src_008",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "tag_id": "protest_toronto",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 8,
+          "description": "Toronto riot spreading from City Hall toward financial district. Looters visible on Bay St. Police lines broken. Ambulances unable to reach injured.",
+          "confidence": 0.93
+        }
+      }
+    },
+    {
+      "offset_seconds": 135,
+      "source": {
+        "id": "src_009",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "tag_id": "protest_ottawa",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 8,
+          "description": "Ottawa — secondary crowd forming near US Embassy on Sussex Drive. Police resource split across two locations. PM residence security elevated.",
+          "confidence": 0.82
+        }
+      }
+    },
+    {
+      "offset_seconds": 150,
+      "source": {
+        "id": "src_010",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "tag_id": "protest_vancouver",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 7,
+          "description": "Vancouver — riot police deployed. Water cannon activated. Crowd fragmenting into groups moving toward port and Burrard Bridge.",
+          "confidence": 0.90
+        }
+      }
+    },
+    {
+      "offset_seconds": 175,
+      "source": {
+        "id": "src_011",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "tag_id": "coordinated_pattern",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Ham radio operator Toronto: 'Protests in every major city at exactly the same time. This is not spontaneous. This is coordinated. Something is very wrong.'",
+          "confidence": 0.76
+        }
+      }
+    },
+    {
+      "offset_seconds": 190,
+      "source": {
+        "id": "src_012",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "tag_id": "protest_toronto",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 6,
+          "description": "Toronto financial district — civilians fleeing the riot moving south toward Lake Shore. Dozens of people running in the same direction.",
+          "confidence": 0.88
+        }
+      }
+    },
+    {
+      "offset_seconds": 210,
+      "source": {
+        "id": "src_013",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "tag_id": "protest_vancouver",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 8,
+          "description": "Vancouver — crowd reached port access roads on Burrard Inlet. Port security gates breached. Cargo operations halted.",
+          "confidence": 0.87
+        }
+      }
+    },
+    {
+      "offset_seconds": 230,
+      "source": {
+        "id": "src_014",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "tag_id": "coordinated_pattern",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Vancouver ham radio: 'Protesters are blocking all bridges and the port. They knew exactly where to go. This looks like a deliberate infrastructure shutdown.'",
+          "confidence": 0.80
+        }
+      }
+    },
+    {
+      "offset_seconds": 280,
+      "source": {
+        "id": "src_015",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Toronto east of riot zone — streets emptying. Businesses closing early. Transit disrupted. City going quiet.",
+          "confidence": 0.91
+        }
+      }
+    },
+    {
+      "offset_seconds": 320,
+      "source": {
+        "id": "src_016",
+        "type": "photo",
+        "data": null,
+        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Ottawa government district locked down. Streets around Parliament empty. Armed RCMP units visible. No resolution in sight.",
+          "confidence": 0.93
+        }
+      }
+    },
+    {
+      "offset_seconds": 380,
+      "source": {
+        "id": "src_017",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "National ham radio net: operators in Halifax, Winnipeg, and Calgary reporting smaller simultaneous protests in their cities too. Pattern now national in scale.",
+          "confidence": 0.83
+        }
+      }
+    }
+  ]
+}

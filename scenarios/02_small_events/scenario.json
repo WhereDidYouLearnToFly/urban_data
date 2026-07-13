@@ -1,8 +1,28 @@
 {
   "id": "02_small_events",
   "name": "Occasional Small Events",
-  "description": "Ordinary urban incidents over a 12-minute window. Minor severity. No coordination or escalation. Shows the system handling routine noise — traffic violations, a crash, a street fight, ambulance response.",
+  "description": "Routine urban incidents over a 10-minute window. Minor severity. Three correlated groups (crash response, street fight, gas smell) plus standalone events.",
   "loop": false,
+  "groups": {
+    "crash_davisville": {
+      "summary": "Two-vehicle collision at Yonge and Davisville with emergency response.",
+      "main_event": "Collision confirmed. Ambulance on scene. One lane blocked.",
+      "prediction": "Traffic disruption on northbound Yonge for 30–60 minutes.",
+      "suggestion": "Re-route northbound Yonge traffic via Church St."
+    },
+    "fight_queen_spadina": {
+      "summary": "Physical altercation at Queen and Spadina, police responding.",
+      "main_event": "Street fight confirmed. Police dispatched.",
+      "prediction": null,
+      "suggestion": "Monitor for escalation. No weapons confirmed."
+    },
+    "gas_bay_adelaide": {
+      "summary": "Reported gas smell at Bay and Adelaide, fire crew responding.",
+      "main_event": "Gas smell reported. Fire crew on scene. No leak confirmed.",
+      "prediction": null,
+      "suggestion": "Await fire crew assessment before closing street."
+    }
+  },
   "events": [
     {
       "offset_seconds": 0,
@@ -15,9 +35,7 @@
           "event_type": "nothing_happening",
           "level": 0,
           "description": "Downtown Toronto baseline. Morning commute, normal conditions.",
-          "confidence": 0.97,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "confidence": 0.97
         }
       }
     },
@@ -31,10 +49,8 @@
         "predefined_analysis_result": {
           "event_type": "heavy_traffic",
           "level": 1,
-          "description": "Highway 401 eastbound near Weston Rd. Congestion building. All lanes slow. No incident visible — likely volume-driven.",
-          "confidence": 0.95,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "description": "Highway 401 eastbound near Weston Rd. Congestion building. All lanes slow — likely volume-driven.",
+          "confidence": 0.95
         }
       }
     },
@@ -48,10 +64,8 @@
         "predefined_analysis_result": {
           "event_type": "traffic_violation",
           "level": 2,
-          "description": "Vehicle running red light at Eglinton Ave and Dufferin St, northbound. Speed estimated 70 km/h in 50 zone.",
-          "confidence": 0.88,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "description": "Vehicle running red light at Eglinton Ave and Dufferin St northbound. Speed estimated 70 km/h in 50 zone.",
+          "confidence": 0.88
         }
       }
     },
@@ -66,9 +80,7 @@
           "event_type": "traffic_violation",
           "level": 2,
           "description": "Cyclist running stop sign on Roncesvalles Ave heading south. Near-miss with pedestrian.",
-          "confidence": 0.79,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "confidence": 0.79
         }
       }
     },
@@ -79,52 +91,52 @@
         "type": "photo",
         "data": null,
         "coordinates": { "lat": 43.6890, "lon": -79.3960 },
+        "tag_id": "crash_davisville",
+        "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "car_crash",
           "level": 4,
           "description": "Two-vehicle collision at Yonge St and Davisville Ave. Vehicles blocking curb lane. Airbags deployed on one vehicle. No fire.",
-          "confidence": 0.91,
-          "tag_id": "1/3",
-          "tag_ai_action": "main_event"
+          "confidence": 0.91
         }
       }
     },
     {
-      "offset_seconds": 140,
+      "offset_seconds": 145,
       "source": {
         "id": "src_006",
         "type": "audio",
         "data": null,
         "coordinates": { "lat": 43.6890, "lon": -79.3960 },
+        "tag_id": "crash_davisville",
+        "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "ambulance",
           "level": 3,
           "description": "Ambulance siren detected approaching Yonge and Davisville from south. ETA estimated 90 seconds.",
-          "confidence": 0.93,
-          "tag_id": "2/3",
-          "tag_ai_action": "prediction"
+          "confidence": 0.93
         }
       }
     },
     {
-      "offset_seconds": 165,
+      "offset_seconds": 170,
       "source": {
         "id": "src_007",
         "type": "photo",
         "data": null,
         "coordinates": { "lat": 43.6890, "lon": -79.3960 },
+        "tag_id": "crash_davisville",
+        "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "ambulance",
           "level": 3,
-          "description": "Ambulance and police on scene at Yonge/Davisville crash. Paramedics attending to driver. Traffic re-routing around scene.",
-          "confidence": 0.95,
-          "tag_id": "3/3",
-          "tag_ai_action": "suggestion"
+          "description": "Ambulance and police on scene at Yonge and Davisville crash. Paramedics attending to driver.",
+          "confidence": 0.95
         }
       }
     },
     {
-      "offset_seconds": 210,
+      "offset_seconds": 220,
       "source": {
         "id": "src_008",
         "type": "photo",
@@ -133,49 +145,47 @@
         "predefined_analysis_result": {
           "event_type": "running_person",
           "level": 2,
-          "description": "Person sprinting east on King St near St. Lawrence Market. No visible pursuer. Could be late for transit.",
-          "confidence": 0.71,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "description": "Person sprinting east on King St near St. Lawrence Market. No visible pursuer. Possible late for transit.",
+          "confidence": 0.71
         }
       }
     },
     {
-      "offset_seconds": 255,
+      "offset_seconds": 265,
       "source": {
         "id": "src_009",
         "type": "photo",
         "data": null,
         "coordinates": { "lat": 43.6491, "lon": -79.4002 },
+        "tag_id": "fight_queen_spadina",
+        "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "street_fight",
           "level": 5,
           "description": "Physical altercation between two individuals on Queen St West near Spadina. Third person attempting to intervene. No weapons visible.",
-          "confidence": 0.84,
-          "tag_id": "1/2",
-          "tag_ai_action": "main_event"
+          "confidence": 0.84
         }
       }
     },
     {
-      "offset_seconds": 275,
+      "offset_seconds": 285,
       "source": {
         "id": "src_010",
         "type": "audio",
         "data": null,
         "coordinates": { "lat": 43.6491, "lon": -79.4002 },
+        "tag_id": "fight_queen_spadina",
+        "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "ambulance",
           "level": 3,
-          "description": "Police sirens detected approaching Queen and Spadina. Fight may have escalated. Crowd noise elevated.",
-          "confidence": 0.87,
-          "tag_id": "2/2",
-          "tag_ai_action": "prediction"
+          "description": "Police sirens approaching Queen and Spadina. Scene being responded to.",
+          "confidence": 0.87
         }
       }
     },
     {
-      "offset_seconds": 330,
+      "offset_seconds": 340,
       "source": {
         "id": "src_011",
         "type": "photo",
@@ -184,10 +194,8 @@
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
-          "description": "Queen and Spadina — police dispersed the altercation. Scene clear. Bystanders moving on.",
-          "confidence": 0.92,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "description": "Queen and Spadina — police dispersed the altercation. Scene clear.",
+          "confidence": 0.92
         }
       }
     },
@@ -195,55 +203,53 @@
       "offset_seconds": 390,
       "source": {
         "id": "src_012",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "tag_id": "gas_bay_adelaide",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 2,
+          "description": "Citizen phone report: 'Gas smell near Bay and Adelaide. Possible small leak. No visible smoke or fire.'",
+          "confidence": 0.70
+        }
+      }
+    },
+    {
+      "offset_seconds": 415,
+      "source": {
+        "id": "src_013",
+        "type": "audio",
+        "data": null,
+        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "tag_id": "gas_bay_adelaide",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "firefighter",
+          "level": 2,
+          "description": "Fire truck responding to gas smell report at Bay and Adelaide. Non-emergency pace.",
+          "confidence": 0.88
+        }
+      }
+    },
+    {
+      "offset_seconds": 480,
+      "source": {
+        "id": "src_014",
         "type": "photo",
         "data": null,
         "coordinates": { "lat": 43.7700, "lon": -79.4100 },
         "predefined_analysis_result": {
           "event_type": "heavy_traffic",
           "level": 2,
-          "description": "Allen Expressway southbound backed up to Lawrence Ave. Slow and stop. Estimated 25-minute delay. No incident — school zone hours.",
-          "confidence": 0.94,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "description": "Allen Expressway southbound backed up to Lawrence Ave. Estimated 25-minute delay. School zone hours.",
+          "confidence": 0.94
         }
       }
     },
     {
-      "offset_seconds": 450,
-      "source": {
-        "id": "src_013",
-        "type": "audio",
-        "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
-        "predefined_analysis_result": {
-          "event_type": "citizen_report",
-          "level": 2,
-          "description": "Citizen phone report: 'Gas smell near Bay and Adelaide. Possible small leak. No visible smoke or fire.'",
-          "confidence": 0.70,
-          "tag_id": "1/2",
-          "tag_ai_action": "main_event"
-        }
-      }
-    },
-    {
-      "offset_seconds": 470,
-      "source": {
-        "id": "src_014",
-        "type": "audio",
-        "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
-        "predefined_analysis_result": {
-          "event_type": "firefighter",
-          "level": 2,
-          "description": "Fire truck responding to gas smell report at Bay and Adelaide. Non-emergency pace. Likely precautionary.",
-          "confidence": 0.88,
-          "tag_id": "2/2",
-          "tag_ai_action": "suggestion"
-        }
-      }
-    },
-    {
-      "offset_seconds": 540,
+      "offset_seconds": 560,
       "source": {
         "id": "src_015",
         "type": "photo",
@@ -252,27 +258,8 @@
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
-          "description": "Bay and Adelaide — fire crew cleared the scene. No leak confirmed. Street normal.",
-          "confidence": 0.95,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
-        }
-      }
-    },
-    {
-      "offset_seconds": 600,
-      "source": {
-        "id": "src_016",
-        "type": "photo",
-        "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
-        "predefined_analysis_result": {
-          "event_type": "nothing_happening",
-          "level": 0,
           "description": "Downtown Toronto. Afternoon settling in. No active incidents. System quiet.",
-          "confidence": 0.97,
-          "tag_id": "1/1",
-          "tag_ai_action": "main_event"
+          "confidence": 0.97
         }
       }
     }

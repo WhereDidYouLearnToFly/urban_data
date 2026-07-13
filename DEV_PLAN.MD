@@ -61,10 +61,10 @@ All demo scenarios as structured JSON files. Coordinates and descriptions genera
 | Scenario | Events | Duration | Loop |
 |---|---|---|---|
 | `01_all_ok` | 8 | 2m 20s | yes |
-| `02_small_events` | 16 | 10m | no |
-| `03_flood` | 22 | 13m | no |
-| `04a_drone_attack` | 22 | 10m | no |
-| `04b_ground_invasion` | 42 | 24m (×10 = 2m 24s) | no |
+| `02_small_events` | 15 | 9m 20s | no |
+| `03_flood` | 20 | 11m 40s | no |
+| `04_mob_protests` | 17 | 6m 20s | no |
+| `05_invasion` | 45 | 21m 20s (×10 = 2m 8s) | no |
 
 ---
 
@@ -155,6 +155,20 @@ All ZMQ messages use multipart: `[topic_bytes, json_payload_bytes]`
 
 In GNU Radio: use `ZMQ SUB Message Source` / `ZMQ PUB Message Sink` blocks (not stream variants).
 
+### Group Schema
+Defined at the scenario level. The AI Processor fires the group result when all events sharing a `tag_id` have arrived (event count == `tag_total`).
+
+```json
+"groups": {
+  "<tag_id>": {
+    "summary": "what this group of events collectively means",
+    "main_event": "confirmed incident description, or null",
+    "prediction": "what is likely to happen next, or null",
+    "suggestion": "recommended action, or null"
+  }
+}
+```
+
 ### Source Schema
 Produced by the Scenario Controller. Input to the GNU Radio flowgraph.
 
@@ -165,13 +179,13 @@ Produced by the Scenario Controller. Input to the GNU Radio flowgraph.
   "data": "path/to/asset or null",
   "coordinates": { "lat": 0.0, "lon": 0.0 },
   "offset_seconds": 0.0,
+  "tag_id": "string or omitted if standalone",
+  "tag_total": 3,
   "predefined_analysis_result": {
     "event_type": "string",
     "level": 0,
     "description": "string",
-    "confidence": 0.0,
-    "tag_id": "1/3",
-    "tag_ai_action": "main_event | prediction | suggestion"
+    "confidence": 0.0
   }
 }
 ```
@@ -201,11 +215,11 @@ Produced by the Fake AI Analyzer block. Input to the Fake AI Processor block and
 
 | # | Name | Events | Key content |
 |---|---|---|---|
-| 1 | Everything OK | 8 (loops) | Baseline "nothing happening" across Toronto, Ottawa, Vancouver |
-| 2 | Small events | 16 | Traffic violation, car crash, ambulance, street fight, gas smell |
-| 3 | Flood | 22 | Don + Humber flood, water rescue, citizen radio reports |
-| 4a | Drone attack | 22 | Shahed swarm: RF → acoustic → visual → impacts in Toronto + Ottawa |
-| 4b | Ground invasion | 42 | Two-column invasion Ontario + BC, 6 phases, seismic → border → urban combat |
+| 01 | Everything OK | 8 (loops) | Baseline "nothing happening" across Toronto, Ottawa, Vancouver |
+| 02 | Small events | 15 | Traffic violation, car crash, ambulance, street fight, gas smell |
+| 03 | Flood | 20 | Don + Humber flood, water rescue, citizen radio reports |
+| 04 | Coordinated Civil Unrest | 17 | Simultaneous riots Toronto + Ottawa + Vancouver, coordinated pattern detected |
+| 05 | Full Scale Invasion | 45 | Shahed drones → Ka-52 helicopters + airborne desant → two armored columns → urban combat |
 
 ---
 
