@@ -37,32 +37,25 @@ blocks:
 - name: epy_block_0
   id: epy_block
   parameters:
-    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
-      \ GRC will instantiate the first class it finds\nto get ports and parameters\
-      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
-      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
-      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
-      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
-      \ example - a simple multiply const\"\"\"\n\n    def __init__(self, example_param=1.0):\
-      \  # only default arguments here\n        \"\"\"arguments to this function show\
-      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
-      \   self,\n            name='Embedded Python Block',   # will show up in GRC\n\
-      \            in_sig=[np.complex64],\n            out_sig=[np.complex64]\n  \
-      \      )\n        # if an attribute with the same name as a parameter is found,\n\
-      \        # a callback is registered (properties work, too).\n        self.example_param\
-      \ = example_param\n\n    def work(self, input_items, output_items):\n      \
-      \  \"\"\"example: multiply with constant\"\"\"\n        output_items[0][:] =\
-      \ input_items[0] * self.example_param\n        return len(output_items[0])\n"
+    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(\"/home/radiolab9/github/urban_data/grc\"\
+      , os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_analyzer\
+      \ import AnalyzerLogic\n\nimport numpy as np\n\n\nclass blk(gr.basic_block):\n\
+      \    def __init__(self):\n        gr.basic_block.__init__(self, name=\"ai_analyzer\"\
+      , in_sig=[], out_sig=[])\n        self.logic = AnalyzerLogic()\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
+      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n    def handle_msg(self,\
+      \ msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n       \
+      \ out = self.logic.analyze(blob)\n        out_pmt = pmt.init_u8vector(len(out),\
+      \ list(out))\n        self.message_port_pub(pmt.intern(\"out\"), pmt.cons(pmt.PMT_NIL,\
+      \ out_pmt))"
     affinity: ''
-    alias: ''
+    alias: AI_Analyzer
     comment: 'Step 2: Source PDU -> Event PDU (common/ai_analyzer.py)'
-    example_param: ''
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
-    _io_cache: ('Embedded Python Block', 'blk', [('example_param', '1.0')], [('0',
-      'complex', 1)], [('0', 'complex', 1)], 'Embedded Python Block example - a simple
-      multiply const', ['example_param'])
+    _io_cache: ('ai_analyzer', 'blk', [], [('in', 'message', 1)], [('out', 'message',
+      1)], '', [])
     bus_sink: false
     bus_source: false
     bus_structure: null
@@ -72,79 +65,18 @@ blocks:
 - name: epy_block_1
   id: epy_block
   parameters:
-    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
-      \ GRC will instantiate the first class it finds\nto get ports and parameters\
-      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
-      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
-      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
-      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
-      \ example - a simple multiply const\"\"\"\n\n    def __init__(self, example_param=1.0):\
-      \  # only default arguments here\n        \"\"\"arguments to this function show\
-      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
-      \   self,\n            name='Embedded Python Block',   # will show up in GRC\n\
-      \            in_sig=[np.complex64],\n            out_sig=[np.complex64]\n  \
-      \      )\n        # if an attribute with the same name as a parameter is found,\n\
-      \        # a callback is registered (properties work, too).\n        self.example_param\
-      \ = example_param\n\n    def work(self, input_items, output_items):\n      \
-      \  \"\"\"example: multiply with constant\"\"\"\n        output_items[0][:] =\
-      \ input_items[0] * self.example_param\n        return len(output_items[0])\n"
-    affinity: ''
-    alias: ''
-    comment: 'Step 3: buffers by tag_id, synthesizes group events (common/ai_processor.py)'
-    example_param: ''
-    maxoutbuf: '0'
-    minoutbuf: '0'
-  states:
-    _io_cache: ('Embedded Python Block', 'blk', [('example_param', '1.0')], [('0',
-      'complex', 1)], [('0', 'complex', 1)], 'Embedded Python Block example - a simple
-      multiply const', ['example_param'])
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [520, 368.0]
-    rotation: 0
-    state: enabled
-- name: fake_ai_analyzer
-  id: epy_block
-  parameters:
-    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),\
-      \ os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_analyzer\
-      \ import AnalyzerLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self):\n\
-      \        gr.basic_block.__init__(self, name=\"fake_ai_analyzer\", in_sig=[],\
-      \ out_sig=[])\n        self.logic = AnalyzerLogic()\n        self.message_port_register_in(pmt.intern(\"\
-      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
+    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(\"/home/radiolab9/github/urban_data/grc\"\
+      , os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_processor\
+      \ import ProcessorLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self,\
+      \ scenario_path=\"/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json\"\
+      ):\n        gr.basic_block.__init__(self, name=\"ai_processor\", in_sig=[],\
+      \ out_sig=[])\n        self.logic = ProcessorLogic(scenario_path)\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        self.message_port_register_out(pmt.intern(\"events\"))\n   \
+      \     self.message_port_register_out(pmt.intern(\"agent_trigger\"))\n      \
       \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n    def handle_msg(self,\
       \ msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n       \
-      \ out = self.logic.analyze(blob)\n        out_pmt = pmt.init_u8vector(len(out),\
-      \ list(out))\n        self.message_port_pub(pmt.intern(\"out\"), pmt.cons(pmt.PMT_NIL,\
-      \ out_pmt))"
-    affinity: ''
-    alias: ''
-    comment: 'Step 2: Source PDU -> Event PDU (common/ai_analyzer.py)'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-  states:
-    _io_cache: ''
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [552, 88.0]
-    rotation: 0
-    state: enabled
-- name: fake_ai_processor
-  id: epy_block
-  parameters:
-    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),\
-      \ os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_processor\
-      \ import ProcessorLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self,\
-      \ scenario_path=\"scenarios/01_all_ok/scenario.json\"):\n        gr.basic_block.__init__(self,\
-      \ name=\"fake_ai_processor\", in_sig=[], out_sig=[])\n        self.logic = ProcessorLogic(scenario_path)\n\
-      \        self.message_port_register_in(pmt.intern(\"in\"))\n        self.message_port_register_out(pmt.intern(\"\
-      events\"))\n        self.message_port_register_out(pmt.intern(\"agent_trigger\"\
-      ))\n        self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n  \
-      \  def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
-      \        result = self.logic.handle(blob)\n        for e in result[\"events\"\
-      ]:\n            e_pmt = pmt.init_u8vector(len(e), list(e))\n            self.message_port_pub(pmt.intern(\"\
+      \ result = self.logic.handle(blob)\n        for e in result[\"events\"]:\n \
+      \           e_pmt = pmt.init_u8vector(len(e), list(e))\n            self.message_port_pub(pmt.intern(\"\
       events\"), pmt.cons(pmt.PMT_NIL, e_pmt))\n        for t in result[\"agent_triggers\"\
       ]:\n            t_pmt = pmt.init_u8vector(len(t), list(t))\n            self.message_port_pub(pmt.intern(\"\
       agent_trigger\"), pmt.cons(pmt.PMT_NIL, t_pmt))"
@@ -153,12 +85,15 @@ blocks:
     comment: 'Step 3: buffers by tag_id, synthesizes group events (common/ai_processor.py)'
     maxoutbuf: '0'
     minoutbuf: '0'
+    scenario_path: ''
   states:
-    _io_cache: ''
+    _io_cache: ('ai_processor', 'blk', [('scenario_path', "'/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json'")],
+      [('in', 'message', 1)], [('agent_trigger', 'message', 1), ('events', 'message',
+      1)], '', [])
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [552, 168.0]
+    coordinate: [520, 368.0]
     rotation: 0
     state: enabled
 - name: message_debug_0
