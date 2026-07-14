@@ -6,8 +6,8 @@ options:
     cmake_opt: ''
     comment: ''
     copyright: ''
-    description: Urban Data demo flowgraph -- ZMQ source, Fake AI Analyzer, Fake
-      AI Processor, ZMQ stub sink
+    description: Urban Data demo flowgraph -- ZMQ source, Fake AI Analyzer, Fake AI
+      Processor, ZMQ stub sink
     gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: no_gui
@@ -34,6 +34,95 @@ options:
     state: enabled
 
 blocks:
+- name: fake_ai_analyzer
+  id: epy_block
+  parameters:
+    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),\
+      \ os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_analyzer\
+      \ import AnalyzerLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self):\n\
+      \        gr.basic_block.__init__(self, name=\"fake_ai_analyzer\", in_sig=[],\
+      \ out_sig=[])\n        self.logic = AnalyzerLogic()\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
+      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n    def handle_msg(self,\
+      \ msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n       \
+      \ out = self.logic.analyze(blob)\n        out_pmt = pmt.init_u8vector(len(out),\
+      \ list(out))\n        self.message_port_pub(pmt.intern(\"out\"), pmt.cons(pmt.PMT_NIL,\
+      \ out_pmt))"
+    affinity: ''
+    alias: ''
+    comment: 'Step 2: Source PDU -> Event PDU (common/ai_analyzer.py)'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ''
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [552, 88.0]
+    rotation: 0
+    state: enabled
+- name: fake_ai_processor
+  id: epy_block
+  parameters:
+    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),\
+      \ os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_processor\
+      \ import ProcessorLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self,\
+      \ scenario_path=\"scenarios/01_all_ok/scenario.json\"):\n        gr.basic_block.__init__(self,\
+      \ name=\"fake_ai_processor\", in_sig=[], out_sig=[])\n        self.logic = ProcessorLogic(scenario_path)\n\
+      \        self.message_port_register_in(pmt.intern(\"in\"))\n        self.message_port_register_out(pmt.intern(\"\
+      events\"))\n        self.message_port_register_out(pmt.intern(\"agent_trigger\"\
+      ))\n        self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n  \
+      \  def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
+      \        result = self.logic.handle(blob)\n        for e in result[\"events\"\
+      ]:\n            e_pmt = pmt.init_u8vector(len(e), list(e))\n            self.message_port_pub(pmt.intern(\"\
+      events\"), pmt.cons(pmt.PMT_NIL, e_pmt))\n        for t in result[\"agent_triggers\"\
+      ]:\n            t_pmt = pmt.init_u8vector(len(t), list(t))\n            self.message_port_pub(pmt.intern(\"\
+      agent_trigger\"), pmt.cons(pmt.PMT_NIL, t_pmt))"
+    affinity: ''
+    alias: ''
+    comment: 'Step 3: buffers by tag_id, synthesizes group events (common/ai_processor.py)'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ''
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [552, 168.0]
+    rotation: 0
+    state: enabled
+- name: message_debug_0
+  id: blocks_message_debug
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    en_uvec: 'True'
+    log_level: info
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [768, 500.0]
+    rotation: 0
+    state: enabled
+- name: zmq_sink
+  id: zeromq_pub_msg_sink
+  parameters:
+    address: tcp://127.0.0.1:5556
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: Stub sink until Step 4 UI exists -- subscribe here to watch live Event
+      PDUs
+    timeout: '100'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1032, 364.0]
+    rotation: 0
+    state: enabled
 - name: zmq_source
   id: zeromq_sub_msg_source
   parameters:
@@ -46,119 +135,13 @@ blocks:
     minoutbuf: '0'
     timeout: '100'
   states:
-    coordinate: [16, 100]
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 356.0]
     rotation: 0
     state: enabled
-
-- name: fake_ai_analyzer
-  id: epy_block
-  parameters:
-    _source_code: |-
-      import os, sys
-      sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
-
-      import pmt
-      from gnuradio import gr
-      from common.ai_analyzer import AnalyzerLogic
-
-
-      class blk(gr.basic_block):
-          def __init__(self):
-              gr.basic_block.__init__(self, name="fake_ai_analyzer", in_sig=[], out_sig=[])
-              self.logic = AnalyzerLogic()
-              self.message_port_register_in(pmt.intern("in"))
-              self.message_port_register_out(pmt.intern("out"))
-              self.set_msg_handler(pmt.intern("in"), self.handle_msg)
-
-          def handle_msg(self, msg):
-              blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))
-              out = self.logic.analyze(blob)
-              out_pmt = pmt.init_u8vector(len(out), list(out))
-              self.message_port_pub(pmt.intern("out"), pmt.cons(pmt.PMT_NIL, out_pmt))
-    affinity: ''
-    alias: ''
-    comment: 'Step 2: Source PDU -> Event PDU (common/ai_analyzer.py)'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-  states:
-    coordinate: [248, 88]
-    rotation: 0
-    state: enabled
-
-- name: fake_ai_processor
-  id: epy_block
-  parameters:
-    _source_code: |-
-      import os, sys
-      sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
-
-      import pmt
-      from gnuradio import gr
-      from common.ai_processor import ProcessorLogic
-
-
-      class blk(gr.basic_block):
-          def __init__(self, scenario_path="scenarios/01_all_ok/scenario.json"):
-              gr.basic_block.__init__(self, name="fake_ai_processor", in_sig=[], out_sig=[])
-              self.logic = ProcessorLogic(scenario_path)
-              self.message_port_register_in(pmt.intern("in"))
-              self.message_port_register_out(pmt.intern("events"))
-              self.message_port_register_out(pmt.intern("agent_trigger"))
-              self.set_msg_handler(pmt.intern("in"), self.handle_msg)
-
-          def handle_msg(self, msg):
-              blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))
-              result = self.logic.handle(blob)
-              for e in result["events"]:
-                  e_pmt = pmt.init_u8vector(len(e), list(e))
-                  self.message_port_pub(pmt.intern("events"), pmt.cons(pmt.PMT_NIL, e_pmt))
-              for t in result["agent_triggers"]:
-                  t_pmt = pmt.init_u8vector(len(t), list(t))
-                  self.message_port_pub(pmt.intern("agent_trigger"), pmt.cons(pmt.PMT_NIL, t_pmt))
-    affinity: ''
-    alias: ''
-    comment: 'Step 3: buffers by tag_id, synthesizes group events (common/ai_processor.py)'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    scenario_path: '"scenarios/01_all_ok/scenario.json"'
-  states:
-    coordinate: [488, 88]
-    rotation: 0
-    state: enabled
-
-- name: zmq_sink
-  id: zeromq_pub_msg_sink
-  parameters:
-    address: tcp://127.0.0.1:5556
-    affinity: ''
-    alias: ''
-    bind: 'True'
-    comment: Stub sink until Step 4 UI exists -- subscribe here to watch live Event
-      PDUs
-    timeout: '100'
-  states:
-    coordinate: [736, 40]
-    rotation: 0
-    state: enabled
-
-- name: message_debug_0
-  id: blocks_message_debug
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    en_uvec: 'True'
-    log_level: info
-  states:
-    coordinate: [736, 184]
-    rotation: 0
-    state: enabled
-
-connections:
-- [zmq_source, out, fake_ai_analyzer, in]
-- [fake_ai_analyzer, out, fake_ai_processor, in]
-- [fake_ai_processor, events, zmq_sink, in]
-- [fake_ai_processor, events, message_debug_0, print]
+connections: []
 
 metadata:
   file_format: 1
