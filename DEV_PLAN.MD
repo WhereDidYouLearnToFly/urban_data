@@ -43,8 +43,8 @@ All inter-process data (Scenario Controller → GR, GR → UI) travels as **PDU 
 |---|---|---|
 | 1 — Scenario JSON | ✅ Done | `scenarios/` — 5 scenarios, 110 total events |
 | 1.1 — Scenario Controller | ✅ Done | `scenario_controller/` — PyQt5 UI + ZMQ PUB |
-| 2 — Fake AI Analyzer | ⬜ Todo | GNU Radio custom Python block |
-| 3 — Fake AI Processor | ⬜ Todo | GNU Radio custom Python block |
+| 2 — Fake AI Analyzer | 🔶 Logic done, GRC wiring pending | `common/ai_analyzer.py` |
+| 3 — Fake AI Processor | 🔶 Logic done, GRC wiring pending | `common/ai_processor.py` |
 | 4 — UI Application | ⬜ Todo | `ui/` |
 | 5 — Media Assets | ⬜ Todo | `assets/` |
 | 6 — Live Agents + MCP | ⬜ Todo | `mcp_server/`, `SKILL.md` |
@@ -58,13 +58,13 @@ All demo scenarios as structured JSON files. Coordinates and descriptions genera
 
 **Output:** `scenarios/` — one subfolder per scenario, each with `scenario.json` and placeholder `assets/{photo,video,audio,rf,seismic}/` folders.
 
-| Scenario | Events | Duration | Loop |
-|---|---|---|---|
-| `01_all_ok` | 8 | 2m 20s | yes |
-| `02_small_events` | 15 | 9m 20s | no |
-| `03_flood` | 20 | 11m 40s | no |
-| `04_mob_protests` | 17 | 6m 20s | no |
-| `05_invasion` | 45 | 21m 20s (×10 = 2m 8s) | no |
+| Scenario        | Events | Duration | Loop |
+|-----------------|--------|----------|------|
+|`01_all_ok`      | 8      | 2m 20s   | yes  |
+|`02_small_events`| 15     | 9m 20s   | no   |
+|`03_flood`       | 20     | 11m 40s  | no   |
+|`04_mob_protests`| 17     | 6m 20s   | no   |
+|`05_invasion`    | 45     | 21m 20s  | no   |
 
 ---
 
@@ -85,15 +85,44 @@ PyQt5 desktop app. Reads scenario JSON and replays events over a ZMQ PUB socket 
 
 ---
 
+### GNU Radio Flowgraph Skeleton
+`grc/urban_data.grc` (wired directly in gnuradio-companion):
+
+```
+[ZMQ PDU Source]  →  [Fake AI Analyzer]  →  [Fake AI Processor]  →  [ZMQ PUB Message Sink] (+ [Message Debug])
+ tcp://127.0.0.1:5555                                                  tcp://127.0.0.1:5556
+ topic "urban_data"                                                     topic "urban_data_events"
+```
+
+The ZMQ PUB sink is a stub standing in for Step 4 — lets the eventual UI (or a throwaway subscriber) be tested against real Event PDUs before the direct message-port wiring exists. Step 4 replaces it with a GNU Radio message-port connection straight into the Qt widgets (no ZMQ hop between processor and UI, per Architecture Overview above). Message Debug stays attached alongside for console visibility during development.
+
+**Shared logic:** `common/` — plain Python, no GNU Radio dependency, unit-testable outside GRC:
+- `common/schemas.py` — `Source`/`Event` dataclasses (canonical field list, mirrors Schemas section below)
+- `common/constants.py` — ZMQ addresses/topics, shared with `scenario_controller`
+- `common/ai_analyzer.py` — Step 2 logic
+- `common/ai_processor.py` — Step 3 logic
+
+**Import convention:** each embedded Python block bootstraps `sys.path` relative to its own `__file__` (one directory up, since `grc/` sits next to `common/` at repo root) before importing from `common` — no packaging/install step needed:
+```python
+import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
+from common.ai_analyzer import AnalyzerLogic
+```
+
+---
+
 ### Step 2: Fake AI Analyzer
-GNU Radio custom Python block. Subscribes to Scenario Controller ZMQ output. Converts each incoming `predefined_analysis_result` field into a full Event (see Event Schema).
+GNU Radio embedded Python block (`gr.basic_block`). GR message ports connect to Processor (pure in-process, no ZMQ). Converts incoming `predefined_analysis_result` field into a full Event (see Event Schema).
 
-- Input: Source PDU from ZMQ SUB Message Source
-- Output: Event PDU with all Event Schema fields populated
-- Adds `timestamp` (wall clock at receive time)
-- Passes `tag_id` and `tag_ai_action` through unchanged
+**Input/Output:** GR message ports (In/Out)
+- **Input:** Source PDU blob from ZMQ Source
+- **Output:** Event PDU blob (timestamp added, `tag_id` passed through, `tag_ai_action` = null)
 
-**Output:** GNU Radio OOT block or embedded GRC Python block
+**Logic:** `common/ai_analyzer.py` — `AnalyzerLogic.analyze(source_json: bytes) -> bytes`
+
+**GRC wiring:** Embedded Python block wraps `AnalyzerLogic`
+
+**Output:** `grc/urban_data.grc` embedded Python block ("Fake AI Analyzer")
 
 ---
 
@@ -101,11 +130,16 @@ GNU Radio custom Python block. Subscribes to Scenario Controller ZMQ output. Con
 GNU Radio custom Python block. Receives Event PDUs from Step 2. Simulates cross-event correlation.
 
 - Accumulates events by `tag_id` group
-- When all parts of a group arrive, sets `tag_ai_action` on the group's events
-- Emits `prediction` and `suggestion` events for `main_event` detections
-- For `main_event`: emits an agent-trigger message (stub for Step 6)
+- When `tag_total` events for a `tag_id` have arrived, synthesizes `main_event`/`prediction`/`suggestion` events from the scenario's `groups` block
+- For `main_event`: emits a separate agent-trigger message on its own port (stub for Step 6)
 
-**Output:** GNU Radio OOT block or embedded GRC Python block
+**Logic:** `common/ai_processor.py` — `ProcessorLogic(scenario_path).handle(event_json: bytes) -> dict`, returns `{"events": [...], "agent_triggers": [...]}`. Loads `groups` from the active scenario's JSON at init via `scenario_path` block parameter.
+
+**GRC wiring:** embedded Python block with two message outputs — `events` (to ZMQ PUB) and `agent_trigger` (stub for Step 6). `scenario_path` exposed as a GRC block parameter.
+
+**Agent triggers:** Separate message port (`agent_trigger`), kept distinct from `events` — currently unconnected in `.grc` (stub for Step 6, no ZMQ sink exists yet). When it does get one, give it its own topic (not `urban_data_events`) so a future agent-listener can subscribe without filtering — exact topic string not decided yet / not in `common/constants.py`.
+
+**Output:** `grc/urban_data.grc` embedded Python block ("Fake AI Processor")
 
 ---
 
@@ -149,9 +183,9 @@ Attach real and generated media to scenario events.
 ## Schemas
 
 ### ZMQ Message Format
-All ZMQ messages use multipart: `[topic_bytes, json_payload_bytes]`
-- **Topic:** `b"urban_data"`
-- **Payload:** JSON string
+All ZMQ messages use multipart: `[topic_bytes, json_payload_bytes]`. Two separate hops, each with its own address/topic (see `common/constants.py`):
+- **Scenario Controller → flowgraph:** `tcp://127.0.0.1:5555`, topic `b"urban_data"`, payload = Source Schema
+- **Processor → stub sink (Step 4 stand-in):** `tcp://127.0.0.1:5556`, topic `b"urban_data_events"`, payload = Event Schema
 
 In GNU Radio: use `ZMQ SUB Message Source` / `ZMQ PUB Message Sink` blocks (not stream variants).
 
