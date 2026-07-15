@@ -60,10 +60,10 @@ blocks:
   parameters:
     _source_code: "import os, sys\n\nURBAN_DATA_ROOT = os.path.join(os.path.expanduser(\"\
       ~\"), \"github\", \"urban_data\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\n\
-      import pmt\nfrom gnuradio import gr\nfrom common.ai_analyzer import AnalyzerLogic\n\
+      import pmt\nfrom gnuradio import gr\nfrom common.ai_source_analyzer import AnalyzerLogic\n\
       \nimport numpy as np\n\n\nclass blk(gr.basic_block):\n    def __init__(self):\n\
-      \        gr.basic_block.__init__(self, name=\"ai_analyzer\", in_sig=[], out_sig=[])\n\
-      \        self.logic = AnalyzerLogic()\n        self.message_port_register_in(pmt.intern(\"\
+      \        gr.basic_block.__init__(self, name=\"ai_source_analyzer\", in_sig=[],\
+      \ out_sig=[])\n        self.logic = AnalyzerLogic()\n        self.message_port_register_in(pmt.intern(\"\
       sources\"))\n        self.message_port_register_out(pmt.intern(\"events\"))\n\
       \        self.set_msg_handler(pmt.intern(\"sources\"), self.handle_msg)\n\n\
       \    def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
@@ -76,7 +76,7 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
-    _io_cache: ('ai_analyzer', 'blk', [], [('sources', 'message', 1)], [('events',
+    _io_cache: ('ai_source_analyzer', 'blk', [], [('sources', 'message', 1)], [('events',
       'message', 1)], '', [])
     bus_sink: false
     bus_source: false
@@ -90,10 +90,10 @@ blocks:
     _source_code: "import os, sys\n\nURBAN_DATA_ROOT = os.path.join(os.path.expanduser(\"\
       ~\"), \"github\", \"urban_data\")\nDEFAULT_SCENARIO_PATH = os.path.join(URBAN_DATA_ROOT,\
       \ \"scenarios\", \"01_all_ok\", \"scenario.json\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\
-      \nimport pmt\nfrom gnuradio import gr\nfrom common.ai_processor import ProcessorLogic\n\
-      \n\nclass blk(gr.basic_block):\n    def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):\n\
-      \        gr.basic_block.__init__(self, name=\"ai_processor\", in_sig=[], out_sig=[])\n\
-      \        self.logic = ProcessorLogic(scenario_path)\n        self.message_port_register_in(pmt.intern(\"\
+      \nimport pmt\nfrom gnuradio import gr\nfrom common.ai_events_processor import\
+      \ ProcessorLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):\n\
+      \        gr.basic_block.__init__(self, name=\"ai_events_processor\", in_sig=[],\
+      \ out_sig=[])\n        self.logic = ProcessorLogic(scenario_path)\n        self.message_port_register_in(pmt.intern(\"\
       events\"))\n        self.message_port_register_out(pmt.intern(\"agent_trigger\"\
       ))\n        self.set_msg_handler(pmt.intern(\"events\"), self.handle_msg)\n\n\
       \    def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
@@ -107,12 +107,12 @@ blocks:
     minoutbuf: '0'
     scenario_path: '''/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json'''
   states:
-    _io_cache: ('ai_processor', 'blk', [('scenario_path', "'/home/ailab9/github/urban_data/scenarios/01_all_ok/scenario.json'")],
+    _io_cache: ('ai_events_processor', 'blk', [('scenario_path', "'/home/ailab9/github/urban_data/scenarios/01_all_ok/scenario.json'")],
       [('events', 'message', 1)], [('agent_trigger', 'message', 1)], '', [])
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 492.0]
+    coordinate: [664, 492.0]
     rotation: 0
     state: enabled
 - name: epy_block_2
@@ -145,7 +145,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 644.0]
+    coordinate: [664, 644.0]
     rotation: 0
     state: enabled
 - name: message_debug_0

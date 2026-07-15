@@ -1,7 +1,7 @@
 """Debug Controller — event tap for live inspection of the Event stream.
 
-Sits alongside the real ai_processor, reading the same Event PDUs from
-ai_analyzer, and splits each one across the four Message Debug ports by
+Sits alongside the real ai_events_processor, reading the same Event PDUs from
+ai_source_analyzer, and splits each one across the four Message Debug ports by
 content:
 - print_pdu: raw PDU, always
 - print:     human-readable one-line summary, always

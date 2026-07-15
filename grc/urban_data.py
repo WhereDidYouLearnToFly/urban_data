@@ -52,10 +52,10 @@ class urban_data(gr.top_block):
         self.msg_connect((self.epy_block_0, 'events'), (self.epy_block_2, 'events'))
         self.msg_connect((self.epy_block_0, 'events'), (self.zmq_sink_0, 'in'))
         self.msg_connect((self.epy_block_1, 'agent_trigger'), (self.zmq_sink, 'in'))
-        self.msg_connect((self.epy_block_2, 'print_pdu'), (self.message_debug_0, 'print_pdu'))
-        self.msg_connect((self.epy_block_2, 'log'), (self.message_debug_0, 'log'))
-        self.msg_connect((self.epy_block_2, 'print'), (self.message_debug_0, 'print'))
         self.msg_connect((self.epy_block_2, 'store'), (self.message_debug_0, 'store'))
+        self.msg_connect((self.epy_block_2, 'log'), (self.message_debug_0, 'log'))
+        self.msg_connect((self.epy_block_2, 'print_pdu'), (self.message_debug_0, 'print_pdu'))
+        self.msg_connect((self.epy_block_2, 'print'), (self.message_debug_0, 'print'))
         self.msg_connect((self.zmq_source, 'out'), (self.epy_block_0, 'sources'))
 
 

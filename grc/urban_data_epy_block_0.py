@@ -6,14 +6,14 @@ sys.path.insert(0, URBAN_DATA_ROOT)
 
 import pmt
 from gnuradio import gr
-from common.ai_analyzer import AnalyzerLogic
+from common.ai_source_analyzer import AnalyzerLogic
 
 import numpy as np
 
 
 class blk(gr.basic_block):
     def __init__(self):
-        gr.basic_block.__init__(self, name="ai_analyzer", in_sig=[], out_sig=[])
+        gr.basic_block.__init__(self, name="ai_source_analyzer", in_sig=[], out_sig=[])
         self.logic = AnalyzerLogic()
         self.message_port_register_in(pmt.intern("sources"))
         self.message_port_register_out(pmt.intern("events"))
