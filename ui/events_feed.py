@@ -7,20 +7,7 @@ message port.
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QListWidget, QListWidgetItem
 from PyQt5.QtGui import QColor
 
-_LEVEL_COLORS = {
-    0: QColor(80, 80, 80),
-    1: QColor(90, 140, 90),
-    5: QColor(200, 160, 60),
-    8: QColor(200, 80, 60),
-}
-
-
-def _color_for_level(level: int) -> QColor:
-    color = _LEVEL_COLORS[0]
-    for threshold in sorted(_LEVEL_COLORS):
-        if level >= threshold:
-            color = _LEVEL_COLORS[threshold]
-    return color
+from common.severity_colors import color_for_level
 
 
 class EventsFeedPanel(QWidget):
@@ -37,7 +24,7 @@ class EventsFeedPanel(QWidget):
 
     def add_event(self, level: int, description: str):
         item = QListWidgetItem(description)
-        item.setForeground(_color_for_level(level))
+        item.setForeground(QColor(color_for_level(level)))
         self.list_widget.insertItem(0, item)
 
     def _add_placeholder_rows(self):

@@ -168,12 +168,7 @@ GRC-generated PyQt5 application. The GNU Radio flowgraph runs inside it. Custom 
 
 **RF Waterfall — deferred, not part of the base layout for now.** Data source undecided (local SDR hardware vs. a selectable online SDR, e.g. WebSDR/KiwiSDR-style — not decided). When built, it won't be a persistent pane — it opens on demand when a source reports an RF-related suspicious event, rather than always being visible.
 
-**Map view — future improvement, not built yet.** `ui/map_view.py` currently just draws a placeholder outline (no real map). Real-map approach undecided; candidates considered so far, roughly cheapest-to-realest:
-- Static raster image via `QPixmap`, no zoom
-- A handful (e.g. 4) of pre-rendered images at discrete zoom levels, swapped on zoom in/out — cheap way to fake zoomability with static assets, but source availability for ready-made zoom-level image sets is unconfirmed
-- Continuous pan/zoom over one high-res local image via `QGraphicsView`/`QGraphicsScene` — real zoom/pan, fully offline, no new heavy deps, but not a true tile pyramid (zooming in just pixelates)
-- Full slippy map (Leaflet + local MBTiles) in `QtWebEngineWidgets` — best fidelity, but that package isn't installed and it's a much bigger dependency for the demo timeline
-No map asset (image or tileset) exists in the repo yet — needs sourcing before any of these can be implemented.
+**Map view — implemented.** `ui/map_view.py` is a real slippy map: `QWebEngineView` + `QWebChannel` bridge driving a Leaflet map, ported from the `github/qtmap` example (`PyQtWebEngine` turned out to already be installed, resolving the earlier "too heavy a dependency" concern). Assets bundled in `ui/map_assets/` (Leaflet 1.9.4 + Canada province GeoJSON, inlined into the generated HTML rather than fetched — Chromium blocks XHR-to-local-file under `file://`). Tiles are fetched live from CartoDB's CDN, so this needs internet at demo time; a fully offline tile story (local tile server / MBTiles) is a possible follow-up, not done. API: `add_event`/`remove_event`/`clear_events`/`focus_event`, plus `eventClicked`/`mapClicked` signals — not yet wired to the Agents panel or Events feed.
 
 **Output:** `grc/urban_data.grc` + `grc/urban_data.py` (generated), custom widget files alongside
 

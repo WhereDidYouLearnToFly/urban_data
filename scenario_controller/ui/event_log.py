@@ -1,21 +1,13 @@
+import os, sys
+
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QListWidget, QListWidgetItem, QLabel, QHBoxLayout, QPushButton
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QColor, QFont
 
+URBAN_DATA_ROOT = os.path.join(os.path.expanduser("~"), "github", "urban_data")
+sys.path.insert(0, URBAN_DATA_ROOT)
 
-_LEVEL_COLORS = {
-    0:  "#4caf50",
-    1:  "#8bc34a",
-    2:  "#cddc39",
-    3:  "#ffeb3b",
-    4:  "#ffc107",
-    5:  "#ff9800",
-    6:  "#ff5722",
-    7:  "#f44336",
-    8:  "#e91e63",
-    9:  "#9c27b0",
-    10: "#b71c1c",
-}
+from common.severity_colors import color_for_level
 
 
 class EventLogWidget(QWidget):
@@ -58,8 +50,7 @@ class EventLogWidget(QWidget):
             text += "…"
 
         item = QListWidgetItem(text)
-        color = _LEVEL_COLORS.get(min(level, 10), "#ffffff")
-        item.setForeground(QColor(color))
+        item.setForeground(QColor(color_for_level(level)))
         item.setToolTip(description)
 
         self._list.addItem(item)
