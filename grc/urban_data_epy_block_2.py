@@ -12,10 +12,13 @@ from common.ai_processor import ProcessorLogic
 
 class blk(gr.basic_block):
     def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):
-        gr.basic_block.__init__(self, name="ai_processor", in_sig=[], out_sig=[])
+        gr.basic_block.__init__(self, name="debug_controller", in_sig=[], out_sig=[])
         self.logic = ProcessorLogic(scenario_path)
         self.message_port_register_in(pmt.intern("events"))
-        self.message_port_register_out(pmt.intern("agent_trigger"))
+        self.message_port_register_out(pmt.intern("print_pdu"))
+        self.message_port_register_out(pmt.intern("store"))
+        self.message_port_register_out(pmt.intern("print"))        
+        self.message_port_register_out(pmt.intern("log"))
         self.set_msg_handler(pmt.intern("events"), self.handle_msg)
 
     def handle_msg(self, msg):
