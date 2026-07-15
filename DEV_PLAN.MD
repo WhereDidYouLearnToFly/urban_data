@@ -43,11 +43,11 @@ All inter-process data (Scenario Controller → GR, GR → UI) travels as **PDU 
 |---|---|---|
 | 1 — Scenario JSON | ✅ Done | `scenarios/` — 5 scenarios, 110 total events |
 | 1.1 — Scenario Controller | ✅ Done | `scenario_controller/` — PyQt5 UI + ZMQ PUB |
-| 2 — Fake AI Analyzer | 🔶 Logic done, GRC wiring pending | `common/ai_analyzer.py` |
-| 3 — Fake AI Processor | 🔶 Logic done, GRC wiring pending | `common/ai_processor.py` |
+| 2 — Fake AI Source Analyzer | 🔶 Logic done, GRC wiring pending | `common/ai_source_analyzer.py` |
+| 3 — Fake AI Events Processor | 🔶 Logic done, GRC wiring pending | `common/ai_events_processor.py` |
 | 4 — UI Application | ⬜ Todo | `ui/` |
 | 5 — Media Assets | ⬜ Todo | `assets/` |
-| 6 — Live Agents + MCP | ⬜ Todo | `mcp_server/`, `SKILL.md` |
+| 6 — Live Agents + MCP | ⬜ Todo | `mcp_server/`, `agent_manager/`, `SKILL.md` |
 
 ---
 
@@ -89,7 +89,7 @@ PyQt5 desktop app. Reads scenario JSON and replays events over a ZMQ PUB socket 
 `grc/urban_data.grc` (wired directly in gnuradio-companion):
 
 ```
-[ZMQ PDU Source]  →  [Fake AI Analyzer]  →  [Fake AI Processor]  →  [ZMQ PUB Message Sink] (+ [Message Debug])
+[ZMQ PDU Source]  →  [Fake AI Source Analyzer]  →  [Fake AI Events Processor]  →  [ZMQ PUB Message Sink] (+ [Message Debug])
  tcp://127.0.0.1:5555                                                  tcp://127.0.0.1:5556
  topic "urban_data"                                                     topic "urban_data_events"
 ```
@@ -99,57 +99,81 @@ The ZMQ PUB sink is a stub standing in for Step 4 — lets the eventual UI (or a
 **Shared logic:** `common/` — plain Python, no GNU Radio dependency, unit-testable outside GRC:
 - `common/schemas.py` — `Source`/`Event` dataclasses (canonical field list, mirrors Schemas section below)
 - `common/constants.py` — ZMQ addresses/topics, shared with `scenario_controller`
-- `common/ai_analyzer.py` — Step 2 logic
-- `common/ai_processor.py` — Step 3 logic
+- `common/ai_source_analyzer.py` — Step 2 logic
+- `common/ai_events_processor.py` — Step 3 logic
 
-**Import convention:** each embedded Python block bootstraps `sys.path` relative to its own `__file__` (one directory up, since `grc/` sits next to `common/` at repo root) before importing from `common` — no packaging/install step needed:
+**Import convention:** `__file__` does **not** work for this — GRC evaluates/imports embedded Python blocks from a throwaway `/tmp/epy_block_*.py` copy, not from `grc/`, so a `__file__`-relative path resolves to `/tmp`. Instead, each embedded Python block bootstraps `sys.path` off `$HOME`, since the only thing differing across machines is the username, not the subpath — no packaging/install step needed:
 ```python
 import os, sys
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
-from common.ai_analyzer import AnalyzerLogic
+URBAN_DATA_ROOT = os.path.join(os.path.expanduser("~"), "github", "urban_data")
+sys.path.insert(0, URBAN_DATA_ROOT)
+from common.ai_source_analyzer import AnalyzerLogic
 ```
 
 ---
 
-### Step 2: Fake AI Analyzer
+### Step 2: Fake AI Source Analyzer
 GNU Radio embedded Python block (`gr.basic_block`). GR message ports connect to Processor (pure in-process, no ZMQ). Converts incoming `predefined_analysis_result` field into a full Event (see Event Schema).
 
 **Input/Output:** GR message ports (In/Out)
 - **Input:** Source PDU blob from ZMQ Source
 - **Output:** Event PDU blob (timestamp added, `tag_id` passed through, `tag_ai_action` = null)
 
-**Logic:** `common/ai_analyzer.py` — `AnalyzerLogic.analyze(source_json: bytes) -> bytes`
+**Logic:** `common/ai_source_analyzer.py` — `AnalyzerLogic.analyze(source_json: bytes) -> bytes`
 
 **GRC wiring:** Embedded Python block wraps `AnalyzerLogic`
 
-**Output:** `grc/urban_data.grc` embedded Python block ("Fake AI Analyzer")
+**Output:** `grc/urban_data.grc` embedded Python block ("Fake AI Source Analyzer")
 
 ---
 
-### Step 3: Fake AI Event Processor
+### Step 3: Fake AI Events Processor
 GNU Radio custom Python block. Receives Event PDUs from Step 2. Simulates cross-event correlation.
 
 - Accumulates events by `tag_id` group
 - When `tag_total` events for a `tag_id` have arrived, synthesizes `main_event`/`prediction`/`suggestion` events from the scenario's `groups` block
 - For `main_event`: emits a separate agent-trigger message on its own port (stub for Step 6)
 
-**Logic:** `common/ai_processor.py` — `ProcessorLogic(scenario_path).handle(event_json: bytes) -> dict`, returns `{"events": [...], "agent_triggers": [...]}`. Loads `groups` from the active scenario's JSON at init via `scenario_path` block parameter.
+**Logic:** `common/ai_events_processor.py` — `ProcessorLogic(scenario_path).handle(event_json: bytes) -> dict`, returns `{"events": [...], "agent_triggers": [...]}`. Loads `groups` from the active scenario's JSON at init via `scenario_path` block parameter.
 
-**GRC wiring:** embedded Python block with two message outputs — `events` (to ZMQ PUB) and `agent_trigger` (stub for Step 6). `scenario_path` exposed as a GRC block parameter.
+**GRC wiring:** embedded Python block with a single message output — `agent_trigger` (stub for Step 6). Does **not** emit an `events` port — the raw Event stream that reaches the Step 4 stub sink comes directly from `ai_source_analyzer`, not through this block; this block is a side-branch that only reacts to completed `tag_id` groups. `scenario_path` exposed as a GRC block parameter.
 
-**Agent triggers:** Separate message port (`agent_trigger`), kept distinct from `events` — currently unconnected in `.grc` (stub for Step 6, no ZMQ sink exists yet). When it does get one, give it its own topic (not `urban_data_events`) so a future agent-listener can subscribe without filtering — exact topic string not decided yet / not in `common/constants.py`.
+**Agent triggers:** `agent_trigger` message port is wired to its own ZMQ PUB stub sink (`tcp://127.0.0.1:5557`, per the flowgraph) — not merged into the `urban_data_events` topic. Real consumption starts with Step 6's `agent_manager`.
 
-**Output:** `grc/urban_data.grc` embedded Python block ("Fake AI Processor")
+**Output:** `grc/urban_data.grc` embedded Python block ("Fake AI Events Processor")
 
 ---
 
 ### Step 4: UI Application
 GRC-generated PyQt5 application. The GNU Radio flowgraph runs inside it. Custom Qt widgets are added to the same window and receive processed events via GNU Radio message ports — no ZMQ between processor and UI.
 
-- **Map view:** custom QWidget drawing event dots over a static Canada map tile (color = event type / severity). Click a dot to open detail popup.
-- **Event feed:** QListWidget — scrolling color-coded event log
-- **Detail popup:** QDialog showing event metadata + attached media (QLabel for photo, QMediaPlayer for video/audio, QPainter widget for RF waterfall)
+**Layout (per `hg.jpg` sketch):** three-column main area over a full-width System Log strip.
+
+```
+┌──────────────┬──────────────────────┬───────────────────────┐
+│ Events Feed  │ Agents               │ Map (Canada / Arctic) │
+│ (scrolling,  │ (per-incident agent  │ event dots over map,  │
+│ color-coded) │ reasoning/chat panel │ click to focus panel  │
+│              │ — Step 6)            │                       │
+├──────────────┴──────────────────────┴───────────────────────┤
+│ System Log (persistent, full width)                          │
+└────────────────────────────────────────────────────────────┘
+```
+
+- **Events feed (left):** QListWidget — scrolling color-coded event log, one row per Event PDU
+- **Agents panel (middle):** per-incident agent chat/reasoning view (Step 6's `agent_manager` output) — replaces the earlier generic "detail popup" concept for anything agent-related; a `main_event` trigger surfaces its agent here
+- **Map view (right):** custom QWidget drawing event dots over a static Canada map tile (color = event type / severity), Arctic region called out separately at the top; click a dot to focus the Agents panel / feed on that incident
+- **System log (bottom, full width):** genuine system/runtime messages — block errors, dropped connections, exceptions — not event content. Distinct from `debug_controller`'s `log` port (which routes high-severity *event* PDUs to the console for development visibility); this panel is real operational plumbing, always present regardless of data source, same principle as the rest of the UI ("it doesn't know it's fake").
 - **Dark theme:** shared `ui/theme.py` palette
+
+**RF Waterfall — deferred, not part of the base layout for now.** Data source undecided (local SDR hardware vs. a selectable online SDR, e.g. WebSDR/KiwiSDR-style — not decided). When built, it won't be a persistent pane — it opens on demand when a source reports an RF-related suspicious event, rather than always being visible.
+
+**Map view — future improvement, not built yet.** `ui/map_view.py` currently just draws a placeholder outline (no real map). Real-map approach undecided; candidates considered so far, roughly cheapest-to-realest:
+- Static raster image via `QPixmap`, no zoom
+- A handful (e.g. 4) of pre-rendered images at discrete zoom levels, swapped on zoom in/out — cheap way to fake zoomability with static assets, but source availability for ready-made zoom-level image sets is unconfirmed
+- Continuous pan/zoom over one high-res local image via `QGraphicsView`/`QGraphicsScene` — real zoom/pan, fully offline, no new heavy deps, but not a true tile pyramid (zooming in just pixelates)
+- Full slippy map (Leaflet + local MBTiles) in `QtWebEngineWidgets` — best fidelity, but that package isn't installed and it's a much bigger dependency for the demo timeline
+No map asset (image or tileset) exists in the repo yet — needs sourcing before any of these can be implemented.
 
 **Output:** `grc/urban_data.grc` + `grc/urban_data.py` (generated), custom widget files alongside
 
@@ -172,11 +196,16 @@ Attach real and generated media to scenario events.
 ## Phase 3 — Live Agents & Polish
 
 ### Step 6: UI Finalization + Real Agents + MCP Server
-- Wire Ollama LLM (e.g. Gemma) to `main_event` triggers so operators can converse with a per-incident AI agent
-- Build `SKILL.md` and MCP server exposing simulated reaction commands (dispatch unit, issue alert, lock zone, etc.)
-- Polish UI
 
-**Output:** `mcp_server/`, updated `ui/`, `SKILL.md`
+**Agent Reasoning Model:** Multi-agent — one real, independently-reasoning LLM agent instance per active incident (per `tag_id`), not a single shared agent across incidents. The reasoning/model call is real (not scripted, unlike Steps 2–3); only the *actions* an agent can take are simulated.
+
+- **Trigger:** `agent_trigger` port on the Fake AI Events Processor (Step 3), currently unconnected — carries `tag_id`, `summary`, `main_event` per `common/ai_events_processor.py`. This is enough to bootstrap an agent's initial context.
+- **New component — Agent Manager** (`agent_manager/`, likely its own block/process rather than another embedded GRC block, since it owns long-lived per-incident state and LLM calls that shouldn't block the flowgraph thread): subscribes to `agent_trigger`, spawns one agent instance per new `tag_id`, routes operator chat messages to the matching instance, tears the instance down when its incident is resolved/scenario resets.
+- **Actions = simulated via MCP:** each agent's tool-calling surface is an MCP server (`mcp_server/`, `SKILL.md`) exposing reaction commands (dispatch unit, issue alert, lock zone, etc.). Calling a tool doesn't do anything real — it logs/simulates the action back into the event feed. This is the only "fake" part of Step 6; everything upstream of the tool call (the agent's reasoning) is real.
+- Wire Ollama LLM (e.g. Gemma) — or swap for an API-based model if local inference proves too slow for live demo — as the reasoning backend
+- Polish UI: operator chat panel per incident, reads/writes through the Agent Manager
+
+**Output:** `mcp_server/`, `agent_manager/`, updated `ui/`, `SKILL.md`
 
 ---
 
@@ -225,7 +254,7 @@ Produced by the Scenario Controller. Input to the GNU Radio flowgraph.
 ```
 
 ### Event Schema
-Produced by the Fake AI Analyzer block. Input to the Fake AI Processor block and the UI.
+Produced by the Fake AI Source Analyzer block. Input to the Fake AI Events Processor block and the UI.
 
 ```json
 {
