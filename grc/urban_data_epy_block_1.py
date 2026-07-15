@@ -1,5 +1,9 @@
 import os, sys
-sys.path.insert(0, os.path.join("/home/radiolab9/github/urban_data/grc", os.pardir))
+
+URBAN_DATA_ROOT = os.path.join(os.path.expanduser("~"), "github", "urban_data")
+DEFAULT_SCENARIO_PATH = os.path.join(URBAN_DATA_ROOT, "scenarios", "01_all_ok", "scenario.json")
+
+sys.path.insert(0, URBAN_DATA_ROOT)
 
 import pmt
 from gnuradio import gr
@@ -7,7 +11,7 @@ from common.ai_processor import ProcessorLogic
 
 
 class blk(gr.basic_block):
-    def __init__(self, scenario_path="/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json"):
+    def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):
         gr.basic_block.__init__(self, name="ai_processor", in_sig=[], out_sig=[])
         self.logic = ProcessorLogic(scenario_path)
         self.message_port_register_in(pmt.intern("in"))

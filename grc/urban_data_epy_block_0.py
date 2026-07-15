@@ -1,5 +1,8 @@
 import os, sys
-sys.path.insert(0, os.path.join("/home/radiolab9/github/urban_data/grc", os.pardir))
+
+URBAN_DATA_ROOT = os.path.join(os.path.expanduser("~"), "github", "urban_data")
+
+sys.path.insert(0, URBAN_DATA_ROOT)
 
 import pmt
 from gnuradio import gr

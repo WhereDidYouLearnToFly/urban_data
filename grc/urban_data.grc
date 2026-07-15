@@ -34,19 +34,41 @@ options:
     state: enabled
 
 blocks:
+- name: blocks_throttle2_0
+  id: blocks_throttle2
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    limit: auto
+    maximum: '0.1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [832, 96.0]
+    rotation: 0
+    state: disabled
 - name: epy_block_0
   id: epy_block
   parameters:
-    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(\"/home/radiolab9/github/urban_data/grc\"\
-      , os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_analyzer\
-      \ import AnalyzerLogic\n\nimport numpy as np\n\n\nclass blk(gr.basic_block):\n\
-      \    def __init__(self):\n        gr.basic_block.__init__(self, name=\"ai_analyzer\"\
-      , in_sig=[], out_sig=[])\n        self.logic = AnalyzerLogic()\n        self.message_port_register_in(pmt.intern(\"\
-      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
-      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n    def handle_msg(self,\
-      \ msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n       \
-      \ out = self.logic.analyze(blob)\n        out_pmt = pmt.init_u8vector(len(out),\
-      \ list(out))\n        self.message_port_pub(pmt.intern(\"out\"), pmt.cons(pmt.PMT_NIL,\
+    _source_code: "import os, sys\n\nURBAN_DATA_ROOT = os.path.join(os.path.expanduser(\"\
+      ~\"), \"github\", \"urban_data\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\n\
+      import pmt\nfrom gnuradio import gr\nfrom common.ai_analyzer import AnalyzerLogic\n\
+      \nimport numpy as np\n\n\nclass blk(gr.basic_block):\n    def __init__(self):\n\
+      \        gr.basic_block.__init__(self, name=\"ai_analyzer\", in_sig=[], out_sig=[])\n\
+      \        self.logic = AnalyzerLogic()\n        self.message_port_register_in(pmt.intern(\"\
+      sources\"))\n        self.message_port_register_out(pmt.intern(\"events\"))\n\
+      \        self.set_msg_handler(pmt.intern(\"sources\"), self.handle_msg)\n\n\
+      \    def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
+      \        out = self.logic.analyze(blob)\n        out_pmt = pmt.init_u8vector(len(out),\
+      \ list(out))\n        self.message_port_pub(pmt.intern(\"events\"), pmt.cons(pmt.PMT_NIL,\
       \ out_pmt))"
     affinity: ''
     alias: AI_Analyzer
@@ -54,30 +76,28 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
-    _io_cache: ('ai_analyzer', 'blk', [], [('in', 'message', 1)], [('out', 'message',
-      1)], '', [])
+    _io_cache: ('ai_analyzer', 'blk', [], [('sources', 'message', 1)], [('events',
+      'message', 1)], '', [])
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 268.0]
+    coordinate: [376, 376.0]
     rotation: 0
     state: enabled
 - name: epy_block_1
   id: epy_block
   parameters:
-    _source_code: "import os, sys\nsys.path.insert(0, os.path.join(\"/home/radiolab9/github/urban_data/grc\"\
-      , os.pardir))\n\nimport pmt\nfrom gnuradio import gr\nfrom common.ai_processor\
-      \ import ProcessorLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self,\
-      \ scenario_path=\"/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json\"\
-      ):\n        gr.basic_block.__init__(self, name=\"ai_processor\", in_sig=[],\
-      \ out_sig=[])\n        self.logic = ProcessorLogic(scenario_path)\n        self.message_port_register_in(pmt.intern(\"\
-      in\"))\n        self.message_port_register_out(pmt.intern(\"events\"))\n   \
-      \     self.message_port_register_out(pmt.intern(\"agent_trigger\"))\n      \
-      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n    def handle_msg(self,\
-      \ msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n       \
-      \ result = self.logic.handle(blob)\n        for e in result[\"events\"]:\n \
-      \           e_pmt = pmt.init_u8vector(len(e), list(e))\n            self.message_port_pub(pmt.intern(\"\
-      events\"), pmt.cons(pmt.PMT_NIL, e_pmt))\n        for t in result[\"agent_triggers\"\
+    _source_code: "import os, sys\n\nURBAN_DATA_ROOT = os.path.join(os.path.expanduser(\"\
+      ~\"), \"github\", \"urban_data\")\nDEFAULT_SCENARIO_PATH = os.path.join(URBAN_DATA_ROOT,\
+      \ \"scenarios\", \"01_all_ok\", \"scenario.json\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\
+      \nimport pmt\nfrom gnuradio import gr\nfrom common.ai_processor import ProcessorLogic\n\
+      \n\nclass blk(gr.basic_block):\n    def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):\n\
+      \        gr.basic_block.__init__(self, name=\"ai_processor\", in_sig=[], out_sig=[])\n\
+      \        self.logic = ProcessorLogic(scenario_path)\n        self.message_port_register_in(pmt.intern(\"\
+      events\"))\n        self.message_port_register_out(pmt.intern(\"agent_trigger\"\
+      ))\n        self.set_msg_handler(pmt.intern(\"events\"), self.handle_msg)\n\n\
+      \    def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
+      \        result = self.logic.handle(blob)\n        for t in result[\"agent_triggers\"\
       ]:\n            t_pmt = pmt.init_u8vector(len(t), list(t))\n            self.message_port_pub(pmt.intern(\"\
       agent_trigger\"), pmt.cons(pmt.PMT_NIL, t_pmt))"
     affinity: ''
@@ -85,15 +105,48 @@ blocks:
     comment: 'Step 3: buffers by tag_id, synthesizes group events (common/ai_processor.py)'
     maxoutbuf: '0'
     minoutbuf: '0'
-    scenario_path: ''
+    scenario_path: '''/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json'''
   states:
-    _io_cache: ('ai_processor', 'blk', [('scenario_path', "'/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json'")],
-      [('in', 'message', 1)], [('agent_trigger', 'message', 1), ('events', 'message',
-      1)], '', [])
+    _io_cache: ('ai_processor', 'blk', [('scenario_path', "'/home/ailab9/github/urban_data/scenarios/01_all_ok/scenario.json'")],
+      [('events', 'message', 1)], [('agent_trigger', 'message', 1)], '', [])
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 368.0]
+    coordinate: [624, 492.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_2
+  id: epy_block
+  parameters:
+    _source_code: "import os, sys\n\nURBAN_DATA_ROOT = os.path.join(os.path.expanduser(\"\
+      ~\"), \"github\", \"urban_data\")\nDEFAULT_SCENARIO_PATH = os.path.join(URBAN_DATA_ROOT,\
+      \ \"scenarios\", \"01_all_ok\", \"scenario.json\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\
+      \nimport pmt\nfrom gnuradio import gr\nfrom common.ai_processor import ProcessorLogic\n\
+      \n\nclass blk(gr.basic_block):\n    def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):\n\
+      \        gr.basic_block.__init__(self, name=\"debug_controller\", in_sig=[],\
+      \ out_sig=[])\n        self.logic = ProcessorLogic(scenario_path)\n        self.message_port_register_in(pmt.intern(\"\
+      events\"))\n        self.message_port_register_out(pmt.intern(\"print_pdu\"\
+      ))\n        self.message_port_register_out(pmt.intern(\"store\"))\n        self.message_port_register_out(pmt.intern(\"\
+      print\"))        \n        self.message_port_register_out(pmt.intern(\"log\"\
+      ))\n        self.set_msg_handler(pmt.intern(\"events\"), self.handle_msg)\n\n\
+      \    def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
+      \        result = self.logic.handle(blob)\n        for t in result[\"agent_triggers\"\
+      ]:\n            t_pmt = pmt.init_u8vector(len(t), list(t))\n            self.message_port_pub(pmt.intern(\"\
+      agent_trigger\"), pmt.cons(pmt.PMT_NIL, t_pmt))"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scenario_path: '''/home/ailab9/github/urban_data/scenarios/01_all_ok/scenario.json'''
+  states:
+    _io_cache: ('debug_controller', 'blk', [('scenario_path', "'/home/ailab9/github/urban_data/scenarios/01_all_ok/scenario.json'")],
+      [('events', 'message', 1)], [('log', 'message', 1), ('print', 'message', 1),
+      ('store', 'message', 1), ('print_pdu', 'message', 1)], '', [])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [624, 644.0]
     rotation: 0
     state: enabled
 - name: message_debug_0
@@ -108,10 +161,26 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [768, 500.0]
+    coordinate: [1264, 644.0]
     rotation: 0
     state: enabled
 - name: zmq_sink
+  id: zeromq_pub_msg_sink
+  parameters:
+    address: tcp://127.0.0.1:5557
+    affinity: ''
+    alias: ''
+    bind: 'True'
+    comment: Stub sink until Step 4 UI exists -- subscribe here to process agent workflow
+    timeout: '100'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1248, 484.0]
+    rotation: 0
+    state: enabled
+- name: zmq_sink_0
   id: zeromq_pub_msg_sink
   parameters:
     address: tcp://127.0.0.1:5556
@@ -125,7 +194,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1032, 364.0]
+    coordinate: [1248, 356.0]
     rotation: 0
     state: enabled
 - name: zmq_source
@@ -146,7 +215,17 @@ blocks:
     coordinate: [40, 356.0]
     rotation: 0
     state: enabled
-connections: []
+
+connections:
+- [epy_block_0, events, epy_block_1, events]
+- [epy_block_0, events, epy_block_2, events]
+- [epy_block_0, events, zmq_sink_0, in]
+- [epy_block_1, agent_trigger, zmq_sink, in]
+- [epy_block_2, log, message_debug_0, log]
+- [epy_block_2, print, message_debug_0, print]
+- [epy_block_2, print_pdu, message_debug_0, print_pdu]
+- [epy_block_2, store, message_debug_0, store]
+- [zmq_source, out, epy_block_0, sources]
 
 metadata:
   file_format: 1

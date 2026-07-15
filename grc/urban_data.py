@@ -37,7 +37,7 @@ class urban_data(gr.top_block):
         self.zmq_source = zeromq.sub_msg_source('tcp://127.0.0.1:5555', 100, False)
         self.zmq_sink = zeromq.pub_msg_sink('tcp://127.0.0.1:5556', 100, True)
         self.message_debug_0 = blocks.message_debug(True, gr.log_levels.info)
-        self.epy_block_1 = epy_block_1.blk(scenario_path=)
+        self.epy_block_1 = epy_block_1.blk(scenario_path='/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json')
         self.epy_block_0 = epy_block_0.blk()
         self.epy_block_0.set_block_alias("AI_Analyzer")
 
