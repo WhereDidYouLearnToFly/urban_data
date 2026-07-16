@@ -9,7 +9,6 @@
 # Description: Urban Data demo flowgraph -- ZMQ source, Fake AI Analyzer, Fake AI Processor, ZMQ stub sink
 # GNU Radio version: 3.10.9.2
 
-from gnuradio import blocks, gr
 from gnuradio import gr
 from gnuradio.filter import firdes
 from gnuradio.fft import window
@@ -22,6 +21,7 @@ from gnuradio import zeromq
 import urban_data_epy_block_0 as epy_block_0  # embedded python block
 import urban_data_epy_block_1 as epy_block_1  # embedded python block
 import urban_data_epy_block_2 as epy_block_2  # embedded python block
+import urban_data_epy_block_3 as epy_block_3  # embedded python block
 
 
 
@@ -35,10 +35,9 @@ class urban_data(gr.top_block):
         # Blocks
         ##################################################
 
-        self.zmq_source = zeromq.sub_msg_source('tcp://127.0.0.1:5555', 100, False)
         self.zmq_sink_0 = zeromq.pub_msg_sink('tcp://127.0.0.1:5556', 100, True)
         self.zmq_sink = zeromq.pub_msg_sink('tcp://127.0.0.1:5557', 100, True)
-        self.message_debug_0 = blocks.message_debug(True, gr.log_levels.info)
+        self.epy_block_3 = epy_block_3.blk(address='tcp://127.0.0.1:5555')
         self.epy_block_2 = epy_block_2.blk()
         self.epy_block_1 = epy_block_1.blk()
         self.epy_block_0 = epy_block_0.blk()
@@ -52,11 +51,7 @@ class urban_data(gr.top_block):
         self.msg_connect((self.epy_block_0, 'events'), (self.epy_block_2, 'events'))
         self.msg_connect((self.epy_block_0, 'events'), (self.zmq_sink_0, 'in'))
         self.msg_connect((self.epy_block_1, 'agent_trigger'), (self.zmq_sink, 'in'))
-        self.msg_connect((self.epy_block_2, 'print_pdu'), (self.message_debug_0, 'print_pdu'))
-        self.msg_connect((self.epy_block_2, 'store'), (self.message_debug_0, 'store'))
-        self.msg_connect((self.epy_block_2, 'log'), (self.message_debug_0, 'log'))
-        self.msg_connect((self.epy_block_2, 'print'), (self.message_debug_0, 'print'))
-        self.msg_connect((self.zmq_source, 'out'), (self.epy_block_0, 'sources'))
+        self.msg_connect((self.epy_block_3, 'sources'), (self.epy_block_0, 'sources'))
 
 
 

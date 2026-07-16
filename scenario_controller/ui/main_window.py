@@ -9,6 +9,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.setWindowTitle("Urban Data — Scenario Controller")
         self.resize(820, 560)
+        self.setWindowFlag(Qt.WindowStaysOnTopHint, True)
         self._build()
 
     def _build(self):

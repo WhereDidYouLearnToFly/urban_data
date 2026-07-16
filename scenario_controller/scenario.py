@@ -12,6 +12,8 @@ class SourceEvent:
     coordinates: dict
     predefined_analysis_result: dict
     offset_seconds: float = 0.0
+    tag_id: Optional[str] = None
+    tag_total: Optional[int] = None
 
     def to_dict(self) -> dict:
         return {
@@ -21,6 +23,8 @@ class SourceEvent:
             "coordinates": self.coordinates,
             "predefined_analysis_result": self.predefined_analysis_result,
             "offset_seconds": self.offset_seconds,
+            "tag_id": self.tag_id,
+            "tag_total": self.tag_total,
         }
 
 
@@ -68,6 +72,8 @@ class ScenarioLoader:
                 coordinates=src["coordinates"],
                 predefined_analysis_result=src["predefined_analysis_result"],
                 offset_seconds=entry["offset_seconds"],
+                tag_id=src.get("tag_id"),
+                tag_total=src.get("tag_total"),
             ))
 
         return Scenario(

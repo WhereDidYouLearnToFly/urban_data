@@ -182,7 +182,7 @@ Attach real and generated media to scenario events.
 - Copy applicable datasets from `~/data/` into `scenarios/<id>/assets/`
 - Generate missing visuals with ComfyUI (tanks, mobs, explosions, floods) using Ontario 511 stills as control frames
 - Run anonymization pass on civilian footage (blur faces and plates)
-- Update scenario JSON `data` fields to reference asset file paths
+- Update scenario JSON `data` fields to embed the asset bytes (base64-encoded) directly — not a file path. The flowgraph is data-agnostic: it has no business resolving paths on whatever machine happens to be running the Scenario Controller, so the actual blob travels through the PDU like everything else.
 
 **Output:** populated `scenarios/<id>/assets/` folders; updated `scenario.json` files
 
@@ -234,7 +234,7 @@ Produced by the Scenario Controller. Input to the GNU Radio flowgraph.
 {
   "id": "string",
   "type": "fft | photo | video | audio | float_sequence",
-  "data": "path/to/asset or null",
+  "data": "base64-encoded blob or null",
   "coordinates": { "lat": 0.0, "lon": 0.0 },
   "offset_seconds": 0.0,
   "tag_id": "string or omitted if standalone",
@@ -257,7 +257,7 @@ Produced by the Fake AI Source Analyzer block. Input to the Fake AI Events Proce
   "level": 0,
   "description": "string",
   "type": "fft | photo | video | audio | float_sequence",
-  "data": "path/to/asset or null",
+  "data": "base64-encoded blob or null",
   "coordinates": { "lat": 0.0, "lon": 0.0 },
   "timestamp": "ISO 8601",
   "confidence": 0.0,

@@ -29,7 +29,7 @@ options:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [40, 132.0]
+    coordinate: [128, 124.0]
     rotation: 0
     state: enabled
 
@@ -60,7 +60,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [376, 376.0]
+    coordinate: [632, 376.0]
     rotation: 0
     state: enabled
 - name: epy_block_1
@@ -89,7 +89,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [664, 504.0]
+    coordinate: [920, 504.0]
     rotation: 0
     state: enabled
 - name: epy_block_2
@@ -122,22 +122,38 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [664, 644.0]
+    coordinate: [920, 644.0]
     rotation: 0
     state: enabled
-- name: message_debug_0
-  id: blocks_message_debug
+- name: epy_block_3
+  id: epy_block
   parameters:
+    _source_code: "import os, sys, threading\n\nURBAN_DATA_ROOT = os.path.join(os.path.expanduser(\"\
+      ~\"), \"github\", \"urban_data\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\n\
+      import pmt\nimport zmq\nfrom gnuradio import gr\nfrom common.zmq_source import\
+      \ ZmqSourceLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self, address=\"\
+      tcp://127.0.0.1:5555\"):\n        gr.basic_block.__init__(self, name=\"zmq_generic_input\"\
+      , in_sig=[], out_sig=[])\n        self.message_port_register_out(pmt.intern(\"\
+      sources\"))\n        self.logic = ZmqSourceLogic(address)\n        self._thread\
+      \ = threading.Thread(target=self._run, daemon=True)\n        self._thread.start()\n\
+      \n    def _run(self):\n        while True:\n            try:\n             \
+      \   payload = self.logic.recv()\n            except zmq.ZMQError:\n        \
+      \        return\n            pdu = pmt.init_u8vector(len(payload), list(payload))\n\
+      \            self.message_port_pub(pmt.intern(\"sources\"), pmt.cons(pmt.PMT_NIL,\
+      \ pdu))\n\n    def stop(self):\n        self.logic.close()\n        return True\n"
+    address: '''tcp://127.0.0.1:5555'''
     affinity: ''
     alias: ''
     comment: ''
-    en_uvec: 'True'
-    log_level: info
+    maxoutbuf: '0'
+    minoutbuf: '0'
   states:
+    _io_cache: ('zmq_generic_input', 'blk', [('address', "'tcp://127.0.0.1:5555'")],
+      [], [('sources', 'message', 1)], '', [])
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1264, 644.0]
+    coordinate: [240, 364.0]
     rotation: 0
     state: enabled
 - name: zmq_sink
@@ -153,7 +169,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1248, 484.0]
+    coordinate: [1504, 484.0]
     rotation: 0
     state: enabled
 - name: zmq_sink_0
@@ -170,25 +186,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1248, 356.0]
-    rotation: 0
-    state: enabled
-- name: zmq_source
-  id: zeromq_sub_msg_source
-  parameters:
-    address: tcp://127.0.0.1:5555
-    affinity: ''
-    alias: ''
-    bind: 'False'
-    comment: Connects to scenario_controller's ZMQ PUB (which binds)
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    timeout: '100'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [40, 356.0]
+    coordinate: [1504, 356.0]
     rotation: 0
     state: enabled
 
@@ -197,11 +195,7 @@ connections:
 - [epy_block_0, events, epy_block_2, events]
 - [epy_block_0, events, zmq_sink_0, in]
 - [epy_block_1, agent_trigger, zmq_sink, in]
-- [epy_block_2, log, message_debug_0, log]
-- [epy_block_2, print, message_debug_0, print]
-- [epy_block_2, print_pdu, message_debug_0, print_pdu]
-- [epy_block_2, store, message_debug_0, store]
-- [zmq_source, out, epy_block_0, sources]
+- [epy_block_3, sources, epy_block_0, sources]
 
 metadata:
   file_format: 1
