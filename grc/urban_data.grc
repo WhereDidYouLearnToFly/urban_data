@@ -67,12 +67,11 @@ blocks:
   id: epy_block
   parameters:
     _source_code: "import os, sys\n\nURBAN_DATA_ROOT = os.path.join(os.path.expanduser(\"\
-      ~\"), \"github\", \"urban_data\")\nDEFAULT_SCENARIO_PATH = os.path.join(URBAN_DATA_ROOT,\
-      \ \"scenarios\", \"01_all_ok\", \"scenario.json\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\
-      \nimport pmt\nfrom gnuradio import gr\nfrom common.ai_events_processor import\
-      \ ProcessorLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):\n\
+      ~\"), \"github\", \"urban_data\")\n\nsys.path.insert(0, URBAN_DATA_ROOT)\n\n\
+      import pmt\nfrom gnuradio import gr\nfrom common.ai_events_processor import\
+      \ ProcessorLogic\n\n\nclass blk(gr.basic_block):\n    def __init__(self):\n\
       \        gr.basic_block.__init__(self, name=\"ai_events_processor\", in_sig=[],\
-      \ out_sig=[])\n        self.logic = ProcessorLogic(scenario_path)\n        self.message_port_register_in(pmt.intern(\"\
+      \ out_sig=[])\n        self.logic = ProcessorLogic()\n        self.message_port_register_in(pmt.intern(\"\
       events\"))\n        self.message_port_register_out(pmt.intern(\"agent_trigger\"\
       ))\n        self.set_msg_handler(pmt.intern(\"events\"), self.handle_msg)\n\n\
       \    def handle_msg(self, msg):\n        blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))\n\
@@ -84,14 +83,13 @@ blocks:
     comment: 'Step 3: buffers by tag_id, synthesizes group events (common/ai_events_processor.py)'
     maxoutbuf: '0'
     minoutbuf: '0'
-    scenario_path: '''/home/radiolab9/github/urban_data/scenarios/01_all_ok/scenario.json'''
   states:
-    _io_cache: ('ai_events_processor', 'blk', [('scenario_path', "'/home/ailab9/github/urban_data/scenarios/01_all_ok/scenario.json'")],
-      [('events', 'message', 1)], [('agent_trigger', 'message', 1)], '', [])
+    _io_cache: ('ai_events_processor', 'blk', [], [('events', 'message', 1)], [('agent_trigger',
+      'message', 1)], '', [])
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [664, 492.0]
+    coordinate: [664, 504.0]
     rotation: 0
     state: enabled
 - name: epy_block_2

@@ -1,7 +1,6 @@
 import os, sys
 
 URBAN_DATA_ROOT = os.path.join(os.path.expanduser("~"), "github", "urban_data")
-DEFAULT_SCENARIO_PATH = os.path.join(URBAN_DATA_ROOT, "scenarios", "01_all_ok", "scenario.json")
 
 sys.path.insert(0, URBAN_DATA_ROOT)
 
@@ -11,9 +10,9 @@ from common.ai_events_processor import ProcessorLogic
 
 
 class blk(gr.basic_block):
-    def __init__(self, scenario_path=DEFAULT_SCENARIO_PATH):
+    def __init__(self):
         gr.basic_block.__init__(self, name="ai_events_processor", in_sig=[], out_sig=[])
-        self.logic = ProcessorLogic(scenario_path)
+        self.logic = ProcessorLogic()
         self.message_port_register_in(pmt.intern("events"))
         self.message_port_register_out(pmt.intern("agent_trigger"))
         self.set_msg_handler(pmt.intern("events"), self.handle_msg)
