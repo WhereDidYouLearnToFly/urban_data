@@ -25,6 +25,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.setWindowTitle("Urban Data")
         self.resize(1400, 800)
+        self.setWindowFlag(Qt.WindowStaysOnTopHint, True)
 
         central = QWidget()
         self.setCentralWidget(central)
