@@ -1,9 +1,9 @@
 """Map view — right column. Interactive Leaflet map (Canada + Arctic) embedded
 via QWebEngineView + QWebChannel, ported from the github/qtmap example
-(radiolab9, MIT). Event dots are plotted at their coordinates and colored by
-severity; clicking a dot is meant to focus the Agents panel / feed on that
-incident (Step 4 wiring, not yet connected — this widget only emits the
-signal).
+(radiolab9, MIT). Event dots are fed by MainWindow's ZMQ subscriber
+(ui/zmq_client.py) and plotted at their coordinates, colored by severity;
+clicking a dot is meant to focus the Agents panel / feed on that incident —
+this widget only emits the signal, MainWindow doesn't wire it up yet.
 
 Bundled assets live in ui/map_assets/ (Leaflet 1.9.4 + Canada province
 outline). Tiles are fetched live from CartoDB's CDN — this needs internet at
@@ -158,6 +158,9 @@ class MapView(QWidget):
         self._channel = QWebChannel()
         self._channel.registerObject("pyHandler", self._bridge)
         self._web_view.page().setWebChannel(self._channel)
+
+        self._loaded = False
+        self._pending_js = []
         self._web_view.loadFinished.connect(self._on_load_finished)
 
         with open(_GENERATED_HTML_PATH, "w") as f:
@@ -167,11 +170,22 @@ class MapView(QWidget):
         layout.addWidget(self._web_view)
 
     def _on_load_finished(self, ok):
-        if ok:
-            self._add_placeholder_events()
+        self._loaded = ok
+        if not ok:
+            return
+        for code in self._pending_js:
+            self._web_view.page().runJavaScript(code)
+        self._pending_js.clear()
 
     def _run_js(self, code: str):
-        self._web_view.page().runJavaScript(code)
+        # Live events can arrive over ZMQ before Chromium finishes loading
+        # the Leaflet page and running initMap() -- calling runJavaScript()
+        # that early is a silent no-op (map is undefined), so queue until
+        # loadFinished instead of dropping the marker.
+        if self._loaded:
+            self._web_view.page().runJavaScript(code)
+        else:
+            self._pending_js.append(code)
 
     def add_event(self, event_id: str, lat: float, lon: float, level: int, description: str):
         color = color_for_level(level)
@@ -186,12 +200,3 @@ class MapView(QWidget):
 
     def focus_event(self, event_id: str, zoom: int = 8):
         self._run_js(f"focusMarker('{event_id}', {zoom})")
-
-    def _add_placeholder_events(self):
-        for event_id, level, description, (lat, lon) in [
-            ("ph-1", 1, "Traffic normal — Hwy 401 westbound", (43.70, -79.55)),
-            ("ph-2", 5, "Ambulance dispatched — Ottawa downtown", (45.4215, -75.6972)),
-            ("ph-3", 8, "Flood warning — Don River rising", (43.6629, -79.3568)),
-            ("ph-4", 1, "Nothing to report — Vancouver harbour", (49.2827, -123.1207)),
-        ]:
-            self.add_event(event_id, lat, lon, level, description)
