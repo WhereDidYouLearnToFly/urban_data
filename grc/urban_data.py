@@ -20,7 +20,6 @@ from gnuradio import eng_notation
 from gnuradio import zeromq
 import urban_data_epy_block_0 as epy_block_0  # embedded python block
 import urban_data_epy_block_1 as epy_block_1  # embedded python block
-import urban_data_epy_block_2 as epy_block_2  # embedded python block
 import urban_data_epy_block_3 as epy_block_3  # embedded python block
 
 
@@ -38,7 +37,6 @@ class urban_data(gr.top_block):
         self.zmq_sink_0 = zeromq.pub_msg_sink('tcp://127.0.0.1:5556', 100, True)
         self.zmq_sink = zeromq.pub_msg_sink('tcp://127.0.0.1:5557', 100, True)
         self.epy_block_3 = epy_block_3.blk(address='tcp://127.0.0.1:5555')
-        self.epy_block_2 = epy_block_2.blk()
         self.epy_block_1 = epy_block_1.blk()
         self.epy_block_0 = epy_block_0.blk()
         self.epy_block_0.set_block_alias("AI_Analyzer")
@@ -48,7 +46,6 @@ class urban_data(gr.top_block):
         # Connections
         ##################################################
         self.msg_connect((self.epy_block_0, 'events'), (self.epy_block_1, 'events'))
-        self.msg_connect((self.epy_block_0, 'events'), (self.epy_block_2, 'events'))
         self.msg_connect((self.epy_block_0, 'events'), (self.zmq_sink_0, 'in'))
         self.msg_connect((self.epy_block_1, 'agent_trigger'), (self.zmq_sink, 'in'))
         self.msg_connect((self.epy_block_3, 'sources'), (self.epy_block_0, 'sources'))

@@ -1,0 +1,1370 @@
+[
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_001",
+    "type": "photo",
+    "description": "Downtown Toronto baseline. Morning commute, normal conditions.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_001.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_001.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_002",
+    "type": "photo",
+    "description": "Highway 401 eastbound near Weston Rd. Congestion building. All lanes slow \u2014 likely volume-driven.",
+    "coordinates": {
+      "lat": 43.718,
+      "lon": -79.518
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_002.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_002.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_003",
+    "type": "photo",
+    "description": "Vehicle running red light at Eglinton Ave and Dufferin St northbound. Speed estimated 70 km/h in 50 zone.",
+    "coordinates": {
+      "lat": 43.702,
+      "lon": -79.416
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_003.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_003.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_004",
+    "type": "photo",
+    "description": "Cyclist running stop sign on Roncesvalles Ave heading south. Near-miss with pedestrian.",
+    "coordinates": {
+      "lat": 43.641,
+      "lon": -79.418
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_004.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_004.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_005",
+    "type": "photo",
+    "description": "Two-vehicle collision at Yonge St and Davisville Ave. Vehicles blocking curb lane. Airbags deployed on one vehicle. No fire.",
+    "coordinates": {
+      "lat": 43.689,
+      "lon": -79.396
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_005.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_005.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_007",
+    "type": "photo",
+    "description": "Ambulance and police on scene at Yonge and Davisville crash. Paramedics attending to driver.",
+    "coordinates": {
+      "lat": 43.689,
+      "lon": -79.396
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_007.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_007.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_008",
+    "type": "photo",
+    "description": "Person sprinting east on King St near St. Lawrence Market. No visible pursuer. Possible late for transit.",
+    "coordinates": {
+      "lat": 43.6591,
+      "lon": -79.3783
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_008.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_008.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_009",
+    "type": "photo",
+    "description": "Physical altercation between two individuals on Queen St West near Spadina. Third person attempting to intervene. No weapons visible.",
+    "coordinates": {
+      "lat": 43.6491,
+      "lon": -79.4002
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_009.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_009.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_011",
+    "type": "photo",
+    "description": "Queen and Spadina \u2014 police dispersed the altercation. Scene clear.",
+    "coordinates": {
+      "lat": 43.6491,
+      "lon": -79.4002
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_011.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_011.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_014",
+    "type": "photo",
+    "description": "Allen Expressway southbound backed up to Lawrence Ave. Estimated 25-minute delay. School zone hours.",
+    "coordinates": {
+      "lat": 43.77,
+      "lon": -79.41
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_014.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_014.png"
+  },
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_015",
+    "type": "photo",
+    "description": "Downtown Toronto. Afternoon settling in. No active incidents. System quiet.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/02_small_events/assets/photo/src_015.jpg",
+    "target_path": "scenarios/02_small_events/assets/photo/src_015.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_001",
+    "type": "photo",
+    "description": "Downtown Toronto baseline. Overcast skies, light rain beginning.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_001.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_001.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_004",
+    "type": "photo",
+    "description": "Lower Don Trail underpass at Eastern Ave \u2014 flooded. Road impassable, 40 cm standing water.",
+    "coordinates": {
+      "lat": 43.66,
+      "lon": -79.375
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_004.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_004.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_006",
+    "type": "photo",
+    "description": "TFRS water rescue boats deployed on flooded Don Valley Pkwy southbound. Two vehicles stranded in approximately 1 metre of water.",
+    "coordinates": {
+      "lat": 43.654,
+      "lon": -79.37
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_006.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_006.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_007",
+    "type": "photo",
+    "description": "DVP southbound fully closed at Richmond St E. Significant standing water, abandoned vehicles visible.",
+    "coordinates": {
+      "lat": 43.649,
+      "lon": -79.362
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_007.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_007.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_010",
+    "type": "photo",
+    "description": "Paramedics responding to stranded resident in flooded basement \u2014 Rosedale Ave near Bloor.",
+    "coordinates": {
+      "lat": 43.672,
+      "lon": -79.398
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_010.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_010.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_012",
+    "type": "photo",
+    "description": "Humber River overflowing banks near Old Mill. Riverside Drive flooded for 600 metres. Evacuation order for adjacent streets.",
+    "coordinates": {
+      "lat": 43.71,
+      "lon": -79.52
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_012.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_012.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_014",
+    "type": "photo",
+    "description": "Multiple residents evacuating on foot along Roncesvalles Ave heading north. Some carrying bags. Panic visible.",
+    "coordinates": {
+      "lat": 43.641,
+      "lon": -79.418
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_014.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_014.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_016",
+    "type": "photo",
+    "description": "Lake Shore Blvd West near Bathurst \u2014 major inundation. Several vehicles partially submerged. Waterline at traffic light bases.",
+    "coordinates": {
+      "lat": 43.64,
+      "lon": -79.42
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_016.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_016.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_019",
+    "type": "photo",
+    "description": "Don Valley rescue winding down. Last stranded vehicle reached. 7 civilians rescued. 2 transported to hospital \u2014 hypothermia, non-life-threatening.",
+    "coordinates": {
+      "lat": 43.654,
+      "lon": -79.37
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_019.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_019.png"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_020",
+    "type": "photo",
+    "description": "Flood event subsiding. DVP remains closed. Emergency services still active. Recovery phase beginning.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/03_flood/assets/photo/src_020.jpg",
+    "target_path": "scenarios/03_flood/assets/photo/src_020.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_001",
+    "type": "photo",
+    "description": "Toronto baseline. Morning calm. No anomalies.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_001.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_001.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_002",
+    "type": "photo",
+    "description": "Large protest gathering forming at Nathan Phillips Square. Estimated 3,000 people. Crowd agitated, pushing against police lines. Signs in multiple languages.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_002.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_002.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_003",
+    "type": "photo",
+    "description": "Simultaneous protest at Parliament Hill Ottawa. Crowd blocking all vehicle access to Wellington St. Police forming defensive line.",
+    "coordinates": {
+      "lat": 45.4215,
+      "lon": -75.6972
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_003.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_003.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_004",
+    "type": "photo",
+    "description": "Protest march on Georgia St Vancouver heading toward Vancouver Art Gallery. 2,000 participants. Traffic blocked in both directions.",
+    "coordinates": {
+      "lat": 49.2827,
+      "lon": -123.1207
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_004.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_004.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_006",
+    "type": "photo",
+    "description": "Ottawa \u2014 vehicles set on fire on Wellington St. Smoke column visible from Parliament. Police requesting reinforcements. Government district access severed.",
+    "coordinates": {
+      "lat": 45.4215,
+      "lon": -75.6972
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_006.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_006.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_008",
+    "type": "photo",
+    "description": "Toronto riot spreading from City Hall toward financial district. Looters visible on Bay St. Police lines broken. Ambulances unable to reach injured.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_008.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_008.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_010",
+    "type": "photo",
+    "description": "Vancouver \u2014 riot police deployed. Water cannon activated. Crowd fragmenting into groups moving toward port and Burrard Bridge.",
+    "coordinates": {
+      "lat": 49.2827,
+      "lon": -123.1207
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_010.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_010.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_012",
+    "type": "photo",
+    "description": "Toronto financial district \u2014 civilians fleeing the riot moving south toward Lake Shore. Dozens of people running in the same direction.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_012.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_012.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_013",
+    "type": "photo",
+    "description": "Vancouver \u2014 crowd reached port access roads on Burrard Inlet. Port security gates breached. Cargo operations halted.",
+    "coordinates": {
+      "lat": 49.2827,
+      "lon": -123.1207
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_013.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_013.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_015",
+    "type": "photo",
+    "description": "Toronto east of riot zone \u2014 streets emptying. Businesses closing early. Transit disrupted. City going quiet.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_015.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_015.png"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_016",
+    "type": "photo",
+    "description": "Ottawa government district locked down. Streets around Parliament empty. Armed RCMP units visible. No resolution in sight.",
+    "coordinates": {
+      "lat": 45.4215,
+      "lon": -75.6972
+    },
+    "current_asset": "scenarios/04_mob_protests/assets/photo/src_016.jpg",
+    "target_path": "scenarios/04_mob_protests/assets/photo/src_016.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_001",
+    "type": "photo",
+    "description": "All systems nominal. Toronto baseline. No anomalies detected.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_001.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_001.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_007",
+    "type": "photo",
+    "description": "Ottawa security camera: delta-wing silhouettes at ~150 m altitude. 8\u201312 units heading southwest toward Toronto.",
+    "coordinates": {
+      "lat": 45.4215,
+      "lon": -75.6972
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_007.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_007.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_151",
+    "type": "photo",
+    "description": "CFB Valcartier perimeter camera: impact on vehicle depot. Fire visible across multiple buildings.",
+    "coordinates": {
+      "lat": 46.9486,
+      "lon": -71.5
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_151.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_151.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_008",
+    "type": "video",
+    "description": "Ottawa traffic camera: Shahed formation overflying Rideau Canal at ~180 km/h heading 225\u00b0 toward Toronto.",
+    "coordinates": {
+      "lat": 45.4215,
+      "lon": -75.6972
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_008.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_008.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2201",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 50.21423320403318,
+      "lon": -132.12235732341418
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2201.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2201.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2202",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 50.362636419724936,
+      "lon": -130.63645944897172
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2202.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2202.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2203",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 50.64776005209605,
+      "lon": -131.90790950735726
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2203.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2203.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_121",
+    "type": "photo",
+    "description": "Halifax Stanfield Airport camera: runway impact. Terminal evacuated, all flights grounded.",
+    "coordinates": {
+      "lat": 44.8808,
+      "lon": -63.5086
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_121.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_121.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2204",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 51.43465556206857,
+      "lon": -132.81257311896454
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2204.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2204.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2205",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 51.477453546987746,
+      "lon": -133.44245848537352
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2205.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2205.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_131",
+    "type": "photo",
+    "description": "CFB Comox perimeter camera: impact on flight line. Search-and-rescue squadron hangar burning.",
+    "coordinates": {
+      "lat": 49.7167,
+      "lon": -124.8867
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_131.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_131.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2206",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 51.87867131638992,
+      "lon": -135.04939087409687
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2206.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2206.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2207",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 52.08743022695836,
+      "lon": -133.55329177805606
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2207.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2207.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2208",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 53.702946512504155,
+      "lon": -136.74236070113906
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2208.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2208.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2209",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 53.785417598156776,
+      "lon": -136.05695832281128
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2209.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2209.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_122",
+    "type": "photo",
+    "description": "Explosion at the Halifax transatlantic cable landing station \u2014 international connectivity degraded, not just local.",
+    "coordinates": {
+      "lat": 44.6488,
+      "lon": -63.5752
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_122.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_122.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2210",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 53.789155756531734,
+      "lon": -136.65933393003573
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2210.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2210.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_132",
+    "type": "photo",
+    "description": "Explosion at the Bamfield transpacific cable landing station \u2014 paired with the Halifax strike, both coasts' international links targeted together.",
+    "coordinates": {
+      "lat": 48.834,
+      "lon": -125.136
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_132.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_132.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1044",
+    "type": "video",
+    "description": "Trudeau Airport camera: transport helicopters discharging troops onto the runway.",
+    "coordinates": {
+      "lat": 45.4706,
+      "lon": -73.7408
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1044.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1044.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2211",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 54.41310403675432,
+      "lon": -137.25369804206147
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2211.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2211.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2212",
+    "type": "photo",
+    "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+    "coordinates": {
+      "lat": 54.96600719060011,
+      "lon": -135.56412994414436
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_2212.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_2212.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1031",
+    "type": "video",
+    "description": "Highway camera near Regina: delta-wing silhouettes low and fast, heading in three directions.",
+    "coordinates": {
+      "lat": 50.2,
+      "lon": -105.0
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1031.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1031.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_010",
+    "type": "photo",
+    "description": "Pearson Airport perimeter camera: impact on runway 06L. Blast crater visible. Radar tower destroyed. All aircraft grounded. Fire suppression active.",
+    "coordinates": {
+      "lat": 43.682,
+      "lon": -79.62
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_010.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_010.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1046",
+    "type": "photo",
+    "description": "Trudeau Airport perimeter camera: terminal secured, troops moving to control tower.",
+    "coordinates": {
+      "lat": 45.4706,
+      "lon": -73.7408
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1046.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1046.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_141",
+    "type": "photo",
+    "description": "Calgary International Airport camera: impact near the terminal, telecom exchange building adjacent also struck.",
+    "coordinates": {
+      "lat": 51.1315,
+      "lon": -114.0106
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_141.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_141.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1037",
+    "type": "video",
+    "description": "Highway 401 camera near Trenton: delta-wing silhouettes descending toward the base perimeter.",
+    "coordinates": {
+      "lat": 44.3,
+      "lon": -77.3
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1037.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1037.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_142",
+    "type": "photo",
+    "description": "CFB Edmonton Garrison: impact on vehicle motor pool. Fires spreading between buildings.",
+    "coordinates": {
+      "lat": 53.5461,
+      "lon": -113.4938
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_142.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_142.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1055",
+    "type": "photo",
+    "description": "Halifax: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 44.6488,
+      "lon": -63.5752
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1055.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1055.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1056",
+    "type": "photo",
+    "description": "Winnipeg: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 49.91,
+      "lon": -97.24
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1056.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1056.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_171",
+    "type": "photo",
+    "description": "CFB Petawawa perimeter camera: impact on garrison motor pool. Army's largest eastern base now under direct attack.",
+    "coordinates": {
+      "lat": 45.9569,
+      "lon": -77.2853
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_171.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_171.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1057",
+    "type": "photo",
+    "description": "Calgary: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 51.1315,
+      "lon": -114.0106
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1057.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1057.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_012",
+    "type": "video",
+    "description": "Camera near Hamilton: Ka-52 attack helicopter formation moving west ahead of ground column. Low altitude, combat configuration.",
+    "coordinates": {
+      "lat": 43.2557,
+      "lon": -79.8711
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_012.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_012.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1000",
+    "type": "video",
+    "description": "Drone recon over Halifax approaches: landing craft visible, armor being unloaded on the waterfront.",
+    "coordinates": {
+      "lat": 44.6,
+      "lon": -63.55
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1000.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1000.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1058",
+    "type": "photo",
+    "description": "Montreal: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 45.5017,
+      "lon": -73.5673
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1058.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1058.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1015",
+    "type": "video",
+    "description": "Drone recon over Esquimalt: landing craft at the dockyard, armor disembarking under cover of the earlier strike.",
+    "coordinates": {
+      "lat": 48.42,
+      "lon": -123.42
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1015.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1015.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1038",
+    "type": "video",
+    "description": "Winnipeg airport camera: transport helicopters discharging troops onto the runway.",
+    "coordinates": {
+      "lat": 49.91,
+      "lon": -97.24
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1038.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1038.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1059",
+    "type": "photo",
+    "description": "Victoria: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 48.4284,
+      "lon": -123.3656
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1059.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1059.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1097",
+    "type": "photo",
+    "description": "Fredericton: Civilians fleeing on foot along the Saint John River pathway, sirens audible across the river.",
+    "coordinates": {
+      "lat": 45.9636,
+      "lon": -66.6431
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1097.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1097.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1001",
+    "type": "photo",
+    "description": "Halifax waterfront camera: first tanks ashore, forming up. Troops moving toward Bedford Highway.",
+    "coordinates": {
+      "lat": 44.615,
+      "lon": -63.58
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1001.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1001.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1041",
+    "type": "video",
+    "description": "Calgary airport camera: transport helicopters discharging troops onto the runway.",
+    "coordinates": {
+      "lat": 51.1315,
+      "lon": -114.0106
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1041.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1041.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1016",
+    "type": "photo",
+    "description": "Esquimalt dockyard camera: first tanks ashore, forming up near the naval base perimeter.",
+    "coordinates": {
+      "lat": 48.44,
+      "lon": -123.4
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1016.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1016.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1060",
+    "type": "photo",
+    "description": "Nanaimo: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 49.1659,
+      "lon": -123.9401
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1060.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1060.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1098",
+    "type": "photo",
+    "description": "Regina: Downtown streets empty, businesses shuttered, distant smoke visible to the east.",
+    "coordinates": {
+      "lat": 50.4452,
+      "lon": -104.6189
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1098.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1098.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1061",
+    "type": "photo",
+    "description": "Moncton: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 46.0878,
+      "lon": -64.7782
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1061.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1061.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1099",
+    "type": "photo",
+    "description": "Kelowna: Highway 97 gridlocked, drivers abandoning vehicles to flee on foot toward the lake.",
+    "coordinates": {
+      "lat": 49.888,
+      "lon": -119.496
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1099.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1099.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_014",
+    "type": "video",
+    "description": "Pearson Airport perimeter camera: military transport helicopters discharging troops directly onto runway and taxiways. Assault teams moving toward terminal buildings. Armed resistance from airport security overrun within minutes.",
+    "coordinates": {
+      "lat": 43.6777,
+      "lon": -79.6248
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_014.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_014.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1040",
+    "type": "photo",
+    "description": "Winnipeg airport perimeter camera: terminal secured, troops moving to control tower.",
+    "coordinates": {
+      "lat": 49.91,
+      "lon": -97.24
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1040.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1040.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1062",
+    "type": "photo",
+    "description": "Iqaluit: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+    "coordinates": {
+      "lat": 63.7467,
+      "lon": -68.517
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1062.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1062.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1043",
+    "type": "photo",
+    "description": "Calgary airport perimeter camera: terminal secured, troops moving to control tower.",
+    "coordinates": {
+      "lat": 51.1315,
+      "lon": -114.0106
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1043.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1043.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1100",
+    "type": "photo",
+    "description": "Thunder Bay: Crowds moving away from the harbourfront after reports of aircraft overhead.",
+    "coordinates": {
+      "lat": 48.3809,
+      "lon": -89.2477
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1100.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1100.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1003",
+    "type": "video",
+    "description": "Highway 102 camera: lead tanks moving north at speed. Drone formation flying escort overhead.",
+    "coordinates": {
+      "lat": 44.85,
+      "lon": -63.45
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1003.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1003.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1018",
+    "type": "video",
+    "description": "Malahat summit camera: lead tanks climbing the grade. Drone formation flying escort overhead.",
+    "coordinates": {
+      "lat": 48.65,
+      "lon": -123.53
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1018.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1018.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1101",
+    "type": "photo",
+    "description": "Saskatoon: University area evacuated, streets empty except for emergency vehicles.",
+    "coordinates": {
+      "lat": 52.1332,
+      "lon": -106.67
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1101.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1101.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1102",
+    "type": "photo",
+    "description": "Charlottetown: Waterfront evacuated after reports of naval activity in the strait.",
+    "coordinates": {
+      "lat": 46.2382,
+      "lon": -63.1311
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1102.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1102.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_016",
+    "type": "video",
+    "description": "YVR Sea Island perimeter camera: transport helicopters landing on runway 08R. Troops deploying rapidly. Control tower under assault. YVR radar already dark from earlier Shahed strike.",
+    "coordinates": {
+      "lat": 49.1947,
+      "lon": -123.1839
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_016.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_016.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1103",
+    "type": "photo",
+    "description": "Prince George: Downtown core empty following province-wide emergency broadcast.",
+    "coordinates": {
+      "lat": 53.9171,
+      "lon": -122.7497
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1103.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1103.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1104",
+    "type": "photo",
+    "description": "Sudbury: Highway 17 backed up for kilometres, civilians heading north away from the corridor.",
+    "coordinates": {
+      "lat": 46.4917,
+      "lon": -80.993
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1104.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1104.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1006",
+    "type": "photo",
+    "description": "Truro town camera: lead tanks at the rail junction. Drone formation still overhead.",
+    "coordinates": {
+      "lat": 45.3648,
+      "lon": -63.2686
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1006.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1006.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1021",
+    "type": "photo",
+    "description": "Nanaimo camera: lead tanks near the BC Ferries terminal. Drone formation still overhead.",
+    "coordinates": {
+      "lat": 49.1659,
+      "lon": -123.9401
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1021.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1021.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1009",
+    "type": "video",
+    "description": "Highway 2 near Moncton: column visible at range, drone formation overhead providing recon.",
+    "coordinates": {
+      "lat": 46.05,
+      "lon": -64.55
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1009.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1009.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1024",
+    "type": "video",
+    "description": "Highway 19 near Parksville: column visible at range, drone formation overhead providing recon.",
+    "coordinates": {
+      "lat": 49.25,
+      "lon": -124.15
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1024.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1024.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1012",
+    "type": "photo",
+    "description": "Downtown Moncton \u2014 lead tank at the Petitcodiac River bridge. Urban combat beginning.",
+    "coordinates": {
+      "lat": 46.0878,
+      "lon": -64.7782
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1012.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1012.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_022",
+    "type": "photo",
+    "description": "Windsor camera Riverside Drive East: T-90 tanks and BTR-82A APCs on Canadian soil. Ka-52 helicopter visible above the column.",
+    "coordinates": {
+      "lat": 42.3149,
+      "lon": -83.0364
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_022.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_022.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1027",
+    "type": "photo",
+    "description": "Downtown Parksville \u2014 lead tank at the town centre. Urban combat beginning.",
+    "coordinates": {
+      "lat": 49.3183,
+      "lon": -124.3117
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_1027.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_1027.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1013",
+    "type": "video",
+    "description": "Greater Moncton Airport camera: troops from transport helicopters seizing the terminal, same pattern as Pearson and YVR.",
+    "coordinates": {
+      "lat": 46.11,
+      "lon": -64.68
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1013.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1013.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1028",
+    "type": "video",
+    "description": "Qualicum Beach airstrip camera: troops from transport helicopters seizing the runway, same pattern as Pearson and YVR.",
+    "coordinates": {
+      "lat": 49.3,
+      "lon": -124.29
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1028.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1028.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_024",
+    "type": "photo",
+    "description": "BC camera Pacific Highway: armored column entering Canada. Attack helicopters providing top cover.",
+    "coordinates": {
+      "lat": 49.0027,
+      "lon": -122.8004
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_024.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_024.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1105",
+    "type": "video",
+    "description": "Toronto: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1105.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1105.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_025",
+    "type": "photo",
+    "description": "Highway 401 east of Windsor: lead tanks at 55 km/h. Column 6 km. Ka-52s engaging resistance positions ahead.",
+    "coordinates": {
+      "lat": 42.4,
+      "lon": -82.95
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_025.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_025.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1106",
+    "type": "video",
+    "description": "Vancouver: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+    "coordinates": {
+      "lat": 49.2827,
+      "lon": -123.1207
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1106.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1106.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1107",
+    "type": "video",
+    "description": "Halifax: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+    "coordinates": {
+      "lat": 44.6488,
+      "lon": -63.5752
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1107.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1107.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1108",
+    "type": "video",
+    "description": "Winnipeg: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+    "coordinates": {
+      "lat": 49.91,
+      "lon": -97.24
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_1108.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_1108.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_028",
+    "type": "video",
+    "description": "Trans-Canada near Abbotsford: 35+ armored vehicles. Helicopter support overhead. Secondary force splitting onto Highway 9.",
+    "coordinates": {
+      "lat": 49.0504,
+      "lon": -122.3045
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_028.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_028.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_030",
+    "type": "photo",
+    "description": "London Ontario 401: lead T-90 at Wonderland Rd. Ka-52 helicopter strafing ahead. OPP roadblock overrun.",
+    "coordinates": {
+      "lat": 42.9849,
+      "lon": -81.2453
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_030.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_030.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_032",
+    "type": "photo",
+    "description": "London street cameras: mass civilian evacuation on foot on Richmond St North. Hundreds fleeing. Vehicles abandoned.",
+    "coordinates": {
+      "lat": 42.9849,
+      "lon": -81.2453
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_032.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_032.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_033",
+    "type": "video",
+    "description": "BC \u2014 Lougheed Highway Coquitlam: lead tank approaching Port Coquitlam. Helicopters over Burnaby Mountain engaging defenders.",
+    "coordinates": {
+      "lat": 49.2838,
+      "lon": -122.7932
+    },
+    "current_asset": "scenarios/05_invasion/assets/video/src_033.mp4",
+    "target_path": "scenarios/05_invasion/assets/video/src_033.mp4"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_035",
+    "type": "photo",
+    "description": "Highway 401 Mississauga Credit River: tanks inside GTA. Ka-52s ranging over Etobicoke.",
+    "coordinates": {
+      "lat": 43.589,
+      "lon": -79.6441
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_035.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_035.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_037",
+    "type": "photo",
+    "description": "Downtown Toronto \u2014 evacuation order in effect. Subway shut down. Streets empty. Helicopter rotor noise audible to the west.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_037.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_037.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_038",
+    "type": "photo",
+    "description": "BC \u2014 Burnaby Kingsway: tanks rolling west. Attack helicopters providing close air support. Fire at Metrotown.",
+    "coordinates": {
+      "lat": 49.2488,
+      "lon": -122.9805
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_038.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_038.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_040",
+    "type": "photo",
+    "description": "Highway 401 at Keele Toronto: lead tanks inside city limits. Ka-52 helicopters over downtown.",
+    "coordinates": {
+      "lat": 43.7,
+      "lon": -79.41
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_040.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_040.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_042",
+    "type": "photo",
+    "description": "Downtown Toronto \u2014 civilian resistance on King St West. Small arms fire from buildings. Helicopters firing rockets at building positions. Urban combat.",
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_042.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_042.png"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_043",
+    "type": "photo",
+    "description": "Vancouver \u2014 Burrard Street camera: lead tank at bridge north end entering downtown. Desant troops landing from helicopters at False Creek simultaneously.",
+    "coordinates": {
+      "lat": 49.2827,
+      "lon": -123.1207
+    },
+    "current_asset": "scenarios/05_invasion/assets/photo/src_043.jpg",
+    "target_path": "scenarios/05_invasion/assets/photo/src_043.png"
+  }
+]

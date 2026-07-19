@@ -124,7 +124,7 @@ blocks:
     bus_structure: null
     coordinate: [920, 644.0]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: epy_block_3
   id: epy_block
   parameters:

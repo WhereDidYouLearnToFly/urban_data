@@ -1,7 +1,7 @@
 {
   "id": "05_invasion",
   "name": "Full Scale Invasion",
-  "description": "Coordinated multi-domain attack: (1) Shahed drone swarm from three vectors; (2) attack helicopter formation and airborne desant drops seizing chokepoints ahead of ground columns; (3) mechanized armor crossing from south into Ontario and BC; (4) urban incursion with helicopter close air support. Approximately 60 minutes of real-time events.",
+  "description": "Coordinated multi-domain attack: (1) Shahed drone swarm from three vectors; (2) attack helicopter formation and airborne desant drops seizing chokepoints ahead of ground columns; (3) mechanized armor crossing from south into Ontario and BC; (4) urban incursion with helicopter close air support. Approximately 60 minutes of real-time events. Nationwide first strike also includes ship-launched drone waves from both coasts and strikes on airports, telecom infrastructure, and military bases across the Atlantic region, Pacific region, Prairies, Quebec, and the Arctic.",
   "loop": false,
   "speed_hint": "10x",
   "groups": {
@@ -24,10 +24,10 @@
       "suggestion": "Issue emergency broadcast. Order civilian shelter-in-place for Toronto."
     },
     "drone_impacts": {
-      "summary": "Shahed warheads detonating in Toronto, Ottawa, and both major airports — pattern consistent with pre-seizure softening.",
+      "summary": "Shahed warheads detonating in Toronto, Ottawa, and both major airports \u2014 pattern consistent with pre-seizure softening.",
       "main_event": "Shahed impacts confirmed: Toronto waterfront, Pearson Airport runway, Ottawa city centre, Ottawa Macdonald-Cartier Airport radar installation.",
       "prediction": "Airport strikes are not random. Disabling radar, comms, and active runways is standard pre-seizure preparation. Airborne desant assault on Pearson and Ottawa airports is likely imminent.",
-      "suggestion": "Evacuate Pearson and Ottawa Macdonald-Cartier airports immediately. Deploy armed response to both facilities. Prepare for helicopter-borne assault within 15–30 minutes."
+      "suggestion": "Evacuate Pearson and Ottawa Macdonald-Cartier airports immediately. Deploy armed response to both facilities. Prepare for helicopter-borne assault within 15\u201330 minutes."
     },
     "helicopter_gunships": {
       "summary": "Attack helicopter formation detected ahead of ground columns in both corridors.",
@@ -36,7 +36,7 @@
       "suggestion": "Warn all ground forces. MANPADS required. No Canadian air assets available to intercept."
     },
     "desant_ontario": {
-      "summary": "Airborne troops seizing Pearson Airport and Highway 403 chokepoints — confirming drone impact prediction.",
+      "summary": "Airborne troops seizing Pearson Airport and Highway 403 chokepoints \u2014 confirming drone impact prediction.",
       "main_event": "PREDICTION CONFIRMED. Desant troops assaulting Pearson International Airport. Simultaneous force on Highway 403 near Hamilton to block relief. Airport seizure in progress.",
       "prediction": "Pearson will be operational as hostile logistics hub within hours if not retaken. Ground column approach to Toronto now uncontested.",
       "suggestion": "Counterattack Pearson immediately or accept permanent loss of the facility. Last window for armed response is now."
@@ -48,13 +48,13 @@
       "suggestion": "Counterattack YVR or destroy runway infrastructure to deny use. All remaining BC forces to Vancouver perimeter."
     },
     "seismic_warning": {
-      "summary": "Simultaneous seismic signatures near Windsor and BC border — heavy vehicle convoy.",
+      "summary": "Simultaneous seismic signatures near Windsor and BC border \u2014 heavy vehicle convoy.",
       "main_event": "Coordinated ground movement on two fronts. Mechanized column confirmed.",
       "prediction": "Ontario column ETA London: 55 min. BC column ETA Vancouver: 90 min.",
       "suggestion": "Scramble surveillance. Notify CAF. Pre-position responders along both corridors."
     },
     "border_crossing_ontario": {
-      "summary": "Armored column crossing Ambassador Bridge Windsor — Canadian soil breached.",
+      "summary": "Armored column crossing Ambassador Bridge Windsor \u2014 Canadian soil breached.",
       "main_event": "Hostile armored column entering Canada at Windsor. T-90 tanks and BTR-82A APCs.",
       "prediction": "Column will reach London in approximately 60 minutes at current speed.",
       "suggestion": "Declare national emergency. Alert all law enforcement and military along 401 corridor."
@@ -66,52 +66,286 @@
       "suggestion": "Evacuate civilians from Highway 1 corridor. Alert BC military assets."
     },
     "column_ontario_inland": {
-      "summary": "Ontario column on 401 — Sarnia infantry confirmed, Windsor struck, helicopter support overhead.",
+      "summary": "Ontario column on 401 \u2014 Sarnia infantry confirmed, Windsor struck, helicopter support overhead.",
       "main_event": "Column advancing east on 401. Infantry in Sarnia. Ka-52s ranging ahead of column.",
       "prediction": "London Ontario at risk within 60 minutes.",
       "suggestion": "Evacuate London. Close Highway 401 to civilian traffic."
     },
     "column_bc_inland": {
-      "summary": "BC column past Chilliwack — secondary force splitting, helicopters over Fraser Valley.",
+      "summary": "BC column past Chilliwack \u2014 secondary force splitting, helicopters over Fraser Valley.",
       "main_event": "BC column past Chilliwack. Secondary force on Highway 9. Helicopters over Fraser Valley.",
       "prediction": "Metro Vancouver perimeter reached within 45 minutes.",
       "suggestion": "Begin civilian evacuation of Burnaby and Coquitlam."
     },
     "midprovince_ontario": {
-      "summary": "Column at London — hospital struck, helicopter strafing runs, mass evacuation.",
+      "summary": "Column at London \u2014 hospital struck, helicopter strafing runs, mass evacuation.",
       "main_event": "Tanks at London. Hospital area struck. Helicopter rocket strikes on defensive positions.",
       "prediction": "Column will reach Hamilton in approximately 2.5 hours.",
       "suggestion": "Abandon London. Fall back to Hamilton perimeter."
     },
     "midprovince_bc": {
-      "summary": "Column in Metro Vancouver — Second Narrows Bridge destroyed by helicopter strike.",
+      "summary": "Column in Metro Vancouver \u2014 Second Narrows Bridge destroyed by helicopter strike.",
       "main_event": "Tanks in Coquitlam. Second Narrows Bridge destroyed. North Shore isolated.",
       "prediction": "Vancouver downtown reachable in under 30 minutes.",
       "suggestion": "Prepare Burrard and Lions Gate bridges for emergency demolition."
     },
     "gta_approach": {
-      "summary": "Column inside GTA — Mississauga cameras confirm, Hamilton desant holding, no defensive line left.",
+      "summary": "Column inside GTA \u2014 Mississauga cameras confirm, Hamilton desant holding, no defensive line left.",
       "main_event": "Column inside GTA. Hamilton chokepoints held by desant. No viable line between column and Toronto.",
       "prediction": "Toronto city limits reachable in under 20 minutes.",
       "suggestion": "Activate Toronto emergency broadcast. Full civilian shelter-in-place."
     },
     "vancouver_approach": {
-      "summary": "Tanks in Burnaby — SFU struck by helicopter, Vancouver minutes away.",
+      "summary": "Tanks in Burnaby \u2014 SFU struck by helicopter, Vancouver minutes away.",
       "main_event": "Tanks in Burnaby. SFU seized. Vancouver downtown approach imminent.",
       "prediction": "Vancouver downtown reachable in under 15 minutes.",
       "suggestion": "Last window for civilian evacuation of downtown peninsula."
     },
     "toronto_urban": {
-      "summary": "Tanks inside Toronto — urban combat, Ka-52s over downtown.",
+      "summary": "Tanks inside Toronto \u2014 urban combat, Ka-52s over downtown.",
       "main_event": "Tanks inside Toronto. Urban combat at Gardiner. Helicopters strafing defensive positions downtown.",
       "prediction": null,
       "suggestion": "All civilian emergency services withdraw to pre-designated safe zones."
     },
     "vancouver_urban": {
-      "summary": "Tanks on Burrard Bridge and desant from helicopters at False Creek — Vancouver downtown breached.",
+      "summary": "Tanks on Burrard Bridge and desant from helicopters at False Creek \u2014 Vancouver downtown breached.",
       "main_event": "Vancouver downtown breached. Lead tank on Burrard Bridge. Desant landing at False Creek.",
       "prediction": null,
       "suggestion": null
+    },
+    "naval_launch_atlantic": {
+      "summary": "Unidentified vessel off Nova Scotia launching a drone swarm toward Halifax.",
+      "main_event": "RF and acoustic signatures confirm a container-sized vessel 400km off Nova Scotia launching Shahed-pattern drones.",
+      "prediction": "Swarm ETA Halifax: ~25 minutes at current heading and speed.",
+      "suggestion": "Task maritime patrol aircraft to the contact. Warn Halifax Regional and CFB Halifax."
+    },
+    "naval_launch_pacific": {
+      "summary": "Unidentified vessel off Vancouver Island launching a drone swarm toward Esquimalt.",
+      "main_event": "RF and acoustic signatures confirm a vessel 350km off the BC coast launching a drone swarm on an easterly heading.",
+      "prediction": "Swarm ETA Esquimalt/Victoria: ~20 minutes at current heading and speed.",
+      "suggestion": "Task RCAF patrol aircraft to the contact. Warn CFB Esquimalt and Victoria emergency services."
+    },
+    "strikes_atlantic_region": {
+      "summary": "Atlantic-launched swarm striking CFB Halifax, Halifax Stanfield Airport, and the Halifax transatlantic cable landing station.",
+      "main_event": "Confirmed strikes: CFB Halifax dockyard, Halifax Stanfield Airport, transatlantic cable landing station.",
+      "prediction": "Loss of the cable landing station degrades transatlantic connectivity nationally, not just regionally.",
+      "suggestion": "Activate backup satellite links. Deploy harbour defense. Evacuate CFB Halifax non-essential personnel."
+    },
+    "strikes_pacific_region": {
+      "summary": "Pacific-launched swarm striking CFB Esquimalt, CFB Comox, and the Bamfield transpacific cable landing station.",
+      "main_event": "Confirmed strikes: CFB Esquimalt naval dockyard, CFB Comox airbase, Bamfield transpacific cable landing station.",
+      "prediction": "Pacific Fleet's home port and the transpacific cable are both compromised in the same wave -- deliberate pairing.",
+      "suggestion": "Disperse remaining Pacific Fleet assets. Activate backup satellite links. Warn Victoria and Comox emergency services."
+    },
+    "strikes_prairies": {
+      "summary": "Drone strikes on CFB Winnipeg, Calgary International Airport, and CFB Edmonton -- attack has reached the Prairies.",
+      "main_event": "Confirmed strikes: CFB Winnipeg / James Richardson Airport, Calgary International Airport and adjacent telecom hub, CFB Edmonton Garrison.",
+      "prediction": "This is not a two-front war anymore. Every regional air mobility base is being taken off the board simultaneously.",
+      "suggestion": "Ground all civilian air traffic nationally. Disperse remaining CAF air assets from fixed bases."
+    },
+    "strikes_quebec": {
+      "summary": "Drone strikes on Montreal Trudeau Airport, CFB Valcartier, and CFB Bagotville -- Quebec's NORAD fighter base hit.",
+      "main_event": "Confirmed strikes: Montreal-Trudeau Airport and downtown telecom exchange, CFB Valcartier, CFB Bagotville fighter base.",
+      "prediction": "Bagotville is one of only two NORAD fighter-intercept bases in eastern Canada. Losing it removes the country's remaining air-defense response.",
+      "suggestion": "Disperse any airworthy CF-18s from Bagotville immediately if not already destroyed. Activate Quebec emergency broadcast."
+    },
+    "strikes_arctic": {
+      "summary": "Strike on the North Warning System radar site near Iqaluit -- the Arctic early-warning picture is now degraded.",
+      "main_event": "Confirmed strike on North Warning System radar installation, Iqaluit.",
+      "prediction": "Loss of this site creates a gap in northern approach radar coverage.",
+      "suggestion": "Request NORAD fill coverage from adjacent sites. Warn Iqaluit emergency services."
+    },
+    "strikes_ontario_military": {
+      "summary": "CFB Trenton and CFB Petawawa struck -- Ontario's main air mobility hub and army garrison both hit.",
+      "main_event": "Confirmed strikes: CFB Trenton (CAF air mobility hub), CFB Petawawa (army garrison).",
+      "prediction": "Trenton is the CAF's primary air transport base -- this strike degrades the ability to move CAF personnel and materiel domestically.",
+      "suggestion": "Disperse remaining air mobility assets from Trenton. Reinforce Petawawa perimeter."
+    },
+    "atlantic_landing_force": {
+      "summary": "Naval landing force putting troops and armor ashore near Halifax.",
+      "main_event": "Amphibious landing confirmed near Halifax \u2014 tanks and infantry disembarking under drone cover.",
+      "prediction": "This is a second invasion front, not just a strike wave. Expect a ground column advancing inland from the coast.",
+      "suggestion": "Scramble any available CAF reserve units to intercept before the column organizes."
+    },
+    "atlantic_column_advance": {
+      "summary": "Tank column moving out of the Halifax area toward Truro.",
+      "main_event": "Armored column advancing on Highway 102 toward Truro, drone escort overhead.",
+      "prediction": "Truro is a rail and highway junction \u2014 a natural next objective.",
+      "suggestion": "Evacuate Highway 102 corridor. Warn Truro emergency services."
+    },
+    "atlantic_column_inland": {
+      "summary": "Column reaches Truro \u2014 drone escort overhead, flanking infantry on foot.",
+      "main_event": "Confirmed tanks in Truro. Infantry flanking via secondary roads. Rail junction now contested.",
+      "prediction": "Truro connects onward to Moncton and the rest of the Maritimes \u2014 the column isn't stopping here.",
+      "suggestion": "Cut rail links if defensible. Warn Moncton and Fredericton."
+    },
+    "atlantic_approach_moncton": {
+      "summary": "Column approaching Moncton NB \u2014 drones ranging ahead, first resistance contact.",
+      "main_event": "Column crossed into New Brunswick, approaching Moncton. Local RCMP engaged, outmatched.",
+      "prediction": "Moncton is the Maritimes' logistics hub \u2014 same pattern as Pearson/YVR, a chokepoint objective.",
+      "suggestion": "Fall back from Moncton perimeter. Do not engage armor with small arms."
+    },
+    "atlantic_urban_moncton": {
+      "summary": "Tanks inside Moncton \u2014 urban combat, troops securing the airport.",
+      "main_event": "Moncton breached. Tanks in the downtown core. Greater Moncton Airport seized by desant troops.",
+      "prediction": null,
+      "suggestion": "All emergency services withdraw. Maritimes ground campaign now fully established."
+    },
+    "pacific_landing_force": {
+      "summary": "Naval landing force putting troops and armor ashore near Esquimalt.",
+      "main_event": "Amphibious landing confirmed near Esquimalt \u2014 Pacific Fleet's home port now also a ground invasion beachhead.",
+      "prediction": "A second landing on top of the naval strike -- Vancouver Island is now a ground front, not just an air target.",
+      "suggestion": "Scramble any available CAF reserve or RCMP tactical units on the Island to slow the advance."
+    },
+    "pacific_column_advance": {
+      "summary": "Tank column moving up-island on the Trans-Canada toward Nanaimo.",
+      "main_event": "Armored column advancing north on Highway 1/the Malahat, drone escort overhead.",
+      "prediction": "Nanaimo is the Island's ferry and highway junction to the mainland \u2014 a natural next objective.",
+      "suggestion": "Evacuate the Malahat corridor. Warn Nanaimo emergency services and BC Ferries."
+    },
+    "pacific_column_inland": {
+      "summary": "Column reaches Nanaimo \u2014 drone escort overhead, flanking infantry on foot.",
+      "main_event": "Confirmed tanks in Nanaimo. Infantry flanking via secondary roads. Ferry terminal now contested.",
+      "prediction": "Nanaimo's ferry terminal is the Island's main link to the mainland \u2014 losing it isolates the Island further.",
+      "suggestion": "Disable or hold the ferry terminal. Warn Parksville and points north."
+    },
+    "pacific_approach_parksville": {
+      "summary": "Column approaching Parksville \u2014 drones ranging ahead, first resistance contact.",
+      "main_event": "Column continuing north from Nanaimo toward Parksville. Local RCMP engaged, outmatched.",
+      "prediction": "Central Island logistics and highway junction \u2014 same chokepoint pattern as every other objective so far.",
+      "suggestion": "Fall back from Parksville perimeter. Do not engage armor with small arms."
+    },
+    "pacific_urban_parksville": {
+      "summary": "Tanks inside Parksville \u2014 urban combat, troops securing the regional airport.",
+      "main_event": "Parksville breached. Tanks in the town centre. Regional airstrip seized by desant troops.",
+      "prediction": null,
+      "suggestion": "All emergency services withdraw. Central Vancouver Island now fully under ground assault."
+    },
+    "drone_formation_prairies": {
+      "summary": "Drone formation tracked inbound over the Prairies ahead of the strike wave.",
+      "main_event": "Shahed-pattern formation confirmed over Saskatchewan/Manitoba airspace, multiple units.",
+      "prediction": "Formation splitting toward Winnipeg, Regina, and Calgary \u2014 one wave, three targets.",
+      "suggestion": "Warn all three cities simultaneously. No time to sequence responses."
+    },
+    "drone_formation_quebec": {
+      "summary": "Drone formation tracked inbound over Quebec ahead of the strike wave.",
+      "main_event": "Shahed-pattern formation confirmed over the Eastern Townships, splitting toward Montreal and Saguenay.",
+      "prediction": "Two of eastern Canada's most important sites -- an international airport and a NORAD fighter base -- hit by the same wave.",
+      "suggestion": "Scramble Bagotville's alert fighters immediately if not already too late."
+    },
+    "drone_formation_arctic": {
+      "summary": "Drone formation tracked on the polar approach ahead of the Iqaluit strike.",
+      "main_event": "Shahed-pattern formation confirmed on the polar route, consistent with the earlier Ellesmere Island contact.",
+      "prediction": "Same wave as the original polar vector \u2014 now confirmed reaching a populated target.",
+      "suggestion": "Warn Iqaluit directly. No local air defense exists this far north."
+    },
+    "drone_formation_ontario_mil": {
+      "summary": "Drone formation tracked ahead of the Trenton/Petawawa strikes.",
+      "main_event": "Shahed-pattern formation confirmed over eastern Ontario, splitting toward two CAF bases.",
+      "prediction": "CAF's main air-mobility hub and largest eastern army garrison targeted by the same wave.",
+      "suggestion": "Scramble any available response to Trenton and Petawawa simultaneously."
+    },
+    "desant_winnipeg": {
+      "summary": "Airborne troops seizing Winnipeg / James Richardson Airport after the earlier strike.",
+      "main_event": "Desant troops confirmed seizing Winnipeg / James Richardson Airport, same pattern as Pearson and YVR.",
+      "prediction": "Winnipeg is now cut off from federal air mobility response.",
+      "suggestion": "Counterattack Winnipeg / James Richardson Airport or accept the loss of the facility."
+    },
+    "desant_calgary": {
+      "summary": "Airborne troops seizing Calgary International Airport after the earlier strike.",
+      "main_event": "Desant troops confirmed seizing Calgary International Airport, same pattern as Pearson and YVR.",
+      "prediction": "Calgary is now cut off from federal air mobility response.",
+      "suggestion": "Counterattack Calgary International Airport or accept the loss of the facility."
+    },
+    "desant_montreal": {
+      "summary": "Airborne troops seizing Montreal-Trudeau Airport after the earlier strike.",
+      "main_event": "Desant troops confirmed seizing Montreal-Trudeau Airport, same pattern as Pearson and YVR.",
+      "prediction": "Montreal is now cut off from federal air mobility response.",
+      "suggestion": "Counterattack Montreal-Trudeau Airport or accept the loss of the facility."
+    },
+    "national_ham_network": {
+      "summary": "A national ham radio network realizing the attack spans the entire country.",
+      "main_event": "Operators from eight provinces/territories independently confirming simultaneous activity in their area.",
+      "prediction": "This confirms the scale: every region of Canada is affected within the same hour.",
+      "suggestion": "Use the ham network as an improvised national situational picture -- official channels are overloaded."
+    },
+    "evacuation_reports": {
+      "summary": "Evacuation orders issued across multiple already-struck cities.",
+      "main_event": "Local authorities in eight cities independently ordering civilian evacuation from strike zones.",
+      "prediction": null,
+      "suggestion": "Coordinate evacuation routes nationally where possible -- avoid routing evacuees into the ground-invasion corridors."
+    },
+    "resistance_reports": {
+      "summary": "Scattered CAF and reserve units attempting to organize a response.",
+      "main_event": "Multiple CAF garrisons reporting they are attempting to mobilize despite losses from the strike wave.",
+      "prediction": "These are the only organized Canadian military response currently forming anywhere in the country.",
+      "suggestion": "Coordinate scattered units into a single chain of command as quickly as possible."
+    },
+    "power_grid_attacks": {
+      "summary": "Coordinated strikes on regional power grid infrastructure.",
+      "main_event": "Six regional substations struck in the same wave as the airport/military strikes -- infrastructure denial is systematic.",
+      "prediction": "Rolling blackouts likely in every affected region within the hour.",
+      "suggestion": "Prioritize grid black-start plans. Warn hospitals to switch to backup power now."
+    },
+    "additional_rf_tracking_east": {
+      "summary": "Additional RF contacts as the original Atlantic/border swarms continue inland.",
+      "main_event": "Multiple additional drone contacts tracked continuing west and south from the original three vectors.",
+      "prediction": "The swarm is not concentrated on a few targets -- it is spreading out to maximize coverage.",
+      "suggestion": "Widen the warning area. Assume any city within range is a potential target."
+    },
+    "additional_rf_tracking_west": {
+      "summary": "Additional RF contacts as the western swarms continue inland.",
+      "main_event": "Multiple additional drone contacts tracked continuing east from the Pacific vector.",
+      "prediction": "Same spreading pattern as the east -- coverage over as much of the country as possible.",
+      "suggestion": "Widen the warning area for BC and Alberta interior."
+    },
+    "additional_seismic_detection": {
+      "summary": "Seismic sensors picking up additional vehicle/armor movement nationally.",
+      "main_event": "Six additional seismic detections nationwide consistent with vehicle convoys, not yet visually confirmed.",
+      "prediction": "Possible additional ground movement building beyond the two confirmed columns.",
+      "suggestion": "Task available surveillance to confirm or rule out these seismic contacts."
+    },
+    "caf_mobilization": {
+      "summary": "CAF units nationwide attempting to mobilize a coordinated response.",
+      "main_event": "Six CAF formations reporting mobilization status despite degraded bases and equipment losses.",
+      "prediction": "This is the first coordinated (if still fragmentary) CAF response since the attack began.",
+      "suggestion": "Establish a single national command net linking all reporting units."
+    },
+    "civilian_impact_reports": {
+      "summary": "Civilian scene reports from cities not directly struck, reacting to the national situation.",
+      "main_event": "Widespread civilian movement and business closures nationwide, even in cities without direct strikes.",
+      "prediction": null,
+      "suggestion": "Issue a single national calm-and-shelter broadcast rather than city-by-city messaging."
+    },
+    "drone_recon_secondary": {
+      "summary": "Follow-up drone surveillance over already-struck major cities.",
+      "main_event": "Small recon drones re-observing already-struck cities, likely for battle damage assessment.",
+      "prediction": "This is standard follow-up ISR behaviour -- confirms a deliberate, doctrinal campaign, not a one-off attack.",
+      "suggestion": "Log all recon sightings \u2014 pattern is useful intelligence on what target types they're prioritizing."
+    },
+    "secondary_telecom_strikes": {
+      "summary": "Additional telecom infrastructure struck in the two original theaters.",
+      "main_event": "Confirms telecom is a deliberate target category nationwide, not just at newly-struck cities.",
+      "prediction": null,
+      "suggestion": "Activate emergency backup communications for both metro areas immediately."
+    },
+    "final_wave_reports": {
+      "summary": "A final wave of citizen/ham reports confirming the attack has touched every region of the country.",
+      "main_event": "Reports received from 17 additional cities/towns in the same hour, completing near-total national coverage.",
+      "prediction": null,
+      "suggestion": "Compile the full national picture from these reports for the after-action record."
+    },
+    "alaska_drone_wave": {
+      "summary": "A dozen simultaneous drones crossing from Alaska, tracked by RF monitor and citizen ham reports, converging on Whitehorse airport and comms.",
+      "main_event": "Confirmed: 12-strong drone swarm crossed from Alaska near Beaver Creek YT, converged on and struck Whitehorse airport and the CBC North transmission tower.",
+      "prediction": "Northern communications relay capacity is now degraded on top of the southern strikes -- the north is not being spared.",
+      "suggestion": "Task any available northern radar/patrol assets to the Alaska border. Warn remaining Yukon/NWT communities directly."
+    },
+    "pacific_coastguard_wave": {
+      "summary": "A dozen simultaneous drones launched from a disguised vessel in the open Pacific, spotted visually by Coast Guard, converging on Prince Rupert then reaching inland to Kamloops.",
+      "main_event": "Confirmed: 12-strong drone swarm launched from a fishing-vessel-disguised platform west of Haida Gwaii, converged on Prince Rupert and reached inland to Kamloops.",
+      "prediction": "This is a third simultaneous naval-launched wave (with the earlier Halifax/Esquimalt vessels) -- the ocean-launch pattern is now confirmed doctrine, not a one-off.",
+      "suggestion": "Task Coast Guard and any patrol aircraft to intercept similar disguised vessels along both coasts."
     }
   },
   "events": [
@@ -121,7 +355,10 @@
         "id": "src_001",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
@@ -136,15 +373,23 @@
         "id": "src_002",
         "type": "fft",
         "data": null,
-        "coordinates": { "lat": 44.0, "lon": -53.0 },
+        "coordinates": {
+          "lat": 44.0,
+          "lon": -53.0
+        },
         "tag_id": "rf_detection",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "drone_photo",
           "level": 7,
-          "description": "PHASE 1 — DRONE ATTACK. RF anomaly over Atlantic — Shahed-136 signature at 900 MHz. Bearing 065°, ~620 km from Nova Scotia.",
+          "description": "RF anomaly over Atlantic \u2014 Shahed-136 signature at 900 MHz. Bearing 065\u00b0, ~620 km from Nova Scotia.",
           "confidence": 0.68
-        }
+        },
+        "heading_deg": 275,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_wave",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
       }
     },
     {
@@ -153,15 +398,20 @@
         "id": "src_003",
         "type": "fft",
         "data": null,
-        "coordinates": { "lat": 47.5, "lon": -69.5 },
+        "coordinates": {
+          "lat": 47.5,
+          "lon": -69.5
+        },
         "tag_id": "rf_detection",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "drone_photo",
           "level": 7,
-          "description": "PHASE 1. RF cluster Maine/NB border — multiple contacts in formation heading northwest into Canada.",
+          "description": "RF cluster Maine/NB border \u2014 multiple contacts in formation heading northwest into Canada.",
           "confidence": 0.74
-        }
+        },
+        "heading_deg": 315,
+        "speed_kmh": 180
       }
     },
     {
@@ -170,15 +420,184 @@
         "id": "src_004",
         "type": "fft",
         "data": null,
-        "coordinates": { "lat": 83.0, "lon": -80.0 },
+        "coordinates": {
+          "lat": 83.0,
+          "lon": -80.0
+        },
         "tag_id": "rf_detection",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "drone_photo",
           "level": 8,
-          "description": "PHASE 1. RF contact polar route — Ellesmere Island. Third wave inbound. Three simultaneous vectors confirmed.",
+          "description": "RF contact polar route \u2014 Ellesmere Island. Third wave inbound. Three simultaneous vectors confirmed.",
           "confidence": 0.65
-        }
+        },
+        "heading_deg": 180,
+        "speed_kmh": 180
+      }
+    },
+    {
+      "offset_seconds": 60,
+      "source": {
+        "id": "src_100",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.0,
+          "lon": -58.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF anomaly 400km off Nova Scotia \u2014 signature consistent with shipborne drone launch tubes, not airborne contact.",
+          "confidence": 0.66
+        },
+        "tag_id": "naval_launch_atlantic",
+        "tag_total": 3,
+        "heading_deg": 292,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_naval_wave",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 65,
+      "source": {
+        "id": "src_110",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3,
+          "lon": -128.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF anomaly 350km off Vancouver Island \u2014 shipborne drone launch signature, no AIS transponder.",
+          "confidence": 0.67
+        },
+        "tag_id": "naval_launch_pacific",
+        "tag_total": 3,
+        "heading_deg": 88,
+        "speed_kmh": 180,
+        "predicted_track_id": "pacific_naval_wave",
+        "target_lat": 48.431,
+        "target_lon": -123.4396
+      }
+    },
+    {
+      "offset_seconds": 75,
+      "source": {
+        "id": "src_101",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.0,
+          "lon": -58.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "Maritime patrol acoustic buoy: heavy vessel engine signature at the RF contact position. Non-standard hull, no AIS transponder.",
+          "confidence": 0.71
+        },
+        "tag_id": "naval_launch_atlantic",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 80,
+      "source": {
+        "id": "src_111",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3,
+          "lon": -128.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "RCAF maritime patrol acoustic contact: heavy vessel engine signature. Non-standard hull profile, no transponder.",
+          "confidence": 0.7
+        },
+        "tag_id": "naval_launch_pacific",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 90,
+      "source": {
+        "id": "src_102",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.0,
+          "lon": -58.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "Second RF cluster from the same vessel \u2014 multiple simultaneous launch signatures. Full swarm airborne, heading toward Nova Scotia.",
+          "confidence": 0.73
+        },
+        "tag_id": "naval_launch_atlantic",
+        "tag_total": 3,
+        "heading_deg": 292,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_naval_wave",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 95,
+      "source": {
+        "id": "src_112",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3,
+          "lon": -128.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "Second RF cluster \u2014 full swarm airborne from the same vessel, heading toward Vancouver Island.",
+          "confidence": 0.72
+        },
+        "tag_id": "naval_launch_pacific",
+        "tag_total": 3,
+        "heading_deg": 88,
+        "speed_kmh": 180,
+        "predicted_track_id": "pacific_naval_wave",
+        "target_lat": 48.431,
+        "target_lon": -123.4396
+      }
+    },
+    {
+      "offset_seconds": 95,
+      "source": {
+        "id": "src_1034",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 70.0,
+          "lon": -75.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact continuing south on the polar route, consistent with the Ellesmere Island vector.",
+          "confidence": 0.68
+        },
+        "tag_id": "drone_formation_arctic",
+        "tag_total": 2,
+        "heading_deg": 160,
+        "speed_kmh": 180,
+        "target_lat": 63.7467,
+        "target_lon": -68.517
       }
     },
     {
@@ -187,15 +606,83 @@
         "id": "src_005",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 44.6476, "lon": -63.5728 },
+        "coordinates": {
+          "lat": 44.6476,
+          "lon": -63.5728
+        },
         "tag_id": "acoustic_confirmation",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "drone_video",
           "level": 8,
-          "description": "PHASE 1. Halifax acoustic array: two-stroke piston hum — Shahed propulsion confirmed. 10–15 units.",
+          "description": "Halifax acoustic array: two-stroke piston hum \u2014 Shahed propulsion confirmed. 10\u201315 units.",
           "confidence": 0.84
-        }
+        },
+        "heading_deg": 270,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_wave",
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 100,
+      "source": {
+        "id": "src_1047",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9636,
+          "lon": -66.6431
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Fredericton NB ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 108,
+      "source": {
+        "id": "src_1035",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 66.0,
+          "lon": -70.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "Northern acoustic buoy: propulsion signature confirmed, formation continuing toward Iqaluit.",
+          "confidence": 0.7
+        },
+        "tag_id": "drone_formation_arctic",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 112,
+      "source": {
+        "id": "src_1048",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.4452,
+          "lon": -104.6189
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Regina SK ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
       }
     },
     {
@@ -204,15 +691,282 @@
         "id": "src_006",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 47.5600, "lon": -52.7126 },
+        "coordinates": {
+          "lat": 47.56,
+          "lon": -52.7126
+        },
         "tag_id": "acoustic_confirmation",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 7,
-          "description": "PHASE 1. Ham radio St. John's NL: 'Dozens of them — like lawn mowers flying low and fast heading west. No lights.'",
+          "description": "Ham radio St. John's NL: 'Dozens of them \u2014 like lawn mowers flying low and fast heading west. No lights.'",
           "confidence": 0.78
         }
+      }
+    },
+    {
+      "offset_seconds": 120,
+      "source": {
+        "id": "src_160",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Iqaluit \u2014 North Warning System radar installation struck. Northern approach radar coverage degraded.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_arctic",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 124,
+      "source": {
+        "id": "src_1049",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 52.1332,
+          "lon": -106.67
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Saskatoon SK ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 130,
+      "source": {
+        "id": "src_1032",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.8,
+          "lon": -72.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF cluster Eastern Townships \u2014 formation splitting toward Montreal and the Saguenay region.",
+          "confidence": 0.71
+        },
+        "tag_id": "drone_formation_quebec",
+        "tag_total": 2,
+        "heading_deg": 249,
+        "speed_kmh": 180,
+        "target_lat": 45.4706,
+        "target_lon": -73.7408
+      }
+    },
+    {
+      "offset_seconds": 130,
+      "source": {
+        "id": "src_1077",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 46.5,
+          "lon": -66.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 135,
+      "source": {
+        "id": "src_161",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Iqaluit ham radio: 'The radar station is burning. We saw one drone, low, then the explosion. No warning at all.'",
+          "confidence": 0.75
+        },
+        "tag_id": "strikes_arctic",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 136,
+      "source": {
+        "id": "src_1050",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3809,
+          "lon": -89.2477
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Thunder Bay ON ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 140,
+      "source": {
+        "id": "src_1078",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 47.2,
+          "lon": -68.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 140,
+      "source": {
+        "id": "src_1081",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 49.5,
+          "lon": -119.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 142,
+      "source": {
+        "id": "src_1033",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.3,
+          "lon": -72.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "Acoustic contact near Trois-Rivi\u00e8res: propulsion signature consistent with the earlier confirmed pattern.",
+          "confidence": 0.76
+        },
+        "tag_id": "drone_formation_quebec",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 148,
+      "source": {
+        "id": "src_1051",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.888,
+          "lon": -119.496
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Kelowna BC ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 150,
+      "source": {
+        "id": "src_150",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Montreal-Trudeau Airport \u2014 runway and downtown telecom exchange struck within seconds of each other.",
+          "confidence": 0.93
+        },
+        "tag_id": "strikes_quebec",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 150,
+      "source": {
+        "id": "src_1079",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9,
+          "lon": -70.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 150,
+      "source": {
+        "id": "src_1082",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 51.5,
+          "lon": -116.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
       }
     },
     {
@@ -221,15 +975,98 @@
         "id": "src_007",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "tag_id": "visual_ottawa",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "drone_photo",
           "level": 9,
-          "description": "PHASE 1. Ottawa security camera: delta-wing silhouettes at ~150 m altitude. 8–12 units heading southwest toward Toronto.",
+          "description": "Ottawa security camera: delta-wing silhouettes at ~150 m altitude. 8\u201312 units heading southwest toward Toronto.",
           "confidence": 0.91
         }
+      }
+    },
+    {
+      "offset_seconds": 160,
+      "source": {
+        "id": "src_151",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.9486,
+          "lon": -71.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Valcartier perimeter camera: impact on vehicle depot. Fire visible across multiple buildings.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_quebec",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 160,
+      "source": {
+        "id": "src_1052",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Whitehorse YT ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 160,
+      "source": {
+        "id": "src_1080",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.8,
+          "lon": -71.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 160,
+      "source": {
+        "id": "src_1083",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 53.0,
+          "lon": -118.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
       }
     },
     {
@@ -238,15 +1075,866 @@
         "id": "src_008",
         "type": "video",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "tag_id": "visual_ottawa",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "drone_video",
           "level": 9,
-          "description": "PHASE 1. Ottawa traffic camera: Shahed formation overflying Rideau Canal at ~180 km/h heading 225° toward Toronto.",
+          "description": "Ottawa traffic camera: Shahed formation overflying Rideau Canal at ~180 km/h heading 225\u00b0 toward Toronto.",
           "confidence": 0.95
-        }
+        },
+        "heading_deg": 235,
+        "speed_kmh": 180,
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 170,
+      "source": {
+        "id": "src_1084",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.5,
+          "lon": -114.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 172,
+      "source": {
+        "id": "src_1053",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 62.454,
+          "lon": -114.3718
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Yellowknife NT ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 175,
+      "source": {
+        "id": "src_152",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3306,
+          "lon": -70.9964
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Explosion CFB Bagotville \u2014 flight line struck. One of only two NORAD fighter-intercept bases in eastern Canada now offline.",
+          "confidence": 0.94
+        },
+        "tag_id": "strikes_quebec",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 183.3,
+      "source": {
+        "id": "src_2101",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 60.52636533183009,
+          "lon": -141.29367337742224
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.74
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 86,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_1"
+      }
+    },
+    {
+      "offset_seconds": 184,
+      "source": {
+        "id": "src_1054",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.2382,
+          "lon": -63.1311
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Charlottetown PE ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 185,
+      "source": {
+        "id": "src_120",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.666,
+          "lon": -63.596
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion CFB Halifax \u2014 dockyard struck. Fires visible from across the harbour.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 185.8,
+      "source": {
+        "id": "src_2102",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 61.117651667653405,
+          "lon": -141.45750868433663
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.73
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 97,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_2"
+      }
+    },
+    {
+      "offset_seconds": 187.3,
+      "source": {
+        "id": "src_2104",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 61.91349963700138,
+          "lon": -141.4334351276816
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.72
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 112,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_4"
+      }
+    },
+    {
+      "offset_seconds": 187.3,
+      "source": {
+        "id": "src_2103",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 61.81032816268015,
+          "lon": -140.4115191172722
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.63
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 113,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_3"
+      }
+    },
+    {
+      "offset_seconds": 188.3,
+      "source": {
+        "id": "src_2201",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.21423320403318,
+          "lon": -132.12235732341418
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.73
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 16,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_1"
+      }
+    },
+    {
+      "offset_seconds": 189.3,
+      "source": {
+        "id": "src_2202",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.362636419724936,
+          "lon": -130.63645944897172
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.73
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 3,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_2"
+      }
+    },
+    {
+      "offset_seconds": 190,
+      "source": {
+        "id": "src_130",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.431,
+          "lon": -123.4396
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion CFB Esquimalt \u2014 Pacific Fleet home dockyard struck.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 190.5,
+      "source": {
+        "id": "src_2105",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.10766763346588,
+          "lon": -141.7352207213651
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.66
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 128,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_5"
+      }
+    },
+    {
+      "offset_seconds": 190.8,
+      "source": {
+        "id": "src_2203",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.64776005209605,
+          "lon": -131.90790950735726
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.68
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 15,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_3"
+      }
+    },
+    {
+      "offset_seconds": 195,
+      "source": {
+        "id": "src_121",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.8808,
+          "lon": -63.5086
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Halifax Stanfield Airport camera: runway impact. Terminal evacuated, all flights grounded.",
+          "confidence": 0.93
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 196.7,
+      "source": {
+        "id": "src_2204",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.43465556206857,
+          "lon": -132.81257311896454
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.78
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 28,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_4"
+      }
+    },
+    {
+      "offset_seconds": 196.9,
+      "source": {
+        "id": "src_2106",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.145004240110815,
+          "lon": -141.4396484999428
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.67
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 130,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_6"
+      }
+    },
+    {
+      "offset_seconds": 198.2,
+      "source": {
+        "id": "src_2107",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.51275432093021,
+          "lon": -141.76892670427495
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.67
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 133,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_7"
+      }
+    },
+    {
+      "offset_seconds": 198.7,
+      "source": {
+        "id": "src_2108",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.70719406614311,
+          "lon": -140.4153402536049
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.74
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 142,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_8"
+      }
+    },
+    {
+      "offset_seconds": 199.3,
+      "source": {
+        "id": "src_2205",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.477453546987746,
+          "lon": -133.44245848537352
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.75
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 34,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_5"
+      }
+    },
+    {
+      "offset_seconds": 200,
+      "source": {
+        "id": "src_131",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.7167,
+          "lon": -124.8867
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Comox perimeter camera: impact on flight line. Search-and-rescue squadron hangar burning.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 201.6,
+      "source": {
+        "id": "src_2206",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.87867131638992,
+          "lon": -135.04939087409687
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.75
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 50,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_6"
+      }
+    },
+    {
+      "offset_seconds": 202.1,
+      "source": {
+        "id": "src_2207",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 52.08743022695836,
+          "lon": -133.55329177805606
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.79
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 42,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_7"
+      }
+    },
+    {
+      "offset_seconds": 202.5,
+      "source": {
+        "id": "src_2109",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.74913593525389,
+          "lon": -140.44966608875225
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.64
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 142,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_9"
+      }
+    },
+    {
+      "offset_seconds": 203.1,
+      "source": {
+        "id": "src_2208",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.702946512504155,
+          "lon": -136.74236070113906
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.71
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 81,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_8"
+      }
+    },
+    {
+      "offset_seconds": 204.9,
+      "source": {
+        "id": "src_2209",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.785417598156776,
+          "lon": -136.05695832281128
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.67
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 81,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_9"
+      }
+    },
+    {
+      "offset_seconds": 205,
+      "source": {
+        "id": "src_122",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the Halifax transatlantic cable landing station \u2014 international connectivity degraded, not just local.",
+          "confidence": 0.87
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 205.1,
+      "source": {
+        "id": "src_2110",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.841261831890456,
+          "lon": -141.28924181732648
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.73
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 139,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_10"
+      }
+    },
+    {
+      "offset_seconds": 206.4,
+      "source": {
+        "id": "src_2111",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 66.6915322784386,
+          "lon": -140.26344638383188
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.77
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 161,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_11"
+      }
+    },
+    {
+      "offset_seconds": 208.8,
+      "source": {
+        "id": "src_2210",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.789155756531734,
+          "lon": -136.65933393003573
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.76
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 82,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_10"
+      }
+    },
+    {
+      "offset_seconds": 209.7,
+      "source": {
+        "id": "src_2112",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 66.86530054318946,
+          "lon": -140.51298983448558
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.67
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 161,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_12"
+      }
+    },
+    {
+      "offset_seconds": 210,
+      "source": {
+        "id": "src_132",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.834,
+          "lon": -125.136
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the Bamfield transpacific cable landing station \u2014 paired with the Halifax strike, both coasts' international links targeted together.",
+          "confidence": 0.86
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 210,
+      "source": {
+        "id": "src_1030",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.5,
+          "lon": -102.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF cluster over southern Saskatchewan \u2014 formation splitting toward multiple Prairie targets.",
+          "confidence": 0.72
+        },
+        "tag_id": "drone_formation_prairies",
+        "tag_total": 2,
+        "heading_deg": 101,
+        "speed_kmh": 180,
+        "target_lat": 49.91,
+        "target_lon": -97.24
+      }
+    },
+    {
+      "offset_seconds": 210,
+      "source": {
+        "id": "src_1044",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Trudeau Airport camera: transport helicopters discharging troops onto the runway.",
+          "confidence": 0.92
+        },
+        "tag_id": "desant_montreal",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 210.4,
+      "source": {
+        "id": "src_2211",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 54.41310403675432,
+          "lon": -137.25369804206147
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.77
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 91,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_11"
+      }
+    },
+    {
+      "offset_seconds": 214.8,
+      "source": {
+        "id": "src_2212",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 54.96600719060011,
+          "lon": -135.56412994414436
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.69
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 102,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_12"
       }
     },
     {
@@ -255,15 +1943,98 @@
         "id": "src_009",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "drone_impacts",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 10,
-          "description": "PHASE 1. Explosion — Shahed-136 warhead detonation downtown Toronto near Union Station.",
+          "description": "Explosion \u2014 Shahed-136 warhead detonation downtown Toronto near Union Station.",
           "confidence": 0.97
         }
+      }
+    },
+    {
+      "offset_seconds": 215,
+      "source": {
+        "id": "src_123",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 47.5615,
+          "lon": -52.7126
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "St. John's ham radio: 'Halifax is being hit hard. We're hearing it on the marine band before it's even on the news.'",
+          "confidence": 0.79
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 220,
+      "source": {
+        "id": "src_133",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.4284,
+          "lon": -123.3656
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Victoria ham radio: 'Esquimalt dockyard is on fire. This isn't Ontario and BC anymore, it's everywhere at once.'",
+          "confidence": 0.8
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 222,
+      "source": {
+        "id": "src_2113",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Whitehorse ham radio: 'I count twelve of them, all together, all heading for the airport and the tower.'",
+          "confidence": 0.8
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14
+      }
+    },
+    {
+      "offset_seconds": 222,
+      "source": {
+        "id": "src_1031",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 50.2,
+          "lon": -105.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Highway camera near Regina: delta-wing silhouettes low and fast, heading in three directions.",
+          "confidence": 0.85
+        },
+        "tag_id": "drone_formation_prairies",
+        "tag_total": 2
       }
     },
     {
@@ -272,15 +2043,102 @@
         "id": "src_010",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6820, "lon": -79.6200 },
+        "coordinates": {
+          "lat": 43.682,
+          "lon": -79.62
+        },
         "tag_id": "drone_impacts",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 10,
-          "description": "PHASE 1. Pearson Airport perimeter camera: impact on runway 06L. Blast crater visible. Radar tower destroyed. All aircraft grounded. Fire suppression active.",
+          "description": "Pearson Airport perimeter camera: impact on runway 06L. Blast crater visible. Radar tower destroyed. All aircraft grounded. Fire suppression active.",
           "confidence": 0.97
         }
+      }
+    },
+    {
+      "offset_seconds": 225,
+      "source": {
+        "id": "src_1045",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Ham radio near Trudeau: 'Soldiers everywhere on the tarmac. Montreal's biggest airport is gone.'",
+          "confidence": 0.85
+        },
+        "tag_id": "desant_montreal",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 227,
+      "source": {
+        "id": "src_2213",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 54.315,
+          "lon": -130.3208
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Prince Rupert \u2014 airport runway and port communications relay both struck within the same minute, all twelve contacts converging together.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14
+      }
+    },
+    {
+      "offset_seconds": 230,
+      "source": {
+        "id": "src_140",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Winnipeg \u2014 CFB Winnipeg / James Richardson Airport shared runway struck.",
+          "confidence": 0.91
+        },
+        "tag_id": "strikes_prairies",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 230,
+      "source": {
+        "id": "src_1036",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6,
+          "lon": -77.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF cluster east of Toronto \u2014 formation splitting toward Trenton and Petawawa.",
+          "confidence": 0.72
+        },
+        "tag_id": "drone_formation_ontario_mil",
+        "tag_total": 2,
+        "heading_deg": 218,
+        "speed_kmh": 180,
+        "target_lat": 44.1198,
+        "target_lon": -77.5288
       }
     },
     {
@@ -289,15 +2147,78 @@
         "id": "src_011",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "tag_id": "drone_impacts",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 10,
-          "description": "PHASE 1. Explosion Ottawa — Macdonald-Cartier Airport. Radar installation destroyed. Control tower struck. Airport now non-operational. Pattern: both major Ontario airports hit within 20 seconds.",
+          "description": "Explosion Ottawa \u2014 Macdonald-Cartier Airport. Radar installation destroyed. Control tower struck. Airport now non-operational. Pattern: both major Ontario airports hit within 20 seconds.",
           "confidence": 0.95
         }
+      }
+    },
+    {
+      "offset_seconds": 237,
+      "source": {
+        "id": "src_2114",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Whitehorse \u2014 Erik Nielsen Whitehorse International Airport struck. CBC North transmission tower hit within seconds, cutting territorial broadcast and much of the north's communications relay.",
+          "confidence": 0.91
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14
+      }
+    },
+    {
+      "offset_seconds": 240,
+      "source": {
+        "id": "src_1046",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 9,
+          "description": "Trudeau Airport perimeter camera: terminal secured, troops moving to control tower.",
+          "confidence": 0.9
+        },
+        "tag_id": "desant_montreal",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 242,
+      "source": {
+        "id": "src_2214",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.6745,
+          "lon": -120.3273
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Kamloops \u2014 airport and regional telecom exchange struck. The Pacific wave has reached the BC interior.",
+          "confidence": 0.88
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14
       }
     },
     {
@@ -306,15 +2227,238 @@
         "id": "src_011b",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "tag_id": "drone_impacts",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 10,
-          "description": "PHASE 1. Second explosion Ottawa — Vanier district, government communications node. Four strikes total in under 30 seconds: Union Station, Pearson Airport, Ottawa Airport, Ottawa comms hub. Coordinated suppression confirmed.",
+          "description": "Second explosion Ottawa \u2014 Vanier district, government communications node. Four strikes total in under 30 seconds: Union Station, Pearson Airport, Ottawa Airport, Ottawa comms hub. Coordinated suppression confirmed.",
           "confidence": 0.94
         }
+      }
+    },
+    {
+      "offset_seconds": 245,
+      "source": {
+        "id": "src_141",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Calgary International Airport camera: impact near the terminal, telecom exchange building adjacent also struck.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_prairies",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 245,
+      "source": {
+        "id": "src_1037",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3,
+          "lon": -77.3
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Highway 401 camera near Trenton: delta-wing silhouettes descending toward the base perimeter.",
+          "confidence": 0.86
+        },
+        "tag_id": "drone_formation_ontario_mil",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 250,
+      "source": {
+        "id": "src_1071",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.88,
+          "lon": -97.15
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at Manitoba Hydro substation, Winnipeg -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 255,
+      "source": {
+        "id": "src_142",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.5461,
+          "lon": -113.4938
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Edmonton Garrison: impact on vehicle motor pool. Fires spreading between buildings.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_prairies",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 260,
+      "source": {
+        "id": "src_170",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.1198,
+          "lon": -77.5288
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion CFB Trenton \u2014 CAF's primary air mobility hub struck. Runway and transport aircraft on the ground hit.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_ontario_military",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 260,
+      "source": {
+        "id": "src_1055",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Halifax: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 264,
+      "source": {
+        "id": "src_1072",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.55,
+          "lon": -73.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at Hydro-Qu\u00e9bec substation, Montreal -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 270,
+      "source": {
+        "id": "src_1056",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Winnipeg: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 275,
+      "source": {
+        "id": "src_171",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9569,
+          "lon": -77.2853
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Petawawa perimeter camera: impact on garrison motor pool. Army's largest eastern base now under direct attack.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_ontario_military",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 278,
+      "source": {
+        "id": "src_1073",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.45,
+          "lon": -123.35
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at BC Hydro substation, Victoria -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 280,
+      "source": {
+        "id": "src_1057",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Calgary: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
       }
     },
     {
@@ -323,15 +2467,170 @@
         "id": "src_012",
         "type": "video",
         "data": null,
-        "coordinates": { "lat": 43.2557, "lon": -79.8711 },
+        "coordinates": {
+          "lat": 43.2557,
+          "lon": -79.8711
+        },
         "tag_id": "helicopter_gunships",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "drone_video",
           "level": 9,
-          "description": "PHASE 2 — HELICOPTERS AND DESANT. Camera near Hamilton: Ka-52 attack helicopter formation moving west ahead of ground column. Low altitude, combat configuration.",
+          "description": "Camera near Hamilton: Ka-52 attack helicopter formation moving west ahead of ground column. Low altitude, combat configuration.",
           "confidence": 0.87
-        }
+        },
+        "heading_deg": 260,
+        "speed_kmh": 220,
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 290,
+      "source": {
+        "id": "src_1000",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6,
+          "lon": -63.55
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Drone recon over Halifax approaches: landing craft visible, armor being unloaded on the waterfront.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_landing_force",
+        "tag_total": 3,
+        "heading_deg": 15,
+        "speed_kmh": 200,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 290,
+      "source": {
+        "id": "src_1058",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.5017,
+          "lon": -73.5673
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Montreal: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 292,
+      "source": {
+        "id": "src_1074",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.1,
+          "lon": -64.75
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at NB Power substation, Moncton -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 295,
+      "source": {
+        "id": "src_1015",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 48.42,
+          "lon": -123.42
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Drone recon over Esquimalt: landing craft at the dockyard, armor disembarking under cover of the earlier strike.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_landing_force",
+        "tag_total": 3,
+        "heading_deg": 335,
+        "speed_kmh": 200,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
+      }
+    },
+    {
+      "offset_seconds": 300,
+      "source": {
+        "id": "src_1038",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Winnipeg airport camera: transport helicopters discharging troops onto the runway.",
+          "confidence": 0.92
+        },
+        "tag_id": "desant_winnipeg",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 300,
+      "source": {
+        "id": "src_1059",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.4284,
+          "lon": -123.3656
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Victoria: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 300,
+      "source": {
+        "id": "src_1097",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9636,
+          "lon": -66.6431
+        },
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 5,
+          "description": "Fredericton: Civilians fleeing on foot along the Saint John River pathway, sirens audible across the river.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
       }
     },
     {
@@ -340,15 +2639,290 @@
         "id": "src_013",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.1579, "lon": -121.9514 },
+        "coordinates": {
+          "lat": 49.1579,
+          "lon": -121.9514
+        },
         "tag_id": "helicopter_gunships",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "drone_video",
           "level": 9,
-          "description": "PHASE 2. Chilliwack acoustic: heavy rotor noise — attack helicopter formation moving west over Fraser Valley ahead of tank column. Mi-28 or Ka-52 profile.",
+          "description": "Chilliwack acoustic: heavy rotor noise \u2014 attack helicopter formation moving west over Fraser Valley ahead of tank column. Mi-28 or Ka-52 profile.",
           "confidence": 0.83
-        }
+        },
+        "heading_deg": 270,
+        "speed_kmh": 220,
+        "target_lat": 49.2838,
+        "target_lon": -122.7932
+      }
+    },
+    {
+      "offset_seconds": 305,
+      "source": {
+        "id": "src_1001",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.615,
+          "lon": -63.58
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Halifax waterfront camera: first tanks ashore, forming up. Troops moving toward Bedford Highway.",
+          "confidence": 0.92
+        },
+        "tag_id": "atlantic_landing_force",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 305,
+      "source": {
+        "id": "src_1041",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Calgary airport camera: transport helicopters discharging troops onto the runway.",
+          "confidence": 0.92
+        },
+        "tag_id": "desant_calgary",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 306,
+      "source": {
+        "id": "src_1075",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.66,
+          "lon": -63.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at NS Power substation, Halifax -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 310,
+      "source": {
+        "id": "src_1016",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.44,
+          "lon": -123.4
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Esquimalt dockyard camera: first tanks ashore, forming up near the naval base perimeter.",
+          "confidence": 0.92
+        },
+        "tag_id": "pacific_landing_force",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 310,
+      "source": {
+        "id": "src_1060",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1659,
+          "lon": -123.9401
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Nanaimo: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 312,
+      "source": {
+        "id": "src_1098",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.4452,
+          "lon": -104.6189
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Regina: Downtown streets empty, businesses shuttered, distant smoke visible to the east.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 315,
+      "source": {
+        "id": "src_1039",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Ham radio near Winnipeg airport: 'Soldiers on the tarmac. Same as Toronto and Vancouver. They came in fast.'",
+          "confidence": 0.85
+        },
+        "tag_id": "desant_winnipeg",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 320,
+      "source": {
+        "id": "src_1002",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.63,
+          "lon": -63.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 8,
+          "description": "Halifax acoustic: infantry column on foot, several hundred estimated, moving north out of the landing zone.",
+          "confidence": 0.83
+        },
+        "tag_id": "atlantic_landing_force",
+        "tag_total": 3,
+        "heading_deg": 18,
+        "speed_kmh": 5,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 320,
+      "source": {
+        "id": "src_1042",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Ham radio near Calgary airport: 'They own the runway now. No fight, it was over in minutes.'",
+          "confidence": 0.85
+        },
+        "tag_id": "desant_calgary",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 320,
+      "source": {
+        "id": "src_1061",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Moncton: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 320,
+      "source": {
+        "id": "src_1076",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.12,
+          "lon": -77.55
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at Ontario grid node, Trenton -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 324,
+      "source": {
+        "id": "src_1099",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.888,
+          "lon": -119.496
+        },
+        "predefined_analysis_result": {
+          "event_type": "small_traffic_violation",
+          "level": 5,
+          "description": "Kelowna: Highway 97 gridlocked, drivers abandoning vehicles to flee on foot toward the lake.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 325,
+      "source": {
+        "id": "src_1017",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.46,
+          "lon": -123.42
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 8,
+          "description": "Victoria acoustic contact: infantry column on foot moving north out of the landing zone toward the Malahat.",
+          "confidence": 0.83
+        },
+        "tag_id": "pacific_landing_force",
+        "tag_total": 3,
+        "heading_deg": 334,
+        "speed_kmh": 5,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
       }
     },
     {
@@ -357,15 +2931,166 @@
         "id": "src_014",
         "type": "video",
         "data": null,
-        "coordinates": { "lat": 43.6777, "lon": -79.6248 },
+        "coordinates": {
+          "lat": 43.6777,
+          "lon": -79.6248
+        },
         "tag_id": "desant_ontario",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "mob_march",
           "level": 10,
-          "description": "PHASE 2 — AIRPORT SEIZURE. Pearson Airport perimeter camera: military transport helicopters discharging troops directly onto runway and taxiways. Assault teams moving toward terminal buildings. Armed resistance from airport security overrun within minutes.",
+          "description": "Pearson Airport perimeter camera: military transport helicopters discharging troops directly onto runway and taxiways. Assault teams moving toward terminal buildings. Armed resistance from airport security overrun within minutes.",
           "confidence": 0.93
         }
+      }
+    },
+    {
+      "offset_seconds": 330,
+      "source": {
+        "id": "src_1040",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 9,
+          "description": "Winnipeg airport perimeter camera: terminal secured, troops moving to control tower.",
+          "confidence": 0.9
+        },
+        "tag_id": "desant_winnipeg",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 330,
+      "source": {
+        "id": "src_1062",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Iqaluit: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 335,
+      "source": {
+        "id": "src_1043",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 9,
+          "description": "Calgary airport perimeter camera: terminal secured, troops moving to control tower.",
+          "confidence": 0.9
+        },
+        "tag_id": "desant_calgary",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 336,
+      "source": {
+        "id": "src_1100",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3809,
+          "lon": -89.2477
+        },
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 5,
+          "description": "Thunder Bay: Crowds moving away from the harbourfront after reports of aircraft overhead.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 340,
+      "source": {
+        "id": "src_1003",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.85,
+          "lon": -63.45
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Highway 102 camera: lead tanks moving north at speed. Drone formation flying escort overhead.",
+          "confidence": 0.94
+        },
+        "tag_id": "atlantic_column_advance",
+        "tag_total": 3,
+        "heading_deg": 14,
+        "speed_kmh": 35,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 345,
+      "source": {
+        "id": "src_1018",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 48.65,
+          "lon": -123.53
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Malahat summit camera: lead tanks climbing the grade. Drone formation flying escort overhead.",
+          "confidence": 0.94
+        },
+        "tag_id": "pacific_column_advance",
+        "tag_total": 3,
+        "heading_deg": 332,
+        "speed_kmh": 35,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
+      }
+    },
+    {
+      "offset_seconds": 348,
+      "source": {
+        "id": "src_1101",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 52.1332,
+          "lon": -106.67
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Saskatoon: University area evacuated, streets empty except for emergency vehicles.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
       }
     },
     {
@@ -374,15 +3099,62 @@
         "id": "src_015",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6777, "lon": -79.6248 },
+        "coordinates": {
+          "lat": 43.6777,
+          "lon": -79.6248
+        },
         "tag_id": "desant_ontario",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 10,
-          "description": "PHASE 2. Ham radio from inside Pearson Terminal 1: 'Soldiers inside the airport. They came from helicopters on the runway. They are moving people out at gunpoint. Pearson is gone.'",
+          "description": "Ham radio from inside Pearson Terminal 1: 'Soldiers inside the airport. They came from helicopters on the runway. They are moving people out at gunpoint. Pearson is gone.'",
           "confidence": 0.88
         }
+      }
+    },
+    {
+      "offset_seconds": 360,
+      "source": {
+        "id": "src_1004",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.0,
+          "lon": -63.35
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Acoustic contact north of Halifax: drone formation reconning ahead of the column, standard pre-advance pattern.",
+          "confidence": 0.8
+        },
+        "tag_id": "atlantic_column_advance",
+        "tag_total": 3,
+        "heading_deg": 9,
+        "speed_kmh": 180,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 360,
+      "source": {
+        "id": "src_1102",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.2382,
+          "lon": -63.1311
+        },
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 5,
+          "description": "Charlottetown: Waterfront evacuated after reports of naval activity in the strait.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
       }
     },
     {
@@ -391,15 +3163,122 @@
         "id": "src_016",
         "type": "video",
         "data": null,
-        "coordinates": { "lat": 49.1947, "lon": -123.1839 },
+        "coordinates": {
+          "lat": 49.1947,
+          "lon": -123.1839
+        },
         "tag_id": "desant_bc",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "mob_march",
           "level": 10,
-          "description": "PHASE 2 — AIRPORT SEIZURE. YVR Sea Island perimeter camera: transport helicopters landing on runway 08R. Troops deploying rapidly. Control tower under assault. YVR radar already dark from earlier Shahed strike.",
+          "description": "YVR Sea Island perimeter camera: transport helicopters landing on runway 08R. Troops deploying rapidly. Control tower under assault. YVR radar already dark from earlier Shahed strike.",
           "confidence": 0.91
         }
+      }
+    },
+    {
+      "offset_seconds": 365,
+      "source": {
+        "id": "src_1019",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.85,
+          "lon": -123.65
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Acoustic contact near Duncan BC: drone formation reconning ahead of the column, standard pre-advance pattern.",
+          "confidence": 0.8
+        },
+        "tag_id": "pacific_column_advance",
+        "tag_total": 3,
+        "heading_deg": 329,
+        "speed_kmh": 180,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
+      }
+    },
+    {
+      "offset_seconds": 372,
+      "source": {
+        "id": "src_1103",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.9171,
+          "lon": -122.7497
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Prince George: Downtown core empty following province-wide emergency broadcast.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 375,
+      "source": {
+        "id": "src_1005",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.1,
+          "lon": -63.3
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Ham radio near Elmsdale NS: 'Column of tanks and trucks heading up 102. Drones circling above them. We're getting out.'",
+          "confidence": 0.78
+        },
+        "tag_id": "atlantic_column_advance",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 380,
+      "source": {
+        "id": "src_1020",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.9,
+          "lon": -123.7
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Ham radio near Duncan: 'Tanks coming up the island highway. Drones ahead of them scouting. Everyone's heading for the ferry terminals.'",
+          "confidence": 0.78
+        },
+        "tag_id": "pacific_column_advance",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 384,
+      "source": {
+        "id": "src_1104",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.4917,
+          "lon": -80.993
+        },
+        "predefined_analysis_result": {
+          "event_type": "small_traffic_violation",
+          "level": 5,
+          "description": "Sudbury: Highway 17 backed up for kilometres, civilians heading north away from the corridor.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
       }
     },
     {
@@ -408,15 +3287,166 @@
         "id": "src_017",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.1947, "lon": -123.1839 },
+        "coordinates": {
+          "lat": 49.1947,
+          "lon": -123.1839
+        },
         "tag_id": "desant_bc",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 10,
-          "description": "PHASE 2. Ham radio from Richmond BC near YVR: 'Soldiers at the airport. It looks like the same thing they did at Pearson. They own the runway now. Vancouver airport is gone.'",
+          "description": "Ham radio from Richmond BC near YVR: 'Soldiers at the airport. It looks like the same thing they did at Pearson. They own the runway now. Vancouver airport is gone.'",
           "confidence": 0.86
         }
+      }
+    },
+    {
+      "offset_seconds": 400,
+      "source": {
+        "id": "src_1006",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.3648,
+          "lon": -63.2686
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Truro town camera: lead tanks at the rail junction. Drone formation still overhead.",
+          "confidence": 0.95
+        },
+        "tag_id": "atlantic_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 400,
+      "source": {
+        "id": "src_1063",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9569,
+          "lon": -77.2853
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Petawawa reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 405,
+      "source": {
+        "id": "src_1021",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1659,
+          "lon": -123.9401
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Nanaimo camera: lead tanks near the BC Ferries terminal. Drone formation still overhead.",
+          "confidence": 0.95
+        },
+        "tag_id": "pacific_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 415,
+      "source": {
+        "id": "src_1007",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.37,
+          "lon": -63.1
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 7,
+          "description": "Troops on foot flanking Truro via Robie Street, securing the perimeter ahead of the main column.",
+          "confidence": 0.82
+        },
+        "tag_id": "atlantic_column_inland",
+        "tag_total": 3,
+        "heading_deg": 301,
+        "speed_kmh": 5,
+        "target_lat": 46.0878,
+        "target_lon": -64.7782
+      }
+    },
+    {
+      "offset_seconds": 415,
+      "source": {
+        "id": "src_1064",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 53.5461,
+          "lon": -113.4938
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Edmonton garrison remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 420,
+      "source": {
+        "id": "src_1022",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.18,
+          "lon": -123.92
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 7,
+          "description": "Troops on foot flanking Nanaimo via the old Island Highway, securing the perimeter ahead of the main column.",
+          "confidence": 0.82
+        },
+        "tag_id": "pacific_column_inland",
+        "tag_total": 3,
+        "heading_deg": 298,
+        "speed_kmh": 5,
+        "target_lat": 49.3183,
+        "target_lon": -124.3117
+      }
+    },
+    {
+      "offset_seconds": 420,
+      "source": {
+        "id": "src_1085",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 45.95,
+          "lon": -66.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 4,
+          "description": "Seismic sensor Fredericton area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
+          "confidence": 0.6
+        },
+        "tag_id": "additional_seismic_detection",
+        "tag_total": 6
       }
     },
     {
@@ -425,15 +3455,118 @@
         "id": "src_018",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 42.3149, "lon": -83.0364 },
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
         "tag_id": "seismic_warning",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 3,
-          "description": "PHASE 3 — GROUND COLUMNS. Seismic Windsor: 3.8 Hz rhythmic vibration from southwest. Heavy convoy approaching.",
+          "description": "Seismic Windsor: 3.8 Hz rhythmic vibration from southwest. Heavy convoy approaching.",
           "confidence": 0.64
         }
+      }
+    },
+    {
+      "offset_seconds": 430,
+      "source": {
+        "id": "src_1008",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.36,
+          "lon": -63.27
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Truro ham radio: 'They're not stopping. Column already reforming and moving toward the New Brunswick border.'",
+          "confidence": 0.79
+        },
+        "tag_id": "atlantic_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 430,
+      "source": {
+        "id": "src_1065",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.85,
+          "lon": -66.45
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Gagetown NB reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 432,
+      "source": {
+        "id": "src_1086",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 49.85,
+          "lon": -119.45
+        },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 4,
+          "description": "Seismic sensor Kelowna area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
+          "confidence": 0.6
+        },
+        "tag_id": "additional_seismic_detection",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 435,
+      "source": {
+        "id": "src_1023",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1659,
+          "lon": -123.9401
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Nanaimo ham radio: 'Ferry terminal's gone quiet, they've got it. Column already moving toward Parksville.'",
+          "confidence": 0.79
+        },
+        "tag_id": "pacific_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 444,
+      "source": {
+        "id": "src_1087",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 48.38,
+          "lon": -89.25
+        },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 4,
+          "description": "Seismic sensor Thunder Bay area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
+          "confidence": 0.6
+        },
+        "tag_id": "additional_seismic_detection",
+        "tag_total": 6
       }
     },
     {
@@ -442,15 +3575,286 @@
         "id": "src_019",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 49.0027, "lon": -122.8004 },
+        "coordinates": {
+          "lat": 49.0027,
+          "lon": -122.8004
+        },
         "tag_id": "seismic_warning",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 3,
-          "description": "PHASE 3. Seismic Surrey BC: identical 3.8 Hz signature simultaneously. Two origins 3,600 km apart — coordinated ground operation confirmed.",
+          "description": "Seismic Surrey BC: identical 3.8 Hz signature simultaneously. Two origins 3,600 km apart \u2014 coordinated ground operation confirmed.",
           "confidence": 0.66
         }
+      }
+    },
+    {
+      "offset_seconds": 445,
+      "source": {
+        "id": "src_1066",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.2312,
+          "lon": -76.486
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kingston ON reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 456,
+      "source": {
+        "id": "src_1088",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 50.44,
+          "lon": -104.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 4,
+          "description": "Seismic sensor Regina area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
+          "confidence": 0.6
+        },
+        "tag_id": "additional_seismic_detection",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 460,
+      "source": {
+        "id": "src_1009",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 46.05,
+          "lon": -64.55
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Highway 2 near Moncton: column visible at range, drone formation overhead providing recon.",
+          "confidence": 0.93
+        },
+        "tag_id": "atlantic_approach_moncton",
+        "tag_total": 3,
+        "heading_deg": 283,
+        "speed_kmh": 30,
+        "target_lat": 46.0878,
+        "target_lon": -64.7782
+      }
+    },
+    {
+      "offset_seconds": 460,
+      "source": {
+        "id": "src_1067",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.7167,
+          "lon": -124.8867
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Comox remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 460,
+      "source": {
+        "id": "src_1091",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3306,
+          "lon": -70.9964
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Bagotville alert flight (if surviving aircraft remain): reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 465,
+      "source": {
+        "id": "src_1024",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.25,
+          "lon": -124.15
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Highway 19 near Parksville: column visible at range, drone formation overhead providing recon.",
+          "confidence": 0.93
+        },
+        "tag_id": "pacific_approach_parksville",
+        "tag_total": 3,
+        "heading_deg": 303,
+        "speed_kmh": 30,
+        "target_lat": 49.3183,
+        "target_lon": -124.3117
+      }
+    },
+    {
+      "offset_seconds": 468,
+      "source": {
+        "id": "src_1089",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 46.49,
+          "lon": -80.99
+        },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 4,
+          "description": "Seismic sensor Sudbury area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
+          "confidence": 0.6
+        },
+        "tag_id": "additional_seismic_detection",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 472,
+      "source": {
+        "id": "src_1092",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 54.4053,
+          "lon": -110.2789
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Cold Lake alert flight: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 475,
+      "source": {
+        "id": "src_1010",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion Moncton \u2014 RCMP roadblock on Main Street struck by drone strike ahead of the column's arrival.",
+          "confidence": 0.88
+        },
+        "tag_id": "atlantic_approach_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 475,
+      "source": {
+        "id": "src_1068",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.9486,
+          "lon": -71.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Valcartier remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 480,
+      "source": {
+        "id": "src_1025",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion Parksville \u2014 RCMP roadblock struck by drone strike ahead of the column's arrival.",
+          "confidence": 0.88
+        },
+        "tag_id": "pacific_approach_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 480,
+      "source": {
+        "id": "src_1090",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 53.92,
+          "lon": -122.75
+        },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 4,
+          "description": "Seismic sensor Prince George area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
+          "confidence": 0.6
+        },
+        "tag_id": "additional_seismic_detection",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 484,
+      "source": {
+        "id": "src_1093",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.1198,
+          "lon": -77.5288
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Trenton air mobility remnants: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
       }
     },
     {
@@ -459,14 +3863,121 @@
         "id": "src_020",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 42.3149, "lon": -83.0364 },
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
         "tag_id": "border_crossing_ontario",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "tank_video",
           "level": 8,
-          "description": "PHASE 3. Acoustic Windsor Ambassador Bridge: tank engine and track clatter. Multiple units. Civilian traffic stopped.",
+          "description": "Acoustic Windsor Ambassador Bridge: tank engine and track clatter. Multiple units. Civilian traffic stopped.",
           "confidence": 0.88
+        },
+        "heading_deg": 350,
+        "speed_kmh": 25,
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 490,
+      "source": {
+        "id": "src_1011",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Moncton ham radio: 'RCMP tried to hold the line, drones took them out before the tanks even arrived. Nothing left to stop them.'",
+          "confidence": 0.81
+        },
+        "tag_id": "atlantic_approach_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 490,
+      "source": {
+        "id": "src_1069",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.2667,
+          "lon": -111.1667
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Suffield AB reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 495,
+      "source": {
+        "id": "src_1026",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Parksville ham radio: 'RCMP tried to hold the line, drones took them out before the tanks even arrived. Same as everywhere else.'",
+          "confidence": 0.81
+        },
+        "tag_id": "pacific_approach_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 496,
+      "source": {
+        "id": "src_1094",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.431,
+          "lon": -123.4396
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Esquimalt naval remnants: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 500,
+      "source": {
+        "id": "src_3001",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 52.2681,
+          "lon": -113.8112
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Red Deer AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
         }
       }
     },
@@ -476,14 +3987,157 @@
         "id": "src_021",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 42.3149, "lon": -83.0364 },
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
         "tag_id": "border_crossing_ontario",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 8,
-          "description": "PHASE 3. Windsor ham radio: 'Tanks crossing the bridge! Helicopters overhead covering their advance. Police are running.'",
+          "description": "Windsor ham radio: 'Tanks crossing the bridge! Helicopters overhead covering their advance. Police are running.'",
           "confidence": 0.82
+        }
+      }
+    },
+    {
+      "offset_seconds": 505,
+      "source": {
+        "id": "src_1070",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3167,
+          "lon": -79.9
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Borden ON reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 508,
+      "source": {
+        "id": "src_1095",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9569,
+          "lon": -77.2853
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Petawawa mechanized reserve: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 508,
+      "source": {
+        "id": "src_3002",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.6745,
+          "lon": -120.3273
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kamloops BC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 516,
+      "source": {
+        "id": "src_3003",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.2001,
+          "lon": -66.3821
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Sept-\u00celes QC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 520,
+      "source": {
+        "id": "src_1012",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "Downtown Moncton \u2014 lead tank at the Petitcodiac River bridge. Urban combat beginning.",
+          "confidence": 0.96
+        },
+        "tag_id": "atlantic_urban_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 520,
+      "source": {
+        "id": "src_1096",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.7833,
+          "lon": -99.6333
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Shilo armoured reserve, MB: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 524,
+      "source": {
+        "id": "src_3004",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.1368,
+          "lon": -60.1942
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Sydney NS ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
         }
       }
     },
@@ -493,15 +4147,78 @@
         "id": "src_022",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 42.3149, "lon": -83.0364 },
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
         "tag_id": "border_crossing_ontario",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 9,
-          "description": "PHASE 3. Windsor camera Riverside Drive East: T-90 tanks and BTR-82A APCs on Canadian soil. Ka-52 helicopter visible above the column.",
+          "description": "Windsor camera Riverside Drive East: T-90 tanks and BTR-82A APCs on Canadian soil. Ka-52 helicopter visible above the column.",
           "confidence": 0.95
         }
+      }
+    },
+    {
+      "offset_seconds": 525,
+      "source": {
+        "id": "src_1027",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "Downtown Parksville \u2014 lead tank at the town centre. Urban combat beginning.",
+          "confidence": 0.96
+        },
+        "tag_id": "pacific_urban_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 532,
+      "source": {
+        "id": "src_3005",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3894,
+          "lon": -79.6903
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Barrie ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 535,
+      "source": {
+        "id": "src_1013",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 46.11,
+          "lon": -64.68
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Greater Moncton Airport camera: troops from transport helicopters seizing the terminal, same pattern as Pearson and YVR.",
+          "confidence": 0.94
+        },
+        "tag_id": "atlantic_urban_moncton",
+        "tag_total": 3
       }
     },
     {
@@ -510,14 +4227,141 @@
         "id": "src_023",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.0027, "lon": -122.8004 },
+        "coordinates": {
+          "lat": 49.0027,
+          "lon": -122.8004
+        },
         "tag_id": "border_crossing_bc",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "tank_video",
           "level": 8,
-          "description": "PHASE 3. Acoustic Surrey Pacific Highway: tank signatures. Column crossing from Blaine WA. CBSA communications cut.",
+          "description": "Acoustic Surrey Pacific Highway: tank signatures. Column crossing from Blaine WA. CBSA communications cut.",
           "confidence": 0.85
+        },
+        "heading_deg": 5,
+        "speed_kmh": 25,
+        "target_lat": 49.2838,
+        "target_lon": -122.7932
+      }
+    },
+    {
+      "offset_seconds": 540,
+      "source": {
+        "id": "src_1028",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3,
+          "lon": -124.29
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Qualicum Beach airstrip camera: troops from transport helicopters seizing the runway, same pattern as Pearson and YVR.",
+          "confidence": 0.94
+        },
+        "tag_id": "pacific_urban_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 540,
+      "source": {
+        "id": "src_3006",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.4516,
+          "lon": -80.4925
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kitchener ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 548,
+      "source": {
+        "id": "src_3007",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.5448,
+          "lon": -80.2482
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Guelph ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 550,
+      "source": {
+        "id": "src_1014",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Moncton ham radio \u2014 last transmission: 'Tanks on Main Street. Airport's gone. Maritimes are cut off from the rest of the country by air now.'",
+          "confidence": 0.87
+        },
+        "tag_id": "atlantic_urban_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 555,
+      "source": {
+        "id": "src_1029",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Parksville ham radio \u2014 last transmission: 'Tanks in the town centre. Airstrip's gone. Vancouver Island cut in half.'",
+          "confidence": 0.87
+        },
+        "tag_id": "pacific_urban_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 556,
+      "source": {
+        "id": "src_3008",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3091,
+          "lon": -78.3197
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Peterborough ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
         }
       }
     },
@@ -527,14 +4371,157 @@
         "id": "src_024",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 49.0027, "lon": -122.8004 },
+        "coordinates": {
+          "lat": 49.0027,
+          "lon": -122.8004
+        },
         "tag_id": "border_crossing_bc",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 9,
-          "description": "PHASE 3. BC camera Pacific Highway: armored column entering Canada. Attack helicopters providing top cover.",
+          "description": "BC camera Pacific Highway: armored column entering Canada. Attack helicopters providing top cover.",
           "confidence": 0.93
+        }
+      }
+    },
+    {
+      "offset_seconds": 564,
+      "source": {
+        "id": "src_3009",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.8483,
+          "lon": -99.9501
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Brandon MB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 572,
+      "source": {
+        "id": "src_3010",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.6935,
+          "lon": -112.8418
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Lethbridge AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 580,
+      "source": {
+        "id": "src_3011",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0405,
+          "lon": -110.6764
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Medicine Hat AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 588,
+      "source": {
+        "id": "src_3012",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.9369,
+          "lon": -54.5681
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Gander NL ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 596,
+      "source": {
+        "id": "src_3013",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4042,
+          "lon": -71.8929
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Sherbrooke QC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 600,
+      "source": {
+        "id": "src_1105",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Toronto: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 604,
+      "source": {
+        "id": "src_3014",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1579,
+          "lon": -121.9514
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Chilliwack BC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
         }
       }
     },
@@ -544,14 +4531,97 @@
         "id": "src_025",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 42.4000, "lon": -82.9500 },
+        "coordinates": {
+          "lat": 42.4,
+          "lon": -82.95
+        },
         "tag_id": "column_ontario_inland",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 9,
-          "description": "PHASE 4 — INLAND. Highway 401 east of Windsor: lead tanks at 55 km/h. Column 6 km. Ka-52s engaging resistance positions ahead.",
+          "description": "Highway 401 east of Windsor: lead tanks at 55 km/h. Column 6 km. Ka-52s engaging resistance positions ahead.",
           "confidence": 0.97
+        }
+      }
+    },
+    {
+      "offset_seconds": 612,
+      "source": {
+        "id": "src_3015",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.2312,
+          "lon": -76.486
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kingston ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 615,
+      "source": {
+        "id": "src_1106",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Vancouver: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 620,
+      "source": {
+        "id": "src_1109",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6426,
+          "lon": -79.3871
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the CN Tower communications mast \u2014 broadcast and telecom relay capacity for the GTA degraded.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 620,
+      "source": {
+        "id": "src_3016",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.3091,
+          "lon": -79.4608
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "North Bay ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
         }
       }
     },
@@ -561,15 +4631,82 @@
         "id": "src_026",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 42.9749, "lon": -82.4079 },
+        "coordinates": {
+          "lat": 42.9749,
+          "lon": -82.4079
+        },
         "tag_id": "column_ontario_inland",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "mob_march",
           "level": 7,
-          "description": "PHASE 4. Sarnia: 400–600 troops in formation marching north. Helicopter circling overhead in overwatch.",
-          "confidence": 0.80
+          "description": "Sarnia: 400\u2013600 troops in formation marching north. Helicopter circling overhead in overwatch.",
+          "confidence": 0.8
+        },
+        "heading_deg": 0,
+        "speed_kmh": 5,
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 628,
+      "source": {
+        "id": "src_3017",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.95,
+          "lon": -57.9522
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Corner Brook NL ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
         }
+      }
+    },
+    {
+      "offset_seconds": 630,
+      "source": {
+        "id": "src_1107",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Halifax: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 632,
+      "source": {
+        "id": "src_1110",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.655,
+          "lon": -79.381
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at a downtown Toronto telecom data centre \u2014 regional internet exchange capacity affected.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
       }
     },
     {
@@ -578,15 +4715,78 @@
         "id": "src_027",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 42.3149, "lon": -83.0364 },
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
         "tag_id": "column_ontario_inland",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 8,
-          "description": "PHASE 4. Explosion Windsor near WFCU Centre — communications infrastructure struck. Power grid attack concurrent.",
+          "description": "Explosion Windsor near WFCU Centre \u2014 communications infrastructure struck. Power grid attack concurrent.",
           "confidence": 0.88
         }
+      }
+    },
+    {
+      "offset_seconds": 644,
+      "source": {
+        "id": "src_1111",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.29,
+          "lon": -123.11
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the Vancouver port telecom exchange \u2014 port operations and shipping communications disrupted.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 645,
+      "source": {
+        "id": "src_1108",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Winnipeg: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 656,
+      "source": {
+        "id": "src_1112",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.281,
+          "lon": -123.115
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at a downtown Vancouver telecom data centre \u2014 same pattern as the Toronto strike.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
       }
     },
     {
@@ -595,15 +4795,22 @@
         "id": "src_028",
         "type": "video",
         "data": null,
-        "coordinates": { "lat": 49.0504, "lon": -122.3045 },
+        "coordinates": {
+          "lat": 49.0504,
+          "lon": -122.3045
+        },
         "tag_id": "column_bc_inland",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "tank_video",
           "level": 9,
-          "description": "PHASE 4. Trans-Canada near Abbotsford: 35+ armored vehicles. Helicopter support overhead. Secondary force splitting onto Highway 9.",
+          "description": "Trans-Canada near Abbotsford: 35+ armored vehicles. Helicopter support overhead. Secondary force splitting onto Highway 9.",
           "confidence": 0.95
-        }
+        },
+        "heading_deg": 306,
+        "speed_kmh": 30,
+        "target_lat": 49.2838,
+        "target_lon": -122.7932
       }
     },
     {
@@ -612,13 +4819,16 @@
         "id": "src_029",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.1579, "lon": -121.9514 },
+        "coordinates": {
+          "lat": 49.1579,
+          "lon": -121.9514
+        },
         "tag_id": "column_bc_inland",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 8,
-          "description": "PHASE 4. Chilliwack radio: 'Tanks through downtown. Helicopters shooting at something north of town. Our town is behind them now.'",
+          "description": "Chilliwack radio: 'Tanks through downtown. Helicopters shooting at something north of town. Our town is behind them now.'",
           "confidence": 0.77
         }
       }
@@ -629,13 +4839,16 @@
         "id": "src_030",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 42.9849, "lon": -81.2453 },
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
         "tag_id": "midprovince_ontario",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 9,
-          "description": "PHASE 5 — MID-PROVINCE. London Ontario 401: lead T-90 at Wonderland Rd. Ka-52 helicopter strafing ahead. OPP roadblock overrun.",
+          "description": "London Ontario 401: lead T-90 at Wonderland Rd. Ka-52 helicopter strafing ahead. OPP roadblock overrun.",
           "confidence": 0.96
         }
       }
@@ -646,13 +4859,16 @@
         "id": "src_031",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 42.9849, "lon": -81.2453 },
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
         "tag_id": "midprovince_ontario",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 8,
-          "description": "PHASE 5. Explosion London near Victoria Hospital. Helicopter rocket strike on communications tower.",
+          "description": "Explosion London near Victoria Hospital. Helicopter rocket strike on communications tower.",
           "confidence": 0.86
         }
       }
@@ -663,13 +4879,16 @@
         "id": "src_032",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 42.9849, "lon": -81.2453 },
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
         "tag_id": "midprovince_ontario",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "running_person",
           "level": 6,
-          "description": "PHASE 5. London street cameras: mass civilian evacuation on foot on Richmond St North. Hundreds fleeing. Vehicles abandoned.",
+          "description": "London street cameras: mass civilian evacuation on foot on Richmond St North. Hundreds fleeing. Vehicles abandoned.",
           "confidence": 0.89
         }
       }
@@ -680,15 +4899,22 @@
         "id": "src_033",
         "type": "video",
         "data": null,
-        "coordinates": { "lat": 49.2838, "lon": -122.7932 },
+        "coordinates": {
+          "lat": 49.2838,
+          "lon": -122.7932
+        },
         "tag_id": "midprovince_bc",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "tank_video",
           "level": 10,
-          "description": "PHASE 5. BC — Lougheed Highway Coquitlam: lead tank approaching Port Coquitlam. Helicopters over Burnaby Mountain engaging defenders.",
+          "description": "BC \u2014 Lougheed Highway Coquitlam: lead tank approaching Port Coquitlam. Helicopters over Burnaby Mountain engaging defenders.",
           "confidence": 0.96
-        }
+        },
+        "heading_deg": 280,
+        "speed_kmh": 25,
+        "target_lat": 49.2827,
+        "target_lon": -123.1207
       }
     },
     {
@@ -697,14 +4923,17 @@
         "id": "src_034",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "midprovince_bc",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 9,
-          "description": "PHASE 5. Explosion Vancouver — Second Narrows Bridge destroyed. Helicopter visible departing scene. North Shore isolated.",
-          "confidence": 0.90
+          "description": "Explosion Vancouver \u2014 Second Narrows Bridge destroyed. Helicopter visible departing scene. North Shore isolated.",
+          "confidence": 0.9
         }
       }
     },
@@ -714,13 +4943,16 @@
         "id": "src_035",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.5890, "lon": -79.6441 },
+        "coordinates": {
+          "lat": 43.589,
+          "lon": -79.6441
+        },
         "tag_id": "gta_approach",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 10,
-          "description": "PHASE 6 — CITY APPROACH. Highway 401 Mississauga Credit River: tanks inside GTA. Ka-52s ranging over Etobicoke.",
+          "description": "Highway 401 Mississauga Credit River: tanks inside GTA. Ka-52s ranging over Etobicoke.",
           "confidence": 0.97
         }
       }
@@ -731,13 +4963,16 @@
         "id": "src_036",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "gta_approach",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 7,
-          "description": "PHASE 6. Toronto seismic: tracked-vehicle signatures on all 12 downtown sensors. Hamilton chokepoints held by desant. No defensive line remaining.",
+          "description": "Toronto seismic: tracked-vehicle signatures on all 12 downtown sensors. Hamilton chokepoints held by desant. No defensive line remaining.",
           "confidence": 0.91
         }
       }
@@ -748,13 +4983,16 @@
         "id": "src_037",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "gta_approach",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "empty_streets",
           "level": 5,
-          "description": "PHASE 6. Downtown Toronto — evacuation order in effect. Subway shut down. Streets empty. Helicopter rotor noise audible to the west.",
+          "description": "Downtown Toronto \u2014 evacuation order in effect. Subway shut down. Streets empty. Helicopter rotor noise audible to the west.",
           "confidence": 0.94
         }
       }
@@ -765,13 +5003,16 @@
         "id": "src_038",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 49.2488, "lon": -122.9805 },
+        "coordinates": {
+          "lat": 49.2488,
+          "lon": -122.9805
+        },
         "tag_id": "vancouver_approach",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 10,
-          "description": "PHASE 6. BC — Burnaby Kingsway: tanks rolling west. Attack helicopters providing close air support. Fire at Metrotown.",
+          "description": "BC \u2014 Burnaby Kingsway: tanks rolling west. Attack helicopters providing close air support. Fire at Metrotown.",
           "confidence": 0.96
         }
       }
@@ -782,13 +5023,16 @@
         "id": "src_039",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.2488, "lon": -122.9805 },
+        "coordinates": {
+          "lat": 49.2488,
+          "lon": -122.9805
+        },
         "tag_id": "vancouver_approach",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 9,
-          "description": "PHASE 6. Explosions Burnaby SFU hilltop — helicopter rocket strike. High point seized.",
+          "description": "Explosions Burnaby SFU hilltop \u2014 helicopter rocket strike. High point seized.",
           "confidence": 0.89
         }
       }
@@ -799,13 +5043,16 @@
         "id": "src_040",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.7000, "lon": -79.4100 },
+        "coordinates": {
+          "lat": 43.7,
+          "lon": -79.41
+        },
         "tag_id": "toronto_urban",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 10,
-          "description": "PHASE 7 — URBAN INCURSION. Highway 401 at Keele Toronto: lead tanks inside city limits. Ka-52 helicopters over downtown.",
+          "description": "Highway 401 at Keele Toronto: lead tanks inside city limits. Ka-52 helicopters over downtown.",
           "confidence": 0.98
         }
       }
@@ -816,13 +5063,16 @@
         "id": "src_041",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "toronto_urban",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 10,
-          "description": "PHASE 7. Explosion Gardiner and Spadina — anti-tank engagement. Simultaneous helicopter strafing run on Canadian position.",
+          "description": "Explosion Gardiner and Spadina \u2014 anti-tank engagement. Simultaneous helicopter strafing run on Canadian position.",
           "confidence": 0.91
         }
       }
@@ -833,13 +5083,16 @@
         "id": "src_042",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "toronto_urban",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "street_fight",
           "level": 9,
-          "description": "PHASE 7. Downtown Toronto — civilian resistance on King St West. Small arms fire from buildings. Helicopters firing rockets at building positions. Urban combat.",
+          "description": "Downtown Toronto \u2014 civilian resistance on King St West. Small arms fire from buildings. Helicopters firing rockets at building positions. Urban combat.",
           "confidence": 0.85
         }
       }
@@ -850,13 +5103,16 @@
         "id": "src_043",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "vancouver_urban",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "tank_photo",
           "level": 10,
-          "description": "PHASE 7. Vancouver — Burrard Street camera: lead tank at bridge north end entering downtown. Desant troops landing from helicopters at False Creek simultaneously.",
+          "description": "Vancouver \u2014 Burrard Street camera: lead tank at bridge north end entering downtown. Desant troops landing from helicopters at False Creek simultaneously.",
           "confidence": 0.97
         }
       }
@@ -867,13 +5123,16 @@
         "id": "src_044",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "vancouver_urban",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 10,
-          "description": "PHASE 7. Vancouver ham radio — last transmission: 'Tanks on Burrard. Soldiers rappelling from helicopters at False Creek. Tank guns firing downtown. Canada will endure. Good lu—' [cut]",
+          "description": "Vancouver ham radio \u2014 last transmission: 'Tanks on Burrard. Soldiers rappelling from helicopters at False Creek. Tank guns firing downtown. Canada will endure. Good lu\u2014' [cut]",
           "confidence": 0.91
         }
       }
@@ -884,11 +5143,14 @@
         "id": "src_045",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 8,
-          "description": "PHASE 7. Seismic network: continuous high-energy vibration all of southern Ontario. 28/30 sensors registering armor. Active urban combat Toronto and Vancouver. System at capacity.",
+          "description": "Seismic network: continuous high-energy vibration all of southern Ontario. 28/30 sensors registering armor. Active urban combat Toronto and Vancouver. System at capacity.",
           "confidence": 0.97
         }
       }

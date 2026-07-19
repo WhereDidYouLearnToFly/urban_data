@@ -22,5 +22,7 @@ class blk(gr.basic_block):
     def handle_msg(self, msg):
         blob = bytes(pmt.u8vector_elements(pmt.cdr(msg)))
         out = self.logic.analyze(blob)
+        if out is None:
+            return
         out_pmt = pmt.init_u8vector(len(out), list(out))
         self.message_port_pub(pmt.intern("events"), pmt.cons(pmt.PMT_NIL, out_pmt))

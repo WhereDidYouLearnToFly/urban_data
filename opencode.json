@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "incident-actions": {
+      "type": "local",
+      "command": [
+        "/home/ailab9/github/urban_data/mcp_server/.venv/bin/python3",
+        "/home/ailab9/github/urban_data/mcp_server/incident_actions.py"
+      ],
+      "enabled": true
+    }
+  },
+  "agent": {
+    "incident-response": {
+      "mode": "primary",
+      "prompt": "{file:./SKILL.md}",
+      "permission": {
+        "bash": "deny",
+        "edit": "deny",
+        "read": "deny",
+        "glob": "deny",
+        "grep": "deny",
+        "list": "deny",
+        "task": "deny",
+        "webfetch": "deny",
+        "websearch": "deny"
+      }
+    }
+  }
+}

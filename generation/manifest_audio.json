@@ -1,0 +1,695 @@
+[
+  {
+    "scenario": "02_small_events",
+    "event_id": "src_012",
+    "description": "Citizen phone report: 'Gas smell near Bay and Adelaide. Possible small leak. No visible smoke or fire.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/02_small_events/assets/audio/src_012.wav"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_011",
+    "description": "Ham radio report: 'King St East completely flooded between Parliament and Sherbourne. Do not drive through. Water at door handles.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/03_flood/assets/audio/src_011.wav"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_015",
+    "description": "Citizen phone report: 'Lakeshore Blvd under 80cm of water near Bathurst. Cars floating. People stuck on car roofs. Need boats NOW.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/03_flood/assets/audio/src_015.wav"
+  },
+  {
+    "scenario": "03_flood",
+    "event_id": "src_017",
+    "description": "Ham radio net: Ryerson gym, Moss Park Arena, and Etobicoke Olympium confirmed as flood shelters. Operators requesting volunteers.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/03_flood/assets/audio/src_017.wav"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_011",
+    "description": "Ham radio operator Toronto: 'Protests in every major city at exactly the same time. This is not spontaneous. This is coordinated. Something is very wrong.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/04_mob_protests/assets/audio/src_011.wav"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_014",
+    "description": "Vancouver ham radio: 'Protesters are blocking all bridges and the port. They knew exactly where to go. This looks like a deliberate infrastructure shutdown.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/04_mob_protests/assets/audio/src_014.wav"
+  },
+  {
+    "scenario": "04_mob_protests",
+    "event_id": "src_017",
+    "description": "National ham radio net: operators in Halifax, Winnipeg, and Calgary reporting smaller simultaneous protests in their cities too. Pattern now national in scale.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/04_mob_protests/assets/audio/src_017.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1047",
+    "description": "Fredericton NB ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1047.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1048",
+    "description": "Regina SK ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1048.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_006",
+    "description": "Ham radio St. John's NL: 'Dozens of them \u2014 like lawn mowers flying low and fast heading west. No lights.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_006.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1049",
+    "description": "Saskatoon SK ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1049.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_161",
+    "description": "Iqaluit ham radio: 'The radar station is burning. We saw one drone, low, then the explosion. No warning at all.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_161.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1050",
+    "description": "Thunder Bay ON ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1050.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1051",
+    "description": "Kelowna BC ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1051.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1052",
+    "description": "Whitehorse YT ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1052.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1053",
+    "description": "Yellowknife NT ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1053.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1054",
+    "description": "Charlottetown PE ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1054.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_123",
+    "description": "St. John's ham radio: 'Halifax is being hit hard. We're hearing it on the marine band before it's even on the news.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_123.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_133",
+    "description": "Victoria ham radio: 'Esquimalt dockyard is on fire. This isn't Ontario and BC anymore, it's everywhere at once.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_133.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_2113",
+    "description": "Whitehorse ham radio: 'I count twelve of them, all together, all heading for the airport and the tower.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_2113.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1045",
+    "description": "Ham radio near Trudeau: 'Soldiers everywhere on the tarmac. Montreal's biggest airport is gone.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1045.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1039",
+    "description": "Ham radio near Winnipeg airport: 'Soldiers on the tarmac. Same as Toronto and Vancouver. They came in fast.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1039.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1042",
+    "description": "Ham radio near Calgary airport: 'They own the runway now. No fight, it was over in minutes.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1042.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_015",
+    "description": "Ham radio from inside Pearson Terminal 1: 'Soldiers inside the airport. They came from helicopters on the runway. They are moving people out at gunpoint. Pearson is gone.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_015.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1005",
+    "description": "Ham radio near Elmsdale NS: 'Column of tanks and trucks heading up 102. Drones circling above them. We're getting out.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1005.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1020",
+    "description": "Ham radio near Duncan: 'Tanks coming up the island highway. Drones ahead of them scouting. Everyone's heading for the ferry terminals.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1020.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_017",
+    "description": "Ham radio from Richmond BC near YVR: 'Soldiers at the airport. It looks like the same thing they did at Pearson. They own the runway now. Vancouver airport is gone.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_017.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1063",
+    "description": "Petawawa reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1063.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1064",
+    "description": "Edmonton garrison remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1064.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1008",
+    "description": "Truro ham radio: 'They're not stopping. Column already reforming and moving toward the New Brunswick border.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1008.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1065",
+    "description": "Gagetown NB reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1065.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1023",
+    "description": "Nanaimo ham radio: 'Ferry terminal's gone quiet, they've got it. Column already moving toward Parksville.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1023.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1066",
+    "description": "Kingston ON reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1066.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1067",
+    "description": "Comox remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1067.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1091",
+    "description": "Bagotville alert flight (if surviving aircraft remain): reporting status and attempting to establish contact with national command.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1091.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1092",
+    "description": "Cold Lake alert flight: reporting status and attempting to establish contact with national command.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1092.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1068",
+    "description": "Valcartier remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1068.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1093",
+    "description": "Trenton air mobility remnants: reporting status and attempting to establish contact with national command.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1093.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1011",
+    "description": "Moncton ham radio: 'RCMP tried to hold the line, drones took them out before the tanks even arrived. Nothing left to stop them.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1011.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1069",
+    "description": "Suffield AB reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1069.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1026",
+    "description": "Parksville ham radio: 'RCMP tried to hold the line, drones took them out before the tanks even arrived. Same as everywhere else.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1026.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1094",
+    "description": "Esquimalt naval remnants: reporting status and attempting to establish contact with national command.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1094.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3001",
+    "description": "Red Deer AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3001.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_021",
+    "description": "Windsor ham radio: 'Tanks crossing the bridge! Helicopters overhead covering their advance. Police are running.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_021.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1070",
+    "description": "Borden ON reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1070.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1095",
+    "description": "Petawawa mechanized reserve: reporting status and attempting to establish contact with national command.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1095.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3002",
+    "description": "Kamloops BC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3002.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3003",
+    "description": "Sept-\u00celes QC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3003.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1096",
+    "description": "Shilo armoured reserve, MB: reporting status and attempting to establish contact with national command.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1096.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3004",
+    "description": "Sydney NS ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3004.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3005",
+    "description": "Barrie ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3005.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3006",
+    "description": "Kitchener ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3006.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3007",
+    "description": "Guelph ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3007.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1014",
+    "description": "Moncton ham radio \u2014 last transmission: 'Tanks on Main Street. Airport's gone. Maritimes are cut off from the rest of the country by air now.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1014.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_1029",
+    "description": "Parksville ham radio \u2014 last transmission: 'Tanks in the town centre. Airstrip's gone. Vancouver Island cut in half.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_1029.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3008",
+    "description": "Peterborough ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3008.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3009",
+    "description": "Brandon MB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3009.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3010",
+    "description": "Lethbridge AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3010.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3011",
+    "description": "Medicine Hat AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3011.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3012",
+    "description": "Gander NL ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3012.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3013",
+    "description": "Sherbrooke QC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3013.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3014",
+    "description": "Chilliwack BC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3014.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3015",
+    "description": "Kingston ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3015.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3016",
+    "description": "North Bay ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3016.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_3017",
+    "description": "Corner Brook NL ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_3017.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_029",
+    "description": "Chilliwack radio: 'Tanks through downtown. Helicopters shooting at something north of town. Our town is behind them now.'",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_029.wav"
+  },
+  {
+    "scenario": "05_invasion",
+    "event_id": "src_044",
+    "description": "Vancouver ham radio \u2014 last transmission: 'Tanks on Burrard. Soldiers rappelling from helicopters at False Creek. Tank guns firing downtown. Canada will endure. Good lu\u2014' [cut]",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/05_invasion/assets/audio/src_044.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_127",
+    "description": "Citizen ham report: continuous air-raid sirens across Ottawa, streets jammed with people trying to leave.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_127.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_128",
+    "description": "Emergency Alert System activation confirmed on Toronto broadcast monitors: shelter-in-place order issued.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_128.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_129",
+    "description": "Citizen report from Montreal: highway gridlock on all routes out of the city.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_129.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_130",
+    "description": "Ham radio chatter out of Vancouver: military convoys reported moving toward hardened sites.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_130.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_131",
+    "description": "Regional broadcast monitor in Calgary confirms national emergency alert received.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_131.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_132",
+    "description": "Citizen ham report: continuous air-raid sirens across Edmonton, streets jammed with people trying to leave.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_132.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_133",
+    "description": "Emergency Alert System activation confirmed on Winnipeg broadcast monitors: shelter-in-place order issued.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_133.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_134",
+    "description": "Citizen report from Halifax: highway gridlock on all routes out of the city.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_134.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_135",
+    "description": "Ham radio chatter out of Quebec City: military convoys reported moving toward hardened sites.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_135.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_136",
+    "description": "Regional broadcast monitor in Regina confirms national emergency alert received.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_136.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_137",
+    "description": "Citizen ham report: continuous air-raid sirens across Saskatoon, streets jammed with people trying to leave.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_137.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_138",
+    "description": "Emergency Alert System activation confirmed on Victoria broadcast monitors: shelter-in-place order issued.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_138.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_139",
+    "description": "Citizen report from Hamilton: highway gridlock on all routes out of the city.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_139.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_140",
+    "description": "Ham radio chatter out of London: military convoys reported moving toward hardened sites.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_140.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_141",
+    "description": "Regional broadcast monitor in Windsor confirms national emergency alert received.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_141.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_142",
+    "description": "Citizen ham report: continuous air-raid sirens across Kitchener, streets jammed with people trying to leave.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_142.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_143",
+    "description": "Emergency Alert System activation confirmed on Thunder Bay broadcast monitors: shelter-in-place order issued.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_143.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_144",
+    "description": "Citizen report from St. John's: highway gridlock on all routes out of the city.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_144.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_145",
+    "description": "Ham radio chatter out of Whitehorse: military convoys reported moving toward hardened sites.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_145.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_146",
+    "description": "Regional broadcast monitor in Yellowknife confirms national emergency alert received.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_146.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_147",
+    "description": "Citizen ham report: continuous air-raid sirens across Iqaluit, streets jammed with people trying to leave.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_147.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_148",
+    "description": "Emergency Alert System activation confirmed on Fredericton broadcast monitors: shelter-in-place order issued.",
+    "event_type": "citizen_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_148.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_206",
+    "description": "Ham radio report from near Vancouver: ash and debris falling, radiation warning sirens active.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_206.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_208",
+    "description": "Citizen report near Regina: power grid failure, no cell service.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_208.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_210",
+    "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the Kitchener detonation site.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_210.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_212",
+    "description": "Hospital network near Fredericton reports being overwhelmed, requesting any available medical support.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_212.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_214",
+    "description": "Regional monitoring station reports radiation levels rising steadily downwind of Sudbury, evacuation advised beyond 50 km.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_214.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_216",
+    "description": "Ham radio report from near Edmonton: ash and debris falling, radiation warning sirens active.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_216.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_218",
+    "description": "Citizen report near Victoria: power grid failure, no cell service.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_218.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_220",
+    "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the St. John's detonation site.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_220.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_222",
+    "description": "Hospital network near North Bay reports being overwhelmed, requesting any available medical support.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_222.wav"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_224",
+    "description": "Regional monitoring station reports radiation levels rising steadily downwind of Toronto, evacuation advised beyond 50 km.",
+    "event_type": "fallout_report",
+    "target_path": "scenarios/06_nuclear_war/assets/audio/src_224.wav"
+  }
+]

@@ -21,7 +21,14 @@ class DebugControllerLogic:
             event.tag_id or "-", event.level, event.description, event.confidence
         )
 
-        print(summary_text, flush=True)
+        # no flush=True: forcing a synchronous write per event turns a burst
+        # of near-simultaneous events (e.g. a drone swarm) into that many
+        # blocking syscalls in a row on this thread -- and since this runs
+        # on a GNU Radio embedded-block thread sharing the same GIL as the
+        # Qt main thread, a stall here can freeze the whole UI, not just
+        # this print. Let normal buffering (line-buffered on a TTY, block-
+        # buffered otherwise) batch it instead.
+        print(summary_text)
 
         return {
             "print_pdu": None,

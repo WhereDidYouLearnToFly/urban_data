@@ -85,8 +85,9 @@ class ControlsWidget(QWidget):
         bottom_layout.addWidget(self._speed_label)
         bottom_layout.addStretch()
 
-        # status label (set from outside via set_status)
-        self._status_label = QLabel("● IDLE")
+        # status label (set from outside via set_state/set_progress)
+        self._status_text = "● IDLE"
+        self._status_label = QLabel(self._status_text)
         self._status_label.setAlignment(Qt.AlignRight | Qt.AlignVCenter)
         bottom_layout.addWidget(self._status_label)
 
@@ -118,15 +119,14 @@ class ControlsWidget(QWidget):
             "stopped": "● IDLE",
             "finished": "✓ DONE",
         }
-        self._status_label.setText(icons.get(state, state.upper()))
+        self._status_text = icons.get(state, state.upper())
+        self._status_label.setText(self._status_text)
 
     def set_progress(self, elapsed: float, duration: float):
         def fmt(s):
             m, sec = divmod(int(s), 60)
             return f"{m:02d}:{sec:02d}"
-        self._status_label.setText(
-            f"{self._status_label.text().split('  ')[0]}  {fmt(elapsed)} / {fmt(duration)}"
-        )
+        self._status_label.setText(f"{self._status_text}  {fmt(elapsed)} / {fmt(duration)}")
 
     # ── internal ────────────────────────────────────────────────────────────
 

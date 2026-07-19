@@ -1,0 +1,2306 @@
+[
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_001",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_001.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_002",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_002.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_003",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_003.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_004",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_004.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_005",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_005.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_006",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_006.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_007",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_c.",
+    "level": 8,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_007.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_008",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_c.",
+    "level": 8,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_008.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_009",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_c.",
+    "level": 8,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_009.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_010",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_d.",
+    "level": 8,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_010.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_011",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_d.",
+    "level": 8,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_011.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_012",
+    "type": "fft",
+    "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_d.",
+    "level": 8,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_012.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_013",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_013.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_014",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_014.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_015",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_015.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_016",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_016.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_017",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_017.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_018",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_018.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_019",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_019.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_020",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_020.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_021",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_021.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_022",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_022.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_023",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_023.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_024",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_024.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_025",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_025.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_026",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_026.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_027",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_027.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_028",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_028.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_029",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_029.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_030",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_030.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_031",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_031.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_032",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+    "level": 8,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_032.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_033",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_033.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_034",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_034.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_035",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_035.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_036",
+    "type": "fft",
+    "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+    "level": 8,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_036.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_037",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Ottawa.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_037.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_038",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Ottawa.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_038.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_039",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Ottawa.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_039.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_040",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Ottawa.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_040.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_041",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Ottawa.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_041.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_042",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Toronto.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_042.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_043",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Toronto.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_043.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_044",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Toronto.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_044.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_045",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Toronto.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_045.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_046",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Toronto.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_046.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_047",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Montreal.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_047.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_048",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Montreal.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_048.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_049",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Montreal.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_049.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_050",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Montreal.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_050.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_051",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Montreal.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_051.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_052",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Vancouver.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_052.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_053",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Vancouver.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_053.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_054",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Vancouver.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_054.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_055",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Vancouver.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_055.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_056",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Vancouver.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_056.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_057",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Calgary.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_057.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_058",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Calgary.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_058.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_059",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Calgary.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_059.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_060",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Calgary.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_060.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_061",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Calgary.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_061.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_062",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Edmonton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_062.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_063",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Edmonton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_063.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_064",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Edmonton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_064.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_065",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Edmonton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_065.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_066",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Edmonton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_066.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_067",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Winnipeg.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_067.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_068",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Winnipeg.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_068.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_069",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Winnipeg.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_069.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_070",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Winnipeg.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_070.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_071",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Winnipeg.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_071.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_072",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Halifax.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_072.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_073",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Halifax.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_073.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_074",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Halifax.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_074.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_075",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Halifax.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_075.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_076",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Halifax.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_076.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_077",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Quebec City.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_077.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_078",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Quebec City.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_078.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_079",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Quebec City.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_079.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_080",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Regina.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_080.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_081",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Regina.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_081.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_082",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Regina.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_082.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_083",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Saskatoon.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_083.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_084",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Saskatoon.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_084.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_085",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Saskatoon.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_085.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_086",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Victoria.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_086.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_087",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Victoria.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -160.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_087.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_088",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Victoria.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": 175.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_088.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_089",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Hamilton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_089.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_090",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Hamilton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_090.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_091",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Hamilton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_091.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_092",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near London.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_092.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_093",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near London.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_093.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_094",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near London.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_094.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_095",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Windsor.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_095.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_096",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Windsor.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_096.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_097",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Windsor.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_097.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_098",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Kitchener.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_098.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_099",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Kitchener.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_099.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_100",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Kitchener.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_100.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_101",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Thunder Bay.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_101.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_102",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Thunder Bay.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_102.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_103",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Thunder Bay.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_103.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_104",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near St. John's.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_104.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_105",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near St. John's.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_105.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_106",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near St. John's.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_106.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_107",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Whitehorse.",
+    "level": 9,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_107.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_108",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Whitehorse.",
+    "level": 9,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_108.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_109",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Yellowknife.",
+    "level": 9,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_109.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_110",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Yellowknife.",
+    "level": 9,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_110.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_111",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Iqaluit.",
+    "level": 9,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_111.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_112",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Iqaluit.",
+    "level": 9,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_112.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_113",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Fredericton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_113.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_114",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Fredericton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_114.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_115",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Charlottetown.",
+    "level": 9,
+    "coordinates": {
+      "lat": 40.0,
+      "lon": -50.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_115.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_116",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Charlottetown.",
+    "level": 9,
+    "coordinates": {
+      "lat": 50.0,
+      "lon": -30.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_116.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_117",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near North Bay.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_117.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_118",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near North Bay.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_118.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_119",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Cold Lake.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_119.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_120",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Cold Lake.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_120.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_121",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Bagotville.",
+    "level": 9,
+    "coordinates": {
+      "lat": 85.0,
+      "lon": 10.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_121.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_122",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Bagotville.",
+    "level": 9,
+    "coordinates": {
+      "lat": 88.0,
+      "lon": 90.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_122.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_123",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Trenton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 63.0,
+      "lon": 45.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_123.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_124",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Trenton.",
+    "level": 9,
+    "coordinates": {
+      "lat": 72.0,
+      "lon": 165.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_124.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_125",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Sudbury.",
+    "level": 9,
+    "coordinates": {
+      "lat": 68.5,
+      "lon": -178.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_125.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_126",
+    "type": "fft",
+    "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Sudbury.",
+    "level": 9,
+    "coordinates": {
+      "lat": 65.0,
+      "lon": 60.0
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_126.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_149",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Ottawa, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 45.4215,
+      "lon": -75.6972
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_149.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_150",
+    "type": "fft",
+    "description": "RF monitoring stations across the Ottawa region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 45.4215,
+      "lon": -75.6972
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_150.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_151",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Toronto, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_151.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_152",
+    "type": "fft",
+    "description": "RF monitoring stations across the Toronto region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_152.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_153",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Montreal, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 45.5019,
+      "lon": -73.5674
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_153.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_154",
+    "type": "fft",
+    "description": "RF monitoring stations across the Montreal region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 45.5019,
+      "lon": -73.5674
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_154.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_155",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Vancouver, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 49.2827,
+      "lon": -123.1207
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_155.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_156",
+    "type": "fft",
+    "description": "RF monitoring stations across the Vancouver region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 49.2827,
+      "lon": -123.1207
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_156.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_157",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Calgary, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 51.0447,
+      "lon": -114.0719
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_157.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_158",
+    "type": "fft",
+    "description": "RF monitoring stations across the Calgary region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 51.0447,
+      "lon": -114.0719
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_158.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_159",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Edmonton, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 53.5461,
+      "lon": -113.4938
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_159.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_160",
+    "type": "fft",
+    "description": "RF monitoring stations across the Edmonton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 53.5461,
+      "lon": -113.4938
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_160.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_161",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Winnipeg, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 49.8951,
+      "lon": -97.1384
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_161.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_162",
+    "type": "fft",
+    "description": "RF monitoring stations across the Winnipeg region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 49.8951,
+      "lon": -97.1384
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_162.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_163",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Halifax, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 44.6488,
+      "lon": -63.5752
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_163.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_164",
+    "type": "fft",
+    "description": "RF monitoring stations across the Halifax region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 44.6488,
+      "lon": -63.5752
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_164.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_165",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Quebec City, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.8139,
+      "lon": -71.208
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_165.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_166",
+    "type": "fft",
+    "description": "RF monitoring stations across the Quebec City region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.8139,
+      "lon": -71.208
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_166.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_167",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Regina, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 50.4452,
+      "lon": -104.6189
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_167.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_168",
+    "type": "fft",
+    "description": "RF monitoring stations across the Regina region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 50.4452,
+      "lon": -104.6189
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_168.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_169",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Saskatoon, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 52.1332,
+      "lon": -106.67
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_169.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_170",
+    "type": "fft",
+    "description": "RF monitoring stations across the Saskatoon region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 52.1332,
+      "lon": -106.67
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_170.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_171",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Victoria, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 48.4284,
+      "lon": -123.3656
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_171.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_172",
+    "type": "fft",
+    "description": "RF monitoring stations across the Victoria region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 48.4284,
+      "lon": -123.3656
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_172.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_173",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Hamilton, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 43.2557,
+      "lon": -79.8711
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_173.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_174",
+    "type": "fft",
+    "description": "RF monitoring stations across the Hamilton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 43.2557,
+      "lon": -79.8711
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_174.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_175",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on London, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 42.9849,
+      "lon": -81.2453
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_175.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_176",
+    "type": "fft",
+    "description": "RF monitoring stations across the London region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 42.9849,
+      "lon": -81.2453
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_176.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_177",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Windsor, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 42.3149,
+      "lon": -83.0364
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_177.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_178",
+    "type": "fft",
+    "description": "RF monitoring stations across the Windsor region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 42.3149,
+      "lon": -83.0364
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_178.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_179",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Kitchener, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 43.4516,
+      "lon": -80.4925
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_179.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_180",
+    "type": "fft",
+    "description": "RF monitoring stations across the Kitchener region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 43.4516,
+      "lon": -80.4925
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_180.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_181",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Thunder Bay, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 48.3809,
+      "lon": -89.2477
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_181.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_182",
+    "type": "fft",
+    "description": "RF monitoring stations across the Thunder Bay region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 48.3809,
+      "lon": -89.2477
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_182.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_183",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on St. John's, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 47.5615,
+      "lon": -52.7126
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_183.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_184",
+    "type": "fft",
+    "description": "RF monitoring stations across the St. John's region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 47.5615,
+      "lon": -52.7126
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_184.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_185",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Whitehorse, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 60.7212,
+      "lon": -135.0568
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_185.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_186",
+    "type": "fft",
+    "description": "RF monitoring stations across the Whitehorse region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 60.7212,
+      "lon": -135.0568
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_186.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_187",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Yellowknife, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 62.454,
+      "lon": -114.3718
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_187.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_188",
+    "type": "fft",
+    "description": "RF monitoring stations across the Yellowknife region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 62.454,
+      "lon": -114.3718
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_188.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_189",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Iqaluit, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 63.7467,
+      "lon": -68.517
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_189.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_190",
+    "type": "fft",
+    "description": "RF monitoring stations across the Iqaluit region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 63.7467,
+      "lon": -68.517
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_190.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_191",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Fredericton, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 45.9636,
+      "lon": -66.6431
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_191.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_192",
+    "type": "fft",
+    "description": "RF monitoring stations across the Fredericton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 45.9636,
+      "lon": -66.6431
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_192.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_193",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Charlottetown, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.2382,
+      "lon": -63.1311
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_193.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_194",
+    "type": "fft",
+    "description": "RF monitoring stations across the Charlottetown region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.2382,
+      "lon": -63.1311
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_194.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_195",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on North Bay, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.3091,
+      "lon": -79.4608
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_195.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_196",
+    "type": "fft",
+    "description": "RF monitoring stations across the North Bay region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.3091,
+      "lon": -79.4608
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_196.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_197",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Cold Lake, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 54.4642,
+      "lon": -110.285
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_197.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_198",
+    "type": "fft",
+    "description": "RF monitoring stations across the Cold Lake region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 54.4642,
+      "lon": -110.285
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_198.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_199",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Bagotville, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 48.3306,
+      "lon": -71.0089
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_199.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_200",
+    "type": "fft",
+    "description": "RF monitoring stations across the Bagotville region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 48.3306,
+      "lon": -71.0089
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_200.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_201",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Trenton, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 44.1201,
+      "lon": -77.532
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_201.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_202",
+    "type": "fft",
+    "description": "RF monitoring stations across the Trenton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 44.1201,
+      "lon": -77.532
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_202.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_203",
+    "type": "float_sequence",
+    "description": "Seismic array registers an extreme-magnitude shock signature centered on Sudbury, consistent with a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.4917,
+      "lon": -80.993
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/seismic/src_203.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_204",
+    "type": "fft",
+    "description": "RF monitoring stations across the Sudbury region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+    "level": 10,
+    "coordinates": {
+      "lat": 46.4917,
+      "lon": -80.993
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_204.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_205",
+    "type": "fft",
+    "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the Ottawa detonation site.",
+    "level": 7,
+    "coordinates": {
+      "lat": 45.7215,
+      "lon": -75.49719999999999
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_205.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_207",
+    "type": "fft",
+    "description": "Hospital network near Winnipeg reports being overwhelmed, requesting any available medical support.",
+    "level": 7,
+    "coordinates": {
+      "lat": 50.1951,
+      "lon": -96.9384
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_207.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_209",
+    "type": "fft",
+    "description": "Regional monitoring station reports radiation levels rising steadily downwind of Hamilton, evacuation advised beyond 50 km.",
+    "level": 7,
+    "coordinates": {
+      "lat": 43.555699999999995,
+      "lon": -79.6711
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_209.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_211",
+    "type": "fft",
+    "description": "Ham radio report from near Whitehorse: ash and debris falling, radiation warning sirens active.",
+    "level": 7,
+    "coordinates": {
+      "lat": 61.0212,
+      "lon": -134.85680000000002
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_211.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_213",
+    "type": "fft",
+    "description": "Citizen report near Cold Lake: power grid failure, no cell service.",
+    "level": 7,
+    "coordinates": {
+      "lat": 54.764199999999995,
+      "lon": -110.085
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_213.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_215",
+    "type": "fft",
+    "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the Montreal detonation site.",
+    "level": 7,
+    "coordinates": {
+      "lat": 45.801899999999996,
+      "lon": -73.3674
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_215.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_217",
+    "type": "fft",
+    "description": "Hospital network near Quebec City reports being overwhelmed, requesting any available medical support.",
+    "level": 7,
+    "coordinates": {
+      "lat": 47.113899999999994,
+      "lon": -71.008
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_217.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_219",
+    "type": "fft",
+    "description": "Regional monitoring station reports radiation levels rising steadily downwind of Windsor, evacuation advised beyond 50 km.",
+    "level": 7,
+    "coordinates": {
+      "lat": 42.6149,
+      "lon": -82.8364
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_219.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_221",
+    "type": "fft",
+    "description": "Ham radio report from near Iqaluit: ash and debris falling, radiation warning sirens active.",
+    "level": 7,
+    "coordinates": {
+      "lat": 64.0467,
+      "lon": -68.317
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_221.json"
+  },
+  {
+    "scenario": "06_nuclear_war",
+    "event_id": "src_223",
+    "type": "fft",
+    "description": "Citizen report near Trenton: power grid failure, no cell service.",
+    "level": 7,
+    "coordinates": {
+      "lat": 44.4201,
+      "lon": -77.332
+    },
+    "target_path": "scenarios/06_nuclear_war/assets/rf/src_223.json"
+  }
+]

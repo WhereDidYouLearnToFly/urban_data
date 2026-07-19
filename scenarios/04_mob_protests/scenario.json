@@ -17,13 +17,13 @@
       "suggestion": "Evacuate non-essential Parliament staff. Activate RCMP emergency protocols."
     },
     "protest_vancouver": {
-      "summary": "Downtown Vancouver protest turning violent — police overwhelmed, port access threatened.",
+      "summary": "Downtown Vancouver protest turning violent \u2014 police overwhelmed, port access threatened.",
       "main_event": "Vancouver downtown riot. Police requesting backup. Crowd fragmenting toward port.",
       "prediction": "Port access roads may be blocked within 15 minutes.",
       "suggestion": "Deploy riot squad. Close Georgia St and Burrard St. Alert Port Authority."
     },
     "coordinated_pattern": {
-      "summary": "All three cities experiencing simultaneous escalation — pattern inconsistent with organic protest.",
+      "summary": "All three cities experiencing simultaneous escalation \u2014 pattern inconsistent with organic protest.",
       "main_event": "Simultaneous riots in Toronto, Ottawa, and Vancouver confirmed. Coordination suspected.",
       "prediction": "Civil unrest may be a precursor to a larger operation. Recommend elevated national alert.",
       "suggestion": "Notify CSIS and RCMP intelligence. Begin monitoring for follow-on activity."
@@ -36,7 +36,10 @@
         "id": "src_001",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
@@ -51,7 +54,10 @@
         "id": "src_002",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "protest_toronto",
         "tag_total": 4,
         "predefined_analysis_result": {
@@ -68,7 +74,10 @@
         "id": "src_003",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "tag_id": "protest_ottawa",
         "tag_total": 3,
         "predefined_analysis_result": {
@@ -85,7 +94,10 @@
         "id": "src_004",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "protest_vancouver",
         "tag_total": 4,
         "predefined_analysis_result": {
@@ -93,7 +105,9 @@
           "level": 4,
           "description": "Protest march on Georgia St Vancouver heading toward Vancouver Art Gallery. 2,000 participants. Traffic blocked in both directions.",
           "confidence": 0.87
-        }
+        },
+        "heading_deg": 280,
+        "speed_kmh": 5
       }
     },
     {
@@ -102,7 +116,10 @@
         "id": "src_005",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "protest_toronto",
         "tag_total": 4,
         "predefined_analysis_result": {
@@ -119,13 +136,16 @@
         "id": "src_006",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "tag_id": "protest_ottawa",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "explosion",
           "level": 7,
-          "description": "Ottawa — vehicles set on fire on Wellington St. Smoke column visible from Parliament. Police requesting reinforcements. Government district access severed.",
+          "description": "Ottawa \u2014 vehicles set on fire on Wellington St. Smoke column visible from Parliament. Police requesting reinforcements. Government district access severed.",
           "confidence": 0.86
         }
       }
@@ -136,13 +156,16 @@
         "id": "src_007",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "protest_vancouver",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "street_fight",
           "level": 6,
-          "description": "Vancouver — crowd turning violent. Store windows smashed on Robson St. Police outnumbered. Transit suspended downtown.",
+          "description": "Vancouver \u2014 crowd turning violent. Store windows smashed on Robson St. Police outnumbered. Transit suspended downtown.",
           "confidence": 0.84
         }
       }
@@ -153,7 +176,10 @@
         "id": "src_008",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "protest_toronto",
         "tag_total": 4,
         "predefined_analysis_result": {
@@ -161,7 +187,11 @@
           "level": 8,
           "description": "Toronto riot spreading from City Hall toward financial district. Looters visible on Bay St. Police lines broken. Ambulances unable to reach injured.",
           "confidence": 0.93
-        }
+        },
+        "heading_deg": 120,
+        "speed_kmh": 6,
+        "target_lat": 43.6483,
+        "target_lon": -79.3808
       }
     },
     {
@@ -170,13 +200,16 @@
         "id": "src_009",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "tag_id": "protest_ottawa",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "mob_march",
           "level": 8,
-          "description": "Ottawa — secondary crowd forming near US Embassy on Sussex Drive. Police resource split across two locations. PM residence security elevated.",
+          "description": "Ottawa \u2014 secondary crowd forming near US Embassy on Sussex Drive. Police resource split across two locations. PM residence security elevated.",
           "confidence": 0.82
         }
       }
@@ -187,14 +220,17 @@
         "id": "src_010",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "protest_vancouver",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "mob_march",
           "level": 7,
-          "description": "Vancouver — riot police deployed. Water cannon activated. Crowd fragmenting into groups moving toward port and Burrard Bridge.",
-          "confidence": 0.90
+          "description": "Vancouver \u2014 riot police deployed. Water cannon activated. Crowd fragmenting into groups moving toward port and Burrard Bridge.",
+          "confidence": 0.9
         }
       }
     },
@@ -204,7 +240,10 @@
         "id": "src_011",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "coordinated_pattern",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -221,13 +260,16 @@
         "id": "src_012",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "tag_id": "protest_toronto",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "running_person",
           "level": 6,
-          "description": "Toronto financial district — civilians fleeing the riot moving south toward Lake Shore. Dozens of people running in the same direction.",
+          "description": "Toronto financial district \u2014 civilians fleeing the riot moving south toward Lake Shore. Dozens of people running in the same direction.",
           "confidence": 0.88
         }
       }
@@ -238,15 +280,22 @@
         "id": "src_013",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "protest_vancouver",
         "tag_total": 4,
         "predefined_analysis_result": {
           "event_type": "mob_march",
           "level": 8,
-          "description": "Vancouver — crowd reached port access roads on Burrard Inlet. Port security gates breached. Cargo operations halted.",
+          "description": "Vancouver \u2014 crowd reached port access roads on Burrard Inlet. Port security gates breached. Cargo operations halted.",
           "confidence": 0.87
-        }
+        },
+        "heading_deg": 350,
+        "speed_kmh": 5,
+        "target_lat": 49.296,
+        "target_lon": -123.114
       }
     },
     {
@@ -255,14 +304,17 @@
         "id": "src_014",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 49.2827, "lon": -123.1207 },
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
         "tag_id": "coordinated_pattern",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 8,
           "description": "Vancouver ham radio: 'Protesters are blocking all bridges and the port. They knew exactly where to go. This looks like a deliberate infrastructure shutdown.'",
-          "confidence": 0.80
+          "confidence": 0.8
         }
       }
     },
@@ -272,11 +324,14 @@
         "id": "src_015",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
           "level": 5,
-          "description": "Toronto east of riot zone — streets emptying. Businesses closing early. Transit disrupted. City going quiet.",
+          "description": "Toronto east of riot zone \u2014 streets emptying. Businesses closing early. Transit disrupted. City going quiet.",
           "confidence": 0.91
         }
       }
@@ -287,7 +342,10 @@
         "id": "src_016",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 45.4215, "lon": -75.6972 },
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
           "level": 5,
@@ -302,7 +360,10 @@
         "id": "src_017",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 7,

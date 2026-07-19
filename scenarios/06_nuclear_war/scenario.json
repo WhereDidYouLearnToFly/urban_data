@@ -1,0 +1,5073 @@
+{
+  "id": "06_nuclear_war",
+  "name": "Nuclear War",
+  "description": "Full-scale strategic nuclear exchange: 36 individual launches across land-based ICBM silo fields and submarine patrol boxes in the Atlantic, Pacific, and under-ice Arctic, resolving into 90 confirmed inbound reentry vehicles converging on 28 Canadian cities and CAF bases from coast to coast to coast. 56 staggered high-yield detonations, followed by a nationwide fallout/aftermath phase. No launches are simultaneous -- every wave and impact is spread out in time.",
+  "loop": false,
+  "speed_hint": "10x",
+  "groups": {
+    "land_launch_wave": {
+      "summary": "Multiple simultaneous missile launches detected, land-based ICBM silo field.",
+      "main_event": "Confirmed: coordinated launch wave from the land domain.",
+      "prediction": "Impact estimated within 20-30 minutes if trajectories hold.",
+      "suggestion": "Activate NORAD continuity protocols. Alert federal government for relocation to continuity-of-government sites."
+    },
+    "trajectory_land_wave": {
+      "summary": "Trajectory analysis resolves multiple inbound reentry vehicles from the land domain, each assigned a target city.",
+      "main_event": "Confirmed: multiple inbound reentry vehicles tracking toward Canadian population centers, land vector.",
+      "prediction": "Time to impact: approximately 10-20 minutes per target.",
+      "suggestion": "Issue a nationwide emergency alert. Order shelter/evacuation per municipal nuclear response plans."
+    },
+    "atlantic_launch_wave": {
+      "summary": "Multiple simultaneous missile launches detected, submarine-launched ballistic missile, Atlantic patrol box.",
+      "main_event": "Confirmed: coordinated launch wave from the atlantic domain.",
+      "prediction": "Impact estimated within 20-30 minutes if trajectories hold.",
+      "suggestion": "Activate NORAD continuity protocols. Alert federal government for relocation to continuity-of-government sites."
+    },
+    "trajectory_atlantic_wave": {
+      "summary": "Trajectory analysis resolves multiple inbound reentry vehicles from the atlantic domain, each assigned a target city.",
+      "main_event": "Confirmed: multiple inbound reentry vehicles tracking toward Canadian population centers, atlantic vector.",
+      "prediction": "Time to impact: approximately 10-20 minutes per target.",
+      "suggestion": "Issue a nationwide emergency alert. Order shelter/evacuation per municipal nuclear response plans."
+    },
+    "pacific_launch_wave": {
+      "summary": "Multiple simultaneous missile launches detected, submarine-launched ballistic missile, Pacific patrol box.",
+      "main_event": "Confirmed: coordinated launch wave from the pacific domain.",
+      "prediction": "Impact estimated within 20-30 minutes if trajectories hold.",
+      "suggestion": "Activate NORAD continuity protocols. Alert federal government for relocation to continuity-of-government sites."
+    },
+    "trajectory_pacific_wave": {
+      "summary": "Trajectory analysis resolves multiple inbound reentry vehicles from the pacific domain, each assigned a target city.",
+      "main_event": "Confirmed: multiple inbound reentry vehicles tracking toward Canadian population centers, pacific vector.",
+      "prediction": "Time to impact: approximately 10-20 minutes per target.",
+      "suggestion": "Issue a nationwide emergency alert. Order shelter/evacuation per municipal nuclear response plans."
+    },
+    "arctic_launch_wave": {
+      "summary": "Multiple simultaneous missile launches detected, submarine-launched ballistic missile, under-ice Arctic patrol box.",
+      "main_event": "Confirmed: coordinated launch wave from the arctic domain.",
+      "prediction": "Impact estimated within 20-30 minutes if trajectories hold.",
+      "suggestion": "Activate NORAD continuity protocols. Alert federal government for relocation to continuity-of-government sites."
+    },
+    "trajectory_arctic_wave": {
+      "summary": "Trajectory analysis resolves multiple inbound reentry vehicles from the arctic domain, each assigned a target city.",
+      "main_event": "Confirmed: multiple inbound reentry vehicles tracking toward Canadian population centers, arctic vector.",
+      "prediction": "Time to impact: approximately 10-20 minutes per target.",
+      "suggestion": "Issue a nationwide emergency alert. Order shelter/evacuation per municipal nuclear response plans."
+    },
+    "detonation_ottawa": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Ottawa.",
+      "main_event": "Confirmed nuclear detonation, Ottawa.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_toronto": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Toronto.",
+      "main_event": "Confirmed nuclear detonation, Toronto.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_montreal": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Montreal.",
+      "main_event": "Confirmed nuclear detonation, Montreal.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_vancouver": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Vancouver.",
+      "main_event": "Confirmed nuclear detonation, Vancouver.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_calgary": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Calgary.",
+      "main_event": "Confirmed nuclear detonation, Calgary.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_edmonton": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Edmonton.",
+      "main_event": "Confirmed nuclear detonation, Edmonton.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_winnipeg": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Winnipeg.",
+      "main_event": "Confirmed nuclear detonation, Winnipeg.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_halifax": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Halifax.",
+      "main_event": "Confirmed nuclear detonation, Halifax.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_quebec_city": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Quebec City.",
+      "main_event": "Confirmed nuclear detonation, Quebec City.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_regina": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Regina.",
+      "main_event": "Confirmed nuclear detonation, Regina.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_saskatoon": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Saskatoon.",
+      "main_event": "Confirmed nuclear detonation, Saskatoon.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_victoria": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Victoria.",
+      "main_event": "Confirmed nuclear detonation, Victoria.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_hamilton": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Hamilton.",
+      "main_event": "Confirmed nuclear detonation, Hamilton.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_london": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at London.",
+      "main_event": "Confirmed nuclear detonation, London.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_windsor": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Windsor.",
+      "main_event": "Confirmed nuclear detonation, Windsor.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_kitchener": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Kitchener.",
+      "main_event": "Confirmed nuclear detonation, Kitchener.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_thunder_bay": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Thunder Bay.",
+      "main_event": "Confirmed nuclear detonation, Thunder Bay.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_st_johns": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at St. John's.",
+      "main_event": "Confirmed nuclear detonation, St. John's.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_whitehorse": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Whitehorse.",
+      "main_event": "Confirmed nuclear detonation, Whitehorse.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_yellowknife": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Yellowknife.",
+      "main_event": "Confirmed nuclear detonation, Yellowknife.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_iqaluit": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Iqaluit.",
+      "main_event": "Confirmed nuclear detonation, Iqaluit.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_fredericton": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Fredericton.",
+      "main_event": "Confirmed nuclear detonation, Fredericton.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_charlottetown": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Charlottetown.",
+      "main_event": "Confirmed nuclear detonation, Charlottetown.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_north_bay": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at North Bay.",
+      "main_event": "Confirmed nuclear detonation, North Bay.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_cold_lake": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Cold Lake.",
+      "main_event": "Confirmed nuclear detonation, Cold Lake.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_bagotville": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Bagotville.",
+      "main_event": "Confirmed nuclear detonation, Bagotville.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_trenton": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Trenton.",
+      "main_event": "Confirmed nuclear detonation, Trenton.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    },
+    "detonation_sudbury": {
+      "summary": "Seismic and RF sensors confirm a high-yield detonation at Sudbury.",
+      "main_event": "Confirmed nuclear detonation, Sudbury.",
+      "prediction": "Fallout plume expected to spread with prevailing winds.",
+      "suggestion": "Activate mass-casualty and continuity-of-government protocols. Begin fallout modeling and downwind evacuation."
+    }
+  },
+  "events": [
+    {
+      "offset_seconds": 5.5,
+      "source": {
+        "id": "src_001",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 11.0,
+      "source": {
+        "id": "src_002",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 16.5,
+      "source": {
+        "id": "src_003",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 22.0,
+      "source": {
+        "id": "src_004",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 27.5,
+      "source": {
+        "id": "src_005",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 33.0,
+      "source": {
+        "id": "src_006",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 38.5,
+      "source": {
+        "id": "src_007",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_c.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 44.0,
+      "source": {
+        "id": "src_008",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_c.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 49.5,
+      "source": {
+        "id": "src_009",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_c.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 55.0,
+      "source": {
+        "id": "src_010",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_d.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 60.5,
+      "source": {
+        "id": "src_011",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_d.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 66.0,
+      "source": {
+        "id": "src_012",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a land-based ICBM silo field launch signature, boost-phase plume confirmed, site designation land_d.",
+          "confidence": 0.9
+        },
+        "tag_id": "land_launch_wave",
+        "tag_total": 12
+      }
+    },
+    {
+      "offset_seconds": 71.5,
+      "source": {
+        "id": "src_013",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 77.0,
+      "source": {
+        "id": "src_014",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 82.5,
+      "source": {
+        "id": "src_015",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 88.0,
+      "source": {
+        "id": "src_016",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 93.5,
+      "source": {
+        "id": "src_017",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 99.0,
+      "source": {
+        "id": "src_018",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 104.5,
+      "source": {
+        "id": "src_019",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 110.0,
+      "source": {
+        "id": "src_020",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Atlantic patrol box launch signature, boost-phase plume confirmed, site designation atl_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 115.5,
+      "source": {
+        "id": "src_021",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 121.0,
+      "source": {
+        "id": "src_022",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 126.5,
+      "source": {
+        "id": "src_023",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 132.0,
+      "source": {
+        "id": "src_024",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 137.5,
+      "source": {
+        "id": "src_025",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 143.0,
+      "source": {
+        "id": "src_026",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 148.5,
+      "source": {
+        "id": "src_027",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 154.0,
+      "source": {
+        "id": "src_028",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, Pacific patrol box launch signature, boost-phase plume confirmed, site designation pac_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 159.5,
+      "source": {
+        "id": "src_029",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 165.0,
+      "source": {
+        "id": "src_030",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 170.5,
+      "source": {
+        "id": "src_031",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 176.0,
+      "source": {
+        "id": "src_032",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_a.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 181.5,
+      "source": {
+        "id": "src_033",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 187.0,
+      "source": {
+        "id": "src_034",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 192.5,
+      "source": {
+        "id": "src_035",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 198.0,
+      "source": {
+        "id": "src_036",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_launch",
+          "level": 8,
+          "description": "Early-warning sensors detect a submarine-launched ballistic missile, under-ice Arctic patrol box launch signature, boost-phase plume confirmed, site designation arc_b.",
+          "confidence": 0.9
+        },
+        "tag_id": "arctic_launch_wave",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 226.0,
+      "source": {
+        "id": "src_037",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Ottawa.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 48.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_ottawa_1",
+        "target_lat": 45.4215,
+        "target_lon": -75.6972
+      }
+    },
+    {
+      "offset_seconds": 232.0,
+      "source": {
+        "id": "src_038",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Ottawa.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 59.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_ottawa_2",
+        "target_lat": 45.4215,
+        "target_lon": -75.6972
+      }
+    },
+    {
+      "offset_seconds": 238.0,
+      "source": {
+        "id": "src_039",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Ottawa.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 327.0,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_ottawa_3",
+        "target_lat": 45.4215,
+        "target_lon": -75.6972
+      }
+    },
+    {
+      "offset_seconds": 244.0,
+      "source": {
+        "id": "src_040",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Ottawa.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 316.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_ottawa_4",
+        "target_lat": 45.4215,
+        "target_lon": -75.6972
+      }
+    },
+    {
+      "offset_seconds": 250.0,
+      "source": {
+        "id": "src_041",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Ottawa.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 48.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_ottawa_5",
+        "target_lat": 45.4215,
+        "target_lon": -75.6972
+      }
+    },
+    {
+      "offset_seconds": 256.0,
+      "source": {
+        "id": "src_042",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Toronto.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 63.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_toronto_1",
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 262.0,
+      "source": {
+        "id": "src_043",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Toronto.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 329.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_toronto_2",
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 268.0,
+      "source": {
+        "id": "src_044",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Toronto.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 318.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_toronto_3",
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 274.0,
+      "source": {
+        "id": "src_045",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Toronto.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 51.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_toronto_4",
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 280.0,
+      "source": {
+        "id": "src_046",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Toronto.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 63.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_toronto_5",
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 286.0,
+      "source": {
+        "id": "src_047",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Montreal.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 325.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_montreal_1",
+        "target_lat": 45.5019,
+        "target_lon": -73.5674
+      }
+    },
+    {
+      "offset_seconds": 292.0,
+      "source": {
+        "id": "src_048",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Montreal.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 315.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_montreal_2",
+        "target_lat": 45.5019,
+        "target_lon": -73.5674
+      }
+    },
+    {
+      "offset_seconds": 298.0,
+      "source": {
+        "id": "src_049",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Montreal.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 46.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_montreal_3",
+        "target_lat": 45.5019,
+        "target_lon": -73.5674
+      }
+    },
+    {
+      "offset_seconds": 304.0,
+      "source": {
+        "id": "src_050",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Montreal.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 58.0,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_montreal_4",
+        "target_lat": 45.5019,
+        "target_lon": -73.5674
+      }
+    },
+    {
+      "offset_seconds": 310.0,
+      "source": {
+        "id": "src_051",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Montreal.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 325.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_montreal_5",
+        "target_lat": 45.5019,
+        "target_lon": -73.5674
+      }
+    },
+    {
+      "offset_seconds": 316.0,
+      "source": {
+        "id": "src_052",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Vancouver.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 57.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_vancouver_1",
+        "target_lat": 49.2827,
+        "target_lon": -123.1207
+      }
+    },
+    {
+      "offset_seconds": 322.0,
+      "source": {
+        "id": "src_053",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Vancouver.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 66.4,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_vancouver_2",
+        "target_lat": 49.2827,
+        "target_lon": -123.1207
+      }
+    },
+    {
+      "offset_seconds": 328.0,
+      "source": {
+        "id": "src_054",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Vancouver.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 57.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_vancouver_3",
+        "target_lat": 49.2827,
+        "target_lon": -123.1207
+      }
+    },
+    {
+      "offset_seconds": 334.0,
+      "source": {
+        "id": "src_055",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Vancouver.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 66.4,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_vancouver_4",
+        "target_lat": 49.2827,
+        "target_lon": -123.1207
+      }
+    },
+    {
+      "offset_seconds": 340.0,
+      "source": {
+        "id": "src_056",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Vancouver.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 57.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_vancouver_5",
+        "target_lat": 49.2827,
+        "target_lon": -123.1207
+      }
+    },
+    {
+      "offset_seconds": 346.0,
+      "source": {
+        "id": "src_057",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Calgary.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 345.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_calgary_1",
+        "target_lat": 51.0447,
+        "target_lon": -114.0719
+      }
+    },
+    {
+      "offset_seconds": 352.0,
+      "source": {
+        "id": "src_058",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Calgary.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 76.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_calgary_2",
+        "target_lat": 51.0447,
+        "target_lon": -114.0719
+      }
+    },
+    {
+      "offset_seconds": 358.0,
+      "source": {
+        "id": "src_059",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Calgary.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 87.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_calgary_3",
+        "target_lat": 51.0447,
+        "target_lon": -114.0719
+      }
+    },
+    {
+      "offset_seconds": 364.0,
+      "source": {
+        "id": "src_060",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Calgary.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 355.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_calgary_4",
+        "target_lat": 51.0447,
+        "target_lon": -114.0719
+      }
+    },
+    {
+      "offset_seconds": 370.0,
+      "source": {
+        "id": "src_061",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Calgary.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 345.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_calgary_5",
+        "target_lat": 51.0447,
+        "target_lon": -114.0719
+      }
+    },
+    {
+      "offset_seconds": 376.0,
+      "source": {
+        "id": "src_062",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Edmonton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 74.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_edmonton_1",
+        "target_lat": 53.5461,
+        "target_lon": -113.4938
+      }
+    },
+    {
+      "offset_seconds": 382.0,
+      "source": {
+        "id": "src_063",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Edmonton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 83.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_edmonton_2",
+        "target_lat": 53.5461,
+        "target_lon": -113.4938
+      }
+    },
+    {
+      "offset_seconds": 388.0,
+      "source": {
+        "id": "src_064",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Edmonton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 355.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_edmonton_3",
+        "target_lat": 53.5461,
+        "target_lon": -113.4938
+      }
+    },
+    {
+      "offset_seconds": 394.0,
+      "source": {
+        "id": "src_065",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Edmonton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 345.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_edmonton_4",
+        "target_lat": 53.5461,
+        "target_lon": -113.4938
+      }
+    },
+    {
+      "offset_seconds": 400.0,
+      "source": {
+        "id": "src_066",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Edmonton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 74.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_edmonton_5",
+        "target_lat": 53.5461,
+        "target_lon": -113.4938
+      }
+    },
+    {
+      "offset_seconds": 406.0,
+      "source": {
+        "id": "src_067",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Winnipeg.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 73.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_winnipeg_1",
+        "target_lat": 49.8951,
+        "target_lon": -97.1384
+      }
+    },
+    {
+      "offset_seconds": 412.0,
+      "source": {
+        "id": "src_068",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Winnipeg.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 343.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_winnipeg_2",
+        "target_lat": 49.8951,
+        "target_lon": -97.1384
+      }
+    },
+    {
+      "offset_seconds": 418.0,
+      "source": {
+        "id": "src_069",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Winnipeg.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 333.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_winnipeg_3",
+        "target_lat": 49.8951,
+        "target_lon": -97.1384
+      }
+    },
+    {
+      "offset_seconds": 424.0,
+      "source": {
+        "id": "src_070",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Winnipeg.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 63.4,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_winnipeg_4",
+        "target_lat": 49.8951,
+        "target_lon": -97.1384
+      }
+    },
+    {
+      "offset_seconds": 430.0,
+      "source": {
+        "id": "src_071",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Winnipeg.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 73.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_winnipeg_5",
+        "target_lat": 49.8951,
+        "target_lon": -97.1384
+      }
+    },
+    {
+      "offset_seconds": 436.0,
+      "source": {
+        "id": "src_072",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Halifax.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 269.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_halifax_1",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 442.0,
+      "source": {
+        "id": "src_073",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Halifax.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 299.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_halifax_2",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 448.0,
+      "source": {
+        "id": "src_074",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Halifax.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 269.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_halifax_3",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 454.0,
+      "source": {
+        "id": "src_075",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Halifax.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 299.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_halifax_4",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 460.0,
+      "source": {
+        "id": "src_076",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Halifax.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 269.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_halifax_5",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 466.0,
+      "source": {
+        "id": "src_077",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Quebec City.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 300.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_quebec_city_1",
+        "target_lat": 46.8139,
+        "target_lon": -71.208
+      }
+    },
+    {
+      "offset_seconds": 472.0,
+      "source": {
+        "id": "src_078",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Quebec City.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 279.4,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_quebec_city_2",
+        "target_lat": 46.8139,
+        "target_lon": -71.208
+      }
+    },
+    {
+      "offset_seconds": 478.0,
+      "source": {
+        "id": "src_079",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Quebec City.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 300.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_quebec_city_3",
+        "target_lat": 46.8139,
+        "target_lon": -71.208
+      }
+    },
+    {
+      "offset_seconds": 484.0,
+      "source": {
+        "id": "src_080",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Regina.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 349.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_regina_1",
+        "target_lat": 50.4452,
+        "target_lon": -104.6189
+      }
+    },
+    {
+      "offset_seconds": 490.0,
+      "source": {
+        "id": "src_081",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Regina.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 339.0,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_regina_2",
+        "target_lat": 50.4452,
+        "target_lon": -104.6189
+      }
+    },
+    {
+      "offset_seconds": 496.0,
+      "source": {
+        "id": "src_082",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Regina.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 69.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_regina_3",
+        "target_lat": 50.4452,
+        "target_lon": -104.6189
+      }
+    },
+    {
+      "offset_seconds": 502.0,
+      "source": {
+        "id": "src_083",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Saskatoon.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 79.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_saskatoon_1",
+        "target_lat": 52.1332,
+        "target_lon": -106.67
+      }
+    },
+    {
+      "offset_seconds": 508.0,
+      "source": {
+        "id": "src_084",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Saskatoon.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 350.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_saskatoon_2",
+        "target_lat": 52.1332,
+        "target_lon": -106.67
+      }
+    },
+    {
+      "offset_seconds": 514.0,
+      "source": {
+        "id": "src_085",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Saskatoon.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 340.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_saskatoon_3",
+        "target_lat": 52.1332,
+        "target_lon": -106.67
+      }
+    },
+    {
+      "offset_seconds": 520.0,
+      "source": {
+        "id": "src_086",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Victoria.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 67.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_victoria_1",
+        "target_lat": 48.4284,
+        "target_lon": -123.3656
+      }
+    },
+    {
+      "offset_seconds": 526.0,
+      "source": {
+        "id": "src_087",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -160.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_a to a descending arc consistent with impact near Victoria.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 59.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_victoria_2",
+        "target_lat": 48.4284,
+        "target_lon": -123.3656
+      }
+    },
+    {
+      "offset_seconds": 532.0,
+      "source": {
+        "id": "src_088",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": 175.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from pac_b to a descending arc consistent with impact near Victoria.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_pacific_wave",
+        "tag_total": 8,
+        "heading_deg": 67.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_victoria_3",
+        "target_lat": 48.4284,
+        "target_lon": -123.3656
+      }
+    },
+    {
+      "offset_seconds": 538.0,
+      "source": {
+        "id": "src_089",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Hamilton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 52.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_hamilton_1",
+        "target_lat": 43.2557,
+        "target_lon": -79.8711
+      }
+    },
+    {
+      "offset_seconds": 544.0,
+      "source": {
+        "id": "src_090",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Hamilton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 64.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_hamilton_2",
+        "target_lat": 43.2557,
+        "target_lon": -79.8711
+      }
+    },
+    {
+      "offset_seconds": 550.0,
+      "source": {
+        "id": "src_091",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Hamilton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 329.4,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_hamilton_3",
+        "target_lat": 43.2557,
+        "target_lon": -79.8711
+      }
+    },
+    {
+      "offset_seconds": 556.0,
+      "source": {
+        "id": "src_092",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near London.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 319.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_london_1",
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 562.0,
+      "source": {
+        "id": "src_093",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near London.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 53.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_london_2",
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 568.0,
+      "source": {
+        "id": "src_094",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near London.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 65.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_london_3",
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 574.0,
+      "source": {
+        "id": "src_095",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Windsor.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 331.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_windsor_1",
+        "target_lat": 42.3149,
+        "target_lon": -83.0364
+      }
+    },
+    {
+      "offset_seconds": 580.0,
+      "source": {
+        "id": "src_096",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Windsor.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 320.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_windsor_2",
+        "target_lat": 42.3149,
+        "target_lon": -83.0364
+      }
+    },
+    {
+      "offset_seconds": 586.0,
+      "source": {
+        "id": "src_097",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Windsor.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 55.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_windsor_3",
+        "target_lat": 42.3149,
+        "target_lon": -83.0364
+      }
+    },
+    {
+      "offset_seconds": 592.0,
+      "source": {
+        "id": "src_098",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Kitchener.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 64.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_kitchener_1",
+        "target_lat": 43.4516,
+        "target_lon": -80.4925
+      }
+    },
+    {
+      "offset_seconds": 598.0,
+      "source": {
+        "id": "src_099",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Kitchener.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 329.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_kitchener_2",
+        "target_lat": 43.4516,
+        "target_lon": -80.4925
+      }
+    },
+    {
+      "offset_seconds": 604.0,
+      "source": {
+        "id": "src_100",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Kitchener.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 319.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_kitchener_3",
+        "target_lat": 43.4516,
+        "target_lon": -80.4925
+      }
+    },
+    {
+      "offset_seconds": 610.0,
+      "source": {
+        "id": "src_101",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Thunder Bay.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 57.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_thunder_bay_1",
+        "target_lat": 48.3809,
+        "target_lon": -89.2477
+      }
+    },
+    {
+      "offset_seconds": 616.0,
+      "source": {
+        "id": "src_102",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Thunder Bay.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 68.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_thunder_bay_2",
+        "target_lat": 48.3809,
+        "target_lon": -89.2477
+      }
+    },
+    {
+      "offset_seconds": 622.0,
+      "source": {
+        "id": "src_103",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Thunder Bay.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 337.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_thunder_bay_3",
+        "target_lat": 48.3809,
+        "target_lon": -89.2477
+      }
+    },
+    {
+      "offset_seconds": 628.0,
+      "source": {
+        "id": "src_104",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near St. John's.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 269.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_st_john's_1",
+        "target_lat": 47.5615,
+        "target_lon": -52.7126
+      }
+    },
+    {
+      "offset_seconds": 634.0,
+      "source": {
+        "id": "src_105",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near St. John's.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 346.4,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_st_john's_2",
+        "target_lat": 47.5615,
+        "target_lon": -52.7126
+      }
+    },
+    {
+      "offset_seconds": 640.0,
+      "source": {
+        "id": "src_106",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near St. John's.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 269.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_st_john's_3",
+        "target_lat": 47.5615,
+        "target_lon": -52.7126
+      }
+    },
+    {
+      "offset_seconds": 646.0,
+      "source": {
+        "id": "src_107",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Whitehorse.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 329.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_whitehorse_1",
+        "target_lat": 60.7212,
+        "target_lon": -135.0568
+      }
+    },
+    {
+      "offset_seconds": 652.0,
+      "source": {
+        "id": "src_108",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Whitehorse.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 42.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_whitehorse_2",
+        "target_lat": 60.7212,
+        "target_lon": -135.0568
+      }
+    },
+    {
+      "offset_seconds": 658.0,
+      "source": {
+        "id": "src_109",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Yellowknife.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 311.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_yellowknife_1",
+        "target_lat": 62.454,
+        "target_lon": -114.3718
+      }
+    },
+    {
+      "offset_seconds": 664.0,
+      "source": {
+        "id": "src_110",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Yellowknife.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 22.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_yellowknife_2",
+        "target_lat": 62.454,
+        "target_lon": -114.3718
+      }
+    },
+    {
+      "offset_seconds": 670.0,
+      "source": {
+        "id": "src_111",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Iqaluit.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 268.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_iqaluit_1",
+        "target_lat": 63.7467,
+        "target_lon": -68.517
+      }
+    },
+    {
+      "offset_seconds": 676.0,
+      "source": {
+        "id": "src_112",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Iqaluit.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 339.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_iqaluit_2",
+        "target_lat": 63.7467,
+        "target_lon": -68.517
+      }
+    },
+    {
+      "offset_seconds": 682.0,
+      "source": {
+        "id": "src_113",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Fredericton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 301.6,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_fredericton_1",
+        "target_lat": 45.9636,
+        "target_lon": -66.6431
+      }
+    },
+    {
+      "offset_seconds": 688.0,
+      "source": {
+        "id": "src_114",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Fredericton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 274.8,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_fredericton_2",
+        "target_lat": 45.9636,
+        "target_lon": -66.6431
+      }
+    },
+    {
+      "offset_seconds": 694.0,
+      "source": {
+        "id": "src_115",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 40.0,
+          "lon": -50.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_b to a descending arc consistent with impact near Charlottetown.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 307.4,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_charlottetown_1",
+        "target_lat": 46.2382,
+        "target_lon": -63.1311
+      }
+    },
+    {
+      "offset_seconds": 700.0,
+      "source": {
+        "id": "src_116",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0,
+          "lon": -30.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from atl_a to a descending arc consistent with impact near Charlottetown.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_atlantic_wave",
+        "tag_total": 15,
+        "heading_deg": 273.1,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_charlottetown_2",
+        "target_lat": 46.2382,
+        "target_lon": -63.1311
+      }
+    },
+    {
+      "offset_seconds": 706.0,
+      "source": {
+        "id": "src_117",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near North Bay.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 319.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_north_bay_1",
+        "target_lat": 46.3091,
+        "target_lon": -79.4608
+      }
+    },
+    {
+      "offset_seconds": 712.0,
+      "source": {
+        "id": "src_118",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near North Bay.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 50.9,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_north_bay_2",
+        "target_lat": 46.3091,
+        "target_lon": -79.4608
+      }
+    },
+    {
+      "offset_seconds": 718.0,
+      "source": {
+        "id": "src_119",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Cold Lake.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 80.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_cold_lake_1",
+        "target_lat": 54.4642,
+        "target_lon": -110.285
+      }
+    },
+    {
+      "offset_seconds": 724.0,
+      "source": {
+        "id": "src_120",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Cold Lake.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 353.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_cold_lake_2",
+        "target_lat": 54.4642,
+        "target_lon": -110.285
+      }
+    },
+    {
+      "offset_seconds": 730.0,
+      "source": {
+        "id": "src_121",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 85.0,
+          "lon": 10.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_a to a descending arc consistent with impact near Bagotville.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 266.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_bagotville_1",
+        "target_lat": 48.3306,
+        "target_lon": -71.0089
+      }
+    },
+    {
+      "offset_seconds": 732.0,
+      "source": {
+        "id": "src_127",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Citizen ham report: continuous air-raid sirens across Ottawa, streets jammed with people trying to leave.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 736.0,
+      "source": {
+        "id": "src_122",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 88.0,
+          "lon": 90.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from arc_b to a descending arc consistent with impact near Bagotville.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_arctic_wave",
+        "tag_total": 8,
+        "heading_deg": 341.7,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_bagotville_2",
+        "target_lat": 48.3306,
+        "target_lon": -71.0089
+      }
+    },
+    {
+      "offset_seconds": 742.0,
+      "source": {
+        "id": "src_123",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.0,
+          "lon": 45.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_d to a descending arc consistent with impact near Trenton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 317.5,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_trenton_1",
+        "target_lat": 44.1201,
+        "target_lon": -77.532
+      }
+    },
+    {
+      "offset_seconds": 748.0,
+      "source": {
+        "id": "src_124",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 72.0,
+          "lon": 165.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_a to a descending arc consistent with impact near Trenton.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 50.2,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_trenton_2",
+        "target_lat": 44.1201,
+        "target_lon": -77.532
+      }
+    },
+    {
+      "offset_seconds": 754.0,
+      "source": {
+        "id": "src_125",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 68.5,
+          "lon": -178.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_b to a descending arc consistent with impact near Sudbury.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 63.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_sudbury_1",
+        "target_lat": 46.4917,
+        "target_lon": -80.993
+      }
+    },
+    {
+      "offset_seconds": 760.0,
+      "source": {
+        "id": "src_126",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 65.0,
+          "lon": 60.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "missile_trajectory",
+          "level": 9,
+          "description": "Post-boost trajectory analysis assigns an inbound reentry vehicle from land_c to a descending arc consistent with impact near Sudbury.",
+          "confidence": 0.9
+        },
+        "tag_id": "trajectory_land_wave",
+        "tag_total": 59,
+        "heading_deg": 331.3,
+        "speed_kmh": 24000,
+        "predicted_track_id": "inbound_sudbury_2",
+        "target_lat": 46.4917,
+        "target_lon": -80.993
+      }
+    },
+    {
+      "offset_seconds": 764.0,
+      "source": {
+        "id": "src_128",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Emergency Alert System activation confirmed on Toronto broadcast monitors: shelter-in-place order issued.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 796.0,
+      "source": {
+        "id": "src_129",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.5019,
+          "lon": -73.5674
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Citizen report from Montreal: highway gridlock on all routes out of the city.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 828.0,
+      "source": {
+        "id": "src_130",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Ham radio chatter out of Vancouver: military convoys reported moving toward hardened sites.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 860.0,
+      "source": {
+        "id": "src_131",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 51.0447,
+          "lon": -114.0719
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Regional broadcast monitor in Calgary confirms national emergency alert received.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 892.0,
+      "source": {
+        "id": "src_132",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 53.5461,
+          "lon": -113.4938
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Citizen ham report: continuous air-raid sirens across Edmonton, streets jammed with people trying to leave.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 924.0,
+      "source": {
+        "id": "src_133",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.8951,
+          "lon": -97.1384
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Emergency Alert System activation confirmed on Winnipeg broadcast monitors: shelter-in-place order issued.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 956.0,
+      "source": {
+        "id": "src_134",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Citizen report from Halifax: highway gridlock on all routes out of the city.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 988.0,
+      "source": {
+        "id": "src_135",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.8139,
+          "lon": -71.208
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Ham radio chatter out of Quebec City: military convoys reported moving toward hardened sites.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1020.0,
+      "source": {
+        "id": "src_136",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.4452,
+          "lon": -104.6189
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Regional broadcast monitor in Regina confirms national emergency alert received.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1052.0,
+      "source": {
+        "id": "src_137",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 52.1332,
+          "lon": -106.67
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Citizen ham report: continuous air-raid sirens across Saskatoon, streets jammed with people trying to leave.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1084.0,
+      "source": {
+        "id": "src_138",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.4284,
+          "lon": -123.3656
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Emergency Alert System activation confirmed on Victoria broadcast monitors: shelter-in-place order issued.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1116.0,
+      "source": {
+        "id": "src_139",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.2557,
+          "lon": -79.8711
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Citizen report from Hamilton: highway gridlock on all routes out of the city.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1148.0,
+      "source": {
+        "id": "src_140",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Ham radio chatter out of London: military convoys reported moving toward hardened sites.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1180.0,
+      "source": {
+        "id": "src_141",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Regional broadcast monitor in Windsor confirms national emergency alert received.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1212.0,
+      "source": {
+        "id": "src_142",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.4516,
+          "lon": -80.4925
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Citizen ham report: continuous air-raid sirens across Kitchener, streets jammed with people trying to leave.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1244.0,
+      "source": {
+        "id": "src_143",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3809,
+          "lon": -89.2477
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Emergency Alert System activation confirmed on Thunder Bay broadcast monitors: shelter-in-place order issued.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1276.0,
+      "source": {
+        "id": "src_144",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 47.5615,
+          "lon": -52.7126
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Citizen report from St. John's: highway gridlock on all routes out of the city.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1308.0,
+      "source": {
+        "id": "src_145",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Ham radio chatter out of Whitehorse: military convoys reported moving toward hardened sites.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1340.0,
+      "source": {
+        "id": "src_146",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 62.454,
+          "lon": -114.3718
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Regional broadcast monitor in Yellowknife confirms national emergency alert received.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1372.0,
+      "source": {
+        "id": "src_147",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Citizen ham report: continuous air-raid sirens across Iqaluit, streets jammed with people trying to leave.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1404.0,
+      "source": {
+        "id": "src_148",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9636,
+          "lon": -66.6431
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 5,
+          "description": "Emergency Alert System activation confirmed on Fredericton broadcast monitors: shelter-in-place order issued.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 1558.0,
+      "source": {
+        "id": "src_149",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Ottawa, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_ottawa",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1564.0,
+      "source": {
+        "id": "src_150",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Ottawa region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_ottawa",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1616.0,
+      "source": {
+        "id": "src_151",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Toronto, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_toronto",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1622.0,
+      "source": {
+        "id": "src_152",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Toronto region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_toronto",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1674.0,
+      "source": {
+        "id": "src_153",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 45.5019,
+          "lon": -73.5674
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Montreal, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_montreal",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1680.0,
+      "source": {
+        "id": "src_154",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.5019,
+          "lon": -73.5674
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Montreal region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_montreal",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1732.0,
+      "source": {
+        "id": "src_155",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Vancouver, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_vancouver",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1738.0,
+      "source": {
+        "id": "src_156",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Vancouver region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_vancouver",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1790.0,
+      "source": {
+        "id": "src_157",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 51.0447,
+          "lon": -114.0719
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Calgary, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_calgary",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1796.0,
+      "source": {
+        "id": "src_158",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 51.0447,
+          "lon": -114.0719
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Calgary region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_calgary",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1848.0,
+      "source": {
+        "id": "src_159",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 53.5461,
+          "lon": -113.4938
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Edmonton, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_edmonton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1854.0,
+      "source": {
+        "id": "src_160",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 53.5461,
+          "lon": -113.4938
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Edmonton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_edmonton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1906.0,
+      "source": {
+        "id": "src_161",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 49.8951,
+          "lon": -97.1384
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Winnipeg, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_winnipeg",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1912.0,
+      "source": {
+        "id": "src_162",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 49.8951,
+          "lon": -97.1384
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Winnipeg region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_winnipeg",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1964.0,
+      "source": {
+        "id": "src_163",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Halifax, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_halifax",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 1970.0,
+      "source": {
+        "id": "src_164",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Halifax region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_halifax",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2022.0,
+      "source": {
+        "id": "src_165",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 46.8139,
+          "lon": -71.208
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Quebec City, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_quebec_city",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2028.0,
+      "source": {
+        "id": "src_166",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 46.8139,
+          "lon": -71.208
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Quebec City region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_quebec_city",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2080.0,
+      "source": {
+        "id": "src_167",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 50.4452,
+          "lon": -104.6189
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Regina, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_regina",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2086.0,
+      "source": {
+        "id": "src_168",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.4452,
+          "lon": -104.6189
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Regina region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_regina",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2138.0,
+      "source": {
+        "id": "src_169",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 52.1332,
+          "lon": -106.67
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Saskatoon, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_saskatoon",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2144.0,
+      "source": {
+        "id": "src_170",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 52.1332,
+          "lon": -106.67
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Saskatoon region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_saskatoon",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2196.0,
+      "source": {
+        "id": "src_171",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 48.4284,
+          "lon": -123.3656
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Victoria, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_victoria",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2202.0,
+      "source": {
+        "id": "src_172",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 48.4284,
+          "lon": -123.3656
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Victoria region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_victoria",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2254.0,
+      "source": {
+        "id": "src_173",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 43.2557,
+          "lon": -79.8711
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Hamilton, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_hamilton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2260.0,
+      "source": {
+        "id": "src_174",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.2557,
+          "lon": -79.8711
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Hamilton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_hamilton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2312.0,
+      "source": {
+        "id": "src_175",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on London, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_london",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2318.0,
+      "source": {
+        "id": "src_176",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the London region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_london",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2370.0,
+      "source": {
+        "id": "src_177",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Windsor, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_windsor",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2376.0,
+      "source": {
+        "id": "src_178",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Windsor region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_windsor",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2428.0,
+      "source": {
+        "id": "src_179",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 43.4516,
+          "lon": -80.4925
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Kitchener, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_kitchener",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2434.0,
+      "source": {
+        "id": "src_180",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.4516,
+          "lon": -80.4925
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Kitchener region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_kitchener",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2486.0,
+      "source": {
+        "id": "src_181",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3809,
+          "lon": -89.2477
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Thunder Bay, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_thunder_bay",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2492.0,
+      "source": {
+        "id": "src_182",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3809,
+          "lon": -89.2477
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Thunder Bay region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_thunder_bay",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2544.0,
+      "source": {
+        "id": "src_183",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 47.5615,
+          "lon": -52.7126
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on St. John's, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_st_johns",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2550.0,
+      "source": {
+        "id": "src_184",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 47.5615,
+          "lon": -52.7126
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the St. John's region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_st_johns",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2602.0,
+      "source": {
+        "id": "src_185",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Whitehorse, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_whitehorse",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2608.0,
+      "source": {
+        "id": "src_186",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Whitehorse region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_whitehorse",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2660.0,
+      "source": {
+        "id": "src_187",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 62.454,
+          "lon": -114.3718
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Yellowknife, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_yellowknife",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2666.0,
+      "source": {
+        "id": "src_188",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 62.454,
+          "lon": -114.3718
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Yellowknife region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_yellowknife",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2718.0,
+      "source": {
+        "id": "src_189",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Iqaluit, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_iqaluit",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2724.0,
+      "source": {
+        "id": "src_190",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Iqaluit region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_iqaluit",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2776.0,
+      "source": {
+        "id": "src_191",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9636,
+          "lon": -66.6431
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Fredericton, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_fredericton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2782.0,
+      "source": {
+        "id": "src_192",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9636,
+          "lon": -66.6431
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Fredericton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_fredericton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2834.0,
+      "source": {
+        "id": "src_193",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 46.2382,
+          "lon": -63.1311
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Charlottetown, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_charlottetown",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2840.0,
+      "source": {
+        "id": "src_194",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 46.2382,
+          "lon": -63.1311
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Charlottetown region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_charlottetown",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2892.0,
+      "source": {
+        "id": "src_195",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 46.3091,
+          "lon": -79.4608
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on North Bay, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_north_bay",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2898.0,
+      "source": {
+        "id": "src_196",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 46.3091,
+          "lon": -79.4608
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the North Bay region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_north_bay",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2950.0,
+      "source": {
+        "id": "src_197",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 54.4642,
+          "lon": -110.285
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Cold Lake, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_cold_lake",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 2956.0,
+      "source": {
+        "id": "src_198",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 54.4642,
+          "lon": -110.285
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Cold Lake region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_cold_lake",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 3008.0,
+      "source": {
+        "id": "src_199",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3306,
+          "lon": -71.0089
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Bagotville, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_bagotville",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 3014.0,
+      "source": {
+        "id": "src_200",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3306,
+          "lon": -71.0089
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Bagotville region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_bagotville",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 3066.0,
+      "source": {
+        "id": "src_201",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 44.1201,
+          "lon": -77.532
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Trenton, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_trenton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 3072.0,
+      "source": {
+        "id": "src_202",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.1201,
+          "lon": -77.532
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Trenton region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_trenton",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 3124.0,
+      "source": {
+        "id": "src_203",
+        "type": "float_sequence",
+        "data": null,
+        "coordinates": {
+          "lat": 46.4917,
+          "lon": -80.993
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "Seismic array registers an extreme-magnitude shock signature centered on Sudbury, consistent with a high-yield detonation.",
+          "confidence": 0.99
+        },
+        "tag_id": "detonation_sudbury",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 3130.0,
+      "source": {
+        "id": "src_204",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 46.4917,
+          "lon": -80.993
+        },
+        "predefined_analysis_result": {
+          "event_type": "detonation",
+          "level": 10,
+          "description": "RF monitoring stations across the Sudbury region go simultaneously dark -- consistent with EMP effects from a high-yield detonation.",
+          "confidence": 0.97
+        },
+        "tag_id": "detonation_sudbury",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 3196.0,
+      "source": {
+        "id": "src_205",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.7215,
+          "lon": -75.49719999999999
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the Ottawa detonation site.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3222.0,
+      "source": {
+        "id": "src_206",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.582699999999996,
+          "lon": -122.9207
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Ham radio report from near Vancouver: ash and debris falling, radiation warning sirens active.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3248.0,
+      "source": {
+        "id": "src_207",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.1951,
+          "lon": -96.9384
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Hospital network near Winnipeg reports being overwhelmed, requesting any available medical support.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3274.0,
+      "source": {
+        "id": "src_208",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.7452,
+          "lon": -104.4189
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Citizen report near Regina: power grid failure, no cell service.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3300.0,
+      "source": {
+        "id": "src_209",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.555699999999995,
+          "lon": -79.6711
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Regional monitoring station reports radiation levels rising steadily downwind of Hamilton, evacuation advised beyond 50 km.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3326.0,
+      "source": {
+        "id": "src_210",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.751599999999996,
+          "lon": -80.2925
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the Kitchener detonation site.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3352.0,
+      "source": {
+        "id": "src_211",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 61.0212,
+          "lon": -134.85680000000002
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Ham radio report from near Whitehorse: ash and debris falling, radiation warning sirens active.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3378.0,
+      "source": {
+        "id": "src_212",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.2636,
+          "lon": -66.4431
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Hospital network near Fredericton reports being overwhelmed, requesting any available medical support.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3404.0,
+      "source": {
+        "id": "src_213",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 54.764199999999995,
+          "lon": -110.085
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Citizen report near Cold Lake: power grid failure, no cell service.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3430.0,
+      "source": {
+        "id": "src_214",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.7917,
+          "lon": -80.79299999999999
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Regional monitoring station reports radiation levels rising steadily downwind of Sudbury, evacuation advised beyond 50 km.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3456.0,
+      "source": {
+        "id": "src_215",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.801899999999996,
+          "lon": -73.3674
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the Montreal detonation site.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3482.0,
+      "source": {
+        "id": "src_216",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 53.8461,
+          "lon": -113.29379999999999
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Ham radio report from near Edmonton: ash and debris falling, radiation warning sirens active.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3508.0,
+      "source": {
+        "id": "src_217",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 47.113899999999994,
+          "lon": -71.008
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Hospital network near Quebec City reports being overwhelmed, requesting any available medical support.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3534.0,
+      "source": {
+        "id": "src_218",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.7284,
+          "lon": -123.1656
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Citizen report near Victoria: power grid failure, no cell service.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3560.0,
+      "source": {
+        "id": "src_219",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 42.6149,
+          "lon": -82.8364
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Regional monitoring station reports radiation levels rising steadily downwind of Windsor, evacuation advised beyond 50 km.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3586.0,
+      "source": {
+        "id": "src_220",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 47.8615,
+          "lon": -52.5126
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Fallout plume modeling from downwind monitoring stations shows radioactive contamination spreading from the St. John's detonation site.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3612.0,
+      "source": {
+        "id": "src_221",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 64.0467,
+          "lon": -68.317
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Ham radio report from near Iqaluit: ash and debris falling, radiation warning sirens active.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3638.0,
+      "source": {
+        "id": "src_222",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.6091,
+          "lon": -79.2608
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Hospital network near North Bay reports being overwhelmed, requesting any available medical support.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3664.0,
+      "source": {
+        "id": "src_223",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.4201,
+          "lon": -77.332
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Citizen report near Trenton: power grid failure, no cell service.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 3690.0,
+      "source": {
+        "id": "src_224",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.953199999999995,
+          "lon": -79.1832
+        },
+        "predefined_analysis_result": {
+          "event_type": "fallout_report",
+          "level": 7,
+          "description": "Regional monitoring station reports radiation levels rising steadily downwind of Toronto, evacuation advised beyond 50 km.",
+          "confidence": 0.9
+        }
+      }
+    }
+  ]
+}

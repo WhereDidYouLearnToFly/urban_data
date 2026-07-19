@@ -34,7 +34,7 @@ def main():
     app = QApplication(sys.argv)
     apply_dark(app)
     window = MainWindow()
-    window.show()
+    window.showFullScreen()
 
     exit_code = app.exec_()
 
