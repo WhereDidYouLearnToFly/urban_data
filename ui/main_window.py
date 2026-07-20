@@ -151,7 +151,11 @@ class MainWindow(QMainWindow):
         # top of the marker) instead of the default cascading spawn spot.
         self.map_view.focus_event(event_id)
 
-        popup = MediaPopup(event, parent=self)
+        try:
+            popup = MediaPopup(event, parent=self)
+        except Exception as exc:
+            self.system_log.append(f"[ERROR] Failed to open media popup for {event_id}: {exc}")
+            return
         map_center = self.map_view.mapToGlobal(self.map_view.rect().center())
         popup.move(map_center.x() - popup.width() // 2 + 60, map_center.y() - popup.height() // 2 - 40)
 

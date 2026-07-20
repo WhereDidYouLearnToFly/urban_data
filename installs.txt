@@ -1,0 +1,102 @@
+Reference of everything installed outside the repo this session, for
+reproducing this setup on another machine. Grouped by where it lives.
+
+================================================================
+1. System apt packages
+================================================================
+sudo apt install libqt5multimedia5-plugins
+  # Qt5 Multimedia's actual GStreamer backend plugin. Without this,
+  # QMediaPlayer.play() silently does nothing (no exception, no sound,
+  # no video) -- ui/media_popup.py's audio/video renderers need it.
+
+git-lfs
+  # was already installed on this machine; if not:
+  # sudo apt install git-lfs
+  # then (once, per-repo): git lfs install --local
+
+================================================================
+2. System python (numpy pin -- required by GNU Radio)
+================================================================
+System python's numpy MUST stay at 1.x -- GNU Radio's apt-installed
+`pmt`/`gnuradio.gr` bindings are compiled C extensions linked against the
+numpy 1.x ABI. If system numpy is ever upgraded to 2.x (e.g. as a side
+effect of installing an unrelated ML package system-wide), `import pmt`
+and `from gnuradio import gr` both fail with:
+  ImportError: numpy.core.multiarray failed to import
+
+sudo pip3 install --break-system-packages "numpy==1.26.4"
+
+Do NOT install ML/audio/video packages (transformers, accelerate, etc.)
+into system python -- see sections 3 and 4 below for where those actually
+belong. Installing them system-wide only risks dragging numpy to 2.x again.
+
+================================================================
+3. ComfyUI's own venv: ~/ComfyUI/comfyui-env
+================================================================
+This is what the ComfyUI server process actually runs on (fully isolated,
+`include-system-site-packages = false`). It already ships its own torch
+(2.12.0+cu130) and transformers (5.12.0) -- used by ComfyUI core's native
+Gemma-based prompt-rewrite nodes (TextGenerate / TextGenerateLTX2Prompt).
+
+Installed into it for the VibeVoice-ComfyUI custom node's import-time
+dependencies (node registration only -- NOT used for actual audio
+generation, see section 4):
+
+~/ComfyUI/comfyui-env/bin/pip install --no-deps \
+  accelerate diffusers librosa soundfile peft bitsandbytes aiortc
+~/ComfyUI/comfyui-env/bin/pip install \
+  cffi pylibsrtp pyopenssl cryptography numba pooch aioice
+
+Also for the pre-existing ComfyUI-VideoHelperSuite / comfyui-impact-pack
+custom nodes (unrelated to our media generation, but were failing to
+import and got fixed along the way):
+~/ComfyUI/comfyui-env/bin/pip install opencv-python-headless imageio-ffmpeg
+
+Custom node source (cloned, not pip-installed):
+cd ~/ComfyUI/custom_nodes
+git clone https://github.com/Enemyx-net/VibeVoice-ComfyUI
+
+Model weights (manual download, not pip):
+  ~/ComfyUI/models/vibevoice/VibeVoice-1.5B/       <- microsoft/VibeVoice-1.5B (HF)
+  ~/ComfyUI/models/vibevoice/tokenizer/            <- Qwen/Qwen2.5-1.5B tokenizer files only
+                                                       (tokenizer_config.json, vocab.json,
+                                                        merges.txt, tokenizer.json)
+
+Custom node file added by us (not a pip package):
+  ~/ComfyUI/custom_nodes/save_text.py
+  # minimal "SaveText" node -- writes a STRING input to a .txt file in
+  # ComfyUI's output dir, used to inspect Gemma's rewritten text during
+  # development. Harmless to keep; not required for the generation
+  # scripts to run (they read history["outputs"] directly, not the file).
+
+================================================================
+4. Standalone VibeVoice venv: ~/ComfyUI/vibevoice-env
+================================================================
+VibeVoice-ComfyUI's node CANNOT actually run inside comfyui-env: it needs
+`transformers<5.0.0` (specifically >=4.51.3), which conflicts with
+ComfyUI core's own `transformers==5.12.0` requirement (see
+https://github.com/Enemyx-net/VibeVoice-ComfyUI/issues/213). So real audio
+generation runs in this fully separate venv instead, driven directly by
+`generation/generate_audio.py` (imports the node's vendored model code
+from ~/ComfyUI/custom_nodes/VibeVoice-ComfyUI/vvembed/ directly, bypassing
+the ComfyUI server entirely for this one asset type).
+
+python3 -m venv ~/ComfyUI/vibevoice-env
+~/ComfyUI/vibevoice-env/bin/pip install torch==2.12.0 torchaudio==2.11.0
+~/ComfyUI/vibevoice-env/bin/pip install numpy "transformers>=4.51.3,<5.0.0" \
+  accelerate diffusers tqdm scipy ml-collections librosa soundfile av peft \
+  "huggingface_hub>=0.25.1,<1.0" absl-py bitsandbytes protobuf
+
+Run with:
+  ~/ComfyUI/vibevoice-env/bin/python3 generation/generate_audio.py
+
+================================================================
+5. Notes on this hardware (NVIDIA GB10 / aarch64)
+================================================================
+torch/torchaudio cu130 wheels for this platform are on plain PyPI now (no
+special --extra-index-url needed) -- `pip install torch==2.12.0` just
+works. Always pin torch to a specific already-verified-working version
+when installing anything alongside it (e.g. `--no-deps`, or a version
+pin) -- letting pip's resolver freely pick a newer torch to satisfy some
+other package's floor version is how this got complicated in the first
+place.
