@@ -3,3 +3,4 @@ __pycache__/
 *.pyo
 ui/map_assets/_map_view.html
 mcp_server/.venv/
+generation/_state/

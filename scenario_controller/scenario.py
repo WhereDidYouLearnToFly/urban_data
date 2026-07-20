@@ -114,6 +114,12 @@ class ScenarioLoader:
             events=events,
         )
 
+    # Real asset extensions only -- excludes tooling artifacts like
+    # generation/*.py's ".generated" completion markers or ".gitkeep",
+    # which would otherwise be picked up by a naive glob and could shadow
+    # (or silently be served as) the actual media for an event.
+    ASSET_EXTENSIONS = {".png", ".jpg", ".jpeg", ".mp4", ".wav", ".json"}
+
     @staticmethod
     def _load_asset_data(folder: Path, event_id: str, type_: str) -> Optional[str]:
         """Look up scenarios/<name>/assets/<modality>/<event_id>.<ext> and
@@ -126,7 +132,10 @@ class ScenarioLoader:
         asset_dir = folder / "assets" / asset_dir_name
         if not asset_dir.is_dir():
             return None
-        matches = sorted(asset_dir.glob(f"{event_id}.*"))
+        matches = sorted(
+            f for f in asset_dir.glob(f"{event_id}.*")
+            if f.suffix.lower() in ScenarioLoader.ASSET_EXTENSIONS
+        )
         if not matches:
             return None
         return base64.b64encode(matches[0].read_bytes()).decode("ascii")

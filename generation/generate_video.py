@@ -18,6 +18,12 @@ MANIFEST_PATH = Path(__file__).resolve().parent / "manifest.json"
 COMFYUI_URL = "http://127.0.0.1:8188"
 COMFYUI_OUTPUT_DIR = Path.home() / "ComfyUI" / "output"
 
+# Completion markers live here, not under scenarios/**/assets/ -- that
+# directory is read by ScenarioLoader._load_asset_data via a glob on the
+# event id, and anything dropped in there (even a differently-named
+# marker file) risks being picked up as if it were real media.
+STATE_DIR = Path(__file__).resolve().parent / "_state"
+
 
 def submit(workflow: dict) -> dict:
     data = json.dumps({"prompt": workflow}).encode()
@@ -76,9 +82,11 @@ def main():
     entries = [e for e in json.loads(MANIFEST_PATH.read_text()) if e["type"] == "video"]
     print(f"{len(entries)} video entries to generate")
 
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+
     for i, entry in enumerate(entries):
         target = REPO_ROOT / entry["target_path"]
-        marker = target.with_suffix(target.suffix + ".generated")
+        marker = STATE_DIR / f"{entry['scenario']}__{entry['event_id']}.generated"
         if marker.exists():
             print(f"  [{i+1}/{len(entries)}] {entry['event_id']} already generated, skipping")
             continue
