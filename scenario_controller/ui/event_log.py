@@ -29,7 +29,7 @@ class EventLogWidget(QWidget):
         layout.addLayout(header)
 
         self._list = QListWidget()
-        self._list.setFont(QFont("Monospace", 9))
+        self._list.setFont(QFont("DejaVu Sans Mono", 9))
         self._list.setAlternatingRowColors(True)
         self._list.setWordWrap(True)
         layout.addWidget(self._list)
