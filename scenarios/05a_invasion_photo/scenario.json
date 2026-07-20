@@ -1,0 +1,1247 @@
+{
+  "id": "05a_invasion_photo",
+  "name": "Invasion \u2014 Photo Debug",
+  "description": "Single-renderer debug scenario: every `photo` event from 05_invasion, isolated for testing the photo popup renderer.",
+  "loop": false,
+  "speed_hint": "1x",
+  "events": [
+    {
+      "offset_seconds": 0,
+      "source": {
+        "id": "src_001",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "predefined_analysis_result": {
+          "event_type": "nothing_happening",
+          "level": 0,
+          "description": "All systems nominal. Toronto baseline. No anomalies detected.",
+          "confidence": 0.98
+        }
+      }
+    },
+    {
+      "offset_seconds": 4,
+      "source": {
+        "id": "src_007",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
+        "tag_id": "visual_ottawa",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 9,
+          "description": "Ottawa security camera: delta-wing silhouettes at ~150 m altitude. 8\u201312 units heading southwest toward Toronto.",
+          "confidence": 0.91
+        }
+      }
+    },
+    {
+      "offset_seconds": 8,
+      "source": {
+        "id": "src_151",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.9486,
+          "lon": -71.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Valcartier perimeter camera: impact on vehicle depot. Fire visible across multiple buildings.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_quebec",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 12,
+      "source": {
+        "id": "src_2201",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.21423320403318,
+          "lon": -132.12235732341418
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.73
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 16,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_1"
+      }
+    },
+    {
+      "offset_seconds": 16,
+      "source": {
+        "id": "src_2202",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.362636419724936,
+          "lon": -130.63645944897172
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.73
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 3,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_2"
+      }
+    },
+    {
+      "offset_seconds": 20,
+      "source": {
+        "id": "src_2203",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.64776005209605,
+          "lon": -131.90790950735726
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.68
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 15,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_3"
+      }
+    },
+    {
+      "offset_seconds": 24,
+      "source": {
+        "id": "src_121",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.8808,
+          "lon": -63.5086
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Halifax Stanfield Airport camera: runway impact. Terminal evacuated, all flights grounded.",
+          "confidence": 0.93
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 28,
+      "source": {
+        "id": "src_2204",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.43465556206857,
+          "lon": -132.81257311896454
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.78
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 28,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_4"
+      }
+    },
+    {
+      "offset_seconds": 32,
+      "source": {
+        "id": "src_2205",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.477453546987746,
+          "lon": -133.44245848537352
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.75
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 34,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_5"
+      }
+    },
+    {
+      "offset_seconds": 36,
+      "source": {
+        "id": "src_131",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.7167,
+          "lon": -124.8867
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Comox perimeter camera: impact on flight line. Search-and-rescue squadron hangar burning.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 40,
+      "source": {
+        "id": "src_2206",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.87867131638992,
+          "lon": -135.04939087409687
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.75
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 50,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_6"
+      }
+    },
+    {
+      "offset_seconds": 44,
+      "source": {
+        "id": "src_2207",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 52.08743022695836,
+          "lon": -133.55329177805606
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.79
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 42,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_7"
+      }
+    },
+    {
+      "offset_seconds": 48,
+      "source": {
+        "id": "src_2208",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.702946512504155,
+          "lon": -136.74236070113906
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.71
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 81,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_8"
+      }
+    },
+    {
+      "offset_seconds": 52,
+      "source": {
+        "id": "src_2209",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.785417598156776,
+          "lon": -136.05695832281128
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.67
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 81,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_9"
+      }
+    },
+    {
+      "offset_seconds": 56,
+      "source": {
+        "id": "src_122",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the Halifax transatlantic cable landing station \u2014 international connectivity degraded, not just local.",
+          "confidence": 0.87
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 60,
+      "source": {
+        "id": "src_2210",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.789155756531734,
+          "lon": -136.65933393003573
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.76
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 82,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_10"
+      }
+    },
+    {
+      "offset_seconds": 64,
+      "source": {
+        "id": "src_132",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.834,
+          "lon": -125.136
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the Bamfield transpacific cable landing station \u2014 paired with the Halifax strike, both coasts' international links targeted together.",
+          "confidence": 0.86
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 68,
+      "source": {
+        "id": "src_2211",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 54.41310403675432,
+          "lon": -137.25369804206147
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.77
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 91,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_11"
+      }
+    },
+    {
+      "offset_seconds": 72,
+      "source": {
+        "id": "src_2212",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 54.96600719060011,
+          "lon": -135.56412994414436
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "Coast Guard visual contact, open Pacific west of Haida Gwaii: drone breaking from a fishing-vessel-disguised launch platform, heading toward Prince Rupert.",
+          "confidence": 0.69
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14,
+        "heading_deg": 102,
+        "speed_kmh": 180,
+        "target_lat": 54.315,
+        "target_lon": -130.3208,
+        "predicted_track_id": "pacific_wave_12"
+      }
+    },
+    {
+      "offset_seconds": 76,
+      "source": {
+        "id": "src_010",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 43.682,
+          "lon": -79.62
+        },
+        "tag_id": "drone_impacts",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Pearson Airport perimeter camera: impact on runway 06L. Blast crater visible. Radar tower destroyed. All aircraft grounded. Fire suppression active.",
+          "confidence": 0.97
+        }
+      }
+    },
+    {
+      "offset_seconds": 80,
+      "source": {
+        "id": "src_1046",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 9,
+          "description": "Trudeau Airport perimeter camera: terminal secured, troops moving to control tower.",
+          "confidence": 0.9
+        },
+        "tag_id": "desant_montreal",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 84,
+      "source": {
+        "id": "src_141",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Calgary International Airport camera: impact near the terminal, telecom exchange building adjacent also struck.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_prairies",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 88,
+      "source": {
+        "id": "src_142",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.5461,
+          "lon": -113.4938
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Edmonton Garrison: impact on vehicle motor pool. Fires spreading between buildings.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_prairies",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 92,
+      "source": {
+        "id": "src_1055",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Halifax: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 96,
+      "source": {
+        "id": "src_1056",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Winnipeg: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 100,
+      "source": {
+        "id": "src_171",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9569,
+          "lon": -77.2853
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "CFB Petawawa perimeter camera: impact on garrison motor pool. Army's largest eastern base now under direct attack.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_ontario_military",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 104,
+      "source": {
+        "id": "src_1057",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Calgary: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 108,
+      "source": {
+        "id": "src_1058",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.5017,
+          "lon": -73.5673
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Montreal: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 112,
+      "source": {
+        "id": "src_1059",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.4284,
+          "lon": -123.3656
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Victoria: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 116,
+      "source": {
+        "id": "src_1097",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9636,
+          "lon": -66.6431
+        },
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 5,
+          "description": "Fredericton: Civilians fleeing on foot along the Saint John River pathway, sirens audible across the river.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 120,
+      "source": {
+        "id": "src_1001",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 44.615,
+          "lon": -63.58
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Halifax waterfront camera: first tanks ashore, forming up. Troops moving toward Bedford Highway.",
+          "confidence": 0.92
+        },
+        "tag_id": "atlantic_landing_force",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 124,
+      "source": {
+        "id": "src_1016",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.44,
+          "lon": -123.4
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Esquimalt dockyard camera: first tanks ashore, forming up near the naval base perimeter.",
+          "confidence": 0.92
+        },
+        "tag_id": "pacific_landing_force",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 128,
+      "source": {
+        "id": "src_1060",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1659,
+          "lon": -123.9401
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Nanaimo: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 132,
+      "source": {
+        "id": "src_1098",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 50.4452,
+          "lon": -104.6189
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Regina: Downtown streets empty, businesses shuttered, distant smoke visible to the east.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 136,
+      "source": {
+        "id": "src_1061",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Moncton: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 140,
+      "source": {
+        "id": "src_1099",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.888,
+          "lon": -119.496
+        },
+        "predefined_analysis_result": {
+          "event_type": "small_traffic_violation",
+          "level": 5,
+          "description": "Kelowna: Highway 97 gridlocked, drivers abandoning vehicles to flee on foot toward the lake.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 144,
+      "source": {
+        "id": "src_1040",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 9,
+          "description": "Winnipeg airport perimeter camera: terminal secured, troops moving to control tower.",
+          "confidence": 0.9
+        },
+        "tag_id": "desant_winnipeg",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 148,
+      "source": {
+        "id": "src_1062",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 6,
+          "description": "Iqaluit: evacuation order in effect. Streets emptying, vehicles backed up on evacuation routes out of the city.",
+          "confidence": 0.88
+        },
+        "tag_id": "evacuation_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 152,
+      "source": {
+        "id": "src_1043",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 9,
+          "description": "Calgary airport perimeter camera: terminal secured, troops moving to control tower.",
+          "confidence": 0.9
+        },
+        "tag_id": "desant_calgary",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 156,
+      "source": {
+        "id": "src_1100",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3809,
+          "lon": -89.2477
+        },
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 5,
+          "description": "Thunder Bay: Crowds moving away from the harbourfront after reports of aircraft overhead.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 160,
+      "source": {
+        "id": "src_1101",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 52.1332,
+          "lon": -106.67
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Saskatoon: University area evacuated, streets empty except for emergency vehicles.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 164,
+      "source": {
+        "id": "src_1102",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.2382,
+          "lon": -63.1311
+        },
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 5,
+          "description": "Charlottetown: Waterfront evacuated after reports of naval activity in the strait.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 168,
+      "source": {
+        "id": "src_1103",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 53.9171,
+          "lon": -122.7497
+        },
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Prince George: Downtown core empty following province-wide emergency broadcast.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 172,
+      "source": {
+        "id": "src_1104",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.4917,
+          "lon": -80.993
+        },
+        "predefined_analysis_result": {
+          "event_type": "small_traffic_violation",
+          "level": 5,
+          "description": "Sudbury: Highway 17 backed up for kilometres, civilians heading north away from the corridor.",
+          "confidence": 0.82
+        },
+        "tag_id": "civilian_impact_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 176,
+      "source": {
+        "id": "src_1006",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 45.3648,
+          "lon": -63.2686
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Truro town camera: lead tanks at the rail junction. Drone formation still overhead.",
+          "confidence": 0.95
+        },
+        "tag_id": "atlantic_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 180,
+      "source": {
+        "id": "src_1021",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1659,
+          "lon": -123.9401
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Nanaimo camera: lead tanks near the BC Ferries terminal. Drone formation still overhead.",
+          "confidence": 0.95
+        },
+        "tag_id": "pacific_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 184,
+      "source": {
+        "id": "src_1012",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "Downtown Moncton \u2014 lead tank at the Petitcodiac River bridge. Urban combat beginning.",
+          "confidence": 0.96
+        },
+        "tag_id": "atlantic_urban_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 188,
+      "source": {
+        "id": "src_022",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
+        "tag_id": "border_crossing_ontario",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Windsor camera Riverside Drive East: T-90 tanks and BTR-82A APCs on Canadian soil. Ka-52 helicopter visible above the column.",
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "offset_seconds": 192,
+      "source": {
+        "id": "src_1027",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "Downtown Parksville \u2014 lead tank at the town centre. Urban combat beginning.",
+          "confidence": 0.96
+        },
+        "tag_id": "pacific_urban_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 196,
+      "source": {
+        "id": "src_024",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.0027,
+          "lon": -122.8004
+        },
+        "tag_id": "border_crossing_bc",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "BC camera Pacific Highway: armored column entering Canada. Attack helicopters providing top cover.",
+          "confidence": 0.93
+        }
+      }
+    },
+    {
+      "offset_seconds": 200,
+      "source": {
+        "id": "src_025",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 42.4,
+          "lon": -82.95
+        },
+        "tag_id": "column_ontario_inland",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "Highway 401 east of Windsor: lead tanks at 55 km/h. Column 6 km. Ka-52s engaging resistance positions ahead.",
+          "confidence": 0.97
+        }
+      }
+    },
+    {
+      "offset_seconds": 204,
+      "source": {
+        "id": "src_030",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
+        "tag_id": "midprovince_ontario",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 9,
+          "description": "London Ontario 401: lead T-90 at Wonderland Rd. Ka-52 helicopter strafing ahead. OPP roadblock overrun.",
+          "confidence": 0.96
+        }
+      }
+    },
+    {
+      "offset_seconds": 208,
+      "source": {
+        "id": "src_032",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
+        "tag_id": "midprovince_ontario",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "running_person",
+          "level": 6,
+          "description": "London street cameras: mass civilian evacuation on foot on Richmond St North. Hundreds fleeing. Vehicles abandoned.",
+          "confidence": 0.89
+        }
+      }
+    },
+    {
+      "offset_seconds": 212,
+      "source": {
+        "id": "src_035",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 43.589,
+          "lon": -79.6441
+        },
+        "tag_id": "gta_approach",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "Highway 401 Mississauga Credit River: tanks inside GTA. Ka-52s ranging over Etobicoke.",
+          "confidence": 0.97
+        }
+      }
+    },
+    {
+      "offset_seconds": 216,
+      "source": {
+        "id": "src_037",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "tag_id": "gta_approach",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "empty_streets",
+          "level": 5,
+          "description": "Downtown Toronto \u2014 evacuation order in effect. Subway shut down. Streets empty. Helicopter rotor noise audible to the west.",
+          "confidence": 0.94
+        }
+      }
+    },
+    {
+      "offset_seconds": 220,
+      "source": {
+        "id": "src_038",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2488,
+          "lon": -122.9805
+        },
+        "tag_id": "vancouver_approach",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "BC \u2014 Burnaby Kingsway: tanks rolling west. Attack helicopters providing close air support. Fire at Metrotown.",
+          "confidence": 0.96
+        }
+      }
+    },
+    {
+      "offset_seconds": 224,
+      "source": {
+        "id": "src_040",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 43.7,
+          "lon": -79.41
+        },
+        "tag_id": "toronto_urban",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "Highway 401 at Keele Toronto: lead tanks inside city limits. Ka-52 helicopters over downtown.",
+          "confidence": 0.98
+        }
+      }
+    },
+    {
+      "offset_seconds": 228,
+      "source": {
+        "id": "src_042",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "tag_id": "toronto_urban",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "street_fight",
+          "level": 9,
+          "description": "Downtown Toronto \u2014 civilian resistance on King St West. Small arms fire from buildings. Helicopters firing rockets at building positions. Urban combat.",
+          "confidence": 0.85
+        }
+      }
+    },
+    {
+      "offset_seconds": 232,
+      "source": {
+        "id": "src_043",
+        "type": "photo",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "tag_id": "vancouver_urban",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "tank_photo",
+          "level": 10,
+          "description": "Vancouver \u2014 Burrard Street camera: lead tank at bridge north end entering downtown. Desant troops landing from helicopters at False Creek simultaneously.",
+          "confidence": 0.97
+        }
+      }
+    }
+  ]
+}

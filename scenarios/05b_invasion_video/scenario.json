@@ -1,0 +1,509 @@
+{
+  "id": "05b_invasion_video",
+  "name": "Invasion \u2014 Video Debug",
+  "description": "Single-renderer debug scenario: every `video` event from 05_invasion, isolated for testing the video popup renderer.",
+  "loop": false,
+  "speed_hint": "1x",
+  "events": [
+    {
+      "offset_seconds": 0,
+      "source": {
+        "id": "src_008",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
+        "tag_id": "visual_ottawa",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Ottawa traffic camera: Shahed formation overflying Rideau Canal at ~180 km/h heading 225\u00b0 toward Toronto.",
+          "confidence": 0.95
+        },
+        "heading_deg": 235,
+        "speed_kmh": 180,
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 4,
+      "source": {
+        "id": "src_1044",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Trudeau Airport camera: transport helicopters discharging troops onto the runway.",
+          "confidence": 0.92
+        },
+        "tag_id": "desant_montreal",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 8,
+      "source": {
+        "id": "src_1031",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 50.2,
+          "lon": -105.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Highway camera near Regina: delta-wing silhouettes low and fast, heading in three directions.",
+          "confidence": 0.85
+        },
+        "tag_id": "drone_formation_prairies",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 12,
+      "source": {
+        "id": "src_1037",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3,
+          "lon": -77.3
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Highway 401 camera near Trenton: delta-wing silhouettes descending toward the base perimeter.",
+          "confidence": 0.86
+        },
+        "tag_id": "drone_formation_ontario_mil",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 16,
+      "source": {
+        "id": "src_012",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 43.2557,
+          "lon": -79.8711
+        },
+        "tag_id": "helicopter_gunships",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Camera near Hamilton: Ka-52 attack helicopter formation moving west ahead of ground column. Low altitude, combat configuration.",
+          "confidence": 0.87
+        },
+        "heading_deg": 260,
+        "speed_kmh": 220,
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 20,
+      "source": {
+        "id": "src_1000",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6,
+          "lon": -63.55
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Drone recon over Halifax approaches: landing craft visible, armor being unloaded on the waterfront.",
+          "confidence": 0.9
+        },
+        "tag_id": "atlantic_landing_force",
+        "tag_total": 3,
+        "heading_deg": 15,
+        "speed_kmh": 200,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 24,
+      "source": {
+        "id": "src_1015",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 48.42,
+          "lon": -123.42
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Drone recon over Esquimalt: landing craft at the dockyard, armor disembarking under cover of the earlier strike.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_landing_force",
+        "tag_total": 3,
+        "heading_deg": 335,
+        "speed_kmh": 200,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
+      }
+    },
+    {
+      "offset_seconds": 28,
+      "source": {
+        "id": "src_1038",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Winnipeg airport camera: transport helicopters discharging troops onto the runway.",
+          "confidence": 0.92
+        },
+        "tag_id": "desant_winnipeg",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 32,
+      "source": {
+        "id": "src_1041",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Calgary airport camera: transport helicopters discharging troops onto the runway.",
+          "confidence": 0.92
+        },
+        "tag_id": "desant_calgary",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 36,
+      "source": {
+        "id": "src_014",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6777,
+          "lon": -79.6248
+        },
+        "tag_id": "desant_ontario",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Pearson Airport perimeter camera: military transport helicopters discharging troops directly onto runway and taxiways. Assault teams moving toward terminal buildings. Armed resistance from airport security overrun within minutes.",
+          "confidence": 0.93
+        }
+      }
+    },
+    {
+      "offset_seconds": 40,
+      "source": {
+        "id": "src_1003",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.85,
+          "lon": -63.45
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Highway 102 camera: lead tanks moving north at speed. Drone formation flying escort overhead.",
+          "confidence": 0.94
+        },
+        "tag_id": "atlantic_column_advance",
+        "tag_total": 3,
+        "heading_deg": 14,
+        "speed_kmh": 35,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 44,
+      "source": {
+        "id": "src_1018",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 48.65,
+          "lon": -123.53
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Malahat summit camera: lead tanks climbing the grade. Drone formation flying escort overhead.",
+          "confidence": 0.94
+        },
+        "tag_id": "pacific_column_advance",
+        "tag_total": 3,
+        "heading_deg": 332,
+        "speed_kmh": 35,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
+      }
+    },
+    {
+      "offset_seconds": 48,
+      "source": {
+        "id": "src_016",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1947,
+          "lon": -123.1839
+        },
+        "tag_id": "desant_bc",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "YVR Sea Island perimeter camera: transport helicopters landing on runway 08R. Troops deploying rapidly. Control tower under assault. YVR radar already dark from earlier Shahed strike.",
+          "confidence": 0.91
+        }
+      }
+    },
+    {
+      "offset_seconds": 52,
+      "source": {
+        "id": "src_1009",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 46.05,
+          "lon": -64.55
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Highway 2 near Moncton: column visible at range, drone formation overhead providing recon.",
+          "confidence": 0.93
+        },
+        "tag_id": "atlantic_approach_moncton",
+        "tag_total": 3,
+        "heading_deg": 283,
+        "speed_kmh": 30,
+        "target_lat": 46.0878,
+        "target_lon": -64.7782
+      }
+    },
+    {
+      "offset_seconds": 56,
+      "source": {
+        "id": "src_1024",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.25,
+          "lon": -124.15
+        },
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Highway 19 near Parksville: column visible at range, drone formation overhead providing recon.",
+          "confidence": 0.93
+        },
+        "tag_id": "pacific_approach_parksville",
+        "tag_total": 3,
+        "heading_deg": 303,
+        "speed_kmh": 30,
+        "target_lat": 49.3183,
+        "target_lon": -124.3117
+      }
+    },
+    {
+      "offset_seconds": 60,
+      "source": {
+        "id": "src_1013",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 46.11,
+          "lon": -64.68
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Greater Moncton Airport camera: troops from transport helicopters seizing the terminal, same pattern as Pearson and YVR.",
+          "confidence": 0.94
+        },
+        "tag_id": "atlantic_urban_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 64,
+      "source": {
+        "id": "src_1028",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3,
+          "lon": -124.29
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 10,
+          "description": "Qualicum Beach airstrip camera: troops from transport helicopters seizing the runway, same pattern as Pearson and YVR.",
+          "confidence": 0.94
+        },
+        "tag_id": "pacific_urban_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 68,
+      "source": {
+        "id": "src_1105",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Toronto: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 72,
+      "source": {
+        "id": "src_1106",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Vancouver: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 76,
+      "source": {
+        "id": "src_1107",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6488,
+          "lon": -63.5752
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Halifax: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 80,
+      "source": {
+        "id": "src_1108",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 6,
+          "description": "Winnipeg: small recon-pattern drone re-observing the earlier strike site, likely battle damage assessment.",
+          "confidence": 0.73
+        },
+        "tag_id": "drone_recon_secondary",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 84,
+      "source": {
+        "id": "src_028",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.0504,
+          "lon": -122.3045
+        },
+        "tag_id": "column_bc_inland",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 9,
+          "description": "Trans-Canada near Abbotsford: 35+ armored vehicles. Helicopter support overhead. Secondary force splitting onto Highway 9.",
+          "confidence": 0.95
+        },
+        "heading_deg": 306,
+        "speed_kmh": 30,
+        "target_lat": 49.2838,
+        "target_lon": -122.7932
+      }
+    },
+    {
+      "offset_seconds": 88,
+      "source": {
+        "id": "src_033",
+        "type": "video",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2838,
+          "lon": -122.7932
+        },
+        "tag_id": "midprovince_bc",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 10,
+          "description": "BC \u2014 Lougheed Highway Coquitlam: lead tank approaching Port Coquitlam. Helicopters over Burnaby Mountain engaging defenders.",
+          "confidence": 0.96
+        },
+        "heading_deg": 280,
+        "speed_kmh": 25,
+        "target_lat": 49.2827,
+        "target_lon": -123.1207
+      }
+    }
+  ]
+}

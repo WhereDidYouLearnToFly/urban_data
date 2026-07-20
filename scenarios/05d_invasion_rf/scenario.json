@@ -1,0 +1,734 @@
+{
+  "id": "05d_invasion_rf",
+  "name": "Invasion \u2014 RF/FFT Debug",
+  "description": "Single-renderer debug scenario: every `fft` (RF) event from 05_invasion, isolated for testing the RF/FFT popup renderer.",
+  "loop": false,
+  "speed_hint": "1x",
+  "events": [
+    {
+      "offset_seconds": 0,
+      "source": {
+        "id": "src_002",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.0,
+          "lon": -53.0
+        },
+        "tag_id": "rf_detection",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF anomaly over Atlantic \u2014 Shahed-136 signature at 900 MHz. Bearing 065\u00b0, ~620 km from Nova Scotia.",
+          "confidence": 0.68
+        },
+        "heading_deg": 275,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_wave",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 4,
+      "source": {
+        "id": "src_003",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 47.5,
+          "lon": -69.5
+        },
+        "tag_id": "rf_detection",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF cluster Maine/NB border \u2014 multiple contacts in formation heading northwest into Canada.",
+          "confidence": 0.74
+        },
+        "heading_deg": 315,
+        "speed_kmh": 180
+      }
+    },
+    {
+      "offset_seconds": 8,
+      "source": {
+        "id": "src_004",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 83.0,
+          "lon": -80.0
+        },
+        "tag_id": "rf_detection",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "RF contact polar route \u2014 Ellesmere Island. Third wave inbound. Three simultaneous vectors confirmed.",
+          "confidence": 0.65
+        },
+        "heading_deg": 180,
+        "speed_kmh": 180
+      }
+    },
+    {
+      "offset_seconds": 12,
+      "source": {
+        "id": "src_100",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.0,
+          "lon": -58.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF anomaly 400km off Nova Scotia \u2014 signature consistent with shipborne drone launch tubes, not airborne contact.",
+          "confidence": 0.66
+        },
+        "tag_id": "naval_launch_atlantic",
+        "tag_total": 3,
+        "heading_deg": 292,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_naval_wave",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 16,
+      "source": {
+        "id": "src_110",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3,
+          "lon": -128.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF anomaly 350km off Vancouver Island \u2014 shipborne drone launch signature, no AIS transponder.",
+          "confidence": 0.67
+        },
+        "tag_id": "naval_launch_pacific",
+        "tag_total": 3,
+        "heading_deg": 88,
+        "speed_kmh": 180,
+        "predicted_track_id": "pacific_naval_wave",
+        "target_lat": 48.431,
+        "target_lon": -123.4396
+      }
+    },
+    {
+      "offset_seconds": 20,
+      "source": {
+        "id": "src_102",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 43.0,
+          "lon": -58.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "Second RF cluster from the same vessel \u2014 multiple simultaneous launch signatures. Full swarm airborne, heading toward Nova Scotia.",
+          "confidence": 0.73
+        },
+        "tag_id": "naval_launch_atlantic",
+        "tag_total": 3,
+        "heading_deg": 292,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_naval_wave",
+        "target_lat": 44.6488,
+        "target_lon": -63.5752
+      }
+    },
+    {
+      "offset_seconds": 24,
+      "source": {
+        "id": "src_112",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3,
+          "lon": -128.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 8,
+          "description": "Second RF cluster \u2014 full swarm airborne from the same vessel, heading toward Vancouver Island.",
+          "confidence": 0.72
+        },
+        "tag_id": "naval_launch_pacific",
+        "tag_total": 3,
+        "heading_deg": 88,
+        "speed_kmh": 180,
+        "predicted_track_id": "pacific_naval_wave",
+        "target_lat": 48.431,
+        "target_lon": -123.4396
+      }
+    },
+    {
+      "offset_seconds": 28,
+      "source": {
+        "id": "src_1034",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 70.0,
+          "lon": -75.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact continuing south on the polar route, consistent with the Ellesmere Island vector.",
+          "confidence": 0.68
+        },
+        "tag_id": "drone_formation_arctic",
+        "tag_total": 2,
+        "heading_deg": 160,
+        "speed_kmh": 180,
+        "target_lat": 63.7467,
+        "target_lon": -68.517
+      }
+    },
+    {
+      "offset_seconds": 32,
+      "source": {
+        "id": "src_1032",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.8,
+          "lon": -72.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF cluster Eastern Townships \u2014 formation splitting toward Montreal and the Saguenay region.",
+          "confidence": 0.71
+        },
+        "tag_id": "drone_formation_quebec",
+        "tag_total": 2,
+        "heading_deg": 249,
+        "speed_kmh": 180,
+        "target_lat": 45.4706,
+        "target_lon": -73.7408
+      }
+    },
+    {
+      "offset_seconds": 36,
+      "source": {
+        "id": "src_1077",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 46.5,
+          "lon": -66.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 40,
+      "source": {
+        "id": "src_1078",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 47.2,
+          "lon": -68.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 44,
+      "source": {
+        "id": "src_1081",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 49.5,
+          "lon": -119.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 48,
+      "source": {
+        "id": "src_1079",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9,
+          "lon": -70.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 52,
+      "source": {
+        "id": "src_1082",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 51.5,
+          "lon": -116.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 56,
+      "source": {
+        "id": "src_1080",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.8,
+          "lon": -71.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking west -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_east",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 60,
+      "source": {
+        "id": "src_1083",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 53.0,
+          "lon": -118.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 64,
+      "source": {
+        "id": "src_1084",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.5,
+          "lon": -114.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 6,
+          "description": "Additional RF contact tracking east -- consistent signature with the earlier confirmed swarm, spreading coverage inland.",
+          "confidence": 0.65
+        },
+        "tag_id": "additional_rf_tracking_west",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 68,
+      "source": {
+        "id": "src_2101",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 60.52636533183009,
+          "lon": -141.29367337742224
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.74
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 86,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_1"
+      }
+    },
+    {
+      "offset_seconds": 72,
+      "source": {
+        "id": "src_2102",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 61.117651667653405,
+          "lon": -141.45750868433663
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.73
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 97,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_2"
+      }
+    },
+    {
+      "offset_seconds": 76,
+      "source": {
+        "id": "src_2104",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 61.91349963700138,
+          "lon": -141.4334351276816
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.72
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 112,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_4"
+      }
+    },
+    {
+      "offset_seconds": 80,
+      "source": {
+        "id": "src_2103",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 61.81032816268015,
+          "lon": -140.4115191172722
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.63
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 113,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_3"
+      }
+    },
+    {
+      "offset_seconds": 84,
+      "source": {
+        "id": "src_2105",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.10766763346588,
+          "lon": -141.7352207213651
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.66
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 128,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_5"
+      }
+    },
+    {
+      "offset_seconds": 88,
+      "source": {
+        "id": "src_2106",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.145004240110815,
+          "lon": -141.4396484999428
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.67
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 130,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_6"
+      }
+    },
+    {
+      "offset_seconds": 92,
+      "source": {
+        "id": "src_2107",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.51275432093021,
+          "lon": -141.76892670427495
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.67
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 133,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_7"
+      }
+    },
+    {
+      "offset_seconds": 96,
+      "source": {
+        "id": "src_2108",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.70719406614311,
+          "lon": -140.4153402536049
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.74
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 142,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_8"
+      }
+    },
+    {
+      "offset_seconds": 100,
+      "source": {
+        "id": "src_2109",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.74913593525389,
+          "lon": -140.44966608875225
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.64
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 142,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_9"
+      }
+    },
+    {
+      "offset_seconds": 104,
+      "source": {
+        "id": "src_2110",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 63.841261831890456,
+          "lon": -141.28924181732648
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.73
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 139,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_10"
+      }
+    },
+    {
+      "offset_seconds": 108,
+      "source": {
+        "id": "src_2111",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 66.6915322784386,
+          "lon": -140.26344638383188
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.77
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 161,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_11"
+      }
+    },
+    {
+      "offset_seconds": 112,
+      "source": {
+        "id": "src_2112",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 66.86530054318946,
+          "lon": -140.51298983448558
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF contact near Beaver Creek YT: drone propulsion signature detected crossing from the Alaska side, low altitude, heading toward Whitehorse.",
+          "confidence": 0.67
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14,
+        "heading_deg": 161,
+        "speed_kmh": 180,
+        "target_lat": 60.7212,
+        "target_lon": -135.0568,
+        "predicted_track_id": "alaska_wave_12"
+      }
+    },
+    {
+      "offset_seconds": 116,
+      "source": {
+        "id": "src_1030",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 50.5,
+          "lon": -102.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF cluster over southern Saskatchewan \u2014 formation splitting toward multiple Prairie targets.",
+          "confidence": 0.72
+        },
+        "tag_id": "drone_formation_prairies",
+        "tag_total": 2,
+        "heading_deg": 101,
+        "speed_kmh": 180,
+        "target_lat": 49.91,
+        "target_lon": -97.24
+      }
+    },
+    {
+      "offset_seconds": 120,
+      "source": {
+        "id": "src_1036",
+        "type": "fft",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6,
+          "lon": -77.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_photo",
+          "level": 7,
+          "description": "RF cluster east of Toronto \u2014 formation splitting toward Trenton and Petawawa.",
+          "confidence": 0.72
+        },
+        "tag_id": "drone_formation_ontario_mil",
+        "tag_total": 2,
+        "heading_deg": 218,
+        "speed_kmh": 180,
+        "target_lat": 44.1198,
+        "target_lon": -77.5288
+      }
+    }
+  ]
+}

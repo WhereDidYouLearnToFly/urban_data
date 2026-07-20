@@ -1,0 +1,2154 @@
+{
+  "id": "05c_invasion_audio",
+  "name": "Invasion \u2014 Audio Debug",
+  "description": "Single-renderer debug scenario: every `audio` event from 05_invasion, isolated for testing the audio popup renderer.",
+  "loop": false,
+  "speed_hint": "1x",
+  "events": [
+    {
+      "offset_seconds": 0,
+      "source": {
+        "id": "src_101",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.0,
+          "lon": -58.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "Maritime patrol acoustic buoy: heavy vessel engine signature at the RF contact position. Non-standard hull, no AIS transponder.",
+          "confidence": 0.71
+        },
+        "tag_id": "naval_launch_atlantic",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 4,
+      "source": {
+        "id": "src_111",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3,
+          "lon": -128.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "RCAF maritime patrol acoustic contact: heavy vessel engine signature. Non-standard hull profile, no transponder.",
+          "confidence": 0.7
+        },
+        "tag_id": "naval_launch_pacific",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 8,
+      "source": {
+        "id": "src_005",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.6476,
+          "lon": -63.5728
+        },
+        "tag_id": "acoustic_confirmation",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Halifax acoustic array: two-stroke piston hum \u2014 Shahed propulsion confirmed. 10\u201315 units.",
+          "confidence": 0.84
+        },
+        "heading_deg": 270,
+        "speed_kmh": 180,
+        "predicted_track_id": "atlantic_wave",
+        "target_lat": 43.6532,
+        "target_lon": -79.3832
+      }
+    },
+    {
+      "offset_seconds": 12,
+      "source": {
+        "id": "src_1047",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9636,
+          "lon": -66.6431
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Fredericton NB ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 16,
+      "source": {
+        "id": "src_1035",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 66.0,
+          "lon": -70.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "Northern acoustic buoy: propulsion signature confirmed, formation continuing toward Iqaluit.",
+          "confidence": 0.7
+        },
+        "tag_id": "drone_formation_arctic",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 20,
+      "source": {
+        "id": "src_1048",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.4452,
+          "lon": -104.6189
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Regina SK ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 24,
+      "source": {
+        "id": "src_006",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 47.56,
+          "lon": -52.7126
+        },
+        "tag_id": "acoustic_confirmation",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Ham radio St. John's NL: 'Dozens of them \u2014 like lawn mowers flying low and fast heading west. No lights.'",
+          "confidence": 0.78
+        }
+      }
+    },
+    {
+      "offset_seconds": 28,
+      "source": {
+        "id": "src_160",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Iqaluit \u2014 North Warning System radar installation struck. Northern approach radar coverage degraded.",
+          "confidence": 0.9
+        },
+        "tag_id": "strikes_arctic",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 32,
+      "source": {
+        "id": "src_1049",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 52.1332,
+          "lon": -106.67
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Saskatoon SK ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 36,
+      "source": {
+        "id": "src_161",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 63.7467,
+          "lon": -68.517
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Iqaluit ham radio: 'The radar station is burning. We saw one drone, low, then the explosion. No warning at all.'",
+          "confidence": 0.75
+        },
+        "tag_id": "strikes_arctic",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 40,
+      "source": {
+        "id": "src_1050",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3809,
+          "lon": -89.2477
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Thunder Bay ON ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 44,
+      "source": {
+        "id": "src_1033",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.3,
+          "lon": -72.0
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 7,
+          "description": "Acoustic contact near Trois-Rivi\u00e8res: propulsion signature consistent with the earlier confirmed pattern.",
+          "confidence": 0.76
+        },
+        "tag_id": "drone_formation_quebec",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 48,
+      "source": {
+        "id": "src_1051",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.888,
+          "lon": -119.496
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Kelowna BC ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 52,
+      "source": {
+        "id": "src_150",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Montreal-Trudeau Airport \u2014 runway and downtown telecom exchange struck within seconds of each other.",
+          "confidence": 0.93
+        },
+        "tag_id": "strikes_quebec",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 56,
+      "source": {
+        "id": "src_1052",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Whitehorse YT ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 60,
+      "source": {
+        "id": "src_1053",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 62.454,
+          "lon": -114.3718
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Yellowknife NT ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 64,
+      "source": {
+        "id": "src_152",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3306,
+          "lon": -70.9964
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Explosion CFB Bagotville \u2014 flight line struck. One of only two NORAD fighter-intercept bases in eastern Canada now offline.",
+          "confidence": 0.94
+        },
+        "tag_id": "strikes_quebec",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 68,
+      "source": {
+        "id": "src_1054",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.2382,
+          "lon": -63.1311
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 7,
+          "description": "Charlottetown PE ham radio net check-in: distant explosions and aircraft noise reported. Operator confirms this matches reports from other provinces on the network.",
+          "confidence": 0.75
+        },
+        "tag_id": "national_ham_network",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 72,
+      "source": {
+        "id": "src_120",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.666,
+          "lon": -63.596
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion CFB Halifax \u2014 dockyard struck. Fires visible from across the harbour.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 76,
+      "source": {
+        "id": "src_130",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.431,
+          "lon": -123.4396
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion CFB Esquimalt \u2014 Pacific Fleet home dockyard struck.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 80,
+      "source": {
+        "id": "src_009",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "tag_id": "drone_impacts",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Explosion \u2014 Shahed-136 warhead detonation downtown Toronto near Union Station.",
+          "confidence": 0.97
+        }
+      }
+    },
+    {
+      "offset_seconds": 84,
+      "source": {
+        "id": "src_123",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 47.5615,
+          "lon": -52.7126
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "St. John's ham radio: 'Halifax is being hit hard. We're hearing it on the marine band before it's even on the news.'",
+          "confidence": 0.79
+        },
+        "tag_id": "strikes_atlantic_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 88,
+      "source": {
+        "id": "src_133",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.4284,
+          "lon": -123.3656
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Victoria ham radio: 'Esquimalt dockyard is on fire. This isn't Ontario and BC anymore, it's everywhere at once.'",
+          "confidence": 0.8
+        },
+        "tag_id": "strikes_pacific_region",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 92,
+      "source": {
+        "id": "src_2113",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Whitehorse ham radio: 'I count twelve of them, all together, all heading for the airport and the tower.'",
+          "confidence": 0.8
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14
+      }
+    },
+    {
+      "offset_seconds": 96,
+      "source": {
+        "id": "src_1045",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4706,
+          "lon": -73.7408
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Ham radio near Trudeau: 'Soldiers everywhere on the tarmac. Montreal's biggest airport is gone.'",
+          "confidence": 0.85
+        },
+        "tag_id": "desant_montreal",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 100,
+      "source": {
+        "id": "src_2213",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 54.315,
+          "lon": -130.3208
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Prince Rupert \u2014 airport runway and port communications relay both struck within the same minute, all twelve contacts converging together.",
+          "confidence": 0.9
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14
+      }
+    },
+    {
+      "offset_seconds": 104,
+      "source": {
+        "id": "src_140",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Winnipeg \u2014 CFB Winnipeg / James Richardson Airport shared runway struck.",
+          "confidence": 0.91
+        },
+        "tag_id": "strikes_prairies",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 108,
+      "source": {
+        "id": "src_011",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
+        "tag_id": "drone_impacts",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Explosion Ottawa \u2014 Macdonald-Cartier Airport. Radar installation destroyed. Control tower struck. Airport now non-operational. Pattern: both major Ontario airports hit within 20 seconds.",
+          "confidence": 0.95
+        }
+      }
+    },
+    {
+      "offset_seconds": 112,
+      "source": {
+        "id": "src_2114",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 60.7212,
+          "lon": -135.0568
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Whitehorse \u2014 Erik Nielsen Whitehorse International Airport struck. CBC North transmission tower hit within seconds, cutting territorial broadcast and much of the north's communications relay.",
+          "confidence": 0.91
+        },
+        "tag_id": "alaska_drone_wave",
+        "tag_total": 14
+      }
+    },
+    {
+      "offset_seconds": 116,
+      "source": {
+        "id": "src_2214",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.6745,
+          "lon": -120.3273
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Kamloops \u2014 airport and regional telecom exchange struck. The Pacific wave has reached the BC interior.",
+          "confidence": 0.88
+        },
+        "tag_id": "pacific_coastguard_wave",
+        "tag_total": 14
+      }
+    },
+    {
+      "offset_seconds": 120,
+      "source": {
+        "id": "src_011b",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4215,
+          "lon": -75.6972
+        },
+        "tag_id": "drone_impacts",
+        "tag_total": 4,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Second explosion Ottawa \u2014 Vanier district, government communications node. Four strikes total in under 30 seconds: Union Station, Pearson Airport, Ottawa Airport, Ottawa comms hub. Coordinated suppression confirmed.",
+          "confidence": 0.94
+        }
+      }
+    },
+    {
+      "offset_seconds": 124,
+      "source": {
+        "id": "src_1071",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.88,
+          "lon": -97.15
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at Manitoba Hydro substation, Winnipeg -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 128,
+      "source": {
+        "id": "src_170",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.1198,
+          "lon": -77.5288
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion CFB Trenton \u2014 CAF's primary air mobility hub struck. Runway and transport aircraft on the ground hit.",
+          "confidence": 0.92
+        },
+        "tag_id": "strikes_ontario_military",
+        "tag_total": 2
+      }
+    },
+    {
+      "offset_seconds": 132,
+      "source": {
+        "id": "src_1072",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.55,
+          "lon": -73.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at Hydro-Qu\u00e9bec substation, Montreal -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 136,
+      "source": {
+        "id": "src_1073",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.45,
+          "lon": -123.35
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at BC Hydro substation, Victoria -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 140,
+      "source": {
+        "id": "src_1074",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.1,
+          "lon": -64.75
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at NB Power substation, Moncton -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 144,
+      "source": {
+        "id": "src_013",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1579,
+          "lon": -121.9514
+        },
+        "tag_id": "helicopter_gunships",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 9,
+          "description": "Chilliwack acoustic: heavy rotor noise \u2014 attack helicopter formation moving west over Fraser Valley ahead of tank column. Mi-28 or Ka-52 profile.",
+          "confidence": 0.83
+        },
+        "heading_deg": 270,
+        "speed_kmh": 220,
+        "target_lat": 49.2838,
+        "target_lon": -122.7932
+      }
+    },
+    {
+      "offset_seconds": 148,
+      "source": {
+        "id": "src_1075",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.66,
+          "lon": -63.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at NS Power substation, Halifax -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 152,
+      "source": {
+        "id": "src_1039",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.91,
+          "lon": -97.24
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Ham radio near Winnipeg airport: 'Soldiers on the tarmac. Same as Toronto and Vancouver. They came in fast.'",
+          "confidence": 0.85
+        },
+        "tag_id": "desant_winnipeg",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 156,
+      "source": {
+        "id": "src_1002",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.63,
+          "lon": -63.6
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 8,
+          "description": "Halifax acoustic: infantry column on foot, several hundred estimated, moving north out of the landing zone.",
+          "confidence": 0.83
+        },
+        "tag_id": "atlantic_landing_force",
+        "tag_total": 3,
+        "heading_deg": 18,
+        "speed_kmh": 5,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 160,
+      "source": {
+        "id": "src_1042",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 51.1315,
+          "lon": -114.0106
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Ham radio near Calgary airport: 'They own the runway now. No fight, it was over in minutes.'",
+          "confidence": 0.85
+        },
+        "tag_id": "desant_calgary",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 164,
+      "source": {
+        "id": "src_1076",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.12,
+          "lon": -77.55
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at Ontario grid node, Trenton -- part of the same coordinated infrastructure-denial pattern as the airport and telecom strikes.",
+          "confidence": 0.86
+        },
+        "tag_id": "power_grid_attacks",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 168,
+      "source": {
+        "id": "src_1017",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.46,
+          "lon": -123.42
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 8,
+          "description": "Victoria acoustic contact: infantry column on foot moving north out of the landing zone toward the Malahat.",
+          "confidence": 0.83
+        },
+        "tag_id": "pacific_landing_force",
+        "tag_total": 3,
+        "heading_deg": 334,
+        "speed_kmh": 5,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
+      }
+    },
+    {
+      "offset_seconds": 172,
+      "source": {
+        "id": "src_015",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6777,
+          "lon": -79.6248
+        },
+        "tag_id": "desant_ontario",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 10,
+          "description": "Ham radio from inside Pearson Terminal 1: 'Soldiers inside the airport. They came from helicopters on the runway. They are moving people out at gunpoint. Pearson is gone.'",
+          "confidence": 0.88
+        }
+      }
+    },
+    {
+      "offset_seconds": 176,
+      "source": {
+        "id": "src_1004",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.0,
+          "lon": -63.35
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Acoustic contact north of Halifax: drone formation reconning ahead of the column, standard pre-advance pattern.",
+          "confidence": 0.8
+        },
+        "tag_id": "atlantic_column_advance",
+        "tag_total": 3,
+        "heading_deg": 9,
+        "speed_kmh": 180,
+        "target_lat": 45.3648,
+        "target_lon": -63.2686
+      }
+    },
+    {
+      "offset_seconds": 180,
+      "source": {
+        "id": "src_1019",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.85,
+          "lon": -123.65
+        },
+        "predefined_analysis_result": {
+          "event_type": "drone_video",
+          "level": 8,
+          "description": "Acoustic contact near Duncan BC: drone formation reconning ahead of the column, standard pre-advance pattern.",
+          "confidence": 0.8
+        },
+        "tag_id": "pacific_column_advance",
+        "tag_total": 3,
+        "heading_deg": 329,
+        "speed_kmh": 180,
+        "target_lat": 49.1659,
+        "target_lon": -123.9401
+      }
+    },
+    {
+      "offset_seconds": 184,
+      "source": {
+        "id": "src_1005",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.1,
+          "lon": -63.3
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Ham radio near Elmsdale NS: 'Column of tanks and trucks heading up 102. Drones circling above them. We're getting out.'",
+          "confidence": 0.78
+        },
+        "tag_id": "atlantic_column_advance",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 188,
+      "source": {
+        "id": "src_1020",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.9,
+          "lon": -123.7
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Ham radio near Duncan: 'Tanks coming up the island highway. Drones ahead of them scouting. Everyone's heading for the ferry terminals.'",
+          "confidence": 0.78
+        },
+        "tag_id": "pacific_column_advance",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 192,
+      "source": {
+        "id": "src_017",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1947,
+          "lon": -123.1839
+        },
+        "tag_id": "desant_bc",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 10,
+          "description": "Ham radio from Richmond BC near YVR: 'Soldiers at the airport. It looks like the same thing they did at Pearson. They own the runway now. Vancouver airport is gone.'",
+          "confidence": 0.86
+        }
+      }
+    },
+    {
+      "offset_seconds": 196,
+      "source": {
+        "id": "src_1063",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9569,
+          "lon": -77.2853
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Petawawa reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 200,
+      "source": {
+        "id": "src_1007",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.37,
+          "lon": -63.1
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 7,
+          "description": "Troops on foot flanking Truro via Robie Street, securing the perimeter ahead of the main column.",
+          "confidence": 0.82
+        },
+        "tag_id": "atlantic_column_inland",
+        "tag_total": 3,
+        "heading_deg": 301,
+        "speed_kmh": 5,
+        "target_lat": 46.0878,
+        "target_lon": -64.7782
+      }
+    },
+    {
+      "offset_seconds": 204,
+      "source": {
+        "id": "src_1064",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 53.5461,
+          "lon": -113.4938
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Edmonton garrison remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 208,
+      "source": {
+        "id": "src_1022",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.18,
+          "lon": -123.92
+        },
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 7,
+          "description": "Troops on foot flanking Nanaimo via the old Island Highway, securing the perimeter ahead of the main column.",
+          "confidence": 0.82
+        },
+        "tag_id": "pacific_column_inland",
+        "tag_total": 3,
+        "heading_deg": 298,
+        "speed_kmh": 5,
+        "target_lat": 49.3183,
+        "target_lon": -124.3117
+      }
+    },
+    {
+      "offset_seconds": 212,
+      "source": {
+        "id": "src_1008",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.36,
+          "lon": -63.27
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Truro ham radio: 'They're not stopping. Column already reforming and moving toward the New Brunswick border.'",
+          "confidence": 0.79
+        },
+        "tag_id": "atlantic_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 216,
+      "source": {
+        "id": "src_1065",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.85,
+          "lon": -66.45
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Gagetown NB reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 220,
+      "source": {
+        "id": "src_1023",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1659,
+          "lon": -123.9401
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Nanaimo ham radio: 'Ferry terminal's gone quiet, they've got it. Column already moving toward Parksville.'",
+          "confidence": 0.79
+        },
+        "tag_id": "pacific_column_inland",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 224,
+      "source": {
+        "id": "src_1066",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.2312,
+          "lon": -76.486
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kingston ON reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 228,
+      "source": {
+        "id": "src_1067",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.7167,
+          "lon": -124.8867
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Comox remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 232,
+      "source": {
+        "id": "src_1091",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.3306,
+          "lon": -70.9964
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Bagotville alert flight (if surviving aircraft remain): reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 236,
+      "source": {
+        "id": "src_1092",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 54.4053,
+          "lon": -110.2789
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Cold Lake alert flight: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 240,
+      "source": {
+        "id": "src_1010",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion Moncton \u2014 RCMP roadblock on Main Street struck by drone strike ahead of the column's arrival.",
+          "confidence": 0.88
+        },
+        "tag_id": "atlantic_approach_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 244,
+      "source": {
+        "id": "src_1068",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.9486,
+          "lon": -71.5
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Valcartier remnants: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 248,
+      "source": {
+        "id": "src_1025",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion Parksville \u2014 RCMP roadblock struck by drone strike ahead of the column's arrival.",
+          "confidence": 0.88
+        },
+        "tag_id": "pacific_approach_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 252,
+      "source": {
+        "id": "src_1093",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.1198,
+          "lon": -77.5288
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Trenton air mobility remnants: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 256,
+      "source": {
+        "id": "src_020",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
+        "tag_id": "border_crossing_ontario",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 8,
+          "description": "Acoustic Windsor Ambassador Bridge: tank engine and track clatter. Multiple units. Civilian traffic stopped.",
+          "confidence": 0.88
+        },
+        "heading_deg": 350,
+        "speed_kmh": 25,
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 260,
+      "source": {
+        "id": "src_1011",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Moncton ham radio: 'RCMP tried to hold the line, drones took them out before the tanks even arrived. Nothing left to stop them.'",
+          "confidence": 0.81
+        },
+        "tag_id": "atlantic_approach_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 264,
+      "source": {
+        "id": "src_1069",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.2667,
+          "lon": -111.1667
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Suffield AB reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 268,
+      "source": {
+        "id": "src_1026",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Parksville ham radio: 'RCMP tried to hold the line, drones took them out before the tanks even arrived. Same as everywhere else.'",
+          "confidence": 0.81
+        },
+        "tag_id": "pacific_approach_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 272,
+      "source": {
+        "id": "src_1094",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.431,
+          "lon": -123.4396
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Esquimalt naval remnants: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 276,
+      "source": {
+        "id": "src_3001",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 52.2681,
+          "lon": -113.8112
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Red Deer AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 280,
+      "source": {
+        "id": "src_021",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
+        "tag_id": "border_crossing_ontario",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Windsor ham radio: 'Tanks crossing the bridge! Helicopters overhead covering their advance. Police are running.'",
+          "confidence": 0.82
+        }
+      }
+    },
+    {
+      "offset_seconds": 284,
+      "source": {
+        "id": "src_1070",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3167,
+          "lon": -79.9
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Borden ON reserves: attempting to mobilize remaining personnel and equipment despite earlier strikes. Command and control degraded but not eliminated.",
+          "confidence": 0.7
+        },
+        "tag_id": "resistance_reports",
+        "tag_total": 8
+      }
+    },
+    {
+      "offset_seconds": 288,
+      "source": {
+        "id": "src_1095",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.9569,
+          "lon": -77.2853
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Petawawa mechanized reserve: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 292,
+      "source": {
+        "id": "src_3002",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.6745,
+          "lon": -120.3273
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kamloops BC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 296,
+      "source": {
+        "id": "src_3003",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.2001,
+          "lon": -66.3821
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Sept-\u00celes QC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 300,
+      "source": {
+        "id": "src_1096",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.7833,
+          "lon": -99.6333
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Shilo armoured reserve, MB: reporting status and attempting to establish contact with national command.",
+          "confidence": 0.68
+        },
+        "tag_id": "caf_mobilization",
+        "tag_total": 6
+      }
+    },
+    {
+      "offset_seconds": 304,
+      "source": {
+        "id": "src_3004",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.1368,
+          "lon": -60.1942
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Sydney NS ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 308,
+      "source": {
+        "id": "src_3005",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3894,
+          "lon": -79.6903
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Barrie ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 312,
+      "source": {
+        "id": "src_023",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.0027,
+          "lon": -122.8004
+        },
+        "tag_id": "border_crossing_bc",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "tank_video",
+          "level": 8,
+          "description": "Acoustic Surrey Pacific Highway: tank signatures. Column crossing from Blaine WA. CBSA communications cut.",
+          "confidence": 0.85
+        },
+        "heading_deg": 5,
+        "speed_kmh": 25,
+        "target_lat": 49.2838,
+        "target_lon": -122.7932
+      }
+    },
+    {
+      "offset_seconds": 316,
+      "source": {
+        "id": "src_3006",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.4516,
+          "lon": -80.4925
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kitchener ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 320,
+      "source": {
+        "id": "src_3007",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.5448,
+          "lon": -80.2482
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Guelph ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 324,
+      "source": {
+        "id": "src_1014",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.0878,
+          "lon": -64.7782
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Moncton ham radio \u2014 last transmission: 'Tanks on Main Street. Airport's gone. Maritimes are cut off from the rest of the country by air now.'",
+          "confidence": 0.87
+        },
+        "tag_id": "atlantic_urban_moncton",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 328,
+      "source": {
+        "id": "src_1029",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.3183,
+          "lon": -124.3117
+        },
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 9,
+          "description": "Parksville ham radio \u2014 last transmission: 'Tanks in the town centre. Airstrip's gone. Vancouver Island cut in half.'",
+          "confidence": 0.87
+        },
+        "tag_id": "pacific_urban_parksville",
+        "tag_total": 3
+      }
+    },
+    {
+      "offset_seconds": 332,
+      "source": {
+        "id": "src_3008",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.3091,
+          "lon": -78.3197
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Peterborough ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 336,
+      "source": {
+        "id": "src_3009",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.8483,
+          "lon": -99.9501
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Brandon MB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 340,
+      "source": {
+        "id": "src_3010",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.6935,
+          "lon": -112.8418
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Lethbridge AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 344,
+      "source": {
+        "id": "src_3011",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 50.0405,
+          "lon": -110.6764
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Medicine Hat AB ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 348,
+      "source": {
+        "id": "src_3012",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.9369,
+          "lon": -54.5681
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Gander NL ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 352,
+      "source": {
+        "id": "src_3013",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 45.4042,
+          "lon": -71.8929
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Sherbrooke QC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 356,
+      "source": {
+        "id": "src_3014",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1579,
+          "lon": -121.9514
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Chilliwack BC ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 360,
+      "source": {
+        "id": "src_3015",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 44.2312,
+          "lon": -76.486
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Kingston ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 364,
+      "source": {
+        "id": "src_1109",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6426,
+          "lon": -79.3871
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the CN Tower communications mast \u2014 broadcast and telecom relay capacity for the GTA degraded.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 368,
+      "source": {
+        "id": "src_3016",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 46.3091,
+          "lon": -79.4608
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "North Bay ON ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 372,
+      "source": {
+        "id": "src_026",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 42.9749,
+          "lon": -82.4079
+        },
+        "tag_id": "column_ontario_inland",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "mob_march",
+          "level": 7,
+          "description": "Sarnia: 400\u2013600 troops in formation marching north. Helicopter circling overhead in overwatch.",
+          "confidence": 0.8
+        },
+        "heading_deg": 0,
+        "speed_kmh": 5,
+        "target_lat": 42.9849,
+        "target_lon": -81.2453
+      }
+    },
+    {
+      "offset_seconds": 376,
+      "source": {
+        "id": "src_3017",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 48.95,
+          "lon": -57.9522
+        },
+        "tag_id": "final_wave_reports",
+        "tag_total": 17,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 6,
+          "description": "Corner Brook NL ham radio: aircraft noise and distant explosions reported in the last hour, consistent with the national pattern.",
+          "confidence": 0.72
+        }
+      }
+    },
+    {
+      "offset_seconds": 380,
+      "source": {
+        "id": "src_1110",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.655,
+          "lon": -79.381
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at a downtown Toronto telecom data centre \u2014 regional internet exchange capacity affected.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 384,
+      "source": {
+        "id": "src_027",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 42.3149,
+          "lon": -83.0364
+        },
+        "tag_id": "column_ontario_inland",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion Windsor near WFCU Centre \u2014 communications infrastructure struck. Power grid attack concurrent.",
+          "confidence": 0.88
+        }
+      }
+    },
+    {
+      "offset_seconds": 388,
+      "source": {
+        "id": "src_1111",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.29,
+          "lon": -123.11
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at the Vancouver port telecom exchange \u2014 port operations and shipping communications disrupted.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 392,
+      "source": {
+        "id": "src_1112",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.281,
+          "lon": -123.115
+        },
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion at a downtown Vancouver telecom data centre \u2014 same pattern as the Toronto strike.",
+          "confidence": 0.87
+        },
+        "tag_id": "secondary_telecom_strikes",
+        "tag_total": 4
+      }
+    },
+    {
+      "offset_seconds": 396,
+      "source": {
+        "id": "src_029",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.1579,
+          "lon": -121.9514
+        },
+        "tag_id": "column_bc_inland",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 8,
+          "description": "Chilliwack radio: 'Tanks through downtown. Helicopters shooting at something north of town. Our town is behind them now.'",
+          "confidence": 0.77
+        }
+      }
+    },
+    {
+      "offset_seconds": 400,
+      "source": {
+        "id": "src_031",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 42.9849,
+          "lon": -81.2453
+        },
+        "tag_id": "midprovince_ontario",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 8,
+          "description": "Explosion London near Victoria Hospital. Helicopter rocket strike on communications tower.",
+          "confidence": 0.86
+        }
+      }
+    },
+    {
+      "offset_seconds": 404,
+      "source": {
+        "id": "src_034",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "tag_id": "midprovince_bc",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosion Vancouver \u2014 Second Narrows Bridge destroyed. Helicopter visible departing scene. North Shore isolated.",
+          "confidence": 0.9
+        }
+      }
+    },
+    {
+      "offset_seconds": 408,
+      "source": {
+        "id": "src_039",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2488,
+          "lon": -122.9805
+        },
+        "tag_id": "vancouver_approach",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 9,
+          "description": "Explosions Burnaby SFU hilltop \u2014 helicopter rocket strike. High point seized.",
+          "confidence": 0.89
+        }
+      }
+    },
+    {
+      "offset_seconds": 412,
+      "source": {
+        "id": "src_041",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
+        "tag_id": "toronto_urban",
+        "tag_total": 3,
+        "predefined_analysis_result": {
+          "event_type": "explosion",
+          "level": 10,
+          "description": "Explosion Gardiner and Spadina \u2014 anti-tank engagement. Simultaneous helicopter strafing run on Canadian position.",
+          "confidence": 0.91
+        }
+      }
+    },
+    {
+      "offset_seconds": 416,
+      "source": {
+        "id": "src_044",
+        "type": "audio",
+        "data": null,
+        "coordinates": {
+          "lat": 49.2827,
+          "lon": -123.1207
+        },
+        "tag_id": "vancouver_urban",
+        "tag_total": 2,
+        "predefined_analysis_result": {
+          "event_type": "citizen_report",
+          "level": 10,
+          "description": "Vancouver ham radio \u2014 last transmission: 'Tanks on Burrard. Soldiers rappelling from helicopters at False Creek. Tank guns firing downtown. Canada will endure. Good lu\u2014' [cut]",
+          "confidence": 0.91
+        }
+      }
+    }
+  ]
+}
