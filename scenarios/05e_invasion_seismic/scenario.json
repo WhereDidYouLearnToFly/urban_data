@@ -12,11 +12,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 45.95,
-          "lon": -66.6
+          "lat": 45.70555,
+          "lon": -66.30293
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Fredericton area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -38,7 +38,7 @@
         "tag_id": "seismic_warning",
         "tag_total": 2,
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 3,
           "description": "Seismic Windsor: 3.8 Hz rhythmic vibration from southwest. Heavy convoy approaching.",
           "confidence": 0.64
@@ -52,11 +52,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 49.85,
-          "lon": -119.45
+          "lat": 49.62995,
+          "lon": -119.12899
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Kelowna area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -72,11 +72,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 48.38,
-          "lon": -89.25
+          "lat": 48.12195,
+          "lon": -88.89399
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Thunder Bay area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -98,7 +98,7 @@
         "tag_id": "seismic_warning",
         "tag_total": 2,
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 3,
           "description": "Seismic Surrey BC: identical 3.8 Hz signature simultaneously. Two origins 3,600 km apart \u2014 coordinated ground operation confirmed.",
           "confidence": 0.66
@@ -112,11 +112,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 50.44,
-          "lon": -104.6
+          "lat": 50.18715,
+          "lon": -104.24759
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Regina area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -136,7 +136,7 @@
           "lon": -80.99
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Sudbury area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -156,7 +156,7 @@
           "lon": -122.75
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Prince George area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -172,13 +172,13 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.6837,
+          "lon": -79.8651
         },
         "tag_id": "gta_approach",
         "tag_total": 3,
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "urban_combat",
           "level": 7,
           "description": "Toronto seismic: tracked-vehicle signatures on all 12 downtown sensors. Hamilton chokepoints held by desant. No defensive line remaining.",
           "confidence": 0.91
@@ -192,11 +192,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.49159,
+          "lon": -79.81228
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "urban_combat",
           "level": 8,
           "description": "Seismic network: continuous high-energy vibration all of southern Ontario. 28/30 sensors registering armor. Active urban combat Toronto and Vancouver. System at capacity.",
           "confidence": 0.97

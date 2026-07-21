@@ -25,6 +25,29 @@ _AGENT_ACCENT = "#ffd11a"
 _OPERATOR_ACCENT = "#5a86b8"
 
 
+def extract_actions_done(text: str) -> str:
+    """Pull out just the "I did this:" section of a decision reply, dropping
+    the "I suggest you do this:" section that follows it -- used for the
+    System Log's one-line notice, which should say what the agent actually
+    did, not what it's merely recommending.
+    """
+    lines = []
+    in_done_section = False
+    for line in text.split("\n"):
+        stripped = line.strip()
+        if stripped.startswith("I did this:"):
+            in_done_section = True
+            after = stripped[len("I did this:"):].strip()
+            if after:
+                lines.append(after)
+            continue
+        if stripped == "I suggest you do this:":
+            break
+        if in_done_section:
+            lines.append(line)
+    return "\n".join(lines).strip()
+
+
 class AgentsPanel(QWidget):
     messageSent = pyqtSignal(str, str)  # tag_id (of the latest incident), text
 
@@ -33,7 +56,7 @@ class AgentsPanel(QWidget):
         layout = QVBoxLayout(self)
         layout.setContentsMargins(4, 4, 4, 4)
         header = QLabel("<b>Agents</b>")
-        header.setStyleSheet("font-size: 16px;")
+        header.setStyleSheet("font-size: 20px;")
         layout.addWidget(header)
 
         # single bordered "window" holding everything below
@@ -53,26 +76,26 @@ class AgentsPanel(QWidget):
         # fit in that space, so it isn't stuck showing only ~4 at a time.
         self.incident_list = QListWidget()
         self.incident_list.setStyleSheet(
-            "QListWidget { font-size: 18px; } QListWidget::item { padding: 4px 0; }"
+            "QListWidget { font-size: 22px; } QListWidget::item { padding: 4px 0; }"
         )
         window_layout.addWidget(self.incident_list, stretch=1)
 
         # bottom: single dialogue transcript, grows and auto-scrolls with the conversation
         self.transcript_view = QTextEdit()
         self.transcript_view.setReadOnly(True)
-        self.transcript_view.setStyleSheet("QTextEdit { font-size: 18px; }")
+        self.transcript_view.setStyleSheet("QTextEdit { font-size: 22px; }")
         window_layout.addWidget(self.transcript_view, stretch=2)
 
         input_row = QHBoxLayout()
         self.input_line = QLineEdit()
         self.input_line.setPlaceholderText("Message the agent...")
         self.input_line.setMinimumHeight(48)
-        self.input_line.setStyleSheet("QLineEdit { font-size: 20px; padding: 6px 10px; }")
+        self.input_line.setStyleSheet("QLineEdit { font-size: 22px; padding: 6px 10px; }")
         self.input_line.returnPressed.connect(self._on_send)
         send_btn = QPushButton("Send")
         send_btn.setMinimumHeight(48)
         send_btn.setMinimumWidth(90)
-        send_btn.setStyleSheet("QPushButton { font-size: 18px; }")
+        send_btn.setStyleSheet("QPushButton { font-size: 20px; }")
         send_btn.clicked.connect(self._on_send)
         input_row.addWidget(self.input_line, stretch=1)
         input_row.addWidget(send_btn)

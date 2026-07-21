@@ -50,8 +50,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.9486,
-          "lon": -71.5
+          "lat": 46.69055,
+          "lon": -71.15362
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -215,8 +215,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.7167,
-          "lon": -124.8867
+          "lat": 49.45865,
+          "lon": -124.52099
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -335,8 +335,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.97649,
+          "lon": -63.40454
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -470,8 +470,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.4706,
-          "lon": -73.7408
+          "lat": 45.5011,
+          "lon": -74.23799
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -490,8 +490,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 51.1315,
-          "lon": -114.0106
+          "lat": 50.78682,
+          "lon": -114.10745
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -510,8 +510,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 53.5461,
-          "lon": -113.4938
+          "lat": 53.28805,
+          "lon": -113.09584
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -530,8 +530,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.30292,
+          "lon": -63.65823
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -550,8 +550,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 50.12307,
+          "lon": -96.80882
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -570,8 +570,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.9569,
-          "lon": -77.2853
+          "lat": 45.9874,
+          "lon": -77.78684
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -590,8 +590,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 51.1315,
-          "lon": -114.0106
+          "lat": 51.34457,
+          "lon": -113.56812
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -630,8 +630,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 48.4284,
-          "lon": -123.3656
+          "lat": 48.63307,
+          "lon": -123.00161
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -650,8 +650,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.9636,
-          "lon": -66.6431
+          "lat": 45.9941,
+          "lon": -67.1447
         },
         "predefined_analysis_result": {
           "event_type": "running_person",
@@ -670,8 +670,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 44.615,
-          "lon": -63.58
+          "lat": 44.6781,
+          "lon": -64.06289
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -690,8 +690,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 48.44,
-          "lon": -123.4
+          "lat": 48.16195,
+          "lon": -123.06371
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -710,8 +710,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.1659,
-          "lon": -123.9401
+          "lat": 49.37897,
+          "lon": -123.51544
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -730,8 +730,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 50.4452,
-          "lon": -104.6189
+          "lat": 50.4757,
+          "lon": -105.16642
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -750,8 +750,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.0878,
-          "lon": -64.7782
+          "lat": 45.74312,
+          "lon": -64.86583
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -770,8 +770,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.888,
-          "lon": -119.496
+          "lat": 49.9185,
+          "lon": -120.03717
         },
         "predefined_analysis_result": {
           "event_type": "small_traffic_violation",
@@ -790,8 +790,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 49.9405,
+          "lon": -97.78142
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -830,8 +830,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 51.1315,
-          "lon": -114.0106
+          "lat": 51.162,
+          "lon": -114.56622
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -850,8 +850,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 48.3809,
-          "lon": -89.2477
+          "lat": 47.8639,
+          "lon": -88.53977
         },
         "predefined_analysis_result": {
           "event_type": "running_person",
@@ -870,8 +870,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 52.1332,
-          "lon": -106.67
+          "lat": 51.87515,
+          "lon": -106.28478
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -890,8 +890,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.2382,
-          "lon": -63.1311
+          "lat": 45.98015,
+          "lon": -62.78923
         },
         "predefined_analysis_result": {
           "event_type": "running_person",
@@ -910,8 +910,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 53.9171,
-          "lon": -122.7497
+          "lat": 53.66195,
+          "lon": -122.34849
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -930,8 +930,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.4917,
-          "lon": -80.993
+          "lat": 46.23195,
+          "lon": -80.64655
         },
         "predefined_analysis_result": {
           "event_type": "small_traffic_violation",
@@ -990,8 +990,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.0878,
-          "lon": -64.7782
+          "lat": 46.1183,
+          "lon": -65.28093
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -1010,8 +1010,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 42.3149,
-          "lon": -83.0364
+          "lat": 42.52797,
+          "lon": -82.66089
         },
         "tag_id": "border_crossing_ontario",
         "tag_total": 3,
@@ -1030,8 +1030,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.3183,
-          "lon": -124.3117
+          "lat": 49.3488,
+          "lon": -124.84659
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -1050,8 +1050,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.0027,
-          "lon": -122.8004
+          "lat": 49.0332,
+          "lon": -123.33189
         },
         "tag_id": "border_crossing_bc",
         "tag_total": 2,
@@ -1110,8 +1110,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 42.9849,
-          "lon": -81.2453
+          "lat": 43.0154,
+          "lon": -81.72193
         },
         "tag_id": "midprovince_ontario",
         "tag_total": 3,
@@ -1150,8 +1150,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.86627,
+          "lon": -78.99942
         },
         "tag_id": "gta_approach",
         "tag_total": 3,
@@ -1190,8 +1190,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.7,
-          "lon": -79.41
+          "lat": 43.30852,
+          "lon": -79.4672
         },
         "tag_id": "toronto_urban",
         "tag_total": 3,
@@ -1210,8 +1210,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.56261,
+          "lon": -78.91594
         },
         "tag_id": "toronto_urban",
         "tag_total": 3,
@@ -1230,8 +1230,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 48.4866,
+          "lon": -122.08138
         },
         "tag_id": "vancouver_urban",
         "tag_total": 2,

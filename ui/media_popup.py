@@ -3,20 +3,28 @@ attached to a Source/Event, opened by clicking an item in the Events Feed or
 a marker on the Map (see ui/main_window.py's _open_media_popup). Content
 renders per Event.type: photo -> QPixmap, video/audio -> QMediaPlayer,
 fft/float_sequence -> a pyqtgraph line plot of the decoded sequence.
+
+Opened media viewers (MediaSlot) live inside one shared PopupGroup window
+rather than each owning its own top-level window -- multiple incidents opened
+one after another used to scatter independent floating windows around the
+screen; grouping them behind a single title bar means dragging it moves the
+whole set together.
 """
 import base64
 import json
 import os
+import subprocess
 import tempfile
 
 import numpy as np
 import pyqtgraph as pg
-from PyQt5.QtCore import Qt, QUrl, QPoint
+from PyQt5.QtCore import Qt, QUrl, QPoint, pyqtSignal
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
 from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QSlider, QSizePolicy,
+    QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QLabel, QPushButton, QSlider,
+    QSizePolicy, QScrollArea, QSizeGrip, QFrame, QStackedWidget,
 )
 
 from common.schemas import Event
@@ -42,7 +50,10 @@ class FloatingWindow(QWidget):
 
         self.content = QWidget()
         self.content_layout = QVBoxLayout(self.content)
+        self.content_layout.setContentsMargins(0, 0, 0, 0)
+        self.content_layout.setSpacing(0)
         outer.addWidget(self.content, stretch=1)
+        outer.addWidget(self._build_resize_bar())
 
         self.setStyleSheet(
             "FloatingWindow { border: 1px solid #5a86b8; background: #1c2b3a; }"
@@ -67,6 +78,20 @@ class FloatingWindow(QWidget):
         bar.mouseMoveEvent = self._title_move
         return bar
 
+    def _build_resize_bar(self) -> QWidget:
+        # Frameless windows (Qt.FramelessWindowHint) lose the OS's own
+        # edge-drag resize entirely -- this reserves a strip for a QSizeGrip
+        # so there's still a way to resize by hand, not just via
+        # PopupGroup's own auto-fit-to-grid sizing.
+        bar = QWidget()
+        bar.setFixedHeight(14)
+        bar.setStyleSheet("background: #26405e;")
+        layout = QHBoxLayout(bar)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.addStretch(1)
+        layout.addWidget(QSizeGrip(bar), 0, Qt.AlignBottom | Qt.AlignRight)
+        return bar
+
     def _title_press(self, event):
         self._drag_offset = event.globalPos() - self.pos()
 
@@ -83,11 +108,38 @@ class FloatingWindow(QWidget):
         self.move(base + QPoint(offset, offset))
 
 
-class MediaPopup(FloatingWindow):
+class MediaSlot(QWidget):
+    """One event's rendered media, as a bordered panel meant to sit inside a
+    PopupGroup's grid rather than own a top-level window itself. Clicking its
+    title bar (not the close button) emits `selected` -- lets the operator
+    locate an event on the map/feed starting from its media instead of only
+    the other way around.
+    """
+    closeRequested = pyqtSignal(str)
+    selected = pyqtSignal(str)
+
     def __init__(self, event: Event, parent=None):
-        super().__init__(title=f"{event.type} — {event.id}", parent=parent)
-        self.resize(480, 360)
+        super().__init__(parent)
+        self.event_id = event.id
         self._tmp_path = None
+        self._player = None
+        self._video_stack = None
+        # Same size the standalone popup used to default to (480x360) -- the
+        # grid shouldn't make individual viewers smaller or stretch them,
+        # just arrange several of that same size next to each other.
+        self.setFixedSize(480, 360)
+        self.setStyleSheet(
+            "MediaSlot { border: 1px solid #3a5a7e; background: #16232f; }"
+        )
+
+        outer = QVBoxLayout(self)
+        outer.setContentsMargins(1, 1, 1, 1)
+        outer.setSpacing(0)
+        outer.addWidget(self._build_slot_bar(event))
+
+        self.content = QWidget()
+        self.content_layout = QVBoxLayout(self.content)
+        outer.addWidget(self.content, stretch=1)
 
         raw = base64.b64decode(event.data)
         if event.type == "photo":
@@ -108,6 +160,22 @@ class MediaPopup(FloatingWindow):
         caption.setStyleSheet("padding: 6px;")
         self.content_layout.addWidget(caption)
 
+    def _build_slot_bar(self, event: Event) -> QWidget:
+        bar = QWidget()
+        bar.setFixedHeight(22)
+        bar.setStyleSheet("background: #203349;")
+        bar.setCursor(Qt.PointingHandCursor)
+        bar.mousePressEvent = lambda e: self.selected.emit(self.event_id)
+        layout = QHBoxLayout(bar)
+        layout.setContentsMargins(6, 0, 4, 0)
+        layout.addWidget(QLabel(f"<b>{event.type} — {event.id}</b>"))
+        layout.addStretch(1)
+        close_btn = QPushButton("×")
+        close_btn.setFixedSize(18, 18)
+        close_btn.clicked.connect(lambda: self.closeRequested.emit(self.event_id))
+        layout.addWidget(close_btn)
+        return bar
+
     # ── renderers ──────────────────────────────────────────────────────────
 
     def _show_photo(self, raw: bytes):
@@ -125,6 +193,12 @@ class MediaPopup(FloatingWindow):
         self._tmp_path = path
 
         player = QMediaPlayer(self)
+        # Default notify interval is 1000ms -- positionChanged (which drives
+        # the progress slider) only fires once a second. Several clips here
+        # are only 1-2 seconds long, so the slider was getting 0-1 updates
+        # for the whole clip: looked static for audio, and like a few
+        # discrete jumps ("begin, middle, end") for slightly longer video.
+        player.setNotifyInterval(50)
         player.setMedia(QMediaContent(QUrl.fromLocalFile(path)))
         return player
 
@@ -138,10 +212,20 @@ class MediaPopup(FloatingWindow):
                 player.pause()
                 play_btn.setText("▶")
             else:
+                if self._video_stack is not None:
+                    self._video_stack.setCurrentIndex(1)  # swap poster frame -> live video widget
                 player.play()
                 play_btn.setText("⏸")
 
+        def on_status_changed(status):
+            if status == QMediaPlayer.EndOfMedia:
+                player.setPosition(0)
+                play_btn.setText("▶")
+                if self._video_stack is not None:
+                    self._video_stack.setCurrentIndex(0)  # back to the poster frame, not a frozen last frame
+
         play_btn.clicked.connect(toggle)
+        player.mediaStatusChanged.connect(on_status_changed)
 
         slider = QSlider(Qt.Horizontal)
         player.durationChanged.connect(slider.setMaximum)
@@ -152,12 +236,62 @@ class MediaPopup(FloatingWindow):
         controls.addWidget(slider, stretch=1)
         self.content_layout.addLayout(controls)
 
+    def _extract_poster_frame(self, video_path: str) -> QPixmap | None:
+        """Grab a single frame from the middle of the video via ffmpeg, to
+        show as a poster before playback starts instead of QVideoWidget's
+        default blank/black area. Best-effort: falls back to no poster (just
+        the blank video widget, same as before) if ffmpeg is missing or the
+        probe/extract fails for any reason -- never worth failing the whole
+        popup over.
+        """
+        try:
+            probe = subprocess.run(
+                ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                 "-of", "default=noprint_wrappers=1:nokey=1", video_path],
+                capture_output=True, text=True, timeout=5,
+            )
+            duration = float(probe.stdout.strip())
+        except Exception:
+            duration = 0.0
+
+        fd, thumb_path = tempfile.mkstemp(suffix=".png")
+        os.close(fd)
+        try:
+            result = subprocess.run(
+                ["ffmpeg", "-y", "-ss", str(max(duration / 2, 0.0)), "-i", video_path,
+                 "-frames:v", "1", thumb_path],
+                capture_output=True, timeout=10,
+            )
+            if result.returncode != 0:
+                return None
+            pixmap = QPixmap(thumb_path)
+            return pixmap if not pixmap.isNull() else None
+        except Exception:
+            return None
+        finally:
+            if os.path.exists(thumb_path):
+                os.remove(thumb_path)
+
     def _show_video(self, raw: bytes):
         player = self._make_player(raw, ".mp4")
         video_widget = QVideoWidget()
         video_widget.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         player.setVideoOutput(video_widget)
-        self.content_layout.addWidget(video_widget, stretch=1)
+
+        poster = self._extract_poster_frame(self._tmp_path)
+        if poster is not None:
+            poster_label = QLabel()
+            poster_label.setAlignment(Qt.AlignCenter)
+            poster_label.setStyleSheet("background: black;")
+            poster_label.setPixmap(poster.scaled(440, 280, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+
+            self._video_stack = QStackedWidget()
+            self._video_stack.addWidget(poster_label)  # index 0 -- shown until Play
+            self._video_stack.addWidget(video_widget)  # index 1
+            self.content_layout.addWidget(self._video_stack, stretch=1)
+        else:
+            self.content_layout.addWidget(video_widget, stretch=1)
+
         self._add_transport_controls(player)
         self._player = player  # keep a live reference so it isn't GC'd
 
@@ -223,7 +357,137 @@ class MediaPopup(FloatingWindow):
         waterfall_plot.addItem(img)
         self.content_layout.addWidget(waterfall_plot, stretch=1)
 
-    def closeEvent(self, event):
+    def cleanup(self):
+        if self._player is not None:
+            self._player.stop()
         if self._tmp_path and os.path.exists(self._tmp_path):
             os.remove(self._tmp_path)
+
+
+class PopupGroup(FloatingWindow):
+    """Single draggable window holding one MediaSlot per open incident, laid
+    out in a fixed-width grid (wraps to a new row past _COLS) behind one
+    title bar -- so opening several incidents in a row doesn't scatter
+    independent windows around the screen; dragging the one title bar moves
+    the whole set together. The window grows to fit its grid -- width is
+    naturally bounded by _COLS, height isn't bounded at all (the scroll area
+    only kicks in once it no longer fits the screen, not before).
+    """
+    eventSelected = pyqtSignal(str)
+
+    _COLS = 3
+    _SLOT_SIZE = (480, 360)  # must match MediaSlot's fixed size
+
+    def __init__(self, parent=None):
+        super().__init__(title="", parent=parent)
+        self.resize(*self._SLOT_SIZE)
+        self._slots: dict[str, MediaSlot] = {}
+        self._order: list[str] = []  # insertion order -- grid position derives from this
+
+        self._grid_host = QWidget()
+        self._grid = QGridLayout(self._grid_host)
+        self._grid.setContentsMargins(4, 4, 4, 4)
+        self._grid.setSpacing(4)
+        # Without this, QScrollArea's setWidgetResizable(True) below stretches
+        # _grid_host (and so the grid's row/column) to fill the whole viewport
+        # whenever there are fewer slots than fit it -- which then stretched
+        # each MediaSlot up to fill that leftover space instead of leaving it
+        # at its fixed size. Anchoring the grid itself top-left keeps any
+        # extra space as blank space instead of being distributed into cells.
+        self._grid.setAlignment(Qt.AlignTop | Qt.AlignLeft)
+
+        scroll = QScrollArea()
+        scroll.setFrameShape(QFrame.NoFrame)  # its own bevel clashed with FloatingWindow's border
+        scroll.setWidgetResizable(True)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        scroll.setWidget(self._grid_host)
+        scroll.setStyleSheet("""
+            QScrollBar:horizontal, QScrollBar:vertical {
+                background: #16232f;
+                margin: 0;
+            }
+            QScrollBar:horizontal { height: 12px; }
+            QScrollBar:vertical { width: 12px; }
+            QScrollBar::handle:horizontal, QScrollBar::handle:vertical {
+                background: #3a5a7e;
+                border-radius: 5px;
+            }
+            QScrollBar::handle:horizontal { min-width: 24px; }
+            QScrollBar::handle:vertical { min-height: 24px; }
+            QScrollBar::handle:hover { background: #5a86b8; }
+            QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; }
+            QScrollBar::add-page, QScrollBar::sub-page { background: none; }
+        """)
+        self.content_layout.addWidget(scroll, stretch=1)
+
+    def has_event(self, event_id: str) -> bool:
+        return event_id in self._slots
+
+    def add_slot(self, event: Event):
+        slot = MediaSlot(event)
+        slot.closeRequested.connect(self.remove_slot)
+        slot.selected.connect(self.eventSelected)
+        self._slots[event.id] = slot
+        self._order.append(event.id)
+        self._relayout()
+
+    def remove_slot(self, event_id: str):
+        slot = self._slots.pop(event_id, None)
+        if slot is None:
+            return
+        self._order.remove(event_id)
+        slot.cleanup()
+        slot.setParent(None)
+        slot.deleteLater()
+        if not self._slots:
+            self.close()
+        else:
+            self._relayout()
+
+    def _relayout(self):
+        # Simplest correct way to keep a gap-free grid after a mid-list
+        # removal: clear the layout's item list (this does not delete the
+        # widgets) and re-add everything in insertion order.
+        while self._grid.count():
+            self._grid.takeAt(0)
+        for i, event_id in enumerate(self._order):
+            row, col = divmod(i, self._COLS)
+            self._grid.addWidget(self._slots[event_id], row, col, Qt.AlignTop | Qt.AlignLeft)
+        self._resize_to_fit()
+
+    def _resize_to_fit(self):
+        # Pure arithmetic from known constants -- no sizeHint() involved.
+        # sizeHint() queried right after addWidget() in the same call was
+        # returning a stale, one-step-behind value (Qt's layout size cache
+        # not yet recomputed), which is exactly the "lags by one slot" bug
+        # this was producing. Fixed quantities only, so there's nothing left
+        # to race.
+        n = len(self._order)
+        if n == 0:
+            return
+        cols = min(self._COLS, n)
+        rows = -(-n // self._COLS)  # ceil division
+        slot_w, slot_h = self._SLOT_SIZE
+        grid_spacing = 4    # must match self._grid.setSpacing(4)
+        grid_margin = 4     # must match self._grid.setContentsMargins(4,4,4,4), each side
+        title_bar_h = 26
+        resize_bar_h = 14
+        outer_border = 2    # FloatingWindow's own 1px border, each side
+        slack = 30          # extra headroom so the scroll area's scrollbar never eats into content
+
+        grid_w = cols * slot_w + (cols - 1) * grid_spacing + 2 * grid_margin
+        grid_h = rows * slot_h + (rows - 1) * grid_spacing + 2 * grid_margin
+
+        width = grid_w + outer_border + slack
+        height = grid_h + outer_border + title_bar_h + resize_bar_h + slack
+        self.resize(width, height)
+
+    def closeEvent(self, event):
+        # Closing the whole group (its own × button) skips remove_slot for
+        # whatever's still open -- clean those up here instead.
+        for slot in self._slots.values():
+            slot.cleanup()
+        self._slots.clear()
+        self._order.clear()
         super().closeEvent(event)

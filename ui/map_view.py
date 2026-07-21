@@ -3,7 +3,7 @@ via QWebEngineView + QWebChannel, ported from the github/qtmap example
 (radiolab9, MIT). Event dots are fed by MainWindow's ZMQ subscriber
 (ui/zmq_client.py) and plotted at their coordinates, colored by severity.
 Single-clicking a marker focuses the Events Feed row for that incident;
-double-clicking opens its MediaPopup (see MainWindow).
+double-clicking opens it in the shared PopupGroup (see MainWindow).
 
 For events carrying a target_lat/target_lon (predicted-movement events --
 drones, mobs, tank columns with a known destination), the origin marker
@@ -14,9 +14,12 @@ direction instead. There is no animation -- it's been added and removed a
 couple of times now chasing UI lag reports; even after fixing the actual
 lag cause (common/debug_controller.py forcing a flush on every event
 print -- see project memory) it was still laggy, so it's staying off.
-Origin dots and paths render on a shared Leaflet Canvas layer
-(L.circleMarker/L.polyline with an explicit `renderer`) rather than
-individual DOM elements, cheap even with dozens on screen at once.
+Paths render on a shared Leaflet Canvas layer (L.polyline with an explicit
+`renderer`), cheap even with dozens on screen at once. Origin dots are real
+DOM markers (L.marker/L.divIcon), not canvas-rendered like the paths --
+canvas circleMarker hit-testing turned out unreliable for clicks here, and a
+DOM marker also guarantees it renders above the paths (Leaflet's markerPane
+always sits above the paths' overlayPane) regardless of add order.
 
 Bundled assets live in ui/map_assets/ (Leaflet 1.9.4 + Canada province
 outline). Tiles are fetched live from CartoDB's CDN — this needs internet at
@@ -27,7 +30,7 @@ import os
 
 from PyQt5.QtCore import QObject, QTimer, QUrl, pyqtSignal, pyqtSlot
 from PyQt5.QtWebChannel import QWebChannel
-from PyQt5.QtWebEngineWidgets import QWebEngineView
+from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage
 from PyQt5.QtWidgets import QVBoxLayout, QWidget
 
 from common.severity_colors import color_for_level
@@ -68,8 +71,30 @@ var CANADA_GEOJSON = {canada_geojson};
 var map;
 var canvasRenderer;  // shared Canvas layer for origin dots + paths -- see module docstring
 var markers = {{}};
+var markerMeta = {{}};  // eventId -> {{baseDiameter, color, typeStyle}}, used to rescale on zoom
 var predictedPaths = {{}};  // trackKey -> {{path: L.Polyline, arrowTip: L.Marker}} -- static, no animation
 var pyHandler = null;
+
+// Dots are a fixed screen-pixel size regardless of zoom (like any DOM
+// marker) -- zooming in to get a better angle to click one doesn't actually
+// make it any bigger, which reads as the dot "running away" from the
+// cursor. Growing it a bit with zoom (relative to the initial view) fixes
+// that without makings dots absurdly huge at max zoom (capped below).
+var REFERENCE_ZOOM = 4;  // matches initMap()'s initial setView zoom
+
+function scaleForZoom(zoom) {{
+    return Math.min(1 + Math.max(0, zoom - REFERENCE_ZOOM) * 0.2, 3.5);
+}}
+
+function rescaleMarkers() {{
+    var scale = scaleForZoom(map.getZoom());
+    for (var eventId in markerMeta) {{
+        var marker = markers[eventId];
+        if (!marker) {{ continue; }}
+        var meta = markerMeta[eventId];
+        marker.setIcon(dotIcon(meta.baseDiameter * scale, meta.color, meta.typeStyle));
+    }}
+}}
 
 new QWebChannel(qt.webChannelTransport, function(channel) {{
     pyHandler = channel.objects.pyHandler;
@@ -97,18 +122,41 @@ function initMap() {{
             pyHandler.onMapClick(e.latlng.lat, e.latlng.lng);
         }}
     }});
+    map.on('zoomend', rescaleMarkers);
 }}
 
-function canvasDot(lat, lng, color, radiusPx) {{
-    // origin dots render on the shared canvas layer, not as individual DOM
-    // nodes -- cheap even with many of them on screen (e.g. a drone swarm).
-    return L.circleMarker([lat, lng], {{
-        renderer: canvasRenderer,
-        radius: radiusPx,
-        color: '#ffffff',
-        weight: 2,
-        fillColor: color,
-        fillOpacity: 1
+// Origin dots used to be canvas-rendered (L.circleMarker on a shared
+// renderer) for cheap rendering with many on screen -- but canvas hit-testing
+// turned out unreliable here (clicks squarely on a dot were falling through
+// to the plain map-click handler instead of the marker's), and canvas layers
+// live in the z-order below the marker pane, so a marker pane icon (e.g. the
+// arrowhead) could in principle sit above them too. A real L.marker/divIcon
+// uses the browser's own DOM hit-testing (exact) and always renders in
+// Leaflet's markerPane, above the overlayPane paths/GeoJSON regardless of
+// add order -- worth the small DOM cost at this scale (dozens, not hundreds).
+// Shape per event type, not a glyph/emoji -- Qt's native widgets already
+// can't render emoji reliably (tofu boxes, see events_feed.py), and Chromium
+// under QWebEngine is no safer bet either (Linux Chromium still depends on a
+// system emoji font being installed). Plain CSS shapes (clip-path/border-
+// radius) have no font dependency at all -- same reasoning as the existing
+// pure-CSS arrowhead triangle below.
+var TYPE_SHAPE = {{
+    photo: 'border-radius:3px;',
+    video: 'clip-path:polygon(15% 0%,15% 100%,100% 50%);',
+    audio: 'border-radius:50%;',
+    fft: 'clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);',
+    float_sequence: 'clip-path:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);'
+}};
+var DEFAULT_SHAPE = 'border-radius:50%;';
+
+function dotIcon(diameterPx, color, typeStyle) {{
+    return L.divIcon({{
+        className: 'event-marker',
+        html: '<div style="width:' + diameterPx + 'px;height:' + diameterPx + 'px;' +
+              'background:' + color + ';border:2px solid #ffffff;box-sizing:border-box;' +
+              (typeStyle || DEFAULT_SHAPE) + '"></div>',
+        iconSize: [diameterPx, diameterPx],
+        iconAnchor: [diameterPx / 2, diameterPx / 2]
     }});
 }}
 
@@ -137,11 +185,39 @@ function bearingTo(lat1, lng1, lat2, lng2) {{
     return (Math.atan2(dLng, dLat) * 180 / Math.PI + 360) % 360;
 }}
 
-function addOrUpdateMarker(eventId, lat, lng, color, headingDeg, speedKmh, trackId, targetLat, targetLng) {{
+// Many events legitimately share the same (or near-identical) real-world
+// coordinates -- multiple sensors on the same city block, repeat seismic
+// readings at one station, etc. Rendered literally on top of each other
+// they're indistinguishable and unclickable past the first one. This keeps
+// the *reported* coordinate untouched everywhere else (map clicks, popups,
+// focusMarker) and only nudges the dot actually drawn, spreading repeats
+// into a small ring around the true point.
+var locationCounts = {{}};
+
+function spreadLocation(lat, lng) {{
+    var key = lat.toFixed(3) + ',' + lng.toFixed(3);
+    var index = locationCounts[key] || 0;
+    locationCounts[key] = index + 1;
+    if (index === 0) {{
+        return [lat, lng];
+    }}
+    // golden-angle spacing so repeats don't line up radially into each
+    // other as the ring grows; radius steps out every 8 markers at one spot.
+    var angle = index * 137.5 * Math.PI / 180;
+    var radius = 0.0006 * (1 + Math.floor((index - 1) / 8));
+    var latScale = Math.max(0.15, Math.cos(lat * Math.PI / 180));
+    return [lat + Math.cos(angle) * radius, lng + Math.sin(angle) * radius / latScale];
+}}
+
+function addOrUpdateMarker(eventId, lat, lng, color, type_, headingDeg, speedKmh, trackId, targetLat, targetLng) {{
     if (markers[eventId]) {{
         map.removeLayer(markers[eventId]);
     }}
     clearPath(eventId);  // clean up a standalone (no trackId) path previously keyed by this id
+
+    var spread = spreadLocation(lat, lng);
+    lat = spread[0];
+    lng = spread[1];
 
     var hasTarget = (targetLat !== null && targetLat !== undefined);
     var hasHeading = hasTarget || (headingDeg !== null && headingDeg !== undefined);
@@ -150,7 +226,11 @@ function addOrUpdateMarker(eventId, lat, lng, color, headingDeg, speedKmh, track
     // when it's the origin of a predicted path, it's dimmed down so the
     // path/arrow reads clearly against it.
     var originColor = hasHeading ? darkenColor(color, 0.5) : color;
-    var marker = canvasDot(lat, lng, originColor, hasHeading ? 5.5 : 7).addTo(map);
+    var typeStyle = TYPE_SHAPE[type_] || DEFAULT_SHAPE;
+    var baseDiameter = hasHeading ? 11 : 14;
+    markerMeta[eventId] = {{baseDiameter: baseDiameter, color: originColor, typeStyle: typeStyle}};
+    var diameter = baseDiameter * scaleForZoom(map.getZoom());
+    var marker = L.marker([lat, lng], {{icon: dotIcon(diameter, originColor, typeStyle)}}).addTo(map);
     marker.on('click', function() {{
         if (pyHandler) {{ pyHandler.onMarkerClick(eventId); }}
     }});
@@ -209,6 +289,7 @@ function removeMarker(eventId) {{
         map.removeLayer(markers[eventId]);
         delete markers[eventId];
     }}
+    delete markerMeta[eventId];
     clearPath(eventId);
 }}
 
@@ -217,14 +298,20 @@ function clearMarkers() {{
         map.removeLayer(markers[id]);
     }}
     markers = {{}};
+    markerMeta = {{}};
     for (var id in predictedPaths) {{
         clearPath(id);
     }}
+    locationCounts = {{}};
 }}
 
 function focusMarker(eventId, zoom) {{
     if (markers[eventId]) {{
-        map.setView(markers[eventId].getLatLng(), zoom);
+        // Pan to the marker always, but never zoom out to get there -- if the
+        // operator is already zoomed in past the default focus level, respect
+        // that instead of yanking them back out to it.
+        var targetZoom = Math.max(map.getZoom(), zoom);
+        map.setView(markers[eventId].getLatLng(), targetZoom);
     }}
 }}
 
@@ -252,10 +339,23 @@ class _Bridge(QObject):
         self.markerDoubleClicked.emit(event_id)
 
 
+class _LoggingPage(QWebEnginePage):
+    """Default QWebEnginePage swallows JS console output entirely -- a JS
+    exception (e.g. inside a marker's click handler) fails completely
+    silently, no different from working correctly. Surfacing it via a signal
+    is what makes that kind of bug diagnosable at all.
+    """
+    consoleMessage = pyqtSignal(str)
+
+    def javaScriptConsoleMessage(self, level, message, line_number, source_id):
+        self.consoleMessage.emit(f"{message} (line {line_number})")
+
+
 class MapView(QWidget):
     mapClicked = pyqtSignal(float, float)
     eventClicked = pyqtSignal(str)         # single click -- focus the feed row
     eventDoubleClicked = pyqtSignal(str)   # double click -- open the media popup
+    jsError = pyqtSignal(str)
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -268,9 +368,12 @@ class MapView(QWidget):
         self._bridge.markerDoubleClicked.connect(self.eventDoubleClicked)
 
         self._web_view = QWebEngineView()
+        self._page = _LoggingPage(self._web_view)
+        self._page.consoleMessage.connect(self.jsError)
+        self._web_view.setPage(self._page)
         self._channel = QWebChannel()
         self._channel.registerObject("pyHandler", self._bridge)
-        self._web_view.page().setWebChannel(self._channel)
+        self._page.setWebChannel(self._channel)
 
         self._loaded = False
         self._pending_js = []
@@ -325,10 +428,11 @@ class MapView(QWidget):
         batch = ";\n".join(chunk)
         self._web_view.page().runJavaScript(batch)
 
-    def add_event(self, event_id: str, lat: float, lon: float, level: int,
+    def add_event(self, event_id: str, lat: float, lon: float, level: int, event_type: str = None,
                   heading_deg: float = None, speed_kmh: float = None, track_id: str = None,
                   target_lat: float = None, target_lon: float = None):
         color = color_for_level(level)
+        type_js = "''" if event_type is None else f"'{event_type}'"
         heading_js = "null" if heading_deg is None else heading_deg
         speed_js = "null" if speed_kmh is None else speed_kmh
         # track_id (tag_id) ties together repeat detections of the same
@@ -340,7 +444,7 @@ class MapView(QWidget):
         target_lat_js = "null" if target_lat is None else target_lat
         target_lon_js = "null" if target_lon is None else target_lon
         self._run_js(
-            f"addOrUpdateMarker('{event_id}', {lat}, {lon}, '{color}', "
+            f"addOrUpdateMarker('{event_id}', {lat}, {lon}, '{color}', {type_js}, "
             f"{heading_js}, {speed_js}, {track_js}, {target_lat_js}, {target_lon_js})"
         )
 

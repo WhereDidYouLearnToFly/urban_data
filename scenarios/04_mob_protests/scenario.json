@@ -55,8 +55,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.39515,
+          "lon": -79.05639
         },
         "tag_id": "protest_toronto",
         "tag_total": 4,
@@ -117,8 +117,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.6837,
+          "lon": -79.8651
         },
         "tag_id": "protest_toronto",
         "tag_total": 4,
@@ -137,8 +137,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.16345,
+          "lon": -75.36031
         },
         "tag_id": "protest_ottawa",
         "tag_total": 3,
@@ -157,8 +157,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.02465,
+          "lon": -122.75822
         },
         "tag_id": "protest_vancouver",
         "tag_total": 4,
@@ -177,8 +177,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.86627,
+          "lon": -78.99942
         },
         "tag_id": "protest_toronto",
         "tag_total": 4,
@@ -201,8 +201,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.452,
+          "lon": -76.19396
         },
         "tag_id": "protest_ottawa",
         "tag_total": 3,
@@ -221,8 +221,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.3132,
+          "lon": -123.6552
         },
         "tag_id": "protest_vancouver",
         "tag_total": 4,
@@ -241,8 +241,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.30852,
+          "lon": -79.4672
         },
         "tag_id": "coordinated_pattern",
         "tag_total": 2,
@@ -261,8 +261,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.94839,
+          "lon": -79.64311
         },
         "tag_id": "protest_toronto",
         "tag_total": 4,
@@ -281,8 +281,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.49577,
+          "lon": -122.69503
         },
         "tag_id": "protest_vancouver",
         "tag_total": 4,
@@ -305,8 +305,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 48.93802,
+          "lon": -123.21387
         },
         "tag_id": "coordinated_pattern",
         "tag_total": 2,
@@ -325,8 +325,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.56261,
+          "lon": -78.91594
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -343,8 +343,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.63457,
+          "lon": -75.30159
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -361,8 +361,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.49159,
+          "lon": -79.81228
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",

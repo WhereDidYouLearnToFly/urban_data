@@ -493,8 +493,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.0,
-          "lon": -58.0
+          "lat": 42.74195,
+          "lon": -57.67669
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -513,8 +513,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.3,
-          "lon": -128.5
+          "lat": 48.04195,
+          "lon": -128.14455
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -533,8 +533,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 43.0,
-          "lon": -58.0
+          "lat": 43.0305,
+          "lon": -58.47674
         },
         "predefined_analysis_result": {
           "event_type": "drone_photo",
@@ -558,8 +558,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 48.3,
-          "lon": -128.5
+          "lat": 48.3305,
+          "lon": -129.02413
         },
         "predefined_analysis_result": {
           "event_type": "drone_photo",
@@ -712,8 +712,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 63.7467,
-          "lon": -68.517
+          "lat": 63.48865,
+          "lon": -67.98244
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -796,8 +796,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 63.7467,
-          "lon": -68.517
+          "lat": 63.7772,
+          "lon": -69.30524
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -916,8 +916,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.4706,
-          "lon": -73.7408
+          "lat": 45.68367,
+          "lon": -73.34484
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -996,8 +996,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.9486,
-          "lon": -71.5
+          "lat": 46.69055,
+          "lon": -71.15362
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -1076,8 +1076,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.16345,
+          "lon": -75.36031
         },
         "tag_id": "visual_ottawa",
         "tag_total": 2,
@@ -1140,8 +1140,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.3306,
-          "lon": -70.9964
+          "lat": 48.07255,
+          "lon": -70.64074
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -1205,8 +1205,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 44.666,
-          "lon": -63.596
+          "lat": 44.48599,
+          "lon": -64.00917
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -1350,8 +1350,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.431,
-          "lon": -123.4396
+          "lat": 47.9039,
+          "lon": -122.70922
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -1565,8 +1565,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.7167,
-          "lon": -124.8867
+          "lat": 49.45865,
+          "lon": -124.52099
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -1635,8 +1635,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.74913593525389,
-          "lon": -140.44966608875225
+          "lat": 63.44915,
+          "lon": -139.88153
         },
         "predefined_analysis_result": {
           "event_type": "drone_photo",
@@ -1710,8 +1710,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.97649,
+          "lon": -63.40454
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -1944,8 +1944,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.39515,
+          "lon": -79.05639
         },
         "tag_id": "drone_impacts",
         "tag_total": 4,
@@ -1964,8 +1964,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 47.5615,
-          "lon": -52.7126
+          "lat": 47.30195,
+          "lon": -52.3596
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -1984,8 +1984,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.4284,
-          "lon": -123.3656
+          "lat": 48.32941,
+          "lon": -122.9106
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -2004,8 +2004,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 60.7212,
-          "lon": -135.0568
+          "lat": 60.46315,
+          "lon": -134.57331
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -2064,8 +2064,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.4706,
-          "lon": -73.7408
+          "lat": 45.21255,
+          "lon": -73.40362
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -2104,8 +2104,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 50.20519,
+          "lon": -97.53202
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2148,8 +2148,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.452,
+          "lon": -76.19396
         },
         "tag_id": "drone_impacts",
         "tag_total": 4,
@@ -2168,8 +2168,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 60.7212,
-          "lon": -135.0568
+          "lat": 60.7517,
+          "lon": -135.76974
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2188,8 +2188,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.4706,
-          "lon": -73.7408
+          "lat": 45.5011,
+          "lon": -74.23799
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -2228,8 +2228,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.63457,
+          "lon": -75.30159
         },
         "tag_id": "drone_impacts",
         "tag_total": 4,
@@ -2248,8 +2248,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 51.1315,
-          "lon": -114.0106
+          "lat": 50.78682,
+          "lon": -114.10745
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2308,8 +2308,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 53.5461,
-          "lon": -113.4938
+          "lat": 53.28805,
+          "lon": -113.09584
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2328,8 +2328,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 44.1198,
-          "lon": -77.5288
+          "lat": 44.1505,
+          "lon": -78.03569
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2348,8 +2348,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.30292,
+          "lon": -63.65823
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -2368,8 +2368,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.55,
-          "lon": -73.6
+          "lat": 45.24365,
+          "lon": -73.22993
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2388,8 +2388,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 50.12307,
+          "lon": -96.80882
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -2408,8 +2408,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.9569,
-          "lon": -77.2853
+          "lat": 45.9874,
+          "lon": -77.78684
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2428,8 +2428,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.45,
-          "lon": -123.35
+          "lat": 48.07532,
+          "lon": -123.51158
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2448,8 +2448,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 51.1315,
-          "lon": -114.0106
+          "lat": 51.34457,
+          "lon": -113.56812
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -2492,8 +2492,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 44.6,
-          "lon": -63.55
+          "lat": 44.38955,
+          "lon": -63.24044
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -2536,8 +2536,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 46.1,
-          "lon": -64.75
+          "lat": 46.38299,
+          "lon": -65.04935
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2600,8 +2600,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 48.4284,
-          "lon": -123.3656
+          "lat": 48.63307,
+          "lon": -123.00161
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -2620,8 +2620,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 45.9636,
-          "lon": -66.6431
+          "lat": 45.9941,
+          "lon": -67.1447
         },
         "predefined_analysis_result": {
           "event_type": "running_person",
@@ -2664,8 +2664,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 44.615,
-          "lon": -63.58
+          "lat": 44.6781,
+          "lon": -64.06289
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -2704,8 +2704,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 44.66,
-          "lon": -63.6
+          "lat": 44.94279,
+          "lon": -63.83713
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -2724,8 +2724,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 48.44,
-          "lon": -123.4
+          "lat": 48.16195,
+          "lon": -123.06371
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -2744,8 +2744,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.1659,
-          "lon": -123.9401
+          "lat": 49.37897,
+          "lon": -123.51544
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -2764,8 +2764,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 50.4452,
-          "lon": -104.6189
+          "lat": 50.4757,
+          "lon": -105.16642
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -2784,8 +2784,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 49.65195,
+          "lon": -96.87283
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -2804,8 +2804,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 44.63,
-          "lon": -63.6
+          "lat": 44.86067,
+          "lon": -63.1825
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -2828,8 +2828,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 51.1315,
-          "lon": -114.0106
+          "lat": 50.87345,
+          "lon": -113.6338
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -2848,8 +2848,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.0878,
-          "lon": -64.7782
+          "lat": 45.74312,
+          "lon": -64.86583
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -2888,8 +2888,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.888,
-          "lon": -119.496
+          "lat": 49.9185,
+          "lon": -120.03717
         },
         "predefined_analysis_result": {
           "event_type": "small_traffic_violation",
@@ -2908,8 +2908,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.46,
-          "lon": -123.42
+          "lat": 48.4505,
+          "lon": -123.94537
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -2932,8 +2932,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 43.6777,
-          "lon": -79.6248
+          "lat": 43.42195,
+          "lon": -79.29304
         },
         "tag_id": "desant_ontario",
         "tag_total": 2,
@@ -2952,8 +2952,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 49.9405,
+          "lon": -97.78142
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -2992,8 +2992,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 51.1315,
-          "lon": -114.0106
+          "lat": 51.162,
+          "lon": -114.56622
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -3012,8 +3012,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 48.3809,
-          "lon": -89.2477
+          "lat": 47.8639,
+          "lon": -88.53977
         },
         "predefined_analysis_result": {
           "event_type": "running_person",
@@ -3080,8 +3080,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 52.1332,
-          "lon": -106.67
+          "lat": 51.87515,
+          "lon": -106.28478
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -3100,8 +3100,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.6777,
-          "lon": -79.6248
+          "lat": 43.1639,
+          "lon": -78.96748
         },
         "tag_id": "desant_ontario",
         "tag_total": 2,
@@ -3144,8 +3144,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.2382,
-          "lon": -63.1311
+          "lat": 45.98015,
+          "lon": -62.78923
         },
         "predefined_analysis_result": {
           "event_type": "running_person",
@@ -3208,8 +3208,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 53.9171,
-          "lon": -122.7497
+          "lat": 53.66195,
+          "lon": -122.34849
         },
         "predefined_analysis_result": {
           "event_type": "empty_streets",
@@ -3248,8 +3248,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.9,
-          "lon": -123.7
+          "lat": 48.59195,
+          "lon": -123.29066
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -3268,8 +3268,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.4917,
-          "lon": -80.993
+          "lat": 46.23195,
+          "lon": -80.64655
         },
         "predefined_analysis_result": {
           "event_type": "small_traffic_violation",
@@ -3288,8 +3288,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.1947,
-          "lon": -123.1839
+          "lat": 48.93665,
+          "lon": -122.82206
         },
         "tag_id": "desant_bc",
         "tag_total": 2,
@@ -3412,8 +3412,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.18,
-          "lon": -123.92
+          "lat": 48.90785,
+          "lon": -123.57847
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -3436,11 +3436,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 45.95,
-          "lon": -66.6
+          "lat": 45.70555,
+          "lon": -66.30293
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Fredericton area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -3462,7 +3462,7 @@
         "tag_id": "seismic_warning",
         "tag_total": 2,
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 3,
           "description": "Seismic Windsor: 3.8 Hz rhythmic vibration from southwest. Heavy convoy approaching.",
           "confidence": 0.64
@@ -3476,8 +3476,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.36,
-          "lon": -63.27
+          "lat": 45.10195,
+          "lon": -62.93348
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -3516,11 +3516,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 49.85,
-          "lon": -119.45
+          "lat": 49.62995,
+          "lon": -119.12899
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Kelowna area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -3536,8 +3536,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.1659,
-          "lon": -123.9401
+          "lat": 49.1964,
+          "lon": -124.47334
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -3556,11 +3556,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 48.38,
-          "lon": -89.25
+          "lat": 48.12195,
+          "lon": -88.89399
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Thunder Bay area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -3582,7 +3582,7 @@
         "tag_id": "seismic_warning",
         "tag_total": 2,
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 3,
           "description": "Seismic Surrey BC: identical 3.8 Hz signature simultaneously. Two origins 3,600 km apart \u2014 coordinated ground operation confirmed.",
           "confidence": 0.66
@@ -3616,11 +3616,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 50.44,
-          "lon": -104.6
+          "lat": 50.18715,
+          "lon": -104.24759
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Regina area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -3728,7 +3728,7 @@
           "lon": -80.99
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Sudbury area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -3828,7 +3828,7 @@
           "lon": -122.75
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "vehicle_convoy",
           "level": 4,
           "description": "Seismic sensor Prince George area: rhythmic vibration signature consistent with vehicle convoy, unconfirmed visually.",
           "confidence": 0.6
@@ -3844,8 +3844,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 44.1198,
-          "lon": -77.5288
+          "lat": 43.86195,
+          "lon": -77.22062
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -3864,8 +3864,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 42.3149,
-          "lon": -83.0364
+          "lat": 42.05685,
+          "lon": -82.71663
         },
         "tag_id": "border_crossing_ontario",
         "tag_total": 3,
@@ -3888,8 +3888,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 46.0878,
-          "lon": -64.7782
+          "lat": 45.82975,
+          "lon": -64.43727
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -3928,8 +3928,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.3183,
-          "lon": -124.3117
+          "lat": 49.06025,
+          "lon": -123.94896
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -3948,8 +3948,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 48.431,
-          "lon": -123.4396
+          "lat": 48.71519,
+          "lon": -123.70336
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -3988,8 +3988,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 42.3149,
-          "lon": -83.0364
+          "lat": 42.3454,
+          "lon": -83.50792
         },
         "tag_id": "border_crossing_ontario",
         "tag_total": 3,
@@ -4028,8 +4028,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 45.9569,
-          "lon": -77.2853
+          "lat": 45.69885,
+          "lon": -76.94517
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -4048,8 +4048,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 50.6745,
-          "lon": -120.3273
+          "lat": 50.41645,
+          "lon": -119.95418
         },
         "tag_id": "final_wave_reports",
         "tag_total": 17,
@@ -4088,8 +4088,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 46.0878,
-          "lon": -64.7782
+          "lat": 46.1183,
+          "lon": -65.28093
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -4148,8 +4148,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 42.3149,
-          "lon": -83.0364
+          "lat": 42.52797,
+          "lon": -82.66089
         },
         "tag_id": "border_crossing_ontario",
         "tag_total": 3,
@@ -4168,8 +4168,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.3183,
-          "lon": -124.3117
+          "lat": 49.3488,
+          "lon": -124.84659
         },
         "predefined_analysis_result": {
           "event_type": "tank_photo",
@@ -4228,8 +4228,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.0027,
-          "lon": -122.8004
+          "lat": 48.74465,
+          "lon": -122.43996
         },
         "tag_id": "border_crossing_bc",
         "tag_total": 2,
@@ -4252,8 +4252,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 49.3,
-          "lon": -124.29
+          "lat": 48.8022,
+          "lon": -123.5881
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -4312,8 +4312,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 46.0878,
-          "lon": -64.7782
+          "lat": 46.30087,
+          "lon": -64.37784
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -4332,8 +4332,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.3183,
-          "lon": -124.3117
+          "lat": 49.53137,
+          "lon": -123.88573
         },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
@@ -4372,8 +4372,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.0027,
-          "lon": -122.8004
+          "lat": 49.0332,
+          "lon": -123.33189
         },
         "tag_id": "border_crossing_bc",
         "tag_total": 2,
@@ -4492,8 +4492,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.98209,
+          "lon": -79.21775
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -4512,8 +4512,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.1579,
-          "lon": -121.9514
+          "lat": 49.1884,
+          "lon": -122.48455
         },
         "tag_id": "final_wave_reports",
         "tag_total": 17,
@@ -4552,8 +4552,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 44.2312,
-          "lon": -76.486
+          "lat": 43.97315,
+          "lon": -76.156
         },
         "tag_id": "final_wave_reports",
         "tag_total": 17,
@@ -4572,8 +4572,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.49577,
+          "lon": -122.69503
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -4592,8 +4592,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.6426,
-          "lon": -79.3871
+          "lat": 43.00648,
+          "lon": -79.01296
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -4676,8 +4676,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.55701,
+          "lon": -63.0976
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -4696,8 +4696,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.655,
-          "lon": -79.381
+          "lat": 43.94903,
+          "lon": -80.26003
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -4716,8 +4716,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 42.3149,
-          "lon": -83.0364
+          "lat": 41.97022,
+          "lon": -83.11859
         },
         "tag_id": "column_ontario_inland",
         "tag_total": 3,
@@ -4736,8 +4736,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.29,
-          "lon": -123.11
+          "lat": 48.93802,
+          "lon": -123.21387
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -4756,8 +4756,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 49.56532,
+          "lon": -97.33438
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -4776,8 +4776,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.281,
-          "lon": -123.115
+          "lat": 49.57789,
+          "lon": -123.40898
         },
         "predefined_analysis_result": {
           "event_type": "explosion",
@@ -4820,8 +4820,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.1579,
-          "lon": -121.9514
+          "lat": 48.89985,
+          "lon": -121.58983
         },
         "tag_id": "column_bc_inland",
         "tag_total": 2,
@@ -4860,8 +4860,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 42.9849,
-          "lon": -81.2453
+          "lat": 42.72685,
+          "lon": -80.92207
         },
         "tag_id": "midprovince_ontario",
         "tag_total": 3,
@@ -4880,8 +4880,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 42.9849,
-          "lon": -81.2453
+          "lat": 43.0154,
+          "lon": -81.72193
         },
         "tag_id": "midprovince_ontario",
         "tag_total": 3,
@@ -4964,13 +4964,13 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.6837,
+          "lon": -79.8651
         },
         "tag_id": "gta_approach",
         "tag_total": 3,
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "urban_combat",
           "level": 7,
           "description": "Toronto seismic: tracked-vehicle signatures on all 12 downtown sensors. Hamilton chokepoints held by desant. No defensive line remaining.",
           "confidence": 0.91
@@ -4984,8 +4984,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.86627,
+          "lon": -78.99942
         },
         "tag_id": "gta_approach",
         "tag_total": 3,
@@ -5024,8 +5024,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.2488,
-          "lon": -122.9805
+          "lat": 48.99075,
+          "lon": -122.61827
         },
         "tag_id": "vancouver_approach",
         "tag_total": 2,
@@ -5044,8 +5044,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.7,
-          "lon": -79.41
+          "lat": 43.30852,
+          "lon": -79.4672
         },
         "tag_id": "toronto_urban",
         "tag_total": 3,
@@ -5064,8 +5064,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.94839,
+          "lon": -79.64311
         },
         "tag_id": "toronto_urban",
         "tag_total": 3,
@@ -5084,8 +5084,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.56261,
+          "lon": -78.91594
         },
         "tag_id": "toronto_urban",
         "tag_total": 3,
@@ -5104,8 +5104,8 @@
         "type": "photo",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 48.4866,
+          "lon": -122.08138
         },
         "tag_id": "vancouver_urban",
         "tag_total": 2,
@@ -5124,8 +5124,8 @@
         "type": "audio",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.3132,
+          "lon": -123.6552
         },
         "tag_id": "vancouver_urban",
         "tag_total": 2,
@@ -5144,11 +5144,11 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.49159,
+          "lon": -79.81228
         },
         "predefined_analysis_result": {
-          "event_type": "nothing_happening",
+          "event_type": "urban_combat",
           "level": 8,
           "description": "Seismic network: continuous high-energy vibration all of southern Ontario. 28/30 sensors registering armor. Active urban combat Toronto and Vancouver. System at capacity.",
           "confidence": 0.97

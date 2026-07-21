@@ -5,9 +5,9 @@
   "loop": false,
   "groups": {
     "don_flood_rescue": {
-      "summary": "Don Valley flooding — road closed, fire rescue deployed and on scene.",
+      "summary": "Don Valley flooding \u2014 road closed, fire rescue deployed and on scene.",
       "main_event": "Don Valley Pkwy flooded. Water rescue underway. 2 vehicles stranded.",
-      "prediction": "DVP closure likely 4–6 hours. Expect significant downtown traffic impact.",
+      "prediction": "DVP closure likely 4\u20136 hours. Expect significant downtown traffic impact.",
       "suggestion": "Close DVP southbound at Lawrence. Activate alternate route signage on Bayview and Leslie."
     },
     "humber_flood": {
@@ -17,15 +17,15 @@
       "suggestion": "Dispatch second water rescue team. Open Etobicoke Olympium as evacuation shelter."
     },
     "flood_medical_rosedale": {
-      "summary": "Ambulance calls spiking — flood-related medical emergencies in Rosedale.",
+      "summary": "Ambulance calls spiking \u2014 flood-related medical emergencies in Rosedale.",
       "main_event": "Multiple flood-related medical calls in Rosedale and Cabbagetown.",
       "prediction": null,
       "suggestion": "Stage additional ambulances at Bloor and Sherbourne intersection."
     },
     "lakeshore_inundation": {
-      "summary": "Lake Shore Blvd heavily flooded — vehicles submerged, civilian rescue needed.",
+      "summary": "Lake Shore Blvd heavily flooded \u2014 vehicles submerged, civilian rescue needed.",
       "main_event": "Lake Shore Blvd near Bathurst impassable. Multiple vehicles submerged.",
-      "prediction": "Water will continue rising for 20–30 minutes before rainfall upstream subsides.",
+      "prediction": "Water will continue rising for 20\u201330 minutes before rainfall upstream subsides.",
       "suggestion": "Deploy all available water rescue units to Lake Shore corridor."
     }
   },
@@ -36,7 +36,10 @@
         "id": "src_001",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
@@ -51,11 +54,14 @@
         "id": "src_002",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 43.6611, "lon": -79.3861 },
+        "coordinates": {
+          "lat": 43.39515,
+          "lon": -79.05639
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 1,
-          "description": "Don River water level sensor at Bloor St — rising 12 cm above seasonal average. Rain rate 42 mm/hr upstream. Early watch issued.",
+          "description": "Don River water level sensor at Bloor St \u2014 rising 12 cm above seasonal average. Rain rate 42 mm/hr upstream. Early watch issued.",
           "confidence": 0.88
         }
       }
@@ -66,11 +72,14 @@
         "id": "src_003",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 43.7100, "lon": -79.5200 },
+        "coordinates": {
+          "lat": 43.71,
+          "lon": -79.52
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 1,
-          "description": "Humber River gauge near Weston — level rising rapidly. 18 cm above flood watch threshold. Second watershed affected.",
+          "description": "Humber River gauge near Weston \u2014 level rising rapidly. 18 cm above flood watch threshold. Second watershed affected.",
           "confidence": 0.91
         }
       }
@@ -81,13 +90,16 @@
         "id": "src_004",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6600, "lon": -79.3750 },
+        "coordinates": {
+          "lat": 43.6837,
+          "lon": -79.8651
+        },
         "tag_id": "don_flood_rescue",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "empty_road",
           "level": 5,
-          "description": "Lower Don Trail underpass at Eastern Ave — flooded. Road impassable, 40 cm standing water.",
+          "description": "Lower Don Trail underpass at Eastern Ave \u2014 flooded. Road impassable, 40 cm standing water.",
           "confidence": 0.93
         }
       }
@@ -98,14 +110,17 @@
         "id": "src_005",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6540, "lon": -79.3700 },
+        "coordinates": {
+          "lat": 43.86627,
+          "lon": -78.99942
+        },
         "tag_id": "don_flood_rescue",
         "tag_total": 3,
         "predefined_analysis_result": {
           "event_type": "firefighter",
           "level": 5,
           "description": "Fire Department water rescue sirens heading east on Lake Shore Blvd toward Don Valley. Multiple units.",
-          "confidence": 0.90
+          "confidence": 0.9
         }
       }
     },
@@ -115,7 +130,10 @@
         "id": "src_006",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6540, "lon": -79.3700 },
+        "coordinates": {
+          "lat": 43.30852,
+          "lon": -79.4672
+        },
         "tag_id": "don_flood_rescue",
         "tag_total": 3,
         "predefined_analysis_result": {
@@ -132,7 +150,10 @@
         "id": "src_007",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6490, "lon": -79.3620 },
+        "coordinates": {
+          "lat": 43.94839,
+          "lon": -79.64311
+        },
         "predefined_analysis_result": {
           "event_type": "empty_road",
           "level": 6,
@@ -147,7 +168,10 @@
         "id": "src_008",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 43.6611, "lon": -79.3861 },
+        "coordinates": {
+          "lat": 43.1371,
+          "lon": -78.73098
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 6,
@@ -162,7 +186,10 @@
         "id": "src_009",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6700, "lon": -79.4000 },
+        "coordinates": {
+          "lat": 43.56261,
+          "lon": -78.91594
+        },
         "tag_id": "flood_medical_rosedale",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -179,13 +206,16 @@
         "id": "src_010",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6720, "lon": -79.3980 },
+        "coordinates": {
+          "lat": 42.87905,
+          "lon": -78.40694
+        },
         "tag_id": "flood_medical_rosedale",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "ambulance",
           "level": 5,
-          "description": "Paramedics responding to stranded resident in flooded basement — Rosedale Ave near Bloor.",
+          "description": "Paramedics responding to stranded resident in flooded basement \u2014 Rosedale Ave near Bloor.",
           "confidence": 0.92
         }
       }
@@ -196,7 +226,10 @@
         "id": "src_011",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.49159,
+          "lon": -79.81228
+        },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 4,
@@ -211,7 +244,10 @@
         "id": "src_012",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.7100, "lon": -79.5200 },
+        "coordinates": {
+          "lat": 43.45195,
+          "lon": -79.19288
+        },
         "tag_id": "humber_flood",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -228,7 +264,10 @@
         "id": "src_013",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.7100, "lon": -79.5200 },
+        "coordinates": {
+          "lat": 43.7405,
+          "lon": -80.00235
+        },
         "tag_id": "humber_flood",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -245,7 +284,10 @@
         "id": "src_014",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6410, "lon": -79.4180 },
+        "coordinates": {
+          "lat": 43.98209,
+          "lon": -79.21775
+        },
         "predefined_analysis_result": {
           "event_type": "running_person",
           "level": 4,
@@ -260,7 +302,10 @@
         "id": "src_015",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6400, "lon": -79.4200 },
+        "coordinates": {
+          "lat": 43.42245,
+          "lon": -79.52303
+        },
         "tag_id": "lakeshore_inundation",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -277,13 +322,16 @@
         "id": "src_016",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6400, "lon": -79.4200 },
+        "coordinates": {
+          "lat": 43.00648,
+          "lon": -79.01296
+        },
         "tag_id": "lakeshore_inundation",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "empty_road",
           "level": 7,
-          "description": "Lake Shore Blvd West near Bathurst — major inundation. Several vehicles partially submerged. Waterline at traffic light bases.",
+          "description": "Lake Shore Blvd West near Bathurst \u2014 major inundation. Several vehicles partially submerged. Waterline at traffic light bases.",
           "confidence": 0.96
         }
       }
@@ -294,7 +342,10 @@
         "id": "src_017",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.94903,
+          "lon": -80.26003
+        },
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 4,
@@ -309,11 +360,14 @@
         "id": "src_018",
         "type": "float_sequence",
         "data": null,
-        "coordinates": { "lat": 43.6611, "lon": -79.3861 },
+        "coordinates": {
+          "lat": 43.86369,
+          "lon": -78.4605
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 3,
-          "description": "Don River water level beginning to recede — 5 cm drop in 20 minutes. Rain stopped upstream. Situation stabilizing.",
+          "description": "Don River water level beginning to recede \u2014 5 cm drop in 20 minutes. Rain stopped upstream. Situation stabilizing.",
           "confidence": 0.85
         }
       }
@@ -324,11 +378,14 @@
         "id": "src_019",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6540, "lon": -79.3700 },
+        "coordinates": {
+          "lat": 43.04698,
+          "lon": -79.86694
+        },
         "predefined_analysis_result": {
           "event_type": "firefighter",
           "level": 4,
-          "description": "Don Valley rescue winding down. Last stranded vehicle reached. 7 civilians rescued. 2 transported to hospital — hypothermia, non-life-threatening.",
+          "description": "Don Valley rescue winding down. Last stranded vehicle reached. 7 civilians rescued. 2 transported to hospital \u2014 hypothermia, non-life-threatening.",
           "confidence": 0.93
         }
       }
@@ -339,7 +396,10 @@
         "id": "src_020",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 44.33661,
+          "lon": -79.5926
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 1,

@@ -3,7 +3,7 @@ Event PDUs, fed by MainWindow's ZMQ subscriber (ui/zmq_client.py), newest
 appended at the bottom with auto-scroll (not prepended at the top -- see
 add_event). Rows for events carrying media/data are marked with a media
 icon. Single-clicking a row focuses the map on that event (eventClicked);
-double-clicking opens its MediaPopup (eventDoubleClicked) — see
+double-clicking opens it in the shared PopupGroup (eventDoubleClicked) — see
 ui/main_window.py.
 """
 from datetime import datetime

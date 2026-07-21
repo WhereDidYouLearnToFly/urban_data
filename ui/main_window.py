@@ -12,9 +12,9 @@ from PyQt5.QtCore import Qt
 from common.schemas import Event
 from ui.agent_manager import AgentManager
 from ui.events_feed import EventsFeedPanel
-from ui.agents_panel import AgentsPanel
+from ui.agents_panel import AgentsPanel, extract_actions_done
 from ui.map_view import MapView
-from ui.media_popup import MediaPopup
+from ui.media_popup import PopupGroup
 from ui.system_log import SystemLogPanel
 from ui.zmq_client import PduSubscriber
 
@@ -50,7 +50,7 @@ class MainWindow(QMainWindow):
         self.map_view = MapView()
 
         self._events_by_id: dict[str, Event] = {}
-        self._open_popups: dict[str, MediaPopup] = {}
+        self._popup_group: PopupGroup | None = None
         # feed: single click focuses the map, double click opens media.
         # map marker: single click both selects the feed row AND opens
         # media directly if the event has any -- no separate double-click
@@ -77,6 +77,7 @@ class MainWindow(QMainWindow):
         top_splitter.setSizes([300, 400, 500])
 
         self.system_log = SystemLogPanel()
+        self.map_view.jsError.connect(lambda msg: self.system_log.append(f"[JS] {msg}"))
 
         main_splitter = QSplitter(Qt.Vertical)
         main_splitter.addWidget(top_splitter)
@@ -125,7 +126,7 @@ class MainWindow(QMainWindow):
             timestamp=event.timestamp, has_data=bool(event.data),
         )
         self.map_view.add_event(
-            event.id, lat, lon, event.level,
+            event.id, lat, lon, event.level, event_type=event.type,
             heading_deg=event.heading_deg, speed_kmh=event.speed_kmh,
             track_id=event.predicted_track_id,
             target_lat=event.target_lat, target_lon=event.target_lon,
@@ -136,32 +137,58 @@ class MainWindow(QMainWindow):
         self._open_media_popup(event_id)
 
     def _open_media_popup(self, event_id: str):
-        existing = self._open_popups.get(event_id)
-        if existing is not None:
-            existing.raise_()
-            existing.activateWindow()
+        # All open media viewers share one PopupGroup window (see
+        # media_popup.py) so they drag around together instead of scattering
+        # independent windows -- created lazily on first use, torn down once
+        # its last slot closes.
+        if self._popup_group is not None and self._popup_group.has_event(event_id):
+            self._popup_group.raise_()
+            self._popup_group.activateWindow()
             return
 
         event = self._events_by_id.get(event_id)
         if event is None or not event.data:
             return
 
-        # focus_event() centers the marker in the map widget -- open the
-        # popup near that center (offset a bit so it doesn't sit directly on
-        # top of the marker) instead of the default cascading spawn spot.
-        self.map_view.focus_event(event_id)
+        # Deliberately does not call map_view.focus_event() here -- clicking
+        # a marker (or a feed row, which already focuses the map itself via
+        # its own eventClicked -> focus_event connection) shouldn't also
+        # yank the map to re-center on something already visible; that read
+        # as the map "focusing on its own" from the operator's side.
+        is_new_group = self._popup_group is None
+        if is_new_group:
+            group = PopupGroup(parent=self)
+            group.destroyed.connect(self._on_popup_group_destroyed)
+            group.eventSelected.connect(self._on_popup_event_selected)
+            self._popup_group = group
 
         try:
-            popup = MediaPopup(event, parent=self)
+            self._popup_group.add_slot(event)
         except Exception as exc:
             self.system_log.append(f"[ERROR] Failed to open media popup for {event_id}: {exc}")
+            if is_new_group:
+                self._popup_group.close()
             return
-        map_center = self.map_view.mapToGlobal(self.map_view.rect().center())
-        popup.move(map_center.x() - popup.width() // 2 + 60, map_center.y() - popup.height() // 2 - 40)
 
-        popup.destroyed.connect(lambda: self._open_popups.pop(event_id, None))
-        self._open_popups[event_id] = popup
-        popup.show()
+        if is_new_group:
+            map_center = self.map_view.mapToGlobal(self.map_view.rect().center())
+            self._popup_group.move(
+                map_center.x() - self._popup_group.width() // 2 + 60,
+                map_center.y() - self._popup_group.height() // 2 - 40,
+            )
+            self._popup_group.show()
+
+        self._popup_group.raise_()
+        self._popup_group.activateWindow()
+
+    def _on_popup_group_destroyed(self):
+        self._popup_group = None
+
+    def _on_popup_event_selected(self, event_id: str):
+        # Reverse direction of _on_map_marker_clicked -- locate an event on
+        # the feed/map starting from its already-open media instead.
+        self.events_feed.select_event(event_id)
+        self.map_view.focus_event(event_id)
 
     def _on_group_pdu(self, payload: bytes):
         try:
@@ -188,7 +215,11 @@ class MainWindow(QMainWindow):
         self.agents_panel.append_message(tag_id, "agent", text, is_decision=is_decision)
         if is_decision:
             label = self.agents_panel.label_for(tag_id)
-            self.system_log.append(f"[{label}] pre-resolved by Agent")
+            actions = extract_actions_done(text)
+            if actions:
+                self.system_log.append(f"[{label}] pre-resolved by Agent: {actions}")
+            else:
+                self.system_log.append(f"[{label}] pre-resolved by Agent")
 
     def keyPressEvent(self, event):
         # showFullScreen() has no window chrome to click back out of --

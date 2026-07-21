@@ -250,8 +250,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.74195,
+          "lon": 165.76519
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -270,8 +270,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.0305,
+          "lon": 163.87169
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -310,8 +310,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.24195,
+          "lon": -177.35483
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -330,8 +330,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.5305,
+          "lon": -178.95134
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -370,8 +370,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.74195,
+          "lon": 60.5595
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -390,8 +390,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.0305,
+          "lon": 59.17498
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -430,8 +430,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.74195,
+          "lon": 45.52084
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -450,8 +450,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.0305,
+          "lon": 44.23199
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -490,8 +490,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 49.74195,
+          "lon": -29.63214
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -510,8 +510,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 50.0305,
+          "lon": -30.54243
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -530,8 +530,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 50.21307,
+          "lon": -29.56802
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -570,8 +570,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 39.74195,
+          "lon": -49.69133
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -590,8 +590,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 40.0305,
+          "lon": -50.45515
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -610,8 +610,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 40.21307,
+          "lon": -49.63752
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -650,8 +650,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -160.0
+          "lat": 39.74195,
+          "lon": -159.69133
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -670,8 +670,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -160.0
+          "lat": 40.0305,
+          "lon": -160.45515
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -690,8 +690,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -160.0
+          "lat": 40.21307,
+          "lon": -159.63752
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -730,8 +730,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": 175.0
+          "lat": 49.74195,
+          "lon": 175.36786
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -750,8 +750,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": 175.0
+          "lat": 50.0305,
+          "lon": 174.45757
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -770,8 +770,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": 175.0
+          "lat": 50.21307,
+          "lon": 175.43198
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -810,8 +810,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 85.0,
-          "lon": 10.0
+          "lat": 84.98525,
+          "lon": 10.09008
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -830,8 +830,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 85.0,
-          "lon": 10.0
+          "lat": 84.74195,
+          "lon": 11.57638
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -850,8 +850,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 85.0,
-          "lon": 10.0
+          "lat": 84.7272,
+          "lon": 11.66646
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -890,8 +890,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 88.0,
-          "lon": 90.0
+          "lat": 87.98525,
+          "lon": 90.09008
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -910,8 +910,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 88.0,
-          "lon": 90.0
+          "lat": 87.74195,
+          "lon": 91.57638
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -930,8 +930,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 88.0,
-          "lon": 90.0
+          "lat": 87.7272,
+          "lon": 91.66646
         },
         "predefined_analysis_result": {
           "event_type": "missile_launch",
@@ -950,8 +950,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.21307,
+          "lon": 165.89857
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -975,8 +975,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.71307,
+          "lon": -177.24237
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1000,8 +1000,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.21307,
+          "lon": 60.65703
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1025,8 +1025,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.21307,
+          "lon": 45.61163
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1050,8 +1050,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.65532,
+          "lon": 164.80332
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1075,8 +1075,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.15532,
+          "lon": -178.16583
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1100,8 +1100,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.65532,
+          "lon": 59.85619
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1125,8 +1125,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.65532,
+          "lon": 44.86613
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1150,8 +1150,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.29519,
+          "lon": 164.39144
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1175,8 +1175,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.79519,
+          "lon": -178.51311
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1200,8 +1200,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.29519,
+          "lon": 59.55502
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1225,8 +1225,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.29519,
+          "lon": 44.58577
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1250,8 +1250,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.90941,
+          "lon": 166.09403
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1275,8 +1275,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.40941,
+          "lon": -177.07756
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1300,8 +1300,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.90941,
+          "lon": 60.79995
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1325,8 +1325,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -160.0
+          "lat": 39.65532,
+          "lon": -160.07934
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1350,8 +1350,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": 175.0
+          "lat": 49.65532,
+          "lon": 174.90545
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1375,8 +1375,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -160.0
+          "lat": 40.29519,
+          "lon": -160.24549
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1400,8 +1400,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": 175.0
+          "lat": 50.29519,
+          "lon": 174.70744
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1425,8 +1425,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -160.0
+          "lat": 39.90941,
+          "lon": -159.55868
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1450,8 +1450,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.90941,
+          "lon": 45.74467
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1475,8 +1475,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.83839,
+          "lon": 163.99535
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1500,8 +1500,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.33839,
+          "lon": -178.84707
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1525,8 +1525,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.83839,
+          "lon": 59.2654
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1550,8 +1550,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.83839,
+          "lon": 44.31617
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1575,8 +1575,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.32889,
+          "lon": 165.38738
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1600,8 +1600,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.82889,
+          "lon": -177.67338
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1625,8 +1625,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.32889,
+          "lon": 60.28325
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1650,8 +1650,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.32889,
+          "lon": 45.26368
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1675,8 +1675,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.35328,
+          "lon": 165.86687
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1700,8 +1700,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 67.85328,
+          "lon": -177.26909
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1725,8 +1725,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.35328,
+          "lon": 60.63385
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1750,8 +1750,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.35328,
+          "lon": 45.59005
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1775,8 +1775,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.0169,
+          "lon": 164.88269
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1800,8 +1800,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.79583,
+          "lon": -179.731
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1825,8 +1825,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 49.65532,
+          "lon": -30.09455
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1850,8 +1850,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 39.65532,
+          "lon": -50.07934
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1875,8 +1875,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 50.29519,
+          "lon": -30.29256
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1900,8 +1900,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 40.29519,
+          "lon": -50.24549
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1925,8 +1925,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 49.90941,
+          "lon": -29.47405
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1950,8 +1950,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 39.90941,
+          "lon": -49.55868
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -1975,8 +1975,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 49.83839,
+          "lon": -30.48298
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2000,8 +2000,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 39.83839,
+          "lon": -50.40527
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2025,8 +2025,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.29583,
+          "lon": 58.49885
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2050,8 +2050,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.29583,
+          "lon": 43.60258
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2075,8 +2075,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.29583,
+          "lon": 162.94699
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2100,8 +2100,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.71049,
+          "lon": -176.17845
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2125,8 +2125,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.21049,
+          "lon": 61.57968
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2150,8 +2150,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.21049,
+          "lon": 46.47052
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2175,8 +2175,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": 175.0
+          "lat": 49.90941,
+          "lon": 175.52595
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2200,8 +2200,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -160.0
+          "lat": 39.83839,
+          "lon": -160.40527
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2225,8 +2225,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": 175.0
+          "lat": 49.83839,
+          "lon": 174.51702
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2250,8 +2250,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.21049,
+          "lon": 167.16041
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2275,8 +2275,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 67.89378,
+          "lon": -178.95498
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2300,8 +2300,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.39378,
+          "lon": 59.17183
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2325,8 +2325,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.39378,
+          "lon": 44.22906
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2350,8 +2350,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.39378,
+          "lon": 163.86738
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2375,8 +2375,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 69.18341,
+          "lon": -178.41339
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2400,8 +2400,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.68341,
+          "lon": 59.6415
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2425,8 +2425,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.68341,
+          "lon": 44.66628
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2450,8 +2450,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 72.68341,
+          "lon": 164.50971
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2475,8 +2475,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.0985,
+          "lon": -176.43546
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2500,8 +2500,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.5985,
+          "lon": 61.3568
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2525,8 +2525,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.5985,
+          "lon": 46.26304
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2550,8 +2550,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.75885,
+          "lon": 165.64857
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2575,8 +2575,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 68.40863,
+          "lon": -179.89361
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2600,8 +2600,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 64.90863,
+          "lon": 58.35783
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2625,8 +2625,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 50.32889,
+          "lon": -29.81377
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2650,8 +2650,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 40.32889,
+          "lon": -49.84373
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2675,8 +2675,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 49.35328,
+          "lon": -29.58326
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2700,8 +2700,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 85.0,
-          "lon": 10.0
+          "lat": 85.0305,
+          "lon": 7.67555
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2725,8 +2725,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 88.0,
-          "lon": 90.0
+          "lat": 88.0305,
+          "lon": 87.67555
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2750,8 +2750,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 85.0,
-          "lon": 10.0
+          "lat": 85.21307,
+          "lon": 11.85116
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2775,8 +2775,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 88.0,
-          "lon": 90.0
+          "lat": 88.21307,
+          "lon": 91.85116
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2800,8 +2800,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 85.0,
-          "lon": 10.0
+          "lat": 85.01575,
+          "lon": 7.76563
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2825,8 +2825,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 88.0,
-          "lon": 90.0
+          "lat": 88.01575,
+          "lon": 87.76563
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2850,8 +2850,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 39.35328,
+          "lon": -49.65031
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2875,8 +2875,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 50.29583,
+          "lon": -30.98698
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2900,8 +2900,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 40.0,
-          "lon": -50.0
+          "lat": 40.29583,
+          "lon": -50.82817
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2925,8 +2925,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.0,
-          "lon": -30.0
+          "lat": 50.21049,
+          "lon": -28.9614
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2950,8 +2950,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 62.90863,
+          "lon": 43.47131
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -2975,8 +2975,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.5985,
+          "lon": 166.85558
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3000,8 +3000,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 69.03623,
+          "lon": -176.77231
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3025,8 +3025,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 65.53623,
+          "lon": 61.06468
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3050,8 +3050,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 85.0,
-          "lon": 10.0
+          "lat": 84.65532,
+          "lon": 9.59482
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3093,8 +3093,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 88.0,
-          "lon": 90.0
+          "lat": 87.65532,
+          "lon": 89.59482
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3118,8 +3118,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.0,
-          "lon": 45.0
+          "lat": 63.53623,
+          "lon": 45.9911
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3143,8 +3143,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 72.0,
-          "lon": 165.0
+          "lat": 71.90863,
+          "lon": 162.75413
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3168,8 +3168,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 68.5,
-          "lon": -178.0
+          "lat": 67.451,
+          "lon": -177.87503
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3193,8 +3193,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 65.0,
-          "lon": 60.0
+          "lat": 63.951,
+          "lon": 60.10837
         },
         "predefined_analysis_result": {
           "event_type": "missile_trajectory",
@@ -3596,8 +3596,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.16345,
+          "lon": -75.36031
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3616,8 +3616,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.452,
+          "lon": -76.19396
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3636,8 +3636,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.39515,
+          "lon": -79.05639
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3656,8 +3656,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.6837,
+          "lon": -79.8651
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3676,8 +3676,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 45.5019,
-          "lon": -73.5674
+          "lat": 45.24385,
+          "lon": -73.23003
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3696,8 +3696,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 45.5019,
-          "lon": -73.5674
+          "lat": 45.5324,
+          "lon": -74.06487
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3716,8 +3716,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.02465,
+          "lon": -122.75822
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3736,8 +3736,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.3132,
+          "lon": -123.6552
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3756,8 +3756,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 51.0447,
-          "lon": -114.0719
+          "lat": 50.78665,
+          "lon": -113.6958
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3776,8 +3776,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 51.0447,
-          "lon": -114.0719
+          "lat": 51.0752,
+          "lon": -114.62647
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3796,8 +3796,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 53.5461,
-          "lon": -113.4938
+          "lat": 53.28805,
+          "lon": -113.09584
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3816,8 +3816,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 53.5461,
-          "lon": -113.4938
+          "lat": 53.5766,
+          "lon": -114.08061
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3836,8 +3836,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 49.8951,
-          "lon": -97.1384
+          "lat": 49.63705,
+          "lon": -96.77134
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3856,8 +3856,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 49.8951,
-          "lon": -97.1384
+          "lat": 49.9256,
+          "lon": -97.67965
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3876,8 +3876,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.39075,
+          "lon": -63.24283
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3896,8 +3896,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.6793,
+          "lon": -64.0653
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3916,8 +3916,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 46.8139,
-          "lon": -71.208
+          "lat": 46.55585,
+          "lon": -70.86249
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3936,8 +3936,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 46.8139,
-          "lon": -71.208
+          "lat": 46.8444,
+          "lon": -71.71747
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3956,8 +3956,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 50.4452,
-          "lon": -104.6189
+          "lat": 50.18715,
+          "lon": -104.24759
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3976,8 +3976,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 50.4452,
-          "lon": -104.6189
+          "lat": 50.4757,
+          "lon": -105.16642
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -3996,8 +3996,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 52.1332,
-          "lon": -106.67
+          "lat": 51.87515,
+          "lon": -106.28478
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4016,8 +4016,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 52.1332,
-          "lon": -106.67
+          "lat": 52.1637,
+          "lon": -107.23802
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4036,8 +4036,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 48.4284,
-          "lon": -123.3656
+          "lat": 48.17035,
+          "lon": -123.00925
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4056,8 +4056,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 48.4284,
-          "lon": -123.3656
+          "lat": 48.4589,
+          "lon": -123.89105
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4076,8 +4076,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 43.2557,
-          "lon": -79.8711
+          "lat": 42.99765,
+          "lon": -79.54643
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4096,8 +4096,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 43.2557,
-          "lon": -79.8711
+          "lat": 43.2862,
+          "lon": -80.34984
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4116,8 +4116,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 42.9849,
-          "lon": -81.2453
+          "lat": 42.72685,
+          "lon": -80.92207
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4136,8 +4136,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 42.9849,
-          "lon": -81.2453
+          "lat": 43.0154,
+          "lon": -81.72193
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4156,8 +4156,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 42.3149,
-          "lon": -83.0364
+          "lat": 42.05685,
+          "lon": -82.71663
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4176,8 +4176,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 42.3149,
-          "lon": -83.0364
+          "lat": 42.3454,
+          "lon": -83.50792
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4196,8 +4196,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 43.4516,
-          "lon": -80.4925
+          "lat": 43.19355,
+          "lon": -80.16678
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4216,8 +4216,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 43.4516,
-          "lon": -80.4925
+          "lat": 43.4821,
+          "lon": -80.97279
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4236,8 +4236,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 48.3809,
-          "lon": -89.2477
+          "lat": 48.12285,
+          "lon": -88.89168
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4256,8 +4256,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 48.3809,
-          "lon": -89.2477
+          "lat": 48.4114,
+          "lon": -89.77266
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4276,8 +4276,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 47.5615,
-          "lon": -52.7126
+          "lat": 47.30345,
+          "lon": -52.36219
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4296,8 +4296,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 47.5615,
-          "lon": -52.7126
+          "lat": 47.592,
+          "lon": -53.2293
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4316,8 +4316,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 60.7212,
-          "lon": -135.0568
+          "lat": 60.46315,
+          "lon": -134.57331
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4336,8 +4336,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 60.7212,
-          "lon": -135.0568
+          "lat": 60.7517,
+          "lon": -135.76974
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4356,8 +4356,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 62.454,
-          "lon": -114.3718
+          "lat": 62.19595,
+          "lon": -113.8605
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4376,8 +4376,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 62.454,
-          "lon": -114.3718
+          "lat": 62.4845,
+          "lon": -115.12574
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4396,8 +4396,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 63.7467,
-          "lon": -68.517
+          "lat": 63.48865,
+          "lon": -67.98244
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4416,8 +4416,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.7467,
-          "lon": -68.517
+          "lat": 63.7772,
+          "lon": -69.30524
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4436,8 +4436,8 @@
         "type": "float_sequence",
         "data": null,
         "coordinates": {
-          "lat": 45.9636,
-          "lon": -66.6431
+          "lat": 45.70555,
+          "lon": -66.30293
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4456,8 +4456,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 45.9636,
-          "lon": -66.6431
+          "lat": 45.9941,
+          "lon": -67.1447
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4496,8 +4496,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 46.2382,
-          "lon": -63.1311
+          "lat": 45.98015,
+          "lon": -62.78923
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4536,8 +4536,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 46.3091,
-          "lon": -79.4608
+          "lat": 46.05105,
+          "lon": -79.11849
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4576,8 +4576,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 54.4642,
-          "lon": -110.285
+          "lat": 54.20615,
+          "lon": -109.87817
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4616,8 +4616,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 48.3306,
-          "lon": -71.0089
+          "lat": 48.07255,
+          "lon": -70.65324
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4656,8 +4656,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 44.1201,
-          "lon": -77.532
+          "lat": 43.86205,
+          "lon": -77.20262
         },
         "predefined_analysis_result": {
           "event_type": "detonation",
@@ -4696,8 +4696,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 46.4917,
-          "lon": -80.993
+          "lat": 46.23365,
+          "lon": -80.64954
         },
         "predefined_analysis_result": {
           "event_type": "detonation",

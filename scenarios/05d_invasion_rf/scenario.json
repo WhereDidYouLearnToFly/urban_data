@@ -131,8 +131,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 43.0,
-          "lon": -58.0
+          "lat": 43.0305,
+          "lon": -58.47674
         },
         "predefined_analysis_result": {
           "event_type": "drone_photo",
@@ -156,8 +156,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 48.3,
-          "lon": -128.5
+          "lat": 48.3305,
+          "lon": -129.02413
         },
         "predefined_analysis_result": {
           "event_type": "drone_photo",
@@ -589,8 +589,8 @@
         "type": "fft",
         "data": null,
         "coordinates": {
-          "lat": 63.74913593525389,
-          "lon": -140.44966608875225
+          "lat": 63.44915,
+          "lon": -139.88153
         },
         "predefined_analysis_result": {
           "event_type": "drone_photo",

@@ -12,8 +12,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 45.4215,
-          "lon": -75.6972
+          "lat": 45.16345,
+          "lon": -75.36031
         },
         "tag_id": "visual_ottawa",
         "tag_total": 2,
@@ -120,8 +120,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 44.6,
-          "lon": -63.55
+          "lat": 44.38955,
+          "lon": -63.24044
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -208,8 +208,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 43.6777,
-          "lon": -79.6248
+          "lat": 43.42195,
+          "lon": -79.29304
         },
         "tag_id": "desant_ontario",
         "tag_total": 2,
@@ -364,8 +364,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 49.3,
-          "lon": -124.29
+          "lat": 48.8022,
+          "lon": -123.5881
         },
         "predefined_analysis_result": {
           "event_type": "mob_march",
@@ -384,8 +384,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 43.6532,
-          "lon": -79.3832
+          "lat": 43.98209,
+          "lon": -79.21775
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -404,8 +404,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 49.2827,
-          "lon": -123.1207
+          "lat": 49.49577,
+          "lon": -122.69503
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -424,8 +424,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 44.6488,
-          "lon": -63.5752
+          "lat": 44.55701,
+          "lon": -63.0976
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",
@@ -444,8 +444,8 @@
         "type": "video",
         "data": null,
         "coordinates": {
-          "lat": 49.91,
-          "lon": -97.24
+          "lat": 49.56532,
+          "lon": -97.33438
         },
         "predefined_analysis_result": {
           "event_type": "drone_video",

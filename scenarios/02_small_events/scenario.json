@@ -7,7 +7,7 @@
     "crash_davisville": {
       "summary": "Two-vehicle collision at Yonge and Davisville with emergency response.",
       "main_event": "Collision confirmed. Ambulance on scene. One lane blocked.",
-      "prediction": "Traffic disruption on northbound Yonge for 30–60 minutes.",
+      "prediction": "Traffic disruption on northbound Yonge for 30\u201360 minutes.",
       "suggestion": "Re-route northbound Yonge traffic via Church St."
     },
     "fight_queen_spadina": {
@@ -30,7 +30,10 @@
         "id": "src_001",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.6532,
+          "lon": -79.3832
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
@@ -45,11 +48,14 @@
         "id": "src_002",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.7180, "lon": -79.5180 },
+        "coordinates": {
+          "lat": 43.718,
+          "lon": -79.518
+        },
         "predefined_analysis_result": {
           "event_type": "heavy_traffic",
           "level": 1,
-          "description": "Highway 401 eastbound near Weston Rd. Congestion building. All lanes slow — likely volume-driven.",
+          "description": "Highway 401 eastbound near Weston Rd. Congestion building. All lanes slow \u2014 likely volume-driven.",
           "confidence": 0.95
         }
       }
@@ -60,7 +66,10 @@
         "id": "src_003",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.7020, "lon": -79.4160 },
+        "coordinates": {
+          "lat": 43.39515,
+          "lon": -79.05639
+        },
         "predefined_analysis_result": {
           "event_type": "traffic_violation",
           "level": 2,
@@ -75,7 +84,10 @@
         "id": "src_004",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6410, "lon": -79.4180 },
+        "coordinates": {
+          "lat": 43.6837,
+          "lon": -79.8651
+        },
         "predefined_analysis_result": {
           "event_type": "traffic_violation",
           "level": 2,
@@ -90,7 +102,10 @@
         "id": "src_005",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6890, "lon": -79.3960 },
+        "coordinates": {
+          "lat": 43.86627,
+          "lon": -78.99942
+        },
         "tag_id": "crash_davisville",
         "tag_total": 3,
         "predefined_analysis_result": {
@@ -107,7 +122,10 @@
         "id": "src_006",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6890, "lon": -79.3960 },
+        "coordinates": {
+          "lat": 43.30852,
+          "lon": -79.4672
+        },
         "tag_id": "crash_davisville",
         "tag_total": 3,
         "predefined_analysis_result": {
@@ -124,7 +142,10 @@
         "id": "src_007",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6890, "lon": -79.3960 },
+        "coordinates": {
+          "lat": 43.94839,
+          "lon": -79.64311
+        },
         "tag_id": "crash_davisville",
         "tag_total": 3,
         "predefined_analysis_result": {
@@ -141,7 +162,10 @@
         "id": "src_008",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6591, "lon": -79.3783 },
+        "coordinates": {
+          "lat": 43.56261,
+          "lon": -78.91594
+        },
         "predefined_analysis_result": {
           "event_type": "running_person",
           "level": 2,
@@ -156,7 +180,10 @@
         "id": "src_009",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6491, "lon": -79.4002 },
+        "coordinates": {
+          "lat": 43.49159,
+          "lon": -79.81228
+        },
         "tag_id": "fight_queen_spadina",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -173,7 +200,10 @@
         "id": "src_010",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6491, "lon": -79.4002 },
+        "coordinates": {
+          "lat": 43.98209,
+          "lon": -79.21775
+        },
         "tag_id": "fight_queen_spadina",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -190,11 +220,14 @@
         "id": "src_011",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6491, "lon": -79.4002 },
+        "coordinates": {
+          "lat": 43.00648,
+          "lon": -79.01296
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
-          "description": "Queen and Spadina — police dispersed the altercation. Scene clear.",
+          "description": "Queen and Spadina \u2014 police dispersed the altercation. Scene clear.",
           "confidence": 0.92
         }
       }
@@ -205,14 +238,17 @@
         "id": "src_012",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.94903,
+          "lon": -80.26003
+        },
         "tag_id": "gas_bay_adelaide",
         "tag_total": 2,
         "predefined_analysis_result": {
           "event_type": "citizen_report",
           "level": 2,
           "description": "Citizen phone report: 'Gas smell near Bay and Adelaide. Possible small leak. No visible smoke or fire.'",
-          "confidence": 0.70
+          "confidence": 0.7
         }
       }
     },
@@ -222,7 +258,10 @@
         "id": "src_013",
         "type": "audio",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.86369,
+          "lon": -78.4605
+        },
         "tag_id": "gas_bay_adelaide",
         "tag_total": 2,
         "predefined_analysis_result": {
@@ -239,7 +278,10 @@
         "id": "src_014",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.7700, "lon": -79.4100 },
+        "coordinates": {
+          "lat": 43.77,
+          "lon": -79.41
+        },
         "predefined_analysis_result": {
           "event_type": "heavy_traffic",
           "level": 2,
@@ -254,7 +296,10 @@
         "id": "src_015",
         "type": "photo",
         "data": null,
-        "coordinates": { "lat": 43.6532, "lon": -79.3832 },
+        "coordinates": {
+          "lat": 43.04698,
+          "lon": -79.86694
+        },
         "predefined_analysis_result": {
           "event_type": "nothing_happening",
           "level": 0,
